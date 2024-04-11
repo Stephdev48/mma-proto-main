@@ -1,6 +1,4 @@
 <?php
-    require_once("session.req.php");
-    require("header.req.php");
     require("connect.php");
 ?>
 

@@ -4,7 +4,7 @@
 
     <script>alertTest();</script>
 
-    <section class="container">
+    <section class="">
         <!-- Retreiving requested page content -->
         <?= $content ?>
     </section>

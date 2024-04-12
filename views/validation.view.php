@@ -1,5 +1,13 @@
 <?php
     require("connect.php");
+    
+    //Customized titles
+    $title = "Long live MVC !";
+    $title_header = "Gestionnaire d'avis";
+
+    // Filling the content variable
+    ob_start();
+
 ?>
 
 
@@ -7,8 +15,6 @@
 
 
 <?php
-
-    require("footer.req.php");
     extract($_SESSION['info-souscripteur']);
     extract($_SESSION['info-enterprise']);
     $sql = mysqli_query($conn, 
@@ -20,10 +26,6 @@
         unset($_SESSION['info-souscripteur'], $_SESSION['info-enterprise']);
     }
 ?>
-
-<a href="step1.php">Nouveau souscripteur</a>
-
-
 
 <?php
     if(DEBUG == true){
@@ -47,13 +49,8 @@
 
         // session_unset();
 
-        // echo "<pre>";
-        // var_dump($_SESSION);
-        // echo "</pre>";
-
-        // echo "<pre>";
-        // var_dump($id_session);
-        // echo "</pre>";
     }
 
-?>
+    $content = ob_get_clean();
+    require("base.view.php");
+    ?>

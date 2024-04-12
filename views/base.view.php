@@ -10,10 +10,19 @@
 </head>
 <body>
     <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Test Tailwind :)
     </h1>
     <img src="../public/pictures/cc-assur.jpeg" alt="test-pic"/>
     <script>alertTest();</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
-</html>
+
+    <section class="container">
+
+    <!-- Retreiving requested page content -->
+    <?= $content ?>
+
+    </section>
+
+
+<?php
+    require 'footer.view.php';
+    ?>

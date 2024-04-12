@@ -6,7 +6,7 @@
     ob_start();
     ?>
 
-
+<p>homepage fonctionne</p>
 
 <?php
     $content = ob_get_clean();

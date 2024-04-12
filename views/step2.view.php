@@ -8,7 +8,7 @@
 
     ?>
 
-
+<p>step2 fonctionne</p>
 
 <?php
     $content = ob_get_clean();

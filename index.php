@@ -1,28 +1,28 @@
 <?php
-    require 'controllers/home-controller.php';
-    require 'controllers/step1-controller.php';
-    require 'controllers/step2-controller.php';
-    require 'controllers/step3-controller.php';
-    require 'controllers/validation-controller.php';
+    require 'controllers/home.controller.php';
+    require 'controllers/step1.controller.php';
+    require 'controllers/step2.controller.php';
+    require 'controllers/step3.controller.php';
+    require 'controllers/validation.controller.php';
 
     session_start();
 
     if (isset($_GET['page'])){
         switch($_GET['page']){
             case 'home':
-                require('views/home.view.php');
+                homeDisplay();
                 break;
             case 'step1':
-                require('views/step1.view.php');
+                step1Display();
                 break;
             case'step2':
-                require('views/step2.view.php');
+                step2Display();
                 break;
             case 'step3':
-                require('views/step3.view.php');
+                step3Display();
                 break;
             case 'validation':
-                require('views/validation.view.php');
+                validDisplay();
                 break;
             default:
                 throw new Exception ('Paramètre invalide !');

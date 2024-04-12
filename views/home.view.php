@@ -1,12 +1,9 @@
 <?php
-
-    //Customized titles
-    $title = "Long live MVC !";
-    $title_header = "Gestionnaire d'avis";
+    //Customized title
+    $title = "Accueil DO";
     
     // Filling the content variable
     ob_start();
-
     ?>
 
 

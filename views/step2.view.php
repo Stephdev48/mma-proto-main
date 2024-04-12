@@ -1,8 +1,7 @@
 <?php
 
-    //Customized titles
-    $title = "Long live MVC !";
-    $title_header = "Gestionnaire d'avis";
+    //Customized title
+    $title = "Formulaire DO-2";
     
     // Filling the content variable
     ob_start();

@@ -3,12 +3,12 @@
     //Customized title
     $title = "Formulaire DO-3";
     
-    // Filling the content variable
+    // Filling the $content variable
     ob_start();
 
     ?>
 
-<p>step3 fonctionne</p>
+<p class="text-center text-3xl">step3 fonctionne</p>
 
 <?php
     $content = ob_get_clean();

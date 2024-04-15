@@ -3,7 +3,7 @@
     //Customized title
     $title = "Formulaire DO-valid";
 
-    // Filling the content variable
+    // Filling the $content variable
     ob_start();
 
 ?>

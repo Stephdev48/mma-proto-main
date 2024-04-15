@@ -9,7 +9,7 @@
     ?>
 
     <!-- Stepper -->
-<section id="stepper" class="sectionfb flex justify-center">
+<section id="stepper" class="sectionfb flex justify-center mb-24">
     <div class="flex justify-center mt-16">   
         <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
         <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
@@ -142,10 +142,10 @@
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
             <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
-            <span>Le Maitre d'Ouvrage est-il le souscripteur ? <input type="checkbox" name="mo-sous"/></span>
-            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-            </svg>
+                <span>Le Maitre d'Ouvrage est-il le souscripteur ? <input type="checkbox" name="mo-sous"/></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
             </button>
         </h2>
         <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">    
@@ -188,64 +188,64 @@
                     <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
                     <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
                 </div> 
-                <div class="flex items-start mb-6">
-                    <div class="flex items-center h-5">
-                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
-                    </div>
-                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-                </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
             </form>
+        </div>
     </div>
 </section>
 
 
     <!-- Qualité du maitre d'ouvrage -->
 <section class="">
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <input type="checkbox" name="pv"/>
-    <div id="accordion-collapse" data-accordion="collapse">
-        <h2 id="accordion-collapse-heading-1">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
-            <span>Autre qualité <input type="checkbox" name="other-quality"/></span>
-            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-            </svg>
-            </button>
-        </h2>
-        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">    
-            <form>
-                <div class="grid gap-6 mb-6 md:grid-cols-2">
-                    <div>
-                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                        <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
-                    </div>    
-            </form>
+    <div>
+        <h2>Qualité du maitre d'ouvrage</h2>
+        <span>Etat (services publics)<input type="checkbox" name="serv-pub"/></span>
+        <span>Organismes d'habitations à loyer modéré (secteur public)<input type="checkbox" name="hlm-pub"/></span>
+        <span>Syndicats de copropriétaires<input type="checkbox" name="syndic"/></span>
+        <span>Vendeur privé après achèvement<input type="checkbox" name="vend-priv"/></span>
+        <span>Société Civile Immobilière<input type="checkbox" name="sci"/></span>
+        <span>Enterprise<input type="checkbox" name="entr"/></span>
+        <span>Collectivités locales<input type="checkbox" name="coll"/></span>
+        <span>Organismes d'habitations à loyer modéré (secteur privé)<input type="checkbox" name="hlm-priv"/></span>
+        <span>Vendeur privé d'immeubles à construier<input type="checkbox" name="vend-imm-const"/></span>
+        <span>Particulier<input type="checkbox" name="part"/></span>
+        <span>Promoteur privé immobilier<input type="checkbox" name="prom-priv-imm"/></span>
+        <span>Association<input type="checkbox" name="asso"/></span>
+        <div>
+            <div id="accordion-collapse" data-accordion="collapse">
+                <h2 id="accordion-collapse-heading-other">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-other" aria-expanded="false" aria-controls="accordion-collapse-other">
+                        <span>Autre qualité <input type="checkbox" name="other-quality"/></span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                </h2>
+            </div>
+            <div id="accordion-collapse-other" class="hidden" aria-labelledby="accordion-collapse-heading-other">    
+                <form>
+                    <div class="grid gap-6 mb-6 md:grid-cols-2">
+                        <div>
+                            <label for="mo-quality" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prècisez :</label>
+                            <input type="text-area" id="mo-quality" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Qualité du maitre d'ouvrage" required />
+                        </div>    
+                </form>
+            </div>
         </div>
+    </div>
 </section>
 
     <!-- Collapsed form : "Maitre d'ouvrage participe à la construction ?"-->
 <section class="">
     <div id="accordion-collapse" data-accordion="collapse">
-        <h2 id="accordion-collapse-heading-1">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+        <h2 id="accordion-collapse-heading-2">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
             <span>Le Maitre d'Ouvrage participe-t-il à la construction ? <input type="checkbox" name="mo-cons"/></span>
             <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
             </svg>
             </button>
         </h2>
-        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">    
+        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">    
             <form>
                 <div class="grid gap-6 mb-6 md:grid-cols-2">
                     <div>

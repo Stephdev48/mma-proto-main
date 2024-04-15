@@ -132,6 +132,14 @@
                     <h3 class="font-medium leading-tight">Justificatifs à fournir</h3>
                 </span>
             </li>
+            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    16
+                </span>
+                <span>
+                    <h3 class="font-medium leading-tight">Validation</h3>
+                </span>
+            </li>
         </ol>
     </div>
 </section>

@@ -3,7 +3,7 @@
     <img src="../public/pictures/aig.jpg" alt="aig"/>
     <img src="../public/pictures/albingia.jpg" alt="albingia"/>
     <img src="../public/pictures/alptis.jpg" alt="alptis"/>
-    <img src="../public/pictures/apicil.jpg" alt="apicil"/>
+    <img src="../public/pictures/apicil.png" alt="apicil"/>
     <img src="../public/pictures/april.png" alt="april"/>
     <img src="../public/pictures/auxiliaire.png" alt="auxiliaire"/>
     <img src="../public/pictures/axre.png" alt="axre"/>

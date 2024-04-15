@@ -11,14 +11,13 @@
     <!-- Stepper -->
 <section id="stepper" class="sectionfb flex justify-center mb-24">
     <div class="flex justify-center mt-16">   
-        <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
-        <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
+        <ol class="flex flex-wrap items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
+            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
                 <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
                     1
                 </span>
                 <span>
                     <h3 class="font-medium leading-tight">Coordonnées souscripteur</h3>
-                    <p class="text-sm">Tous les champs sont requis</p>
                 </span>
             </li>
             <li class="flex items-center text-blue-600 dark:text-blue-500 space-x-2.5 rtl:space-x-reverse">
@@ -141,8 +140,8 @@
 <section class="">
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
-                <span>Le Maitre d'Ouvrage est-il le souscripteur ? <input type="checkbox" name="mo-sous"/></span>
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+                <span class="ml-6">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="checkbox" name="mo-sous"/><label for="mo-sous"> Oui </label><input type="checkbox" name=""/><label for="mo-sous"> Non</label></span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                 </svg>
@@ -195,26 +194,32 @@
 
 
     <!-- Qualité du maitre d'ouvrage -->
-<section class="">
+<section class="my-20">
     <div>
-        <h2>Qualité du maitre d'ouvrage</h2>
-        <span>Etat (services publics)<input type="checkbox" name="serv-pub"/></span>
-        <span>Organismes d'habitations à loyer modéré (secteur public)<input type="checkbox" name="hlm-pub"/></span>
-        <span>Syndicats de copropriétaires<input type="checkbox" name="syndic"/></span>
-        <span>Vendeur privé après achèvement<input type="checkbox" name="vend-priv"/></span>
-        <span>Société Civile Immobilière<input type="checkbox" name="sci"/></span>
-        <span>Enterprise<input type="checkbox" name="entr"/></span>
-        <span>Collectivités locales<input type="checkbox" name="coll"/></span>
-        <span>Organismes d'habitations à loyer modéré (secteur privé)<input type="checkbox" name="hlm-priv"/></span>
-        <span>Vendeur privé d'immeubles à construier<input type="checkbox" name="vend-imm-const"/></span>
-        <span>Particulier<input type="checkbox" name="part"/></span>
-        <span>Promoteur privé immobilier<input type="checkbox" name="prom-priv-imm"/></span>
-        <span>Association<input type="checkbox" name="asso"/></span>
+        <fieldset class="flex flex-row mx-10 mb-2">
+            <legend class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</legend>
+            <div class="flex flex-col ml-8">
+                <span><input type="checkbox" name="serv-pub"/> Etat (services publics)</span>
+                <span><input type="checkbox" name="hlm-pub"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                <span><input type="checkbox" name="syndic"/> Syndicats de copropriétaires</span>
+                <span><input type="checkbox" name="vend-priv"/> Vendeur privé après achèvement</span>
+                <span><input type="checkbox" name="sci"/> Société Civile Immobilière</span>
+                <span><input type="checkbox" name="entr"/> Enterprise</span>
+            </div>
+            <div class="flex flex-col ml-8">
+                <span><input type="checkbox" name="coll"/> Collectivités locales</span>
+                <span><input type="checkbox" name="hlm-priv"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                <span><input type="checkbox" name="vend-imm-const"/> Vendeur privé d'immeubles à construier</span>
+                <span><input type="checkbox" name="part"/> Particulier</span>
+                <span><input type="checkbox" name="prom-priv-imm"/> Promoteur privé immobilier</span>
+                <span><input type="checkbox" name="asso"/> Association</span>
+            </div>
+        </fieldset>
         <div>
             <div id="accordion-collapse" data-accordion="collapse">
                 <h2 id="accordion-collapse-heading-other">
-                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-other" aria-expanded="false" aria-controls="accordion-collapse-other">
-                        <span>Autre qualité <input type="checkbox" name="other-quality"/></span>
+                    <button type="button" class="flex items-center justify-between w-full p-5 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-other" aria-expanded="false" aria-controls="accordion-collapse-other">
+                        <span class="ml-12"><input type="checkbox" name="other-quality"/> Autre qualité</span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                         </svg>
@@ -225,7 +230,7 @@
                 <form>
                     <div class="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
-                            <label for="mo-quality" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prècisez :</label>
+                            <label for="mo-quality" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Précisez :</label>
                             <input type="text-area" id="mo-quality" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Qualité du maitre d'ouvrage" required />
                         </div>    
                 </form>
@@ -238,8 +243,8 @@
 <section class="">
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-2">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-            <span>Le Maitre d'Ouvrage participe-t-il à la construction ? <input type="checkbox" name="mo-cons"/></span>
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+            <span class="ml-6">Le Maitre d'Ouvrage participe-t-il à la construction ? <input type="checkbox" name="mo-cons"/><label for="mo-cons"> Oui </label><input type="checkbox" name=""/><label for=""> Non</label></span>
             <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
             </svg>

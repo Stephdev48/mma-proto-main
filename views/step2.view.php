@@ -7,6 +7,8 @@
     ob_start();
 
     ?>
+    
+    <!-- Stepper -->
 <section id="stepper" class="sectionfb flex justify-center">
     <div class="flex justify-center mt-16">   
         <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
@@ -135,7 +137,9 @@
     </div>
 </section>
 
-<p class="text-center text-3xl">step2 fonctionne</p>
+<section class="">
+
+</section>
 
 <?php
     $content = ob_get_clean();

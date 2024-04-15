@@ -1,5 +1,4 @@
 <?php
-
     //Customized title
     $title = "Etape 1";
 
@@ -12,8 +11,7 @@
 		$keys = array_keys($_SESSION['info-'.$_POST['fields']]);
 		if (in_array('send-step1', $keys)) {
 			unset($_SESSION['info-'.$_POST['fields']]['send-step1']);
-		}
-        
+		}  
 	}
 
     // Filling the $content variable

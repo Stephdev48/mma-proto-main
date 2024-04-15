@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
     <!-- CUSTOM CSS-->
     <link href="output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Composants Flowbite</title>
 
 </head>
 <body>
@@ -252,7 +251,7 @@
             </div>
         </section>
                 
-
+        <!-- Steppers -->
         <section>
                 <ol class="flex items-center">
                     <li class="relative w-full mb-6">
@@ -381,6 +380,8 @@
                 </ol>
                 
         </section>
+
+        <!-- Progress bar -->
         <section id="progress" class="sectionfb">
                     <h2 class="sectionfb-title">Progress</h2>
 
@@ -393,8 +394,6 @@
 
         </section>
 
-
-        
         <!-- Accordion-->
         <section id="table" class="sectionfb">
             <h2 class="sectionfb-title"><a href="https://flowbite.com/docs/components/accordion/">Accordion</a></h2>
@@ -497,9 +496,6 @@
               </div>
               
         </section>
-        
-
-  
 
         <!-- table-->
         <section id="table" class="sectionfb">
@@ -677,7 +673,6 @@
 
         </section>
 
-
         <!-- Modal-->
         <section id="table" class="sectionfb">
             <h2 class="sectionfb-title"><a href="https://flowbite.com/docs/components/tables/">MODAL</a></h2>
@@ -775,7 +770,6 @@
                         </div>
                     </div>
         </section>
-    </main>
-    
+    </main> 
 </body>
 </html>

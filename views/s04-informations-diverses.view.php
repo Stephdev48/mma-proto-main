@@ -21,11 +21,11 @@
 
     ?>
 
+
 <?php
     // Stepper
     require 'views/stepper.view.php';
     ?>
-
 
 
 <?php

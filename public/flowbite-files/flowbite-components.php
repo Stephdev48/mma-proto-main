@@ -14,7 +14,7 @@
     <!-- Date Picker-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
     <!-- CUSTOM CSS-->
-    <link href="output.css" rel="stylesheet" />
+    <link href="../style/output.css" rel="stylesheet" />
     <title>Composants Flowbite</title>
 
 </head>

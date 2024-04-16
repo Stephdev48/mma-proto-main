@@ -1,8 +1,8 @@
 <?php
     require 'controllers/home.controller.php';
-    require 'controllers/step1.controller.php';
-    require 'controllers/step2.controller.php';
-    require 'controllers/step3.controller.php';
+    require 'controllers/s01-coordonnees.controller.php';
+    require 'controllers/s02-maitre-ouvrage.controller.php';
+    require 'controllers/s03-oper-construct.controller.php';
     require 'controllers/validation.controller.php';
 
     session_start();
@@ -20,6 +20,9 @@
                 break;
             case 'step3':
                 step3Display();
+                break;
+            case 'step4':
+                step4Display();
                 break;
             case 'validation':
                 validDisplay();

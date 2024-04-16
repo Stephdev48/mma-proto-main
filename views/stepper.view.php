@@ -70,62 +70,6 @@
                     9
                 </span>
                 <span>
-                    <h3 class="font-medium leading-tight">L'opération de construction : Travaux sur existants</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    10
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">L'opération de construction : Maitrise d'oeuvre</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    11
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">Lots techniques</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    12
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">Garanties demandées</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    13
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">RCD Constructeur Non Réalisateur (CNR)</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    14
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">Assurance tous risques chantier</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    15
-                </span>
-                <span>
-                    <h3 class="font-medium leading-tight">Justificatifs à fournir</h3>
-                </span>
-            </li>
-            <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
-                <span class="flex items-center justify-center w-8 h-8 border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
-                    16
-                </span>
-                <span>
                     <h3 class="font-medium leading-tight">Validation</h3>
                 </span>
             </li>

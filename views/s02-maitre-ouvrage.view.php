@@ -1,7 +1,7 @@
 <?php
 
     //Customized title
-    $title = "Formulaire DO-2";
+    $title = "Formulaire DO-02";
     
     //Send form fields
     if (isset($_POST['send-step2'])) {
@@ -162,7 +162,7 @@
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-1">
             <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
-                <span class="ml-6">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="checkbox" name="mo-sous"/><label for="mo-sous"> Oui </label><input type="checkbox" name=""/><label for="mo-sous"> Non</label></span>
+                <span class="ml-6">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="radio" name="mo-sous"/><label for="mo-sous"> Oui </label><input type="radio" name="mo-sous"/><label for="mo-sous"> Non</label></span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                 </svg>
@@ -220,27 +220,27 @@
         <fieldset class="flex flex-row mx-10 mb-2">
             <legend class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</legend>
             <div class="flex flex-col ml-8">
-                <span><input type="checkbox" name="serv-pub"/> Etat (services publics)</span>
-                <span><input type="checkbox" name="hlm-pub"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                <span><input type="checkbox" name="syndic"/> Syndicats de copropriétaires</span>
-                <span><input type="checkbox" name="vend-priv"/> Vendeur privé après achèvement</span>
-                <span><input type="checkbox" name="sci"/> Société Civile Immobilière</span>
-                <span><input type="checkbox" name="entr"/> Enterprise</span>
+                <span><input type="radio" name="quali-mo"/> Etat (services publics)</span>
+                <span><input type="radio" name="quali-mo"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                <span><input type="radio" name="quali-mo"/> Syndicats de copropriétaires</span>
+                <span><input type="radio" name="quali-mo"/> Vendeur privé après achèvement</span>
+                <span><input type="radio" name="quali-mo"/> Société Civile Immobilière</span>
+                <span><input type="radio" name="quali-mo"/> Enterprise</span>
             </div>
             <div class="flex flex-col ml-8">
-                <span><input type="checkbox" name="coll"/> Collectivités locales</span>
-                <span><input type="checkbox" name="hlm-priv"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                <span><input type="checkbox" name="vend-imm-const"/> Vendeur privé d'immeubles à construier</span>
-                <span><input type="checkbox" name="part"/> Particulier</span>
-                <span><input type="checkbox" name="prom-priv-imm"/> Promoteur privé immobilier</span>
-                <span><input type="checkbox" name="asso"/> Association</span>
+                <span><input type="radio" name="quali-mo"/> Collectivités locales</span>
+                <span><input type="radio" name="quali-mo"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                <span><input type="radio" name="quali-mo"/> Vendeur privé d'immeubles à construier</span>
+                <span><input type="radio" name="quali-mo"/> Particulier</span>
+                <span><input type="radio" name="quali-mo"/> Promoteur privé immobilier</span>
+                <span><input type="radio" name="quali-mo"/> Association</span>
             </div>
         </fieldset>
         <div>
             <div id="accordion-collapse" data-accordion="collapse">
                 <h2 id="accordion-collapse-heading-other">
                     <button type="button" class="flex items-center justify-between w-full p-5 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-other" aria-expanded="false" aria-controls="accordion-collapse-other">
-                        <span class="ml-12"><input type="checkbox" name="other-quality"/> Autre qualité</span>
+                        <span class="ml-12"><input type="radio" name="quali-mo"/> Autre qualité</span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                         </svg>
@@ -265,7 +265,7 @@
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-2">
             <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                <span class="ml-6">Le Maitre d'Ouvrage participe-t-il à la construction ? <input type="checkbox" name="mo-cons"/><label for="mo-cons"> Oui </label><input type="checkbox" name=""/><label for=""> Non</label></span>
+                <span class="ml-6">Le Maitre d'Ouvrage participe-t-il à la construction ? <input type="radio" name="mo-cons"/><label for="mo-cons"> Oui </label><input type="radio" name="mo-cons"/><label for=""> Non</label></span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                 </svg>

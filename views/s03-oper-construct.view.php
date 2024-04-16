@@ -1,7 +1,7 @@
 <?php
 
     //Customized title
-    $title = "Formulaire DO-3";
+    $title = "Formulaire DO-03";
     
     //Send form fields
     if (isset($_POST['send-step3'])) {
@@ -162,7 +162,7 @@
     <div id="accordion-collapse" data-accordion="collapse">
         <h2 id="accordion-collapse-heading-nature">
             <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-nature" aria-expanded="false" aria-controls="accordion-collapse-body-nature">
-                <span class="ml-6">Nature de l'opération : <input type="checkbox" name="mo-sous"/><label for="mo-sous"> Construction neuve </label><input type="checkbox" name=""/><label for="mo-sous"> Travaux sur une construction existante</label></span>
+                <span class="ml-6">Nature de l'opération : <input type="radio" name="new-used"/><label for="mo-sous"> Construction neuve </label><input type="radio" name="new-used"/><label for="mo-sous"> Travaux sur une construction existante</label></span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                 </svg>
@@ -218,17 +218,31 @@
     <fieldset class="flex flex-row mx-10 mb-2">
         <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
         <div class="flex flex-col ml-8">
-            <span><input type="checkbox" name="serv-pub"/> Maison individuelle</span>
-            <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire</span>
-            <span><input type="checkbox" name="syndic"/> Collectif d'habitation</span>
+            <div>
+                <span><input type="checkbox" name="serv-pub"/> Maison individuelle</span>
+            </div>
+            <div>
+                <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire</span><br />
+                <span class="text-sm">(nombre de maisons : <input type="text" name="" style="height:12px; width: 30px"/> )</span>
+            </div>
+            <div>
+                <span><input type="checkbox" name="syndic"/> Collectif d'habitation</span><br />
+                <span class="text-sm">(nombre d'appartements : <input type="text" name="" style="height:12px; width: 30px"/> )</span>
+            </div>
             <span><input type="checkbox" name="vend-priv"/> Bâtiment à usage industriel ou agricole</span>
-            <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente</span>
+            <div>
+                <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente</span><br />
+                <span class="text-sm">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:12px; width:30px"/> m²)</span>
+            </div>
         </div>
         <div class="flex flex-col ml-8">
             <span><input type="checkbox" name="coll"/> Bâtiment à usage de bureau</span>
             <span><input type="checkbox" name="hlm-priv"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique.</span>
             <span><input type="checkbox" name="vend-imm-const"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
-            <span><input type="checkbox" name="part"/> Autre construction</span>
+            <div>
+                <span><input type="checkbox" name="part"/> Autre construction</span><br />
+                <span class="text-sm">(son usage : <input type="text" name="" style="height:12px; width:200px"/> )</span>
+            </div>
         </div>
     </fieldset>
 </section>

@@ -3,6 +3,7 @@
     require 'controllers/s01-coordonnees.controller.php';
     require 'controllers/s02-maitre-ouvrage.controller.php';
     require 'controllers/s03-oper-construct.controller.php';
+    require 'controllers/s04-informations-diverses.controller.php';
     require 'controllers/validation.controller.php';
 
     session_start();

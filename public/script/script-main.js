@@ -1,3 +1,8 @@
+function alertTestJs(){
+    alert("Le JS fonctionne");
+}
+
+
 function stepperColor(stepperidmod){
     var element = document.getElementById(stepperidmod);
     element.classList.add('text-blue-600','dark:text-blue-500','font-bold');
@@ -7,3 +12,14 @@ function stepperColor(stepperidmod){
     var elementsubtitle = document.getElementById(stepperidmod+"-p");
     elementsubtitle.classList.add('text-black');
 }
+
+function radioFormOpen(elementhidden){
+var element = document.getElementById(elementhidden);
+    element.classList.remove('hidden');
+}
+
+function radioFormClose(elementhidden){
+    var element = document.getElementById(elementhidden);
+        element.classList.add('hidden');
+    }
+

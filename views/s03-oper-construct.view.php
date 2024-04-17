@@ -25,6 +25,8 @@
     // Stepper
     require 'views/stepper.view.php';
     ?>
+    <script>stepperColor('step3');</script>
+
 
     <!-- Collapsed form : "Nature opération : neuf ou existant"-->
 <section class="myContainer">

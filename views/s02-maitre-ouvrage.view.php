@@ -25,6 +25,7 @@
     // Stepper
     require 'views/stepper.view.php';
     ?>
+    <script>stepperColor('step2');</script>
 
     <!-- Collapsed form : "Maitre d'ouvrage = souscripteur ?"-->
 <section class="myContainer">

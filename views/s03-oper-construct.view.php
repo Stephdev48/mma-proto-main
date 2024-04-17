@@ -25,12 +25,12 @@
     // Stepper
     require 'views/stepper.view.php';
     ?>
-<script>stepperColor('step3');</script>
+<script>stepColor('step3');</script>
 
 
     <!-- Collapsed form : "Nature opération : neuf ou existant"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Nature de l'opération <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
+    <span class="text-gray-500 font-medium">Nature de l'opération : <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
     <form id="nat-operation" class="hidden">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -107,9 +107,12 @@
     </fieldset>
 </section>
 
+
+    <!-- Send button -->
 <div class="myContainer mt-16">
     <button type="submit" name="send-step3" value="step3" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
 </div>
+
 
 <?php
     $content = ob_get_clean();

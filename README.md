@@ -1,5 +1,6 @@
 # mma-proto-main
  Proto principal
 
-# à faire
+# à faire / idées
  vérifier tous les name et id des checkbox et radio !
+step3 type d'ouvrage : modifier opacity et activer quand case cochée ou bien champ caché ?

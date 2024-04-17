@@ -25,7 +25,7 @@
     require 'views/stepper.view.php';
     ?>
 
-<script>stepperColor('step1');</script>
+<script>stepColor('step1');</script>
 
 <!-- Personal informations -->
 <form action="" method="post" class="max-w-md mx-auto mt-16 myContainer">

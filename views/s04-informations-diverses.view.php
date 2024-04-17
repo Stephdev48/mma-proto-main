@@ -27,7 +27,7 @@
     require 'views/stepper.view.php';
     ?>
 
-<script>stepperColor('step4');</script>
+<script>stepColor('step4');</script>
 
 
 

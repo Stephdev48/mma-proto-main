@@ -3,13 +3,12 @@ function alertTestJs(){
 }
 
 
-function stepperColor(stepperidmod){
-    var element = document.getElementById(stepperidmod);
+function stepColor(stepidmod){
+    var element = document.getElementById(stepidmod);
     element.classList.add('text-blue-600','dark:text-blue-500','font-bold');
-    var stepspan = element.firstElementChild;
-    console.log(stepspan);
+    var stepspan = document.getElementById(stepidmod+'-circle');
     stepspan.classList.add('border-blue-600','border-2');
-    var elementsubtitle = document.getElementById(stepperidmod+"-p");
+    var elementsubtitle = document.getElementById(stepidmod+"-p");
     elementsubtitle.classList.add('text-black');
 }
 

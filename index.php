@@ -25,6 +25,9 @@
             case 'step4':
                 step4Display();
                 break;
+            case 'partners':
+                require 'views/partner-companies.view.php';
+                break;
             case 'validation':
                 validDisplay();
                 break;

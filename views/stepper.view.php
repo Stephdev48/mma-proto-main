@@ -56,7 +56,7 @@
                     7
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Etude de sol</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
                 </span>
             </li>
             <li id="step8" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
@@ -64,7 +64,7 @@
                     8
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Contrôleur technique</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
                 </span>
             </li>
             <li id="step9" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">

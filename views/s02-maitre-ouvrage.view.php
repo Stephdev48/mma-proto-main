@@ -19,17 +19,18 @@
     // Filling the $content variable
     ob_start();
 
-    ?>
+?>
 
 <?php
     // Stepper
     require 'views/stepper.view.php';
-    ?>
+?>
 <script>stepperColor('step2');</script>
+
 
     <!-- Collapsed form : "Maitre d'ouvrage = souscripteur ?"-->
 <section class="myContainer">
-    <span class="ml-6 text-gray-500 font-medium">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/><label for="mo-sous-no"> Non</label></span>  
+    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/><label for="mo-sous-no"> Non</label></span>  
     <form id="mo-form-sous" class="hidden">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -75,44 +76,35 @@
 
     <!-- Qualité du maitre d'ouvrage -->
 <section class="my-16 myContainer">
-    <div>
-        <fieldset class="flex flex-row mx-6 mb-2">
-            <legend class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</legend>
+        <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</h3>
+        <div class="flex flex-row mx-6 mb-2">
             <div class="flex flex-col ml-8">
-                <span><input type="radio" name="quali-mo"/> Etat (services publics)</span>
-                <span><input type="radio" name="quali-mo"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                <span><input type="radio" name="quali-mo"/> Syndicats de copropriétaires</span>
-                <span><input type="radio" name="quali-mo"/> Vendeur privé après achèvement</span>
-                <span><input type="radio" name="quali-mo"/> Société Civile Immobilière</span>
-                <span><input type="radio" name="quali-mo"/> Enterprise</span>
-                <span><input type="radio" name="quali-mo" onclick="radioFormOpen('mo-quality')"/> Autre qualité</span>
-                <div id="mo-quality" class="hidden">
-                    <label for="mo-quality" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
+                <span><input type="radio" name="mo-quality"/> Etat (services publics)</span>
+                <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                <span><input type="radio" name="mo-quality"/> Syndicats de copropriétaires</span>
+                <span><input type="radio" name="mo-quality"/> Vendeur privé après achèvement</span>
+                <span><input type="radio" name="mo-quality"/> Société Civile Immobilière</span>
+                <span><input type="radio" name="mo-quality"/> Enterprise</span>
+                <span><input type="radio" name="mo-quality" onclick="radioFormOpen('mo-quality-other')"/> Autre qualité</span>
+                <div id="mo-quality-other" class="hidden">
+                    <label for="mo-quality-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
                     <input type="text-area" id="mo-quality-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>    
             </div>
             <div class="flex flex-col ml-8">
-                <span><input type="radio" name="quali-mo"/> Collectivités locales</span>
-                <span><input type="radio" name="quali-mo"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                <span><input type="radio" name="quali-mo"/> Vendeur privé d'immeubles à construier</span>
-                <span><input type="radio" name="quali-mo"/> Particulier</span>
-                <span><input type="radio" name="quali-mo"/> Promoteur privé immobilier</span>
-                <span><input type="radio" name="quali-mo"/> Association</span>
-            </div>
-        </fieldset>
-        <div>    
-                <form>
-                    <div class="grid gap-6 mb-6 md:grid-cols-2">
-                        
-                </form>
+                <span><input type="radio" name="mo-quality"/> Collectivités locales</span>
+                <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                <span><input type="radio" name="mo-quality"/> Vendeur privé d'immeubles à construire</span>
+                <span><input type="radio" name="mo-quality"/> Particulier</span>
+                <span><input type="radio" name="mo-quality"/> Promoteur privé immobilier</span>
+                <span><input type="radio" name="mo-quality"/> Association</span>
             </div>
         </div>
-    </div>
 </section>
 
     <!-- Collapsed form : "Maitre d'ouvrage participe à la construction ?"-->
 <section class="myContainer">
-    <span class="ml-6 text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const')"/><label for="mo-sous-no"> Non</label></span>  
+    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const')"/><label for="mo-sous-no"> Non</label></span>  
     <form id="mo-form-const" class="hidden">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -155,8 +147,9 @@
     </form>
 </section>
 
-
-
+<div class="myContainer mt-16">
+    <button type="submit" name="send-step2" value="step2" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
+</div>
 
 <?php
     $content = ob_get_clean();

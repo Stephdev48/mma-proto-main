@@ -22,7 +22,8 @@
                     3
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Description</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
+                    <p id="step3-p" class="text-xs text-gray-500 font-normal">Nature et type de l'ouvrage</p>
                 </span>
             </li>
             <li id="step4" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
@@ -30,7 +31,8 @@
                     4
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Risques</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
+                    <p id="step4-p" class="text-xs text-gray-500 font-normal">Informations générales</p>
                 </span>
             </li>
             <li id="step5" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
@@ -38,7 +40,7 @@
                     5
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Panneaux photovoltaïques</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
                 </span>
             </li>
             <li id="step6" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">
@@ -46,7 +48,7 @@
                     6
                 </span>
                 <span>
-                    <h3 class="leading-tight">L'opération de construction : Géothermie</h3>
+                    <h3 class="leading-tight">L'opération de construction</h3>
                 </span>
             </li>
             <li id="step7" class="flex items-center text-gray-500 dark:text-gray-400 space-x-2.5 rtl:space-x-reverse">

@@ -27,6 +27,8 @@
     require 'views/stepper.view.php';
     ?>
 
+<script>stepperColor('step4');</script>
+
 
 
 
@@ -40,4 +42,3 @@
     $content = ob_get_clean();
     require("base.view.php");
     ?>
-    <script>stepperColor('step4');</script>

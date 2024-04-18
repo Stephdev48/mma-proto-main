@@ -102,18 +102,44 @@
             </div>
         </form>
         <table id="tableau" class="hidden text-sm font-light border border-1 border-gray-300">
-            <thead>
-                <tr>
-                    <th scope="col">Activité ou mission exercée</th>
-                    <th scope="col">
-                            <tr>
-                                <th scope="col">Papiers peints et/ou Peintures intérieures</th>
-                                <th scope="col">Gros oeuvre fondations, Charpente - Couverture, Etanchéité</th>
-                                <th scope="col">Autres travaux</th>
-                            </tr>
-                    </th>
-                </tr>
-            </thead>
+            <caption>Complétez le tableau ci-dessous en cochant les cases correspondantes :</caption>
+            <tr>
+                <td>Activité ou mission exercée</td>
+                <td>
+                    <table>
+                        <tr>Nature des travaux</tr>
+                        <tr>
+                            <td>Papiers peints et/ou Peintures intérieures</td>
+                            <td>Gros oeuvre fondations, Charpente - Couverture, Etancdéité</td>
+                            <td>Autres travaux</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/><label>Conception</label></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/><label>Direction</label></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/><label>Surveillance</label></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/><label>Exécution</label></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+                <td><input type="checkbox"/></td>
+            </tr>
         </table>
     </form>
 </section>

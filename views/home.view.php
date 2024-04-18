@@ -37,7 +37,7 @@
         Les Données à Caractère Personnel qui vous seront communiquées dans le cadre de l'exercice de votre droit d'accès le seront à titre personnel et confidentiel. A ce titre, pour que votre demande d'accès soit prise en compte, Vous devrez faire parvenir les éléments nécessaires à votre identifica-tion à savoir, une attestation écrite sur l'honneur par laquelle Vous certifiez être le titulaire desdites Données à Caractère Personnel ainsi qu'une photocopie d'une pièce d'identité. 
         Vous disposez par ailleurs en cas de non-respect par La société Cabinet Cotton Alexandre à ses obli-gations au titre de la législation/réglementation en vigueur, du droit d'introduire une réclamation au-près de la Commission Nationale de l'Informatique et des Libertés (CNIL).</textarea>
         <div class="flex justify-center mb-4">
-            <input id="checkbox-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" >
+            <input id="checkbox-home" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" >
             <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lu et approuvé.</label>
         </div><br />                                                 
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">

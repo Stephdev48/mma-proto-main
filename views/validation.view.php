@@ -9,7 +9,7 @@
 ?>
 
 
-<p>Formulaire validé.</p>
+<p style="font-size: 50px; text-align: center;">Cette étape fonctionne</p>
 
 
 <?php

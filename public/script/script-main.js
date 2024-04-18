@@ -17,8 +17,8 @@ var element = document.getElementById(elementhidden);
     element.classList.remove('hidden');
 }
 
-function radioFormClose(elementhidden){
-    var element = document.getElementById(elementhidden);
+function radioFormClose(elementvisible){
+    var element = document.getElementById(elementvisible);
         element.classList.add('hidden');
     }
 

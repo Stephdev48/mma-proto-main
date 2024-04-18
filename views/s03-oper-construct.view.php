@@ -30,7 +30,7 @@
 
     <!-- Collapsed form : "Nature opération : neuf ou existant"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Nature de l'opération : <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
+    <span class="text-gray-500 font-medium">Nature de l'opération : &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
     <form id="nat-operation" class="hidden">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -82,17 +82,17 @@
                 <span><input type="checkbox" name="serv-pub"/> Maison individuelle</span>
             </div>
             <div>
-                <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire</span><br />
-                <span class="text-sm">(nombre de maisons : <input type="text" name="" style="height:12px; width: 30px"/> )</span>
+                <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire :</span><br />
+                <span class="text-xs">(nombre de maisons : <input type="text" name="" style="height:10px; width: 30px; border-radius:6px;"/> )</span>
             </div>
             <div>
-                <span><input type="checkbox" name="syndic"/> Collectif d'habitation</span><br />
-                <span class="text-sm">(nombre d'appartements : <input type="text" name="" style="height:12px; width: 30px"/> )</span>
+                <span><input type="checkbox" name="syndic"/> Collectif d'habitation :</span><br />
+                <span class="text-xs">(nombre d'appartements : <input type="text" name="" style="height:10px; width: 30px; border-radius:6px;"/> )</span>
             </div>
             <span><input type="checkbox" name="vend-priv"/> Bâtiment à usage industriel ou agricole</span>
             <div>
-                <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente</span><br />
-                <span class="text-sm">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:12px; width:30px"/> m²)</span>
+                <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente :</span><br />
+                <span class="text-xs">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:10px; width:30px; border-radius:6px;"/> m²)</span>
             </div>
         </div>
         <div class="flex flex-col ml-8">
@@ -100,8 +100,8 @@
             <span><input type="checkbox" name="hlm-priv"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique.</span>
             <span><input type="checkbox" name="vend-imm-const"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
             <div>
-                <span><input type="checkbox" name="part"/> Autre construction</span><br />
-                <span class="text-sm">(son usage : <input type="text" name="" style="height:12px; width:200px"/> )</span>
+                <span><input type="checkbox" name="part"/> Autre construction :</span><br />
+                <span class="text-xs">(son usage : <input type="text" name="" style="height:10px; width:200px; border-radius:6px;"/> )</span>
             </div>
         </div>
     </fieldset>
@@ -109,7 +109,7 @@
 
 
     <!-- Send button -->
-<div class="myContainer mt-16">
+<div class="myContainer text-center mt-16">
     <button type="submit" name="send-step3" value="step3" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
 </div>
 

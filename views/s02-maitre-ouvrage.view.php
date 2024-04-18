@@ -30,46 +30,27 @@
 
     <!-- Collapsed form : "Maitre d'ouvrage = souscripteur ?"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il le souscripteur ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/><label for="mo-sous-no"> Non</label></span>  
+    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/><label for="mo-sous-no"> Non</label></span>  
     <form id="mo-form-sous" class="hidden">
-        <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+        <div class="mb-6 md:grid-cols-2">
+            <div class="py-4">
+                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : </span>
+                <input type="radio" id="" name="civilite"><label for="civilite"> Particulier</label>
+                <input type="radio" id="" name="civilite"><label for="civilite"> Entreprise</label>
             </div>
-            <div>
-                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
+            <div class="py-4">
+                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom ou Raison sociale</label>
+                <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
-            <div>
-                <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required />
+            <div class="py-4">
+                <label for="mo-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
+                <input type="text" id="" nom="mo-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>  
-            <div>
-                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-                <input type="tel" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
-            </div>
-            <div>
-                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                <input type="url" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
-            </div>
-            <div>
-                <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-                <input type="number" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+            <div class="py-4">
+                <label for="mo-siret" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
+                <input type="text" id="" name="mo-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
             </div>
         </div>
-        <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
-        </div> 
-        <div class="mb-6">
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
-        <div class="mb-6">
-            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
-            <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
     </form>
 </section>
 
@@ -102,14 +83,13 @@
         </div>
 </section>
 
-    <!-- Collapsed form : "Maitre d'ouvrage participe à la construction ?"-->
+    <!-- Collapsed form : "Maitre d'ouvrage participe t-il à la construction ?"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const')"/><label for="mo-sous-yes"> Oui </label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const')"/><label for="mo-sous-no"> Non</label></span>  
+    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const')"/><label for="mo-sous-no"> Non</label></span>  
     <form id="mo-form-const" class="hidden">
         <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+                <p class="border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">La clause contrat n°001 des Conventions Spéciales n°811 "Intervention du maître d'ouvrage dans la conception, la direction, la surveillance ou la réalisation des travaux" est obligatoirement souscrite.</p>
             </div>
             <div>
                 <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
@@ -147,7 +127,8 @@
     </form>
 </section>
 
-<div class="myContainer mt-16">
+    <!-- Send button -->
+<div class="myContainer text-center mt-16">
     <button type="submit" name="send-step2" value="step2" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
 </div>
 

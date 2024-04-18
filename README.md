@@ -8,3 +8,5 @@ navigation via le stepper : désactiver les étapes suivantes non parcourues
 
 ## Responsive !!
 notamment les listes de cases à cocher
+
+# Infobulles !

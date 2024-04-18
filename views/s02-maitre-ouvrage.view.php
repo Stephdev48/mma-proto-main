@@ -110,7 +110,7 @@
                         <tr>Nature des travaux</tr>
                         <tr>
                             <td>Papiers peints et/ou Peintures intérieures</td>
-                            <td>Gros oeuvre fondations, Charpente - Couverture, Etancdéité</td>
+                            <td>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</td>
                             <td>Autres travaux</td>
                         </tr>
                     </table>

@@ -83,25 +83,25 @@
             </div>
             <div>
                 <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire :</span><br />
-                <span class="text-xs">(nombre de maisons : <input type="text" name="" style="height:10px; width: 30px; border-radius:6px;"/> )</span>
+                <span class="text-xs">(nombre de maisons : <input type="text" name="" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
             <div>
                 <span><input type="checkbox" name="syndic"/> Collectif d'habitation :</span><br />
-                <span class="text-xs">(nombre d'appartements : <input type="text" name="" style="height:10px; width: 30px; border-radius:6px;"/> )</span>
+                <span class="text-xs">(nombre d'appartements : <input type="text" name="" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
             <span><input type="checkbox" name="vend-priv"/> Bâtiment à usage industriel ou agricole</span>
             <div>
                 <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente :</span><br />
-                <span class="text-xs">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:10px; width:30px; border-radius:6px;"/> m²)</span>
+                <span class="text-xs">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:10px; width:60px; border-radius:6px;" class="bg-gray-50"/> m²)</span>
             </div>
         </div>
         <div class="flex flex-col ml-8">
             <span><input type="checkbox" name="coll"/> Bâtiment à usage de bureau</span>
-            <span><input type="checkbox" name="hlm-priv"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique.</span>
+            <span><input type="checkbox" name="hlm-priv"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
             <span><input type="checkbox" name="vend-imm-const"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
             <div>
                 <span><input type="checkbox" name="part"/> Autre construction :</span><br />
-                <span class="text-xs">(son usage : <input type="text" name="" style="height:10px; width:200px; border-radius:6px;"/> )</span>
+                <span class="text-xs">(son usage : <input type="text" name="" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
         </div>
     </fieldset>

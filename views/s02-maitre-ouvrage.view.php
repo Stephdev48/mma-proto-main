@@ -1,32 +1,3 @@
-<?php
-
-    //Customized title
-    $title = "Formulaire DO-02";
-    
-    //Send form fields
-    if (isset($_POST['send-step2'])) {
-        foreach ($_POST as $key => $value)
-        {
-            $_SESSION['info-'.$_POST['fields']][$key] = $value;
-        }
-        $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-        if (in_array('send-step2', $keys)) {
-            unset($_SESSION['info-'.$_POST['fields']]['send-step2']);
-        }  
-        header("Location: index.php?page=step3");
-    }
-    
-    // Filling the $content variable
-    ob_start();
-
-?>
-
-<?php
-    // Stepper
-    require 'views/stepper.view.php';
-?>
-<script>stepColor('step2');</script>
-
 
     <!-- Collapsed form : "Maitre d'ouvrage = souscripteur ?"-->
 <section class="myContainer">
@@ -35,11 +6,11 @@
         <div class="mb-6 md:grid-cols-2">
             <div class="flex flex-row py-4">
                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                <input type="radio" id="" name="civilite" onclick="radioFormClose('siret-field')"><label for="civilite"> Particulier &ensp;</label>
-                <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field')"><label for="civilite"> Entreprise</label></span>
+                <input type="radio" id="" name="civilite" onclick="radioFormClose('siret-field')"><label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
+                <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field')"><label for="civilite">&ensp; Entreprise</label></span>
             </div>
             <div class="py-4">
-                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom ou Raison sociale</label>
+                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom ou Raison sociale du maitre d'ouvrage</label>
                 <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="py-4">
@@ -67,7 +38,7 @@
                 <span><input type="radio" name="mo-quality"/> Société Civile Immobilière</span>
                 <span><input type="radio" name="mo-quality"/> Enterprise</span>
                 <span><input type="radio" name="mo-quality" onclick="radioFormOpen('mo-quality-other')"/> Autre qualité</span>
-                <div id="mo-quality-other" class="hidden">
+                <div id="mo-quality-other" class="hidden mt-2">
                     <label for="mo-quality-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
                     <input type="text-area" id="mo-quality-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>    
@@ -155,7 +126,3 @@
     <button type="submit" name="send-step2" value="step2" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
 </div>
 
-<?php
-    $content = ob_get_clean();
-    require("base.view.php");
-    ?>

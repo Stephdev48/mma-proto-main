@@ -1,14 +1,3 @@
-<?php
-   
-    //Customized title
-    $title = "Formulaire DO-valid";
-
-    // Filling the $content variable
-    ob_start();
-
-?>
-
-
 <p style="font-size: 50px; text-align: center;">Cette étape fonctionne</p>
 
 
@@ -47,7 +36,3 @@
 
         // session_unset();
     // }
-
-    $content = ob_get_clean();
-    require("base.view.php");
-    ?>

@@ -10,37 +10,38 @@
     session_start();
 
     if (isset($_GET['page'])){
+        $currentstep = $_GET['page'];
         switch($_GET['page']){
             case 'home':
-                homeDisplay();
+                homeDisplay($currentstep);
                 break;
             case 'step1':
-                step1Display();
+                step1Display($currentstep);
                 break;
             case'step2':
-                step2Display();
+                step2Display($currentstep);
                 break;
             case 'step3':
-                step3Display();
+                step3Display($currentstep);
                 break;
             case 'step4':
-                step4Display();
+                step4Display($currentstep);
                 break;
             case 'step5':
-                step5Display();
+                step5Display($currentstep);
                 break;
             case 'partners':
                 require 'views/partner-companies.view.php';
                 break;
             case 'validation':
-                validDisplay();
+                validDisplay($currentstep);
                 break;
             default:
                 throw new Exception ('Paramètre invalide !');
                 break;
         }
     }else{
-        require('views/home.view.php');
+        require('views/error.view.php');
     }
 
 ?>

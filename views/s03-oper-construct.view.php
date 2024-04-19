@@ -1,33 +1,3 @@
-<?php
-
-    //Customized title
-    $title = "Formulaire DO-03";
-    
-    //Send form fields
-    if (isset($_POST['send-step3'])) {
-        foreach ($_POST as $key => $value)
-        {
-            $_SESSION['info-'.$_POST['fields']][$key] = $value;
-        }
-        $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-        if (in_array('send-step3', $keys)) {
-            unset($_SESSION['info-'.$_POST['fields']]['send-step3']);
-        }  
-        header("Location: index.php?page=step4");
-    }
-
-    // Filling the $content variable
-    ob_start();
-
-    ?>
-
-<?php
-    // Stepper
-    require 'views/stepper.view.php';
-    ?>
-<script>stepColor('step3');</script>
-
-
     <!-- Collapsed form : "Nature opération : neuf ou existant"-->
 <section class="myContainer">
     <span class="text-gray-500 font-medium">Nature de l'opération : &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
@@ -112,9 +82,3 @@
 <div class="myContainer text-center mt-16">
     <button type="submit" name="send-step3" value="step3" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
 </div>
-
-
-<?php
-    $content = ob_get_clean();
-    require("base.view.php");
-    ?>

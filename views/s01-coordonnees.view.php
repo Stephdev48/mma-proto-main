@@ -1,33 +1,4 @@
-<?php
-    //Customized title
-    $title = "Formulaire DO-01";
-
-    //Send form fields
-    if (isset($_POST['send-step1'])) {
-		foreach ($_POST as $key => $value)
-		{
-			$_SESSION['info-'.$_POST['fields']][$key] = $value;
-		}
-		$keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-		if (in_array('send-step1', $keys)) {
-			unset($_SESSION['info-'.$_POST['fields']]['send-step1']);
-		}  
-        header("Location: index.php?page=step2");
-	}
-
-    // Filling the $content variable
-    ob_start();
-    ?>
-
-
-<?php
-    // Stepper
-    require 'views/stepper.view.php';
-    ?>
-
-<script>stepColor('step1');</script>
-
-<!-- Personal informations -->
+    <!-- Personal informations -->
 <form action="" method="post" class="max-w-md mx-auto mt-16 myContainer">
     <div class="grid md:grid-cols-2 md:gap-6">
         <div class="relative z-0 w-full mb-5 group">
@@ -92,7 +63,3 @@
 </div>
 
 
-<?php
-    $content = ob_get_clean();
-    require("base.view.php");
-    ?>

@@ -1,12 +1,3 @@
-<?php
-    //Customized title
-    $title = "Accueil DO";
-    
-    // Filling the content variable
-    ob_start();
-    ?>
-
-
     <!-- CGU, RGPD et checkbox -->
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
@@ -50,9 +41,3 @@
         </div>
     </div>
 </section>
-
-
-<?php
-    $content = ob_get_clean();
-    require("base.view.php");
-    ?>

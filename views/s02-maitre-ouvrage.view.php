@@ -85,23 +85,24 @@
 
     <!-- Collapsed form : "Maitre d'ouvrage participe t-il à la construction ?"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const'),radioFormOpen('tableau')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const'),radioFormClose('tableau')"/><label for="mo-sous-no"> Non</label></span>  
-    <form id="mo-form-const" class="hidden px-8 py-4">
-        <div class="flex flex-row py-4">
+    <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const'),radioFormOpen('tableau')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const'),radioFormClose('tableau')"/><label for="mo-sous-no"> Non</label></span>
+    
+    <form id="mo-form-const" class="hidden py-4">
+        <div class="flex flex-row p-2">
             <div class="flex items-center">
                 <svg class="w-6 h-6 text-blue-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
             </div>
             <p class="text-gray-900 text-sm block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:text-white">La clause contrat n°001 des Conventions Spéciales n°811 "Intervention du maître d'ouvrage dans la conception, la direction, la surveillance ou la réalisation des travaux" est obligatoirement souscrite.</p>
         </div>
-        <span class="text-black font-sm">Le Maitre d'Ouvrage est-il un professionnel de la construction ? &ensp;&ensp;<input type="radio" name="mo-pro" id="check-yes" onclick="radioFormOpen('mo-form-pro')"/><label> Oui &ensp;</label><input type="radio" name="mo-pro" id="check-no" onclick="radioFormClose('mo-form-pro')"/><label> Non</label></span>
+        <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il un professionnel de la construction ? &ensp;&ensp;<input type="radio" name="mo-pro" id="check-yes" onclick="radioFormOpen('mo-form-pro')"/><label> Oui &ensp;</label><input type="radio" name="mo-pro" id="check-no" onclick="radioFormClose('mo-form-pro')"/><label> Non</label></span>
         <form>
             <div id="mo-form-pro" class="py-4 hidden mx-6">
                 <label for="mo-pro-field" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession</label>
                 <input type="text" id="" name="mo-pro-field" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
         </form>
-        <table id="tableau" class="hidden text-sm font-light border border-1 border-gray-300">
+        <table id="tableau" class="hidden text-sm font-light border border-1 border-gray-300 mt-10">
             <caption>Complétez le tableau ci-dessous en cochant les cases correspondantes :</caption>
             <tr>
                 <td>Activité ou mission exercée</td>

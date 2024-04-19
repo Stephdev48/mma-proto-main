@@ -122,25 +122,25 @@
                     <td>Autres travaux</td>
                 </tr>
                 <tr>
-                    <td class="border-r-2 border-l-2 border-b border-gray-300 p-2"><input type="checkbox"/><label>&ensp; Conception</label></td>
+                    <td class="border-r-2 border-l-2 border-b border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Conception</label></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td class="border-r-2 border-b border-l-2 border-gray-300 p-2"><input type="checkbox"/><label>&ensp; Direction</label></td>
+                    <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Direction</label></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td class="border-r-2 border-b border-l-2 border-gray-300 p-2"><input type="checkbox"/><label>&ensp; Surveillance</label></td>
+                    <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Surveillance</label></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td class="border-r-2 border-l-2 border-b-2 border-gray-300 p-2"><input type="checkbox"/><label>&ensp; Exécution</label></td>
+                    <td class="border-r-2 border-l-2 border-b-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Exécution</label></td>
                     <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>
                     <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>

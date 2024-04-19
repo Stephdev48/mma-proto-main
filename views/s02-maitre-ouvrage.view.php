@@ -110,17 +110,16 @@
             <span class="text-gray-500 font-medium">Complétez le tableau ci-dessous en cochant les cases correspondantes :</span>
             <table class="text-sm font-light border border-1 border-gray-300 w-4/5 ml-6 mt-2">
                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Nature des travaux</td>
+                    <td></td>
+                </tr>
+                <tr class="">
                     <td>Activité ou mission exercée</td>
-                    <td>
-                        <table>
-                            <tr>Nature des travaux</tr>
-                            <tr>
-                                <td>Papiers peints et/ou Peintures intérieures</td>
-                                <td>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</td>
-                                <td>Autres travaux</td>
-                            </tr>
-                        </table>
-                    </td>
+                    <td>Papiers peints et/ou Peintures intérieures</td>
+                    <td>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</td>
+                    <td>Autres travaux</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox"/><label>Conception</label></td>

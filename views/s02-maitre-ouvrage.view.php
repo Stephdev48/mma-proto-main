@@ -108,42 +108,42 @@
         </div>
         <div id="tableau" class="hidden">
             <span class="text-gray-500 font-medium">Complétez le tableau ci-dessous en cochant les cases correspondantes :</span>
-            <table class="text-sm font-light border border-1 border-gray-300 w-4/5 ml-6 mt-2">
+            <table class="text-sm font-light w-4/5 ml-6 mt-2">
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td>Nature des travaux</td>
-                    <td></td>
+                    <td class="bg-gray-50 border-t-2 border-b-2 border-l-2 border-gray-300"></td>
+                    <td class="bg-gray-50 border-t-2 border-b-2 border-gray-300">Nature des travaux</td>
+                    <td class="bg-gray-50 border-t-2 border-b-2 border-r-2 border-gray-300"></td>
                 </tr>
-                <tr class="">
-                    <td>Activité ou mission exercée</td>
-                    <td>Papiers peints et/ou Peintures intérieures</td>
-                    <td>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</td>
+                <tr class="bg-gray-50 border-b-2 border-l-2 border-r-2 border-gray-300">
+                    <td class="border-t-2 border-r-2 border-gray-300">Activité ou mission exercée</td>
+                    <td class="border-r-2 border-gray-300">Papiers peints et/ou Peintures intérieures</td>
+                    <td class="border-r-2 border-gray-300">Gros oeuvre fondations, Charpente - Couverture, Etanchéité</td>
                     <td>Autres travaux</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"/><label>Conception</label></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
+                    <td class="border-r-2 border-l-2 border-gray-300"><input type="checkbox"/><label>Conception</label></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"/><label>Direction</label></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
+                    <td class="border-r-2 border-l-2 border-gray-300"><input type="checkbox"/><label>Direction</label></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"/><label>Surveillance</label></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
+                    <td class="border-r-2 border-l-2 border-gray-300"><input type="checkbox"/><label>Surveillance</label></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-r-2 border-gray-300"><input type="checkbox"/></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"/><label>Exécution</label></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
-                    <td><input type="checkbox"/></td>
+                    <td class="border-r-2 border-l-2 border-b-2 border-gray-300"><input type="checkbox"/><label>Exécution</label></td>
+                    <td class="border-b-2 border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-b-2 border-r-2 border-gray-300"><input type="checkbox"/></td>
+                    <td class="border-b-2 border-r-2 border-gray-300"><input type="checkbox"/></td>
                 </tr>
             </table>
         </div>

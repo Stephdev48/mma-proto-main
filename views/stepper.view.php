@@ -85,7 +85,7 @@
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
-                        <p id="step4-p" class="text-xs text-gray-500 font-normal ml-2">Informations générales</p>
+                        <p id="step4-p" class="text-xs text-gray-500 font-normal ml-2">Situation de l'ouvrage et Travaux annexes</p>
                     </span>
                 </a>
             </li>

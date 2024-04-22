@@ -10,7 +10,6 @@
         <span class="ml-8 text-gray-500 font-medium">
             <input type="radio" name="neuf-exist" id="check-no" onclick="radioFormOpen('nat-operation')"/>
             <label for="neuf-exist"> Travaux sur construction existante</label>
-            <p class="text-xs text-gray-500 font-normal">(cocher la ou les cases correspondantes)</p>
         </span>
     </div>
     <form id="nat-operation" class="hidden mt-8">

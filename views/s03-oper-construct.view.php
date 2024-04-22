@@ -1,45 +1,128 @@
     <!-- Collapsed form : "Nature opération : neuf ou existant"-->
 <section class="myContainer">
-    <span class="text-gray-500 font-medium">Nature de l'opération : &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('nat-operation')"/><label for="mo-sous-yes"> Construction neuve &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('nat-operation')"/><label for="mo-sous-no"> Travaux sur construction existante</label></span>  
-    <form id="nat-operation" class="hidden">
-        <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+    <div class="flex flex-row">
+        <span class="text-gray-500 font-medium">Nature de l'opération : </span>
+        <span class="ml-6 text-gray-500 font-medium">
+            <input type="radio" name="neuf-exist" id="check-yes" onclick="radioFormClose('nat-operation')"/>
+            <label for="neuf-exist"> Construction neuve &ensp;</label>
+            <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
+        </span>
+        <span class="ml-8 text-gray-500 font-medium">
+            <input type="radio" name="neuf-exist" id="check-no" onclick="radioFormOpen('nat-operation')"/>
+            <label for="neuf-exist"> Travaux sur construction existante</label>
+            <p class="text-xs text-gray-500 font-normal">(cocher la ou les cases correspondantes)</p>
+        </span>
+    </div>
+    <form id="nat-operation" class="hidden mt-8">
+        <h3 class="text-gray-500 font-medium mb-6">De quoi s'agit-il ?</h3>
+        <div class="ml-12">
+            <div class="my-4">
+                <span class="text-gray-500 font-medium">D'une surélévation &ensp;&ensp;
+                    <input type="radio" name="surelev" id="check-yes" onclick="radioFormOpen('surelevation')"/><label for="surelev"> Oui &ensp;</label><input type="radio" name="surelev" id="check-no" onclick="radioFormClose('surelevation')"/><label for="surelev"> Non</label></span>  
+                <div id="surelevation" class="hidden px-8 py-4">
+                    <div class="mb-6 md:grid-cols-2">
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? : &ensp;&ensp;
+                            <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante (hors fondation) ? : &ensp;&ensp;
+                            <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Non</label></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
+            <div class="my-4">
+                <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
+                    <input type="radio" name="ext-horizont" id="check-yes" onclick="radioFormOpen('extension-horizontale')"/><label for="ext-horizont"> Oui &ensp;</label><input type="radio" name="ext-horizont" id="check-no" onclick="radioFormClose('extension-horizontale')"/><label for="ext-horizont"> Non</label></span>  
+                <div id="extension-horizontale" class="hidden px-8 py-4">
+                    <div class="mb-6 md:grid-cols-2">
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
+                            <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Non</label></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="company" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                <input type="text" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Flowbite" required />
-            </div>  
-            <div>
-                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-                <input type="tel" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+            <div class="my-4">
+                <span class="text-gray-500 font-medium">D'une rénovation ? &ensp;&ensp;
+                    <input type="radio" name="renovation" id="check-yes" onclick="radioFormOpen('renovation-inter')"/><label for="renovation"> Oui &ensp;</label><input type="radio" name="renovation" id="check-no" onclick="radioFormClose('renovation-inter')"/><label for="renovation"> Non</label></span>  
+                <div id="renovation-inter" class="hidden px-8 py-4">
+                    <div class="mb-6 md:grid-cols-2">
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
+                            <input type="radio" id="" name="renov-inter"><label for="renov-inter">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="renov-inter"><label for="renov-inter">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
+                            <input type="radio" id="" name="renov-iso-therm"><label for="renov-iso-therm">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="renov-iso-therm"><label for="renov-iso-therm">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
+                            <input type="radio" id="" name="renov-refect-toit"><label for="renov-refect-toit">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="renov-refect-toit"><label for="renov-refect-toit">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
+                            <input type="radio" id="" name="renov-etancheite"><label for="renov-etancheite">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="renov-etancheite"><label for="renov-etancheite">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
+                            <input type="radio" id="" name="renov-ravalement"><label for="renov-ravalement">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="renov-ravalement"><label for="renov-ravalement">&ensp; Non</label></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Website URL</label>
-                <input type="url" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="flowbite.com" required />
-            </div>
-            <div>
-                <label for="visitors" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique visitors (per month)</label>
-                <input type="number" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+            <div class="my-4">
+                <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;
+                    <input type="radio" name="rehabilitation" id="check-yes" onclick="radioFormOpen('rehabilitation-inter')"/><label for="rehabilitation"> Oui &ensp;</label><input type="radio" name="rehabilitation" id="check-no" onclick="radioFormClose('rehabilitation-inter')"/><label for="rehabilitation"> Non</label></span>  
+                <div id="rehabilitation-inter" class="hidden px-8 py-4">
+                    <div class="mb-6 md:grid-cols-2">
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
+                            <input type="radio" id="" name="rehab-inter"><label for="rehab-inter">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="rehab-inter"><label for="rehab-inter">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
+                            <input type="radio" id="" name="rehab-iso-therm"><label for="rehab-iso-therm">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="rehab-iso-therm"><label for="rehab-iso-therm">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
+                            <input type="radio" id="" name="rehab-refect-toit"><label for="rehab-refect-toit">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="rehab-refect-toit"><label for="rehab-refect-toit">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
+                            <input type="radio" id="" name="rehab-etancheite"><label for="rehab-etancheite">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="rehab-etancheite"><label for="rehab-etancheite">&ensp; Non</label></span>
+                        </div>
+                        <div class="flex flex-row py-2">
+                            <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
+                            <input type="radio" id="" name="rehab-ravalement"><label for="rehab-ravalement">&ensp; Oui &ensp;&ensp;</label>
+                            <input type="radio" id="" name="rehab-ravalement"><label for="rehab-ravalement">&ensp; Non</label></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
-        </div> 
-        <div class="mb-6">
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
-        <div class="mb-6">
-            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm password</label>
-            <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required />
-        </div> 
+        <div class="mt-12">
+            <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
+                <input type="radio" name="sinistre" id="check-yes" onclick="radioFormOpen('sinistre-champ-descr')"/><label for="sinistre"> Oui &ensp;</label><input type="radio" name="sinistre" id="check-no" onclick="radioFormClose('sinistre-champ-descr')"/><label for="sinistre"> Non</label>
+            </span>
+            <div id="sinistre-champ-descr" class="hidden ml-10 mt-4 ">
+                <label for="sinistre-descr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez décrire le sinistre :&ensp;&ensp;</label>
+                <input type="text" id="" name="sinistre-descr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            </div>
+        </div>
     </form>
 </section>
 

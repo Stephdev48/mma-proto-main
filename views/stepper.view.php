@@ -1,46 +1,46 @@
 <?php
 
-$currentstep1 = "text-gray-500 dark:text-gray-400";
-$currentstep1circle = "border-gray-500 dark:border-gray-400";
-$currentstep2 = "text-gray-500 dark:text-gray-400";
-$currentstep2circle = "border-gray-500 dark:border-gray-400";
-$currentstep3 = "text-gray-500 dark:text-gray-400";
-$currentstep3circle = "border-gray-500 dark:border-gray-400";
-$currentstep4 = "text-gray-500 dark:text-gray-400";
-$currentstep4circle = "border-gray-500 dark:border-gray-400";
-$currentstep5 = "text-gray-500 dark:text-gray-500";
-$currentstep5circle = "border-gray-500 dark:border-gray-400";
-$validation = "text-gray-500 dark:text-gray-500";
-$validationcircle = "border-gray-500 dark:border-gray-400";
+    $currentstep1 = "text-gray-500 dark:text-gray-400";
+    $currentstep1circle = "border-gray-500 dark:border-gray-400";
+    $currentstep2 = "text-gray-500 dark:text-gray-400";
+    $currentstep2circle = "border-gray-500 dark:border-gray-400";
+    $currentstep3 = "text-gray-500 dark:text-gray-400";
+    $currentstep3circle = "border-gray-500 dark:border-gray-400";
+    $currentstep4 = "text-gray-500 dark:text-gray-400";
+    $currentstep4circle = "border-gray-500 dark:border-gray-400";
+    $currentstep5 = "text-gray-500 dark:text-gray-500";
+    $currentstep5circle = "border-gray-500 dark:border-gray-400";
+    $validation = "text-gray-500 dark:text-gray-500";
+    $validationcircle = "border-gray-500 dark:border-gray-400";
 
-switch ($currentstep){
-    case'step1':
-        $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
-        $currentstep1circle = "border-blue-600 border-2";
-        break;
-    case'step2':
-        $currentstep2 = "text-blue-600 dark:text-blue-500 font-bold";
-        $currentstep2circle = "border-blue-600 border-2";
-        break;
-    case'step3':
-        $currentstep3 = "text-blue-600 dark:text-blue-500 font-bold";
-        $currentstep3circle = "border-blue-600 border-2";
-        break;
-    case'step4':
-        $currentstep4 = "text-blue-600 dark:text-blue-500 font-bold";
-        $currentstep4circle = "border-blue-600 border-2";
-        break;
-    case'step5':
-        $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
-        $currentstep5circle = "border-blue-600 border-2";
-        break;
-    case 'validation':
-        $validation = "text-blue-600 dark:text-blue-500 font-bold";
-        $validationcircle = "border-blue-600 border-2";
-    default:
-        throw new Exception ('Paramètre invalide !');
-        break;
-}
+    switch ($currentstep){
+        case'step1':
+            $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep1circle = "border-blue-600 border-2";
+            break;
+        case'step2':
+            $currentstep2 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep2circle = "border-blue-600 border-2";
+            break;
+        case'step3':
+            $currentstep3 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep3circle = "border-blue-600 border-2";
+            break;
+        case'step4':
+            $currentstep4 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep4circle = "border-blue-600 border-2";
+            break;
+        case'step5':
+            $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep5circle = "border-blue-600 border-2";
+            break;
+        case 'validation':
+            $validation = "text-blue-600 dark:text-blue-500 font-bold";
+            $validationcircle = "border-blue-600 border-2";
+        default:
+            throw new Exception ('Paramètre invalide !');
+            break;
+    }
 ?>
 
 

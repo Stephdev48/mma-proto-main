@@ -10,3 +10,5 @@ navigation via le stepper : désactiver les étapes suivantes non parcourues
 notamment les listes de cases à cocher
 
 # Infobulles !
+
+# Commentaires !

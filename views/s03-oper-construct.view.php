@@ -25,7 +25,7 @@
                         <label for="surelev"> Non</label>
                     </span>  
                     <div id="surelevation" class="hidden px-8 py-4">
-                        <div class="mb-6 md:grid-cols-2">
+                        <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? : &ensp;&ensp;
                                     <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
@@ -50,7 +50,7 @@
                         <label for="ext-horizont"> Non</label>
                     </span>  
                     <div id="extension-horizontale" class="hidden px-8 py-4">
-                        <div class="mb-6 md:grid-cols-2">
+                        <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                 <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
@@ -68,7 +68,7 @@
                         <label for="renovation"> Non</label>
                     </span>  
                     <div id="renovation-inter" class="hidden px-8 py-4">
-                        <div class="mb-6 md:grid-cols-2">
+                        <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                 <input type="radio" id="" name="renov-inter"><label for="renov-inter">&ensp; Oui &ensp;&ensp;</label>
@@ -106,7 +106,7 @@
                         <label for="rehabilitation"> Non</label>
                     </span>  
                     <div id="rehabilitation-inter" class="hidden px-8 py-4">
-                        <div class="mb-6 md:grid-cols-2">
+                        <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                 <input type="radio" id="" name="rehab-inter"><label for="rehab-inter">&ensp; Oui &ensp;&ensp;</label>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-12">
+            <div class="my-10">
                 <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
                     <input type="radio" name="sinistre" id="check-yes" onclick="radioFormOpen('sinistre-champ-descr')"/><label for="sinistre"> Oui &ensp;</label><input type="radio" name="sinistre" id="check-no" onclick="radioFormClose('sinistre-champ-descr')"/><label for="sinistre"> Non</label>
                 </span>

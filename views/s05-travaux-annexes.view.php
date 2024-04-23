@@ -93,12 +93,40 @@
 
         <!-- Géothermie -->
     <div class="myContainer mt-16">
+        <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-2">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
         </div>
     </div>
+
+        <!-- Contrôleur technique-->
+    <div class="myContainer mt-16">
+        <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
+        <div class="ml-10 mt-2">
+            <span class="font-normal">Nom du contrôleur technique : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
+        </div>
+        <div class="ml-10 mt-2">
+            <h3 class="font-normal">Type de contrôle :</h3>
+            <div class="flex flex-row ml-10">
+                <div class="flex flex-col">
+                    <span><input type="radio" name="type-controle"/> L</span>
+                    <span><input type="radio" name="type-controle"/> L + TH</span>
+                    <span><input type="radio" name="type-controle"/> LE</span>
+                    <span><input type="radio" name="type-controle"/> LE + TH</span>
+                </div>
+                <div class="flex flex-col ml-12">
+                    <span><input type="radio" name="type-controle"/> L + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="type-controle"/> L + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="type-controle"/> LE + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="type-controle"/> LE + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
     
+
 
     <!-- Send button -->
 <div class="myContainer mt-16 text-center">

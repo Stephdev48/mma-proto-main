@@ -131,28 +131,28 @@
         <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
         <div class="flex flex-col ml-8">
             <div>
-                <span><input type="checkbox" name="serv-pub"/> Maison individuelle</span>
+                <span><input type="checkbox" name="mais-indiv"/> Maison individuelle</span>
             </div>
             <div>
-                <span><input type="checkbox" name="hlm-pub"/> Opération pavillonnaire :</span><br />
+                <span><input type="checkbox" name="ope-pav"/> Opération pavillonnaire :</span><br />
                 <span class="text-xs">(nombre de maisons : <input type="text" name="" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
             <div>
-                <span><input type="checkbox" name="syndic"/> Collectif d'habitation :</span><br />
+                <span><input type="checkbox" name="coll-habit"/> Collectif d'habitation :</span><br />
                 <span class="text-xs">(nombre d'appartements : <input type="text" name="" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
-            <span><input type="checkbox" name="vend-priv"/> Bâtiment à usage industriel ou agricole</span>
+            <span><input type="checkbox" name="bat-indus"/> Bâtiment à usage industriel ou agricole</span>
             <div>
-                <span><input type="checkbox" name="sci"/> Centre commercial, bâtiment à usage de vente :</span><br />
-                <span class="text-xs">(superficie hors oeuvre nette (SHON) : <input type="text" name="" style="height:10px; width:60px; border-radius:6px;" class="bg-gray-50"/> m²)</span>
+                <span><input type="checkbox" name="centre-com"/> Centre commercial, bâtiment à usage de vente :</span><br />
+                <span class="text-xs">(superficie hors oeuvre nette (SHON) : <input type="text" name="centre-com-surf" style="height:10px; width:60px; border-radius:6px;" class="bg-gray-50"/> m²)</span>
             </div>
         </div>
         <div class="flex flex-col ml-8">
-            <span><input type="checkbox" name="coll"/> Bâtiment à usage de bureau</span>
-            <span><input type="checkbox" name="hlm-priv"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
-            <span><input type="checkbox" name="vend-imm-const"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
+            <span><input type="checkbox" name="bat-bur"/> Bâtiment à usage de bureau</span>
+            <span><input type="checkbox" name="hopital"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
+            <span><input type="checkbox" name="vrd-privatif"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
             <div>
-                <span><input type="checkbox" name="part"/> Autre construction :</span><br />
+                <span><input type="checkbox" name="aute-cont"/> Autre construction :</span><br />
                 <span class="text-xs">(son usage : <input type="text" name="" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )</span>
             </div>
         </div>

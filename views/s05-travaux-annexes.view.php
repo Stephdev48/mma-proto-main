@@ -5,17 +5,17 @@
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-2">
             <span class="font-normal">La structure de la construction (poteaux, poutres et violes) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="bois-structure" id=""/><label for="bois-structure"> Oui &ensp;</label><input type="radio" name="bois-structure" id=""/><label for="bois-structure"> Non</label>
+                <input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">L'enveloppe de la construction (façade, planchers et balcons) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe"> Oui &ensp;</label><input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe"> Non</label>
+                <input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">Les produits utilisés bénéficient-ils d'un marquage CE ? &ensp;&ensp;
-                <input type="radio" name="produits-ce" id=""/><label for="produits-ce"> Oui &ensp;</label><input type="radio" name="produits-ce" id=""/><label for="produits-ce"> Non</label>
+                <input type="radio" name="produits-ce" id=""/><label for="produits-ce" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="produits-ce" id=""/><label for="produits-ce" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">

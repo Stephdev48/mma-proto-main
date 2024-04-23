@@ -8,9 +8,9 @@
     $currentstep3circle = "border-gray-500 dark:border-gray-400";
     $currentstep4 = "text-gray-500 dark:text-gray-400";
     $currentstep4circle = "border-gray-500 dark:border-gray-400";
-    $currentstep5 = "text-gray-500 dark:text-gray-500";
+    $currentstep5 = "text-gray-500 dark:text-gray-400";
     $currentstep5circle = "border-gray-500 dark:border-gray-400";
-    $validation = "text-gray-500 dark:text-gray-500";
+    $validation = "text-gray-500 dark:text-gray-400";
     $validationcircle = "border-gray-500 dark:border-gray-400";
 
     switch ($currentstep){
@@ -74,7 +74,7 @@
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
-                        <p id="step3-p" class="text-xs text-gray-500 font-normal ml-2">Nature et type de l'ouvrage</p>
+                        <p id="step3-p" class="text-xs font-normal ml-2 <?= $currentstep3 ?>">Nature et type de l'ouvrage</p>
                     </span>
                 </a>
             </li>
@@ -85,7 +85,7 @@
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
-                        <p id="step4-p" class="text-xs text-gray-500 font-normal ml-2">Situation de l'ouvrage et Travaux annexes</p>
+                        <p id="step4-p" class="text-xs font-normal ml-2 <?= $currentstep4 ?>">Situation de l'ouvrage et Travaux annexes</p>
                     </span>
                 </a>
             </li>
@@ -96,7 +96,7 @@
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
-                        <p id="step5-p" class="text-xs text-gray-500 font-normal ml-2">Travaux annexes</p>
+                        <p id="step5-p" class="text-xs font-normal ml-2 <?= $currentstep5 ?>">Travaux annexes</p>
                     </span>
                 </a>
             </li>

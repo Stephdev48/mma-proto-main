@@ -28,7 +28,7 @@
                 require('views/s01-coordonnees.view.php');
                 break;
             case'step2':
-                require('views/s02-maiter-ouvrage.view.php');
+                require('views/s02-maitre-ouvrage.view.php');
                 break;
             case 'step3':
                 require('views/s03-oper-contruct.view.php');

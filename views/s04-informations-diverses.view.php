@@ -7,7 +7,7 @@
         </span>  
     </div>
         <!-- Zone sismicité -->
-    <div class="flex-column mt-10">
+    <div class="flex-column mt-16">
         <span class="text-gray-500 font-medium">Dans quelle zone de sismicité est-il situé ?</span>
         <div class="ml-10 mt-2">
             <input type="radio" name="sism-range"/><label for="sism-range" class="mr-6"> 1 (très faible)</label>
@@ -18,25 +18,25 @@
         </div>
     </div>
         <!-- Zone termites insectes -->
-    <div class="mt-10">
+    <div class="mt-16">
         <span class="text-gray-500 font-medium">Est-il situé dans une zone contaminée par les termites ou autres insectes xylophages ? &ensp;&ensp;
             <input type="radio" name="insectes" id=""/><label for="insectes"> Oui &ensp;</label><input type="radio" name="insectes" id=""/><label for="insectes"> Non</label>
         </span>  
     </div>
         <!-- Matériaux traditionnels ou technique courante -->
-    <div class="mt-10">
+    <div class="mt-16">
         <span class="text-gray-500 font-medium">Les travaux sont-ils réalisés avec des matériaux traditionnels ou selon des procédés de technique courante ? &ensp;&ensp;
             <input type="radio" name="proc-techniques" id=""/><label for="proc-techniques"> Oui &ensp;</label><input type="radio" name="proc-techniques" id=""/><label for="proc-techniques"> Non</label>
         </span>  
     </div>
         <!-- Parking -->
-    <div class="mt-10">
+    <div class="mt-16">
         <span class="text-gray-500 font-medium">Y a-t-il la présence d'un parking (accessoire de l'ouvrage) desservant l'ouvrage ? &ensp;&ensp;
             <input type="radio" name="parking" id=""/><label for="parking"> Oui &ensp;</label><input type="radio" name="parking" id=""/><label for="parking"> Non</label>
         </span>  
     </div>
         <!-- Travaux sur existants -->
-    <div class="mt-10">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Si travaux sur une contruction existante ou sur existants :</h3>
             <div class="my-2 ml-10">
                 <span class="font-normal">Si les existants datent de moins de 10 ans, ont-ils fait l'objet d'un contrat d'assurance "dommages ouvrage" ? &ensp;&ensp;
@@ -57,7 +57,7 @@
             </div>
     </div>
         <!-- Label -->
-    <div class="mt-10">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Label :</h3>
         <div class="my-2 ml-10">
             <span class="font-normal">L'opération de construction bénéficie-t-elle d'un label de performance énergétique (ex. BBC...) ? &ensp;&ensp;
@@ -75,26 +75,26 @@
 
     <!-- Travaux annexes -->
 <section class="myContainer">
-    <div class="flex-column mt-10">
+    <div class="flex-column mt-16">
         <span class="text-gray-500 font-medium">Travaux annexes :</span>
         <div class="ml-10 mt-2">
-            <span class="text-gray-500 font-medium">S'agit-il d'une construction en bois ? &ensp;&ensp;
-                <input type="radio" name="constr-bois" id=""/><label for="constr-bois"> Oui &ensp;</label><input type="radio" name="constr-bois" id=""/><label for="constr-bois"> Non</label>
+            <span class="font-normal">S'agit-il d'une construction en bois ? &ensp;&ensp;
+                <input type="radio" name="constr-bois" id=""/><label for="constr-bois" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="constr-bois" id=""/><label for="constr-bois" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
-            <span class="text-gray-500 font-medium">Y a-t-il la présence de panneaux photovoltaïques ? &ensp;&ensp;
-                <input type="radio" name="pann-photo" id=""/><label for="pann-photo"> Oui &ensp;</label><input type="radio" name="pann-photo" id=""/><label for="pann-photo"> Non</label>
+            <span class="font-normal">Y a-t-il la présence de panneaux photovoltaïques ? &ensp;&ensp;
+                <input type="radio" name="pann-photo" id=""/><label for="pann-photo" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="pann-photo" id=""/><label for="pann-photo" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
-            <span class="text-gray-500 font-medium">L'opération de construction bénéficie-t-elle d'une installation géothermique ? &ensp;&ensp;
-                <input type="radio" name="geothermie" id=""/><label for="geothermie"> Oui &ensp;</label><input type="radio" name="geothermie" id=""/><label for="geothermie"> Non</label>
+            <span class="font-normal">L'opération de construction bénéficie-t-elle d'une installation géothermique ? &ensp;&ensp;
+                <input type="radio" name="geothermie" id=""/><label for="geothermie" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="geothermie" id=""/><label for="geothermie" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
-            <span class="text-gray-500 font-medium">Y a-t-il intervention d'un contrôleur technique ? &ensp;&ensp;
-                <input type="radio" name="control-tech" id=""/><label for="control-tech"> Oui &ensp;</label><input type="radio" name="control-tech" id=""/><label for="control-tech"> Non</label>
+            <span class="font-normal">Y a-t-il intervention d'un contrôleur technique ? &ensp;&ensp;
+                <input type="radio" name="control-tech" id=""/><label for="control-tech" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="control-tech" id=""/><label for="control-tech" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
     </div>

@@ -6,17 +6,21 @@
         <div class="mb-6 md:grid-cols-2">
             <div class="flex flex-row py-4">
                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                <input type="radio" id="" name="civilite" onclick="radioFormClose('siret-field')"><label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
-                <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field')"><label for="civilite">&ensp; Entreprise</label></span>
+                <input type="radio" id="" name="civilite" checked onclick="radioFormClose('siret-field'),radioFormClose('raison-field')"><label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
+                <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field'),radioFormOpen('raison-field')"><label for="civilite">&ensp; Entreprise</label></span>
             </div>
             <div class="py-4">
-                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom ou Raison sociale du maitre d'ouvrage</label>
+                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
                 <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="py-4">
                 <label for="mo-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
                 <input type="text" id="" nom="mo-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-            </div>  
+            </div>
+            <div id="raison-field" class="hidden py-4">
+                <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
+                <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            </div>
             <div id="siret-field" class="hidden py-4">
                 <label for="mo-siret" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
                 <input type="text" id="" name="mo-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
@@ -28,30 +32,30 @@
 
     <!-- Qualité du maitre d'ouvrage -->
 <section class="my-16 myContainer">
-        <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</h3>
-        <div class="flex flex-row mx-6 mb-2">
-            <div class="flex flex-col ml-8">
-                <span><input type="radio" name="mo-quality"/> Etat (services publics)</span>
-                <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                <span><input type="radio" name="mo-quality"/> Syndicats de copropriétaires</span>
-                <span><input type="radio" name="mo-quality"/> Vendeur privé après achèvement</span>
-                <span><input type="radio" name="mo-quality"/> Société Civile Immobilière</span>
-                <span><input type="radio" name="mo-quality"/> Enterprise</span>
-                <span><input type="radio" name="mo-quality" onclick="radioFormOpen('mo-quality-other')"/> Autre qualité</span>
-                <div id="mo-quality-other" class="hidden mt-2">
-                    <label for="mo-quality-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
-                    <input type="text-area" id="mo-quality-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-                </div>    
-            </div>
-            <div class="flex flex-col ml-8">
-                <span><input type="radio" name="mo-quality"/> Collectivités locales</span>
-                <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                <span><input type="radio" name="mo-quality"/> Vendeur privé d'immeubles à construire</span>
-                <span><input type="radio" name="mo-quality"/> Particulier</span>
-                <span><input type="radio" name="mo-quality"/> Promoteur privé immobilier</span>
-                <span><input type="radio" name="mo-quality"/> Association</span>
-            </div>
+    <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</h3>
+    <div class="flex flex-row mx-6 mb-2">
+        <div class="flex flex-col ml-8">
+            <span><input type="radio" name="mo-quality"/> Etat (services publics)</span>
+            <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+            <span><input type="radio" name="mo-quality"/> Syndicats de copropriétaires</span>
+            <span><input type="radio" name="mo-quality"/> Vendeur privé après achèvement</span>
+            <span><input type="radio" name="mo-quality"/> Société Civile Immobilière</span>
+            <span><input type="radio" name="mo-quality"/> Enterprise</span>
+            <span><input type="radio" name="mo-quality" onclick="radioFormOpen('mo-quality-other')"/> Autre qualité</span>
+            <div id="mo-quality-other" class="hidden mt-2">
+                <label for="mo-quality-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
+                <input type="text-area" id="mo-quality-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+            </div>    
         </div>
+        <div class="flex flex-col ml-8">
+            <span><input type="radio" name="mo-quality"/> Collectivités locales</span>
+            <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+            <span><input type="radio" name="mo-quality"/> Vendeur privé d'immeubles à construire</span>
+            <span><input type="radio" name="mo-quality"/> Particulier</span>
+            <span><input type="radio" name="mo-quality"/> Promoteur privé immobilier</span>
+            <span><input type="radio" name="mo-quality"/> Association</span>
+        </div>
+    </div>
 </section>
 
     <!-- Collapsed form : "Maitre d'ouvrage participe t-il à la construction ?"-->

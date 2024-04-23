@@ -4,7 +4,7 @@
     require 'controllers/s02-maitre-ouvrage.controller.php';
     require 'controllers/s03-oper-construct.controller.php';
     require 'controllers/s04-informations-diverses.controller.php';
-    require 'controllers/s05-travaux-annexes.controller.php';
+    require 'controllers/s04-bis-travaux-annexes.controller.php';
     require 'controllers/validation.controller.php';
 
     session_start();
@@ -27,8 +27,8 @@
             case 'step4':
                 step4Display($currentstep);
                 break;
-            case 'step5':
-                step5Display($currentstep);
+            case 'step4bis':
+                step4BisDisplay($currentstep);
                 break;
             case 'partners':
                 require 'views/partner-companies.view.php';

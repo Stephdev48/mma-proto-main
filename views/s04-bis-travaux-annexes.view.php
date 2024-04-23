@@ -18,7 +18,8 @@
             </span>
         </div>
         <div class="ml-10 mt-4">
-            <span class="font-normal">Nom de l'entreprise réalisant la construction : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
+            <span class="font-normal">Nom de l'entreprise réalisant la construction : &ensp;&ensp;</span>
+            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
@@ -86,7 +87,8 @@
             </div>
         </div>
         <div class="ml-10 mt-4">
-            <span class="font-normal">Nom de l'entreprise réalisant l'installation' : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
+            <span class="font-normal">Nom de l'entreprise réalisant l'installation' : &ensp;&ensp;</span>
+            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
@@ -94,7 +96,8 @@
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-2">
-            <span class="font-normal">Nom de l'entreprise réalisant les forages : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
+            <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
+            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
@@ -102,7 +105,8 @@
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-2">
-            <span class="font-normal">Nom du contrôleur technique : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
+            <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
+            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
         </div>
         <div class="ml-10 mt-4">
             <h3 class="font-normal">Type de contrôle :</h3>

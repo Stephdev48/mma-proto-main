@@ -19,13 +19,7 @@
 
         // Filling the $content variable
         ob_start();
-
-        function coordFormDisplay($currentstep){
-            $coordform = "Récupération du formulaire".$currentstep;
-            echo $coordform;
-        }
-
-     
+   
         
         require 'views/s04-informations-diverses.view.php';
 

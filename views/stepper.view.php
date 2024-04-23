@@ -30,9 +30,9 @@
             $currentstep4 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep4circle = "border-blue-600 border-2";
             break;
-        case'step5':
-            $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
-            $currentstep5circle = "border-blue-600 border-2";
+        case'step4bis':
+            $currentstep4bis = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep4biscircle = "border-blue-600 border-2";
             break;
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
@@ -89,14 +89,14 @@
                     </span>
                 </a>
             </li>
-            <li id="step5" class="flex items-center space-x-2.5 <?= $currentstep5 ?>">
-                <a href="index.php?page=step5" class="flex flex-row">
-                    <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep5circle ?>">
-                        5
+            <li id="step4bis" class="flex items-center space-x-2.5 <?= $currentstep4bis ?>">
+                <a href="index.php?page=step4bis" class="flex flex-row">
+                    <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep4biscircle ?>">
+                        4b
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
-                        <p id="step5-p" class="text-xs font-normal ml-2 <?= $currentstep5 ?>">Travaux annexes</p>
+                        <p id="step4bis-p" class="text-xs font-normal ml-2 <?= $currentstep4bis ?>">Travaux annexes</p>
                     </span>
                 </a>
             </li>

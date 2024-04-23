@@ -2,7 +2,13 @@
     <form action="" method="post">
         <!-- Collapsed form : "Maitre d'ouvrage = souscripteur ?"-->
         <div>
-            <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/><label for="mo-sous-no"> Non</label></span>  
+            <div class="text-gray-500 font-medium">
+                <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/>
+                <label for="mo-sous-yes"> Oui &ensp;</label>
+                <input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/>
+                <label for="mo-sous-no"> Non</label>
+            </div>  
             <div id="mo-form-sous" class="hidden px-8 py-4">
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
@@ -62,7 +68,13 @@
 
         <!-- Collapsed form : "Maitre d'ouvrage participe t-il à la construction ?"-->
         <div>
-            <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;<input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const'),radioFormOpen('tableau')"/><label for="mo-sous-yes"> Oui &ensp;</label><input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const'),radioFormClose('tableau')"/><label for="mo-sous-no"> Non</label></span>
+            <div class="text-gray-500 font-medium">
+                <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
+                <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormOpen('mo-form-const'),radioFormOpen('tableau')"/>
+                <label for="mo-sous-yes"> Oui &ensp;</label>
+                <input type="radio" name="mo-sous" id="check-no" onclick="radioFormClose('mo-form-const'),radioFormClose('tableau')"/>
+                <label for="mo-sous-no"> Non</label>
+            </div>
             <div id="mo-form-const" class="hidden py-4">
                 <div class="flex flex-row p-2 mb-6">
                     <div class="flex items-center">
@@ -80,7 +92,7 @@
                         <input type="text" id="" name="mo-pro-field" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                 </div>
-                <div id="tableau" class="hidden">
+                <div id="tableau" class="hidden mt-10">
                     <span class="text-gray-500 font-medium">Complétez le tableau ci-dessous en cochant les cases correspondantes :</span>
                     <table class="text-sm font-light w-4/5 ml-6 mt-2">
                         <tr>

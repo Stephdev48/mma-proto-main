@@ -1,31 +1,31 @@
 <form action="" method="post">
         <!-- Construction bois -->
-    <div class="myContainer mt-16">
+    <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et violes) est-elle en bois ? &ensp;&ensp;
                 <input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">L'enveloppe de la construction (façade, planchers et balcons) est-elle en bois ? &ensp;&ensp;
                 <input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="bois-enveloppe" id=""/><label for="bois-enveloppe" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Les produits utilisés bénéficient-ils d'un marquage CE ? &ensp;&ensp;
                 <input type="radio" name="produits-ce" id=""/><label for="produits-ce" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="produits-ce" id=""/><label for="produits-ce" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant la construction : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
         </div>
     </div>
 
         <!-- Panneaux photovoltaïques -->
-    <div class="myContainer mt-16">
+    <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
@@ -42,7 +42,7 @@
                 </span>
             </div>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Les procédés mis en oeuvre bénéficient-ils d'un avis technique ? &ensp;&ensp;
                 <input type="radio" name="pv-proc-tech" id="" onclick="radioFormClose('pv-etn-field')"/>
                 <label for="pv-proc-tech" class="text-gray-500 font-medium"> Oui &ensp;</label>
@@ -58,7 +58,7 @@
                 </span>
             </div>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">En présence d'un avis technique, les procédés figurent-ils sur la liste verte de la C2P ? &ensp;&ensp;
                 <input type="radio" name="liste-c2p" id=""/>
                 <label for="liste-c2p" class="text-gray-500 font-medium"> Oui &ensp;</label>
@@ -66,13 +66,13 @@
                 <label for="liste-c2p" class="text-gray-500 font-medium"> Non</label>
             </span>  
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Quelle est la surface de l'installation ?<input type="text" name="pv-surface" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> m²</span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Quelle est la puissance de l'installation ?<input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> kWc</span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <h3 class="font-normal">Quelle est la destination de l'électricité produite par l'installation photovoltaïque ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
@@ -85,13 +85,13 @@
                 </span>
             </div>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant l'installation' : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
         </div>
     </div>
 
         <!-- Géothermie -->
-    <div class="myContainer mt-16">
+    <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-2">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
@@ -99,12 +99,12 @@
     </div>
 
         <!-- Contrôleur technique-->
-    <div class="myContainer mt-16">
+    <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-2">
             <span class="font-normal">Nom du contrôleur technique : <span class="text-orange-600"> FONCTION !</span>&ensp;&ensp;</span>
         </div>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-4">
             <h3 class="font-normal">Type de contrôle :</h3>
             <div class="flex flex-row ml-10">
                 <div class="flex flex-col">
@@ -125,7 +125,7 @@
     </div>
  
         <!-- Send button -->
-    <div class="myContainer mt-16 text-center">
+    <div class="myContainer mt-20 text-center">
         <button type="submit" name="send-step5" value="step5" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
     </div>
 </form>

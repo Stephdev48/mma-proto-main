@@ -3,7 +3,7 @@
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
-            <span class="font-normal">La structure de la construction (poteaux, poutres et violes) est-elle en bois ? &ensp;&ensp;
+            <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
                 <input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Oui &ensp;</label><input type="radio" name="bois-structure" id=""/><label for="bois-structure" class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
@@ -19,14 +19,14 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant la construction : &ensp;&ensp;</span>
-            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
         <!-- Panneaux photovoltaïques -->
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
-        <div class="ml-10 mt-4">
+        <div class="ml-10 mt-6">
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
@@ -88,28 +88,28 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant l'installation' : &ensp;&ensp;</span>
-            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
         <!-- Géothermie -->
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
-            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep); ?></div>
         </div>
     </div>
 
         <!-- Contrôleur technique-->
     <div class="myContainer mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
-        <div class="ml-10 mt-2">
+        <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
-            <div class="ml-10"><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep); ?></div>
         </div>
-        <div class="ml-10 mt-4">
-            <h3 class="font-normal">Type de contrôle :</h3>
+        <div class="ml-10 mt-14">
+            <h3 class="font-normal mb-4">Type de contrôle :</h3>
             <div class="flex flex-row ml-10">
                 <div class="flex flex-col">
                     <span><input type="radio" name="type-controle"/> L</span>

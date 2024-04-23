@@ -16,27 +16,39 @@
         <div id="nat-operation" class="hidden mt-8">
             <h3 class="text-gray-500 font-medium mb-6">De quoi s'agit-il ?</h3>
             <div class="ml-12">
+                <!-- Surélévation -->
                 <div class="my-4">
-                    <span class="text-gray-500 font-medium">D'une surélévation &ensp;&ensp;
-                        <input type="radio" name="surelev" id="check-yes" onclick="radioFormOpen('surelevation')"/><label for="surelev"> Oui &ensp;</label><input type="radio" name="surelev" id="check-no" onclick="radioFormClose('surelevation')"/><label for="surelev"> Non</label></span>  
+                    <span class="text-gray-500 font-medium">D'une surélévation &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <input type="radio" name="surelev" id="check-yes" onclick="radioFormOpen('surelevation')"/>
+                        <label for="surelev"> Oui &ensp;</label>
+                        <input type="radio" name="surelev" id="check-no" onclick="radioFormClose('surelevation')"/>
+                        <label for="surelev"> Non</label>
+                    </span>  
                     <div id="surelevation" class="hidden px-8 py-4">
                         <div class="mb-6 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? : &ensp;&ensp;
-                                <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Non</label></span>
+                                    <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Oui &ensp;&ensp;</label>
+                                    <input type="radio" id="" name="sous-oeuvre"><label for="sous-oeuvre">&ensp; Non</label>
+                                </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante (hors fondation) ? : &ensp;&ensp;
-                                <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Non</label></span>
+                                    <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Oui &ensp;&ensp;</label>
+                                    <input type="radio" id="" name="hors-fond"><label for="hors-fond">&ensp; Non</label>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Extension horizontale -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
-                        <input type="radio" name="ext-horizont" id="check-yes" onclick="radioFormOpen('extension-horizontale')"/><label for="ext-horizont"> Oui &ensp;</label><input type="radio" name="ext-horizont" id="check-no" onclick="radioFormClose('extension-horizontale')"/><label for="ext-horizont"> Non</label></span>  
+                        <input type="radio" name="ext-horizont" id="check-yes" onclick="radioFormOpen('extension-horizontale')"/>
+                        <label for="ext-horizont"> Oui &ensp;</label>
+                        <input type="radio" name="ext-horizont" id="check-no" onclick="radioFormClose('extension-horizontale')"/>
+                        <label for="ext-horizont"> Non</label>
+                    </span>  
                     <div id="extension-horizontale" class="hidden px-8 py-4">
                         <div class="mb-6 md:grid-cols-2">
                             <div class="flex flex-row py-2">
@@ -47,9 +59,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rénovation -->
                 <div class="my-4">
-                    <span class="text-gray-500 font-medium">D'une rénovation ? &ensp;&ensp;
-                        <input type="radio" name="renovation" id="check-yes" onclick="radioFormOpen('renovation-inter')"/><label for="renovation"> Oui &ensp;</label><input type="radio" name="renovation" id="check-no" onclick="radioFormClose('renovation-inter')"/><label for="renovation"> Non</label></span>  
+                    <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <input type="radio" name="renovation" id="check-yes" onclick="radioFormOpen('renovation-inter')"/>
+                        <label for="renovation"> Oui &ensp; </label>
+                        <input type="radio" name="renovation" id="check-no" onclick="radioFormClose('renovation-inter')"/>
+                        <label for="renovation"> Non</label>
+                    </span>  
                     <div id="renovation-inter" class="hidden px-8 py-4">
                         <div class="mb-6 md:grid-cols-2">
                             <div class="flex flex-row py-2">
@@ -80,9 +97,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- Réhabilitation -->
                 <div class="my-4">
-                    <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;
-                        <input type="radio" name="rehabilitation" id="check-yes" onclick="radioFormOpen('rehabilitation-inter')"/><label for="rehabilitation"> Oui &ensp;</label><input type="radio" name="rehabilitation" id="check-no" onclick="radioFormClose('rehabilitation-inter')"/><label for="rehabilitation"> Non</label></span>  
+                    <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <input type="radio" name="rehabilitation" id="check-yes" onclick="radioFormOpen('rehabilitation-inter')"/>
+                        <label for="rehabilitation"> Oui &ensp;</label>
+                        <input type="radio" name="rehabilitation" id="check-no" onclick="radioFormClose('rehabilitation-inter')"/>
+                        <label for="rehabilitation"> Non</label>
+                    </span>  
                     <div id="rehabilitation-inter" class="hidden px-8 py-4">
                         <div class="mb-6 md:grid-cols-2">
                             <div class="flex flex-row py-2">

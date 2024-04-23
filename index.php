@@ -4,7 +4,7 @@
     require 'controllers/s02-maitre-ouvrage.controller.php';
     require 'controllers/s03-oper-construct.controller.php';
     require 'controllers/s04-informations-diverses.controller.php';
-    require 'controllers/s05-a_definir.controller.php';
+    require 'controllers/s05-travaux-annexes.controller.php';
     require 'controllers/validation.controller.php';
 
     session_start();

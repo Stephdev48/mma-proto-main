@@ -1,10 +1,12 @@
     <!-- Situation de l'ouvrage -->
 <section class="myContainer">
+        <!-- Zone inondable -->
     <div class="">
         <span class="text-gray-500 font-medium">Est-il situé dans une zone inondable ? &ensp;&ensp;
             <input type="radio" name="zone-inond" id=""/><label for="zone-inond"> Oui &ensp;</label><input type="radio" name="zone-inond" id=""/><label for="zone-inond"> Non</label>
         </span>  
     </div>
+        <!-- Zone sismicité -->
     <div class="flex-column mt-10">
         <span class="text-gray-500 font-medium">Dans quelle zone de sismicité est-il situé ?</span>
         <div class="ml-10 mt-2">
@@ -15,21 +17,25 @@
             <input type="radio" name="sism-range"/><label for="sism-range"> 5 (forte)</label>
         </div>
     </div>
+        <!-- Zone termites insectes -->
     <div class="mt-10">
         <span class="text-gray-500 font-medium">Est-il situé dans une zone contaminée par les termites ou autres insectes xylophages ? &ensp;&ensp;
             <input type="radio" name="insectes" id=""/><label for="insectes"> Oui &ensp;</label><input type="radio" name="insectes" id=""/><label for="insectes"> Non</label>
         </span>  
     </div>
+        <!-- Matériaux traditionnels ou technique courante -->
     <div class="mt-10">
         <span class="text-gray-500 font-medium">Les travaux sont-ils réalisés avec des matériaux traditionnels ou selon des procédés de technique courante ? &ensp;&ensp;
             <input type="radio" name="proc-techniques" id=""/><label for="proc-techniques"> Oui &ensp;</label><input type="radio" name="proc-techniques" id=""/><label for="proc-techniques"> Non</label>
         </span>  
     </div>
+        <!-- Parking -->
     <div class="mt-10">
         <span class="text-gray-500 font-medium">Y a-t-il la présence d'un parking (accessoire de l'ouvrage) desservant l'ouvrage ? &ensp;&ensp;
             <input type="radio" name="parking" id=""/><label for="parking"> Oui &ensp;</label><input type="radio" name="parking" id=""/><label for="parking"> Non</label>
         </span>  
     </div>
+        <!-- Travaux sur existants -->
     <div class="mt-10">
         <h3 class="text-gray-500 font-medium">Si travaux sur une contruction existante ou sur existants :</h3>
             <div class="my-2 ml-10">
@@ -50,6 +56,7 @@
                 </span>
             </div>
     </div>
+        <!-- Label -->
     <div class="mt-10">
         <h3 class="text-gray-500 font-medium">Label :</h3>
         <div class="my-2 ml-10">
@@ -76,7 +83,7 @@
             </span>
         </div>
         <div class="ml-10 mt-2">
-            <span class="text-gray-500 font-medium">Y a-t-il la présence de pannaeux photovoltaïques ? &ensp;&ensp;
+            <span class="text-gray-500 font-medium">Y a-t-il la présence de panneaux photovoltaïques ? &ensp;&ensp;
                 <input type="radio" name="pann-photo" id=""/><label for="pann-photo"> Oui &ensp;</label><input type="radio" name="pann-photo" id=""/><label for="pann-photo"> Non</label>
             </span>
         </div>

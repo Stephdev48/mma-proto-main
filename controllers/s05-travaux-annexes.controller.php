@@ -19,7 +19,7 @@
 
         // Filling the $content variable
         ob_start();
-        require 'views/s05-a_definir.view.php';
+        require 'views/s05-travaux-annexes.view.php';
 
         $content = ob_get_clean();
         require("views/base.view.php");

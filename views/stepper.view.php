@@ -96,6 +96,7 @@
                     </span>
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
+                        <p id="step5-p" class="text-xs text-gray-500 font-normal ml-2">Travaux annexes</p>
                     </span>
                 </a>
             </li>

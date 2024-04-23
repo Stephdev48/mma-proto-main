@@ -13,8 +13,10 @@
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" id="" name="civilite" checked onclick="radioFormClose('siret-field'),radioFormClose('raison-field')"><label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
-                        <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field'),radioFormOpen('raison-field')"><label for="civilite">&ensp; Entreprise</label></span>
+                        <input type="radio" id="" name="civilite" checked onclick="radioFormClose('siret-field'),radioFormClose('raison-field')">
+                        <label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
+                        <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field'),radioFormOpen('raison-field')">
+                        <label for="civilite">&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
                         <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>

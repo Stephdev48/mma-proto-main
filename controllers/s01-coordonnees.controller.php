@@ -17,6 +17,7 @@
             header("Location: index.php?page=step2");
         }
 
+
         // Filling the $content variable
         ob_start();
 

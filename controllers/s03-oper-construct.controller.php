@@ -18,9 +18,10 @@
             header("Location: index.php?page=step4");
         }
 
+
         // Filling the $content variable
         ob_start();
-        
+
         require('views/s03-oper-construct.view.php');
 
         $content = ob_get_clean();

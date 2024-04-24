@@ -8,8 +8,8 @@
     $currentstep3circle = "border-gray-500 dark:border-gray-400";
     $currentstep4 = "text-gray-500 dark:text-gray-400";
     $currentstep4circle = "border-gray-500 dark:border-gray-400";
-    $currentstep5 = "text-gray-500 dark:text-gray-400";
-    $currentstep5circle = "border-gray-500 dark:border-gray-400";
+    $currentstep4bis = "text-gray-500 dark:text-gray-400";
+    $currentstep4biscircle = "border-gray-500 dark:border-gray-400";
     $validation = "text-gray-500 dark:text-gray-400";
     $validationcircle = "border-gray-500 dark:border-gray-400";
 
@@ -37,9 +37,10 @@
             $currentstep4bis = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep4biscircle = "border-blue-600 border-2";
             break;
-        case 'validation':
+        case'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
             $validationcircle = "border-blue-600 border-2";
+            break;
         default:
             throw new Exception ('Paramètre invalide !');
             break;
@@ -94,7 +95,7 @@
             </li>
             <li id="step4bis" class="flex items-center space-x-2.5 <?= $currentstep4bis ?>">
                 <a href="index.php?page=step4bis" class="flex flex-row">
-                    <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep4biscircle ?>">
+                    <span id="step4bis-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep4biscircle ?>">
                         4b
                     </span>
                     <span>

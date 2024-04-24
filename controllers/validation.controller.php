@@ -20,6 +20,7 @@
     
             // Filling the $content variable
             ob_start();
+
             require 'views/validation.view.php';
     
             $content = ob_get_clean();

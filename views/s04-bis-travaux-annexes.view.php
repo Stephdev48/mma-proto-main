@@ -19,7 +19,7 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant la construction : &ensp;&ensp;</span>
-            <div><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep.'-bois'); ?></div>
         </div>
     </div>
 
@@ -88,7 +88,7 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant l'installation' : &ensp;&ensp;</span>
-            <div><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep.'-pv'); ?></div>
         </div>
     </div>
 
@@ -97,7 +97,7 @@
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
-            <div><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep.'-geo'); ?></div>
         </div>
     </div>
 
@@ -106,7 +106,7 @@
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
-            <div><?php coordFormDisplay($currentstep); ?></div>
+            <div><?php coordFormDisplay($currentstep.'-ct'); ?></div>
         </div>
         <div class="ml-10 mt-14">
             <h3 class="font-normal mb-4">Type de contrôle :</h3>

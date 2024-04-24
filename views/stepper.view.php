@@ -13,6 +13,10 @@
     $validation = "text-gray-500 dark:text-gray-400";
     $validationcircle = "border-gray-500 dark:border-gray-400";
 
+
+    $currentstep8 =  $currentstep5;
+    $currentstep8circle =  $currentstep8;
+
     switch ($currentstep){
         case'step1':
             $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
@@ -34,6 +38,10 @@
             $currentstep4bis = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep4biscircle = "border-blue-600 border-2";
             break;
+        case'step8':
+                $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
+                $currentstep8circle = "border-blue-600 border-2";
+                break;
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
             $validationcircle = "border-blue-600 border-2";

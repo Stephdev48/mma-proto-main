@@ -5,6 +5,7 @@
     require 'controllers/s03-oper-construct.controller.php';
     require 'controllers/s04-informations-diverses.controller.php';
     require 'controllers/s04-bis-travaux-annexes.controller.php';
+    require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
 
     session_start();
@@ -29,6 +30,9 @@
                 break;
             case 'step4bis':
                 step4BisDisplay($currentstep);
+                break;
+            case 'step8':
+                step8Display($currentstep);
                 break;
             case 'partners':
                 require 'views/partner-companies.view.php';

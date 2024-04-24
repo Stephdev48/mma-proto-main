@@ -14,3 +14,5 @@ notamment les listes de cases à cocher
 # Commentaires !
 
 # ajout a pour moa
+
+# variable $currentstep dans le stepper redondance !

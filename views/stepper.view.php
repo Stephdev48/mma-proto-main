@@ -2,22 +2,23 @@
 
     $currentstep1 = "text-gray-500 dark:text-gray-400";
     $currentstep1circle = "border-gray-500 dark:border-gray-400";
-    $currentstep2 = "text-gray-500 dark:text-gray-400";
-    $currentstep2circle = "border-gray-500 dark:border-gray-400";
-    $currentstep3 = "text-gray-500 dark:text-gray-400";
-    $currentstep3circle = "border-gray-500 dark:border-gray-400";
-    $currentstep4 = "text-gray-500 dark:text-gray-400";
-    $currentstep4circle = "border-gray-500 dark:border-gray-400";
-    $currentstep5 = "text-gray-500 dark:text-gray-400";
-    $currentstep5circle = "border-gray-500 dark:border-gray-400";
-    $validation = "text-gray-500 dark:text-gray-400";
-    $validationcircle = "border-gray-500 dark:border-gray-400";
-
-
-    $currentstep8 =  $currentstep5;
-    $currentstep8circle =  $currentstep8;
+    $currentstep2 = $currentstep1;
+    $currentstep2circle = $currentstep1circle;
+    $currentstep3 = $currentstep1;
+    $currentstep3circle = $currentstep1circle;
+    $currentstep4 = $currentstep1;
+    $currentstep4circle = $currentstep1circle;
+    $currentstep4bis = $currentstep1;
+    $currentstep4biscircle = $currentstep1circle;
+    $validation = $currentstep1;
+    $validationcircle = $currentstep1circle;
+    $currentstep8 =  $currentstep1;
+    $currentstep8circle =  $currentstep1circle;
 
     switch ($currentstep){
+        case'home':
+            $home = 'hidden';
+            break;
         case'step1':
             $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep1circle = "border-blue-600 border-2";
@@ -39,12 +40,13 @@
             $currentstep4biscircle = "border-blue-600 border-2";
             break;
         case'step8':
-                $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
-                $currentstep8circle = "border-blue-600 border-2";
-                break;
+            $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep8circle = "border-blue-600 border-2";
+            break;
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
             $validationcircle = "border-blue-600 border-2";
+            break;
         default:
             throw new Exception ('Paramètre invalide !');
             break;
@@ -52,7 +54,7 @@
 ?>
 
 
-<section id="stepper" class="flex justify-center mb-24 m-8">
+<section id="stepper" class="flex justify-center mb-24 m-8 <?= $home ?>">
     <div class="flex justify-center mt-16">   
         <ol class="flex flex-wrap items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0">
             <li id="step1" class="flex items-center space-x-2.5 <?= $currentstep1 ?>">

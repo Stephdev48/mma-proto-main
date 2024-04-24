@@ -14,6 +14,9 @@
     $validationcircle = "border-gray-500 dark:border-gray-400";
 
     switch ($currentstep){
+        case'home' :
+            $homestep = "hidden";
+            break;
         case'step1':
             $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep1circle = "border-blue-600 border-2";
@@ -44,7 +47,7 @@
 ?>
 
 
-<section id="stepper" class="flex justify-center mb-24 m-8">
+<section id="stepper" class="flex justify-center mb-24 m-8 <?= $homestep ?>">
     <div class="flex justify-center mt-16">   
         <ol class="flex flex-wrap items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0">
             <li id="step1" class="flex items-center space-x-2.5 <?= $currentstep1 ?>">

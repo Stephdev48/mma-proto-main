@@ -4,12 +4,12 @@
         <div>
             <div class="text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
-                <input type="radio" name="mo-sous" id="check-yes" onclick="radioFormClose('mo-form-sous')"/>
-                <label for="mo-sous-yes"> Oui &ensp;</label>
-                <input type="radio" name="mo-sous" id="check-no" onclick="radioFormOpen('mo-form-sous')"/>
-                <label for="mo-sous-no"> Non</label>
+                <input type="radio" name="moa-sous" id="check-yes" onclick="radioFormClose('moa-form-sous')"/>
+                <label for="moa-sous-yes"> Oui &ensp;</label>
+                <input type="radio" name="moa-sous" id="check-no" onclick="radioFormOpen('moa-form-sous')"/>
+                <label for="moa-sous-no"> Non</label>
             </div>  
-            <div id="mo-form-sous" class="hidden px-8 py-4">
+            <div id="moa-form-sous" class="hidden px-8 py-4">
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
@@ -19,20 +19,20 @@
                         <label for="civilite">&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
-                        <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
-                        <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <label for="moa-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
+                        <input type="text" id="" name="moa-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div class="py-4">
-                        <label for="mo-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
-                        <input type="text" id="" nom="mo-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <label for="moa-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
+                        <input type="text" id="" nom="moa-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div id="raison-field" class="hidden py-4">
-                        <label for="mo-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
-                        <input type="text" id="" name="mo-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <label for="moa-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
+                        <input type="text" id="" name="moa-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div id="siret-field" class="hidden py-4">
-                        <label for="mo-siret" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
-                        <input type="text" id="" name="mo-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                        <label for="moa-siret" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
+                        <input type="text" id="" name="moa-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                     </div>
                 </div>
             </div>

@@ -248,6 +248,7 @@
                     <label for="tva" class="text-gray-500 font-medium"> Non</label>
                 </span>  
             </div>
+        </div>
 
         <!-- Send button -->
         <div class="text-center mt-16">

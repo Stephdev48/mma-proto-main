@@ -74,7 +74,7 @@
             if (in_array('send-step8', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step8']);
             }  
-            // header("Location: index.php?page=step");
+            header("Location: index.php?page=validation");
         }
 
         // Filling the $content variable

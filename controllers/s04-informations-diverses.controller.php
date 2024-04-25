@@ -5,7 +5,7 @@
         $title = "Formulaire DO-04";
         
         //Send form fields
-        if (isset($_POST['send-step4'])) {
+        if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
                 $_SESSION['info-'.$_POST['fields']][$key] = $value;
@@ -14,7 +14,7 @@
             if (in_array('send-step4', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step4']);
             }  
-            // header("Location: index.php?page=step");
+            header("Location: index.php?page=step5");
         }
 
         // Filling the $content variable

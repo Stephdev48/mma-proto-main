@@ -5,7 +5,7 @@
         $title = "Formulaire DO-01";
 
         //Send form fields
-        if (isset($_POST['send-step1'])) {
+        if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
                 $_SESSION['info-'.$_POST['fields']][$key] = $value;

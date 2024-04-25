@@ -18,3 +18,9 @@ home.view textarea à finir
 # ajout a pour moa
 
 # variable $currentstep dans le stepper redondance !
+
+# remplir champs étapes précédentes
+
+# changer label
+
+# mettre value aux checkbox et radio

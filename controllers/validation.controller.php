@@ -6,7 +6,7 @@
             $title = "Formulaire DO-validation";
             
             //Send form fields
-            if (isset($_POST['send-validation'])) {
+            if (isset($_POST['fields'])) {
                 foreach ($_POST as $key => $value)
                 {
                     $_SESSION['info-'.$_POST['fields']][$key] = $value;

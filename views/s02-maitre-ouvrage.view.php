@@ -5,9 +5,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-sous" id="check-yes" onclick="radioFormClose('moa-form-sous')"/>
+                    <input type="radio" name="moa-sous-yes" value="oui" onclick="radioFormClose('moa-form-sous')"/>
                     <label for="moa-sous-yes"> Oui &ensp;</label>
-                    <input type="radio" name="moa-sous" id="check-no" onclick="radioFormOpen('moa-form-sous')"/>
+                    <input type="radio" name="moa-sous-no" value="non" onclick="radioFormOpen('moa-form-sous')"/>
                     <label for="moa-sous-no"> Non</label>
                 </div>
             </div>  
@@ -147,6 +147,8 @@
         <div class="text-center mt-16">
             <button type="submit" name="send-step2" value="step2" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
         </div>
+
+        <input type="hidden" name="fields" value="moa">
     </form>
 </section>
 

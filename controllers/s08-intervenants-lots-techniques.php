@@ -2,7 +2,7 @@
     function step8Display($currentstep){
         
         //Customized title
-        $title = "Formulaire DO-04";
+        $title = "Formulaire DO-08";
         
         //Send form fields
         if (isset($_POST['send-step8'])) {
@@ -12,7 +12,7 @@
             }
             $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
             if (in_array('send-step8', $keys)) {
-                unset($_SESSION['info-'.$_POST['fields']]['send-step4']);
+                unset($_SESSION['info-'.$_POST['fields']]['send-step8']);
             }  
             // header("Location: index.php?page=step");
         }

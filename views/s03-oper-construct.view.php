@@ -147,7 +147,6 @@
             </div>
         </div>
 
-
         <!-- Collapsed form : "Type d'ouvrage"-->
         <fieldset class="flex flex-col lg:flex-row mb-2 mt-10">
             <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
@@ -184,6 +183,71 @@
             </div>
         </fieldset>
 
+        <!-- Adresse de la construction -->
+        <div class="mt-10">
+            <span class="text-gray-500 font-medium">Adresse de la construction</span>
+            <div class="mx-8 my-2">
+                <label for="esc-res-bat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Escalier, résidence, bâtiment</label>
+                <input type="text" name="esc-res-bat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="mx-8 my-2">
+                <label for="num-nom-rue" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro et nom de la rue</label>
+                <input type="text" name="num-nom-rue" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
+                <div>
+                    <label for="lieu-dit" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu-dit</label>
+                    <input type="text" name="lieu-dit" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                </div>
+                <div>
+                    <label for="arrond" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Arrondissement</label>
+                    <input type="text" id="arrond" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                </div>
+            </div>
+            <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
+                <div>
+                    <label for="zipcode" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Code postal</label>
+                    <input type="text" name="zipcode" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                </div>
+                <div>
+                    <label for="commune" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Commune</label>
+                    <input type="text" id="commune" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                </div>
+            </div>
+        </div>
+
+        <!-- Dates de l'opération de construction -->
+        <div class="mt-10">
+            <span class="text-gray-500 font-medium">Dates de l'opération de construction</span>
+            <div class="mx-8 my-2">
+                <label for="date-debut" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date d'ouverture de chantier</label>
+                <input type="date" name="date-debut" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="mx-8 mt-4">
+                <label for="date-debut-prevue" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">A défaut, date prévue de début</label>
+                <input type="date" name="date-debut-prevue" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="mx-8 mt-4">
+                <label for="date-reception" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date de réception</label>
+                <input type="date" name="date-reception" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+        </div>
+
+        <!-- Coût de l'opération de construction -->
+        <div class="mt-10">
+            <span class="text-gray-500 font-medium">Coût de l'opération de construction</span>
+            <div class="mx-8 my-2">
+                <label for="cout-operation" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Coût en €</label>
+                <input type="text" name="cout-operation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+            </div>
+            <div class="mx-8 mt-4">
+                <span class="text-sm font-medium text-gray-900">Comprend la TVA ? &ensp;&ensp;
+                    <input type="radio" name="tva"/>
+                    <label for="tva" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                    <input type="radio" name="tva"/>
+                    <label for="tva" class="text-gray-500 font-medium"> Non</label>
+                </span>  
+            </div>
 
         <!-- Send button -->
         <div class="text-center mt-16">

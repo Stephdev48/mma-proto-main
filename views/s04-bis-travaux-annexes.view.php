@@ -1,6 +1,6 @@
 <form action="" method="post">
         <!-- Construction bois -->
-    <div class="myContainer mt-20">
+    <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
@@ -24,7 +24,7 @@
     </div>
 
         <!-- Panneaux photovoltaïques -->
-    <div class="myContainer mt-20">
+    <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
         <div class="ml-10 mt-6">
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
@@ -93,7 +93,7 @@
     </div>
 
         <!-- Géothermie -->
-    <div class="myContainer mt-20">
+    <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
@@ -102,7 +102,7 @@
     </div>
 
         <!-- Contrôleur technique-->
-    <div class="myContainer mt-20">
+    <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
@@ -129,8 +129,8 @@
     </div>
  
         <!-- Send button -->
-    <div class="myContainer mt-20 text-center">
-        <button type="submit" name="send-step5" value="step5" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+    <div class="mt-20 text-center">
+        <button type="submit" name="send-step5" value="step5" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
     </div>
 </form>
 

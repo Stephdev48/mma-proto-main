@@ -1,14 +1,14 @@
-<section class="myContainer">
+<section class="">
     <form action="" method="post">
         <!-- Collapsed form : "Nature opération : neuf ou existant"-->
-        <div class="flex flex-row">
+        <div class="flex flex-col lg:flex-row">
             <span class="text-gray-500 font-medium">Nature de l'opération : </span>
             <span class="ml-6 text-gray-500 font-medium">
                 <input type="radio" name="neuf-exist" id="check-yes" onclick="radioFormClose('nat-operation')"/>
                 <label for="neuf-exist"> Construction neuve &ensp;</label>
                 <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
             </span>
-            <span class="ml-8 text-gray-500 font-medium">
+            <span class="ml-6 mt-2 lg:mt-0 text-gray-500 font-medium">
                 <input type="radio" name="neuf-exist" id="check-no" onclick="radioFormOpen('nat-operation')"/>
                 <label for="neuf-exist"> Travaux sur construction existante</label>
             </span>
@@ -149,7 +149,7 @@
 
 
         <!-- Collapsed form : "Type d'ouvrage"-->
-        <fieldset class="flex flex-row mb-2 mt-10">
+        <fieldset class="flex flex-col lg:flex-row mb-2 mt-10">
             <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
             <div class="flex flex-col ml-8">
                 <div>
@@ -174,16 +174,20 @@
                 <span><input type="checkbox" name="hopital"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
                 <span><input type="checkbox" name="vrd-privatif"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
                 <div>
-                    <span><input type="checkbox" name="aute-cont"/> Autre construction :</span><br />
-                    <span class="text-xs">(son usage : <input type="text" name="" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )</span>
+                    <span>
+                        <input type="checkbox" name="autre-const"/> Autre construction :
+                    </span><br />
+                    <span class="text-xs">(son usage : 
+                        <input type="text" name="autre-const-usage" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )
+                    </span>
                 </div>
             </div>
         </fieldset>
 
 
         <!-- Send button -->
-        <div class="myContainer text-center mt-16">
-            <button type="submit" name="send-step3" value="step3" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+        <div class="text-center mt-16">
+            <button type="submit" name="send-step3" value="step3" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
         </div>
     </form>
 </section>

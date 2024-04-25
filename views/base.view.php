@@ -3,7 +3,7 @@
     require 'stepper.view.php';
     ?>
 
-<section class="">
+<section class="w-[460px] lg:w-[780px] xl:w-[960px] m-auto">
     <!-- Retreiving requested page content -->
     <?= $content ?>
 </section>

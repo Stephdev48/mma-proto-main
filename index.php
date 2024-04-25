@@ -8,6 +8,7 @@
     require 'controllers/s02-maitre-ouvrage.controller.php';
     require 'controllers/s03-oper-construct.controller.php';
     require 'controllers/s04-informations-diverses.controller.php';
+    require 'controllers/s05-maitrise-oeuvre.controller.php';
     require 'controllers/s04-bis-travaux-annexes.controller.php';
     require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
@@ -35,6 +36,9 @@
                 break;
             case 'step4bis':
                 step4BisDisplay($currentstep);
+                break;
+            case 'step5':
+                step5Display($currentstep);
                 break;
             case 'step8':
                 step8Display($currentstep);

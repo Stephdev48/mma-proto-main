@@ -72,7 +72,7 @@
             }            
             $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
             if (in_array('send-step8', $keys)) {
-                unset($_SESSION['info-'.$_POST['fields']]['send-step4']);
+                unset($_SESSION['info-'.$_POST['fields']]['send-step8']);
             }  
             // header("Location: index.php?page=step");
         }

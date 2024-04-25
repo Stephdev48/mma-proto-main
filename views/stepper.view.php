@@ -10,6 +10,8 @@
     $currentstep4circle = $currentstep1circle;
     $currentstep4bis = $currentstep1;
     $currentstep4biscircle = $currentstep1circle;
+    $currentstep5 = $currentstep1;
+    $currentstep5circle = $currentstep1circle;
     $validation = $currentstep1;
     $validationcircle = $currentstep1circle;
     $currentstep8 =  $currentstep1;
@@ -38,6 +40,10 @@
         case'step4bis':
             $currentstep4bis = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep4biscircle = "border-blue-600 border-2";
+            break;
+        case'step5':
+            $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep5circle = "border-blue-600 border-2";
             break;
         case'step8':
             $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
@@ -107,6 +113,16 @@
                     <span>
                         <h3 class="ml-2">L'opération de construction</h3>
                         <p id="step4bis-p" class="text-xs font-normal ml-2 <?= $currentstep4bis ?>">Travaux annexes</p>
+                    </span>
+                </a>
+            </li>
+            <li id="step5" class="flex items-center space-x-2.5 <?= $currentstep5 ?>">
+                <a href="index.php?page=step5" class="flex flex-row">
+                    <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep5circle ?>">
+                        5
+                    </span>
+                    <span>
+                        <h3 class="ml-2">Maîtrise d'oeuvre</h3>
                     </span>
                 </a>
             </li>

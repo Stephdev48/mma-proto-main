@@ -1,4 +1,8 @@
 <?php
+
+    define('ROOT_PATH', dirname(__FILE__) );
+    define('DEBUG', true );
+
     require 'controllers/home.controller.php';
     require 'controllers/s01-coordonnees.controller.php';
     require 'controllers/s02-maitre-ouvrage.controller.php';
@@ -9,6 +13,7 @@
     require 'controllers/validation.controller.php';
 
     session_start();
+
 
     if (isset($_GET['page'])){
         $currentstep = $_GET['page'];

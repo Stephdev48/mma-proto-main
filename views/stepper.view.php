@@ -105,7 +105,7 @@
                     </span>
                 </a>
             </li>
-            <li id="step4bis" class="flex items-center space-x-2.5 <?= $currentstep4bis ?>">
+            <li id="step4bis" class=" hidden flex items-center space-x-2.5 <?= $currentstep4bis ?>">
                 <a href="index.php?page=step4bis" class="flex flex-row">
                     <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 <?= $currentstep4biscircle ?>">
                         4b

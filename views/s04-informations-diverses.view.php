@@ -10,12 +10,11 @@
     </div>
 <?php endif;?> 
 
-
-
-
 <section>
     <!-- Situation de l'ouvrage -->
     <form action="" method="post">
+
+
             <!-- Zone inondable -->
         <div>
             <span class="text-gray-500 font-medium">Est-il situé dans une zone inondable ? &ensp;&ensp;
@@ -45,6 +44,7 @@
                 <label> Non</label>
             </span>  
         </div>
+        
             <!-- Matériaux traditionnels ou technique courante -->
         <div class="mt-16">
             <span class="text-gray-500 font-medium">Les travaux sont-ils réalisés avec des matériaux traditionnels ou selon des procédés de technique courante ? &ensp;&ensp;
@@ -89,6 +89,7 @@
                     </span>
                 </div>
         </div>
+        
             <!-- Label -->
         <div class="mt-16">
             <h3 class="text-gray-500 font-medium">Label :</h3>
@@ -121,9 +122,10 @@
                     <label> Non</label>
                 </div>
             </div>
+
             <div id="etude-sol-form" class="hidden px-8 py-4">
                 <div>
-                    <?php echo coordFormDisplay($currentstep.'-es'); ?>
+                    <?php echo coordFormDisplay('etude-sol'); ?>
                 </div>
                 <div class="flex flex-col lg:flex-row mt-16">
                     <span class="ml-2 font-normal">
@@ -143,9 +145,9 @@
             <span class="text-gray-500 font-medium">Travaux annexes :</span>
             <div class="ml-10 mt-2">
                 <span class="font-normal">S'agit-il d'une construction en bois ? &ensp;&ensp;
-                    <input type="radio" name="constr-bois" value="oui"/>
+                    <input type="radio" name="construction-bois" value="oui"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="constr-bois" value="non"/>
+                    <input type="radio" name="construction-bois" value="non"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>

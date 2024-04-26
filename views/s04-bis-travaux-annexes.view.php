@@ -1,5 +1,20 @@
+<?php if(DEBUG==true):?>
+    <div id="debug">
+        <pre>
+        <?php
+        //if(!empty($_POST)){ var_dump($_POST);};
+        //if(!empty($_FILES)){ var_dump($_FILES);};
+        if(!empty($_SESSION)){ var_dump($_SESSION);};
+        //var_dump($array_datas);
+        ?>
+        </pre>
+    </div>
+<?php endif;?> 
 <form action="" method="post">
         <!-- Construction bois -->
+    <?php
+    if($_SESSION["info-situation"]['construction-bois']=='oui'):
+    ?>        
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
@@ -28,11 +43,14 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant la construction : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay($currentstep.'-bois'); ?></div>
+            <div><?php echo coordFormDisplay('bois'); ?></div>
         </div>
     </div>
+    <?php
+    endif;  // fin contrôleur technique
+    ?>
 
-        <!-- Panneaux photovoltaïques -->
+    <!-- Panneaux photovoltaïques -->
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
         <div class="ml-10 mt-6">
@@ -101,25 +119,28 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant l'installation' : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay($currentstep.'-pv'); ?></div>
+            <div><?php echo coordFormDisplay('pv'); ?></div>
         </div>
     </div>
 
-        <!-- Géothermie -->
+    <!-- Géothermie -->
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay($currentstep.'-geo'); ?></div>
+            <div><?php echo coordFormDisplay('geo'); ?></div>
         </div>
     </div>
 
-        <!-- Contrôleur technique-->
+    <!-- Contrôleur technique-->
+    <?php
+    if($_SESSION["info-situation"]['control-tech']=='oui'):
+    ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay($currentstep.'-ct'); ?></div>
+            <div><?php echo coordFormDisplay('ct'); ?></div>
         </div>
         <div class="ml-10 mt-14">
             <h3 class="font-normal mb-4">Type de contrôle (choisissez l'option correspondante):</h3>
@@ -140,8 +161,11 @@
         </div>
 
     </div>
+    <?php
+    endif;  // fin contrôleur technique
+    ?>
  
-        <!-- Bouton suivant -->
+    <!-- Bouton suivant -->
     <div class="mt-20 text-center">
         <button type="submit" name="send-step4bis" value="step4bis" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
     </div>

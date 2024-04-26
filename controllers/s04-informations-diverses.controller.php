@@ -17,7 +17,15 @@
             if (in_array('send-step4', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step4']);
             }  
-            header("Location: index.php?page=step5");
+
+            /*if($_SESSION["info-situation"]['construction-bois']=="oui"
+                || $_SESSION["info-situation"]['construction-bois'] =="oui"){
+                    header("Location: index.php?page=step4bis");
+                }else{
+                    header("Location: index.php?page=step5");
+                }
+            */
+                    
         }
 
 

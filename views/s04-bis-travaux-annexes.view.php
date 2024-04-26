@@ -47,10 +47,13 @@
         </div>
     </div>
     <?php
-    endif;  // fin contrôleur technique
+    endif;  // fin construction bois
     ?>
 
     <!-- Panneaux photovoltaïques -->
+    <?php
+    if($_SESSION["info-situation"]['pann-photo']=='oui'):
+    ?>    
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
         <div class="ml-10 mt-6">
@@ -122,8 +125,14 @@
             <div><?php echo coordFormDisplay('pv'); ?></div>
         </div>
     </div>
+    <?php
+    endif;  // fin panneaux photovoltaïques
+    ?>
 
     <!-- Géothermie -->
+    <?php
+    if($_SESSION["info-situation"]['geothermie']=='oui'):
+    ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
@@ -131,6 +140,9 @@
             <div><?php echo coordFormDisplay('geo'); ?></div>
         </div>
     </div>
+    <?php
+    endif;  // fin géothermie
+    ?>
 
     <!-- Contrôleur technique-->
     <?php

@@ -15,7 +15,7 @@
     require 'controllers/validation.controller.php';
    
     // Vide la superglobale $_SESSION
-    $_SESSION = [];
+    // $_SESSION = [];
 
     session_start();
 
@@ -23,6 +23,7 @@
         $currentstep = $_GET['page'];
         switch($_GET['page']){
             case 'home':
+                $_SESSION = [];
                 homeDisplay($currentstep);
                 break;
             case 'step1':

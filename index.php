@@ -1,6 +1,7 @@
 <?php
 
     define('ROOT_PATH', dirname(__FILE__) );
+    define('UPLOAD_FOLDER', "/public/uploads" );
     define('DEBUG', true );
 
     require 'controllers/home.controller.php';

@@ -28,11 +28,12 @@
 
         $array_fake_data = array
         (
-            1 => array
+            0 => array
                     (
                         'nom' => 'GEVAUBOIS',
                         'montant' => 5500,
-                        'nature' => 2,
+                        'nature' => 5,
+                        'nature-autre' => "",
                         'debut' => '20/02/2024',
                         'fin' => '20/02/2034',
                         'folder' => '94f52dfc',
@@ -42,11 +43,12 @@
                         'annexefileremarque' => '',
                         'status' => '1'
                     ),
-            2 => array
+            1 => array
                     (
                         'nom' => 'MACON 48',
                         'montant' => 35500,
-                        'nature' => 2,
+                        'nature' => 3,
+                        'nature-autre' => "",
                         'debut' => '20/02/2022',
                         'fin' => '20/02/2032',                        
                         'folder' => '82f52dfc',
@@ -55,7 +57,37 @@
                         'annexefile' => 'urssaf-justificatif-declaration-2024-03-20240425-09h11.pdf',
                         'annexefileremarque' => 'Yes !  trop bien',
                         'status' => '2'                                           
-                    )
+                    ),
+            2 => array
+                    (
+                        'nom' => 'TTRAVO',
+                        'montant' => 35500,
+                        'nature' => 99,
+                        'nature-autre' => "plaquiste",
+                        'debut' => '20/02/2022',
+                        'fin' => '20/02/2032',                        
+                        'folder' => '82f52dfc',
+                        'rcdfile' => '',
+                        'rcdfileremarque' => '',     
+                        'annexefile' => 'urssaf-justificatif-declaration-2024-03-20240425-09h11.pdf',
+                        'annexefileremarque' => 'Encore mieux ☺️',
+                        'status' => '2'                                           
+                    ) ,
+            3 => array
+                    (
+                        'nom' => 'Carreleur',
+                        'montant' => 12500,
+                        'nature' => 11,
+                        'nature-autre' => "",
+                        'debut' => '20/02/2022',
+                        'fin' => '20/02/2032',                        
+                        'folder' => '82f52dfc',
+                        'rcdfile' => '',
+                        'rcdfileremarque' => '',     
+                        'annexefile' => '',
+                        'annexefileremarque' => '',
+                        'status' => '2'                                           
+                    )                                       
         );
         
         $array_datas = $array_fake_data;
@@ -74,7 +106,7 @@
             if (in_array('send-step8', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step8']);
             }  
-            header("Location: index.php?page=validation");
+            //header("Location: index.php?page=validation");
         }
 
         // Filling the $content variable

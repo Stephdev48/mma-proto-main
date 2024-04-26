@@ -12,7 +12,7 @@ const ALLOWED_FILES = [
 
 const MAX_SIZE = 10 * 1024 * 1024; //  10MB
 
-const UPLOAD_DIR = ROOT_PATH . '/public/uploads';
+const UPLOAD_DIR = ROOT_PATH . UPLOAD_FOLDER;
 if(!empty($_POST['folder'])){ $folder = $_POST['folder']."/";}
 
 

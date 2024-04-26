@@ -1,4 +1,7 @@
 <?php 
+
+    require_once 'models/form-entreprises.model.php';
+
     function step4BisDisplay($currentstep){
         
         //Customized title

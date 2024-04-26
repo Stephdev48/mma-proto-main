@@ -1,4 +1,7 @@
 <?php 
+
+    require_once 'models/form-entreprises.model.php';
+
     function step5Display($currentstep){
         
         //Customized title
@@ -19,15 +22,7 @@
 
         // Filling the $content variable
         ob_start();
-   
-        function coordFormDisplay($type){
-            $coordform = file_get_contents('views/templates/form-entreprises.view.html');
 
-            //on ajoute la variable dans le résultat HTML généré
-            $coordform = str_replace('##type##',$type, $coordform);
-            return $coordform;
-        }
-        
         require 'views/s05-maitrise-oeuvre.view.php';
 
         $content = ob_get_clean();

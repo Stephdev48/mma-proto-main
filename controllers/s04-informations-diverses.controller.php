@@ -4,10 +4,10 @@
     
     function step4Display($currentstep){
         
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-04";
         
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
@@ -21,7 +21,7 @@
         }
 
 
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
    
            

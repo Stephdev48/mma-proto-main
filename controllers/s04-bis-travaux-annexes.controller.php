@@ -4,10 +4,10 @@
 
     function step4BisDisplay($currentstep){
         
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-04bis";
         
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
@@ -20,7 +20,7 @@
             // header("Location: index.php?page=validation");
         }
 
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
 
         function coordFormDisplay($type){

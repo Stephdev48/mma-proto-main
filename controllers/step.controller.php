@@ -1,10 +1,10 @@
 <?php
 
     function stepDisplay($currentstep){
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-'.$currentstep'";
 
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['send-'.$currentstep.''])) {
             foreach ($_POST as $key => $value)
             {
@@ -17,7 +17,7 @@
             header("Location: index.php?page=step2");
         }
 
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
 
         switch($currentstep){

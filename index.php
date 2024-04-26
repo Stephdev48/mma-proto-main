@@ -13,7 +13,9 @@
     require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
    
-    // session_unset();
+    // Vide la superglobale $_SESSION
+    $_SESSION = [];
+
     session_start();
 
     if (isset($_GET['page'])){

@@ -1,10 +1,10 @@
 <?php
 
     function step2Display($currentstep){
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-02";
 
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
@@ -17,7 +17,7 @@
             header("Location: index.php?page=step3");
         }
         
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
 
         require('views/s02-maitre-ouvrage.view.php');

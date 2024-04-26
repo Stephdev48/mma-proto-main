@@ -1,10 +1,10 @@
 <?php
     function homeDisplay($currentstep){
 
-        //Customized title
+        // Titre personnalisé
         $title = "Accueil DO";
 
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['send-home'])) {
             foreach ($_POST as $key => $value)
             {
@@ -17,7 +17,7 @@
             header("Location: index.php?page=step1");
         }
 
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
 
         require('views/home.view.php');

@@ -22,3 +22,5 @@ Assurance tous risque chantier
 # quels champs doivent être "required" ?
 
 # var_dump de l'ensemble
+
+# homogénéiser les name des inputs

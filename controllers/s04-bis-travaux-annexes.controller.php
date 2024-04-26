@@ -17,7 +17,7 @@
             if (in_array('send-step4bis', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step4bis']);
             }  
-            // header("Location: index.php?page=validation");
+            header("Location: index.php?page=step5");
         }
 
         // Remplissage de la variable $content

@@ -1,14 +1,17 @@
 <?php 
+
+    require_once 'models/form-entreprises.model.php';
+    
     function step4Display($currentstep){
         
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-04";
         
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
-                $_SESSION['info-'.$_POST['fields']][$key] = $value;
+               $_SESSION['info-'.$_POST['fields']][$key] = $value;
             }
             $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
             if (in_array('send-step4', $keys)) {
@@ -17,19 +20,14 @@
             header("Location: index.php?page=step5");
         }
 
-        // Filling the $content variable
-        ob_start();
-   
-        function coordFormDisplay($type){
-            $coordform = file_get_contents('views/templates/form-entreprises.view.html');
 
-            //on ajoute la variable dans le résultat HTML généré
-            $coordform = str_replace('##type##',$type, $coordform);
-            return $coordform;
-        }
-        
+        // Remplissage de la variable $content
+        ob_start();
+     
         require 'views/s04-informations-diverses.view.php';
 
         $content = ob_get_clean();
         require("views/base.view.php");
     }
+
+    

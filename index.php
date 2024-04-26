@@ -13,9 +13,11 @@
     require 'controllers/s04-bis-travaux-annexes.controller.php';
     require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
+   
+    // Vide la superglobale $_SESSION
+    $_SESSION = [];
 
     session_start();
-
 
     if (isset($_GET['page'])){
         $currentstep = $_GET['page'];

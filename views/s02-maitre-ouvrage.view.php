@@ -1,40 +1,40 @@
 <section class="">
     <form action="" method="post">
-        <!-- Collapsed form : "Maitre d'ouvrage est-il le souscripteur ?"-->
+        <!-- Formulaire caché : "Maitre d'ouvrage est-il le souscripteur ?"-->
         <div>
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-sous-yes" value="oui" onclick="radioFormClose('moa-form-sous')"/>
-                    <label for="moa-sous-yes"> Oui &ensp;</label>
-                    <input type="radio" name="moa-sous-no" value="non" onclick="radioFormOpen('moa-form-sous')"/>
-                    <label for="moa-sous-no"> Non</label>
+                    <input type="radio" name="moa-sous-yes" value="oui" onclick="radioFormClose('moa-sous-form')"/>
+                    <label> Oui &ensp;</label>
+                    <input type="radio" name="moa-sous-no" value="non" onclick="radioFormOpen('moa-sous-form')"/>
+                    <label> Non</label>
                 </div>
             </div>  
-            <div id="moa-form-sous" class="hidden px-8 py-4">
+            <div id="moa-sous-form" class="hidden px-8 py-4">
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" id="" name="civilite" checked onclick="radioFormClose('siret-field'),radioFormClose('raison-field')">
-                        <label for="civilite">&ensp; Particulier &ensp;&ensp;</label>
-                        <input type="radio" id="" name="civilite" onclick="radioFormOpen('siret-field'),radioFormOpen('raison-field')">
-                        <label for="civilite">&ensp; Entreprise</label></span>
+                        <input type="radio" name="civilite-particulier" value="particulier" checked onclick="radioFormClose('siret-champ'),radioFormClose('raison-champ')">
+                        <label>&ensp; Particulier &ensp;&ensp;</label>
+                        <input type="radio" name="civilite-entreprise" value="entreprise" onclick="radioFormOpen('siret-champ'),radioFormOpen('raison-champ')">
+                        <label>&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
-                        <label for="moa-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
-                        <input type="text" id="" name="moa-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <label for="moa-nom-prenom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
+                        <input type="text" name="moa-nom-prenom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div class="py-4">
                         <label for="moa-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
-                        <input type="text" id="" nom="moa-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <input type="text" nom="moa-adresse" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
-                    <div id="raison-field" class="hidden py-4">
-                        <label for="moa-nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
-                        <input type="text" id="" name="moa-nom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <div id="raison-champ" class="hidden py-4">
+                        <label for="moa-raison-sociale" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
+                        <input type="text" name="moa-raison-sociale" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
-                    <div id="siret-field" class="hidden py-4">
+                    <div id="siret-champ" class="hidden py-4">
                         <label for="moa-siret" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
-                        <input type="text" id="" name="moa-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                        <input type="text" name="moa-siret" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                     </div>
                 </div>
             </div>
@@ -43,45 +43,45 @@
 
         <!-- Qualité du maitre d'ouvrage -->
         <div class="my-16">
-            <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (cochez la case correspondante) :</h3>
+            <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (choisissez l'option correspondante) :</h3>
             <div class="flex flex-col lg:flex-row mx-6 mb-2">
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="mo-quality"/> Etat (services publics)</span>
-                    <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                    <span><input type="radio" name="mo-quality"/> Syndicats de copropriétaires</span>
-                    <span><input type="radio" name="mo-quality"/> Vendeur privé après achèvement</span>
-                    <span><input type="radio" name="mo-quality"/> Société Civile Immobilière</span>
-                    <span><input type="radio" name="mo-quality"/> Enterprise</span>
-                    <span><input type="radio" name="mo-quality" onclick="radioFormOpen('mo-quality-other')"/> Autre qualité</span>
-                    <div id="mo-quality-other" class="hidden mt-2">
-                        <label for="mo-quality-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
-                        <input type="text-area" id="mo-quality-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <span><input type="radio" name="moa-qualite"/> Etat (services publics)</span>
+                    <span><input type="radio" name="moa-qualite"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                    <span><input type="radio" name="moa-qualite"/> Syndicats de copropriétaires</span>
+                    <span><input type="radio" name="moa-qualite"/> Vendeur privé après achèvement</span>
+                    <span><input type="radio" name="moa-qualite"/> Société Civile Immobilière</span>
+                    <span><input type="radio" name="moa-qualite"/> Enterprise</span>
+                    <span><input type="radio" name="moa-qualite" onclick="radioFormOpen('moa-qualite-autre')"/> Autre qualité</span>
+                    <div id="moa-qualite-autre" class="hidden mt-2">
+                        <label for="moa-qualite-champ" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
+                        <input type="text" id="moa-qualite-champ" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>    
                 </div>
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="mo-quality"/> Collectivités locales</span>
-                    <span><input type="radio" name="mo-quality"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                    <span><input type="radio" name="mo-quality"/> Vendeur privé d'immeubles à construire</span>
-                    <span><input type="radio" name="mo-quality"/> Particulier</span>
-                    <span><input type="radio" name="mo-quality"/> Promoteur privé immobilier</span>
-                    <span><input type="radio" name="mo-quality"/> Association</span>
+                    <span><input type="radio" name="moa-qualite"/> Collectivités locales</span>
+                    <span><input type="radio" name="moa-qualite"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                    <span><input type="radio" name="moa-qualite"/> Vendeur privé d'immeubles à construire</span>
+                    <span><input type="radio" name="moa-qualite"/> Particulier</span>
+                    <span><input type="radio" name="moa-qualite"/> Promoteur privé immobilier</span>
+                    <span><input type="radio" name="moa-qualite"/> Association</span>
                 </div>
             </div>
         </div>
 
 
-        <!-- Collapsed form : "Maitre d'ouvrage participe t-il à la construction ?"-->
+        <!-- Formulaire caché : "Maitre d'ouvrage participe t-il à la construction ?"-->
         <div>
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-sous" id="check-yes" onclick="radioFormOpen('moa-form-const'),radioFormOpen('tableau')"/>
-                    <label for="moa-sous-yes"> Oui &ensp;</label>
-                    <input type="radio" name="moa-sous" id="check-no" onclick="radioFormClose('moa-form-const'),radioFormClose('tableau')"/>
-                    <label for="moa-sous-no"> Non</label>
+                    <input type="radio" name="moa-construction" value="oui" onclick="radioFormOpen('moa-construction-form'),radioFormOpen('tableau')"/>
+                    <label> Oui &ensp;</label>
+                    <input type="radio" name="moa-construction" value="non" onclick="radioFormClose('moa-construction-form'),radioFormClose('tableau')"/>
+                    <label> Non</label>
                 </div>
             </div>
-            <div id="moa-form-const" class="hidden py-4">
+            <div id="moa-construction-form" class="hidden py-4">
                 <div class="flex flex-row p-2 mb-6">
                     <div class="flex items-center">
                         <svg class="w-6 h-6 text-blue-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
@@ -91,11 +91,16 @@
                 </div>
                 <div class="mb-6">
                     <div>
-                        <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il un professionnel de la construction ? &ensp;&ensp;<input type="radio" name="moa-pro" id="check-yes" onclick="radioFormOpen('moa-form-pro')"/><label> Oui &ensp;</label><input type="radio" name="moa-pro" id="check-no" onclick="radioFormClose('moa-form-pro')"/><label> Non</label></span>
+                        <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il un professionnel de la construction ? &ensp;&ensp;
+                            <input type="radio" name="moa-construction-pro" value="oui" onclick="radioFormOpen('moa-construction-pro-form')"/>
+                            <label> Oui &ensp;</label>
+                            <input type="radio" name="moa-construction-pro" value="non" onclick="radioFormClose('moa-construction-pro-form')"/>
+                            <label> Non</label>
+                        </span>
                     </div>
-                    <div id="moa-form-pro" class="py-4 hidden mx-6">
-                        <label for="moa-pro-field" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
-                        <input type="text" id="" name="moa-pro-field" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <div id="moa-construction-pro-form" class="py-4 hidden mx-6">
+                        <label for="moa-construction-pro-champ" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
+                        <input type="text" name="moa-construction-pro-champ" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                 </div>
                 <div id="tableau" class="hidden mt-10">
@@ -114,28 +119,61 @@
                             <td>Autres travaux</td>
                         </tr>
                         <tr>
-                            <td class="border-r-2 border-l-2 border-b border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Conception</label></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
+                            <td class="border-r-2 border-l-2 border-b border-gray-300 p-2 pl-4">
+                                <input type="checkbox" name="moa-tab-conception"/>
+                                <label>&ensp; Conception</label>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-tab-conception-1"/></td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-tab-conception-2"/></td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-tab-conception-3"/></td>
                         </tr>
                         <tr>
-                            <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Direction</label></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
+                            <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4">
+                                <input type="checkbox" name="moa-direction"/>
+                                <label>&ensp; Direction</label>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-direction-1"/>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-direction-2"/>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-direction-3"/>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Surveillance</label></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-r-2 border-b border-gray-300 text-center p-2"><input type="checkbox"/></td>
+                            <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4">
+                                <input type="checkbox" name="moa-surveillance"/>
+                                <label>&ensp; Surveillance</label>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-surveillance-1"/>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-surveillance-2"/>
+                            </td>
+                            <td class="border-r-2 border-b border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-surveillance-3"/>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="border-r-2 border-l-2 border-b-2 border-gray-300 p-2 pl-4"><input type="checkbox"/><label>&ensp; Exécution</label></td>
-                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>
-                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2"><input type="checkbox"/></td>
+                            <td class="border-r-2 border-l-2 border-b-2 border-gray-300 p-2 pl-4">
+                                <input type="checkbox" name="moa-execution"/>
+                                <label>&ensp; Exécution</label>
+                            </td>
+                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-execution-1"/>
+                            </td>
+                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-execution-2"/>
+                            </td>
+                            <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
+                                <input type="checkbox" name="moa-execution-3"/>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -143,9 +181,9 @@
         </div>
 
 
-        <!-- Send button -->
+        <!-- Bouton suivant -->
         <div class="text-center mt-16">
-            <button type="submit" name="send-step2" value="step2" class="myContainer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+            <button type="submit" name="send-step2" value="step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-2/5 lg:w-1/5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
         </div>
 
         <input type="hidden" name="fields" value="moa">

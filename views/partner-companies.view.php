@@ -1,9 +1,9 @@
 
 <?php
-    //Customized title
+    // Titre personnalisé
     $title = "Partenaires";
     
-    // Filling the content variable
+    // Remplissage de la variable $content
     ob_start();
     ?>
     

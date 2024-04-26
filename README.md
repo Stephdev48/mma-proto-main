@@ -1,9 +1,7 @@
 # mma-proto-main
  Proto principal
 
-# à faire / idées
- vérifier tous les name et id des checkbox et radio !
-step3 type d'ouvrage : modifier opacity et activer quand case cochée ou bien champ caché ?
+# idées
 navigation via le stepper : désactiver les étapes suivantes non parcourues
 
 ## Responsive !!
@@ -13,14 +11,14 @@ home.view textarea à finir
 
 # Infobulles !
 
-# Commentaires !
+# remplir les champs des étapes précédentes si retour ( voir video )
+ajouter bouton "précédent" sur toutes les steps à partir de la step2
 
-# ajout a pour moa
+# champs et étapes manquants :
+garanties
+CNR
+Assurance tous risque chantier
 
-# variable $currentstep dans le stepper redondance !
+# quels champs doivent être "required" ?
 
-# remplir champs étapes précédentes
-
-# changer label
-
-# mettre value aux checkbox et radio
+# var_dump de l'ensemble

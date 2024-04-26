@@ -1,7 +1,7 @@
 <?php 
     function step8Display($currentstep){
         
-        //Customized title
+        // Titre personnalisé
         $title = "Formulaire DO-08";
         
         $date = new DateTimeImmutable();
@@ -92,7 +92,7 @@
         
         $array_datas = $array_fake_data;
 
-        //Send form fields
+        // Envoi des champs du formulaire
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
@@ -109,7 +109,7 @@
             //header("Location: index.php?page=validation");
         }
 
-        // Filling the $content variable
+        // Remplissage de la variable $content
         ob_start();
         require 'views/step8.view.php';
 

@@ -121,10 +121,10 @@
                 <!-- Réhabilitation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="rehabilitation" id="check-yes" onclick="radioFormOpen('rehabilitation-inter')"/>
-                        <label for="rehabilitation"> Oui &ensp;</label>
-                        <input type="radio" name="rehabilitation" id="check-no" onclick="radioFormClose('rehabilitation-inter')"/>
-                        <label for="rehabilitation"> Non</label>
+                        <input type="radio" name="operation-nature-rehabilitation" value ="oui" onclick="radioFormOpen('operation-nature-rehabilitation')"/>
+                        <label> Oui &ensp;</label>
+                        <input type="radio" name="operation-nature-rehabilitation" value="non" onclick="radioFormClose('operation-nature-rehabilitation')"/>
+                        <label> Non</label>
                     </span>  
                     <div id="operation-nature-rehabilitation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">

@@ -1,5 +1,4 @@
 <?php
-
     function step3Display($currentstep){
         
         //Customized title

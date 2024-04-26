@@ -11,13 +11,14 @@ home.view textarea à finir
 
 # Infobulles !
 
-# remplir champs étapes précédentes ( voir video )
-
-# mettre value aux checkbox et radio, et changer nom des labels
+# remplir les champs des étapes précédentes si retour ( voir video )
+ajouter bouton "précédent" sur toutes les steps à partir de la step2
 
 # champs et étapes manquants :
 garanties
 CNR
 Assurance tous risque chantier
+
+# quels champs doivent être "required" ?
 
 # var_dump de l'ensemble

@@ -42,9 +42,9 @@
     <div class="mt-16">
         <span class="text-gray-500 font-medium">Y a-t-il la présence d'un parking (accessoire de l'ouvrage) desservant l'ouvrage ? &ensp;&ensp;
             <input type="radio" name="situation-parking" value="oui"/>
-            <label for="parking"> Oui &ensp;</label>
+            <label> Oui &ensp;</label>
             <input type="radio" name="situation-parking" value="non"/>
-            <label for="parking"> Non</label>
+            <label> Non</label>
         </span>  
     </div>
         <!-- Travaux sur existants -->
@@ -58,9 +58,9 @@
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
                 <div id="situation-do-10ans-contrat" class="hidden ml-10 mt-4 ">
-                    <label for="situation-do-10ans-contrat-assureur" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom de l'assureur :&ensp;&ensp;</label>
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom de l'assureur :&ensp;&ensp;</label>
                     <input type="text" name="situation-do-10ans-contrat-assureur" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-                    <label for="situation-do-10ans-contrat-numero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">N° de contrat :&ensp;&ensp;</label>
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">N° de contrat :&ensp;&ensp;</label>
                     <input type="text" name="situation-do-10ans-contrat-numero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>
             </div>
@@ -79,17 +79,17 @@
         <div class="my-2 ml-10">
             <span class="font-normal">L'opération de construction bénéficie-t-elle d'un label de performance énergétique (ex. BBC...) ? &ensp;&ensp;
                 <input type="radio" name="label-energie" value="oui"/>
-                <label for="label-energie" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="label-energie" value="non"/>
-                <label for="label-energie" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>  
         </div>
         <div class="my-2 ml-10">
             <span class="font-normal">L'opération de construction bénéficie-t-elle d'un label de qualité environnementale (ex. HQE...) ? &ensp;&ensp;
                 <input type="radio" name="label-qualite" value="oui"/>
-                <label for="label-qualite" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="label-qualite" value="non"/>
-                <label for="label-qualite" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
     </div>
@@ -99,10 +99,10 @@
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Intervention d'un bureau spécialisé ? &ensp;&ensp;</span>
             <div class="ml-8 text-gray-500 font-medium">
-                <input type="radio" name="etude-sol" value="oui" id="check-yes" onclick="radioFormOpen('etude-sol-form')"/>
-                <label for="etude-sol"> Oui &ensp;</label>
-                <input type="radio" name="etude-sol" value="non" id="check-no" onclick="radioFormClose('etude-sol-form')"/>
-                <label for="etude-sol"> Non</label>
+                <input type="radio" name="etude-sol" value="oui" onclick="radioFormOpen('etude-sol-form')"/>
+                <label> Oui &ensp;</label>
+                <input type="radio" name="etude-sol" value="non" onclick="radioFormClose('etude-sol-form')"/>
+                <label> Non</label>
             </div>
         </div>
         <div id="etude-sol-form" class="hidden px-8 py-4">
@@ -115,9 +115,9 @@
                 </span>
                 <div class="text-gray-500 font-medium">
                     <input type="radio" name="etude-sol-parking" value="oui"/>
-                    <label for="etude-sol-parking"> Oui &ensp;</label>
+                    <label> Oui &ensp;</label>
                     <input type="radio" name="etude-sol-parking" value="non"/>
-                    <label for="etude-sol-parking"> Non</label>
+                    <label> Non</label>
                 </div>
             </div>
         </div>
@@ -128,33 +128,33 @@
         <div class="ml-10 mt-2">
             <span class="font-normal">S'agit-il d'une construction en bois ? &ensp;&ensp;
                 <input type="radio" name="constr-bois" value="oui"/>
-                <label for="constr-bois" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="constr-bois" value="non"/>
-                <label for="constr-bois" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">Y a-t-il la présence de panneaux photovoltaïques ? &ensp;&ensp;
                 <input type="radio" name="pann-photo" value="oui"/>
-                <label for="pann-photo" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="pann-photo" value="non"/>
-                <label for="pann-photo" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">L'opération de construction bénéficie-t-elle d'une installation géothermique ? &ensp;&ensp;
                 <input type="radio" name="geothermie" value="oui"/>
-                <label for="geothermie" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="geothermie" value="non"/>
-                <label for="geothermie" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">Y a-t-il intervention d'un contrôleur technique ? &ensp;&ensp;
                 <input type="radio" name="control-tech" value="oui"/>
-                <label for="control-tech" class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                 <input type="radio" name="control-tech" value="non"/>
-                <label for="control-tech" class="text-gray-500 font-medium"> Non</label>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
     </div>

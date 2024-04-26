@@ -23,8 +23,7 @@
 
         // Remplissage de la variable $content
         ob_start();
-   
-           
+     
         require 'views/s04-informations-diverses.view.php';
 
         $content = ob_get_clean();

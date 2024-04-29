@@ -13,32 +13,32 @@
 <form action="" method="post">
         <!-- Construction bois -->
     <?php
-    if($_SESSION["info-situation"]['construction-bois']=='oui'):
+    if($_SESSION["info-situation"]['situation-construction-bois']=='oui'):
     ?>        
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="constr-bois-structure" value="oui"/>
+                <input type="radio" name="trav-annexes-constr-bois" value="oui"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="constr-bois-structure" value="non"/>
+                <input type="radio" name="trav-annexes-constr-bois" value="non"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">L'enveloppe de la construction (façade, planchers et balcons) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="constr-bois-enveloppe" value="oui"/>
+                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="oui"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="constr-bois-enveloppe" value="non"/>
+                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="non"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les produits utilisés bénéficient-ils d'un marquage CE ? &ensp;&ensp;
-                <input type="radio" name="constr-produits-ce"  value="oui"/>
-                <label for="produits-ce" class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="constr-produits-ce" value="non"/>
-                <label for="produits-ce" class="text-gray-500 font-medium"> Non</label>
+                <input type="radio" name="trav-annexes-constr-produits-ce"  value="oui"/>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <input type="radio" name="trav-annexes-constr-produits-ce" value="non"/>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
@@ -52,7 +52,7 @@
 
     <!-- Panneaux photovoltaïques -->
     <?php
-    if($_SESSION["info-situation"]['pann-photo']=='oui'):
+    if($_SESSION["info-situation"]['situation-pann-photo']=='oui'):
     ?>    
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
@@ -60,62 +60,62 @@
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
-                    <input type="radio" name="pv-montage" value="integre"/>
+                    <input type="radio" name="trav-annexes-pv-montage" value="integre"/>
                     <label> intégrés à la toiture</label>
                 </span>
                 <span class="ml-4">
-                    <input type="radio" name="pv-montage" value="surimpose"/>
+                    <input type="radio" name="trav-annexes-pv-montage" value="surimpose"/>
                     <label> surimposés à la toiture</label>
                 </span>
                 <span class="ml-4">
-                    <input type="radio" name="pv-montage" value="autre"/>
+                    <input type="radio" name="trav-annexes-pv-montage" value="autre"/>
                     <label> autres (ex : façade... )</label>
                 </span>
             </div>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les procédés mis en oeuvre bénéficient-ils d'un avis technique ? &ensp;&ensp;
-                <input type="radio" name="pv-proc-tech"value="oui" onclick="radioFormClose('pv-etn')"/>
-                <label for="pv-proc-tech" class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="pv-proc-tech" value="non" onclick="radioFormOpen('pv-etn')"/>
-                <label for="pv-proc-tech" class="text-gray-500 font-medium"> Non</label>
+                <input type="radio" name="trav-annexes-pv-proc-tech"value="oui" onclick="radioFormClose('pv-etn')"/>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <input type="radio" name="trav-annexes-pv-proc-tech" value="non" onclick="radioFormOpen('pv-etn')"/>
+                <label class="text-gray-500 font-medium"> Non</label>
             </span>
             <div id="pv-etn" class="hidden">
                 <span class="font-normal ml-10">Sont-ils visés par une Enquête de Technique Nouvelle (ETN) ? &ensp;&ensp;
-                    <input type="radio" name="pv-etn" value="oui"/>
+                    <input type="radio" name="trav-annexes-pv-etn" value="oui"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="pv-etn" value="non"/>
+                    <input type="radio" name="trav-annexes-pv-etn" value="non"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">En présence d'un avis technique, les procédés figurent-ils sur la liste verte de la C2P ? &ensp;&ensp;
-                <input type="radio" name="liste-c2p" value="oui"/>
+                <input type="radio" name="trav-annexes-pv-liste-c2p" value="oui"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="liste-c2p" value="non"/>
+                <input type="radio" name="trav-annexes-pv-liste-c2p" value="non"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>  
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Quelle est la surface de l'installation ?
-                <input type="text" name="pv-surface" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> m²
+                <input type="text" name="trav-annexes-pv-surface" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> m²
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Quelle est la puissance de l'installation ?
-                <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> kWc
+                <input type="text" name="trav-annexes-pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> kWc
             </span>
         </div>
         <div class="ml-10 mt-4">
             <h3 class="font-normal">Quelle est la destination de l'électricité produite par l'installation photovoltaïque ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
-                    <input type="radio" name="pv-destination" value="revente"/>
+                    <input type="radio" name="trav-annexes-pv-destination" value="revente"/>
                     <label> Revente à un opérateuer dans le domaine de l'énergie</label>
                 </span>
                 <span class="ml-4">
-                    <input type="radio" name="pv-destination" value="autocons"/>
+                    <input type="radio" name="trav-annexes-pv-destination" value="autocons"/>
                     <label> Autoconsommation</label>
                 </span>
             </div>
@@ -131,7 +131,7 @@
 
     <!-- Géothermie -->
     <?php
-    if($_SESSION["info-situation"]['geothermie']=='oui'):
+    if($_SESSION["info-situation"]['situation-geothermie']=='oui'):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
@@ -146,7 +146,7 @@
 
     <!-- Contrôleur technique-->
     <?php
-    if($_SESSION["info-situation"]['control-tech']=='oui'):
+    if($_SESSION["info-situation"]['situation-control-tech']=='oui'):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
@@ -158,16 +158,16 @@
             <h3 class="font-normal mb-4">Type de contrôle (choisissez l'option correspondante):</h3>
             <div class="flex flex-row ml-10">
                 <div class="flex flex-col">
-                    <span><input type="radio" name="type-controle" value="l"/> L</span>
-                    <span><input type="radio" name="type-controle" value="lth"/> L + TH</span>
-                    <span><input type="radio" name="type-controle" value="le"/> LE</span>
-                    <span><input type="radio" name="type-controle" value="leth"/> LE + TH</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="l"/> L</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="lth"/> L + TH</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="le"/> LE</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="leth"/> LE + TH</span>
                 </div>
                 <div class="flex flex-col ml-12">
-                    <span><input type="radio" name="type-controle" value="lautre"/> L + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="type-controle" value="lthautre"/> L + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="type-controle" value="leautre"/> LE + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="type-controle" value="lethautre"/> LE + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="lautre"/> L + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="lthautre"/> L + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="leautre"/> LE + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav-annexes-ct-type-controle" value="lethautre"/> LE + TH + Autres ( précisez : <input type="text" name="pv-puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
                 </div>
             </div>
         </div>

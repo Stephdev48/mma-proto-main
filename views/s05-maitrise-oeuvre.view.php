@@ -31,17 +31,17 @@
             <div class="flex mt-16">
                 <span class="font-normal">Est-il indépendant à l'égard des autres constructeurs et du maître d'ouvrage ?</span>
                 <div class="ml-10">
-                    <input type="radio" name="moe-inde" value="oui" onclick="radioFormClose('moe-inde-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="oui" onclick="radioFormClose('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="moe-inde" value="non" onclick="radioFormOpen('moe-inde-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="non" onclick="radioFormOpen('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </div>
             </div>
         </div>
-        <div id="moe-inde-info" class="hidden px-8 py-4">
+        <div id="moe-intervention-form-info" class="hidden px-8 py-4">
             <div class="ml-10">
-                <label for="moe-qualite" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa qualité, sa fonction</label>
-                <input type="text" name="moe-qualite" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <label for="moe-intervention-qualite" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa qualité, sa fonction</label>
+                <input type="text" name="moe-intervention-qualite" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="ml-10 mt-4">
                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa mission</span>

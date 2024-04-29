@@ -18,10 +18,10 @@
                 unset($_SESSION['info-'.$_POST['fields']]['send-step4']);
             }  
 
-            if($_SESSION["info-situation"]['construction-bois']=="oui"
-                || $_SESSION["info-situation"]['pann-photo'] =="oui" 
-                || $_SESSION["info-situation"]['geothermie'] =="oui" 
-                || $_SESSION["info-situation"]['controle-tech'] =="oui") {
+            if($_SESSION["info-situation"]['situation-construction-bois']=="oui"
+                || $_SESSION["info-situation"]['situation-pann-photo'] =="oui" 
+                || $_SESSION["info-situation"]['situation-geothermie'] =="oui" 
+                || $_SESSION["info-situation"]['situation-controle-tech'] =="oui") {
                     header("Location: index.php?page=step4bis");
                 }else{
                     header("Location: index.php?page=step5");

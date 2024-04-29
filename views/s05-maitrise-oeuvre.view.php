@@ -18,9 +18,9 @@
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Y a-t-il intervention d'un architecte ou d'un maitre d'oeuvre ? &ensp;&ensp;</span>
             <div class="ml-8 text-gray-500 font-medium">
-                <input type="radio" name="moe-intervention" value="oui" onclick="radioFormOpen('moe-intervention-form')"/>
+                <input type="radio" name="moe-intervention" value="oui" onclick="showElement('moe-intervention-form')"/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="moe-intervention" value="non" onclick="radioFormClose('moe-intervention-form')"/>
+                <input type="radio" name="moe-intervention" value="non" onclick="hideElement('moe-intervention-form')"/>
                 <label> Non</label>
             </div>
         </div>
@@ -31,9 +31,9 @@
             <div class="flex mt-16">
                 <span class="font-normal">Est-il indépendant à l'égard des autres constructeurs et du maître d'ouvrage ?</span>
                 <div class="ml-10">
-                    <input type="radio" name="moe-intervention-form" value="oui" onclick="radioFormClose('moe-intervention-form-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="oui" onclick="hideElement('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="moe-intervention-form" value="non" onclick="radioFormOpen('moe-intervention-form-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="non" onclick="showElement('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </div>
             </div>

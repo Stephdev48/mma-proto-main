@@ -4,12 +4,12 @@
         <div class="flex flex-col lg:flex-row">
             <span class="text-gray-500 font-medium">Nature de l'opération : </span>
             <span class="ml-6 text-gray-500 font-medium">
-                <input type="radio" name="nature-neuf-exist" value="neuve" onclick="radioFormClose('nature-operation')"/>
+                <input type="radio" name="nature-neuf-exist" value="neuve" onclick="hideElement('nature-operation')"/>
                 <label> Construction neuve &ensp;</label>
                 <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
             </span>
             <span class="ml-6 mt-2 lg:mt-0 text-gray-500 font-medium">
-                <input type="radio" name="nature-neuf-exist" value="existante" onclick="radioFormOpen('nature-operation')"/>
+                <input type="radio" name="nature-neuf-exist" value="existante" onclick="showElement('nature-operation')"/>
                 <label> Travaux sur construction existante</label>
             </span>
         </div>
@@ -19,9 +19,9 @@
                 <!-- Surélévation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une surélévation &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature-operation-surelev" value="oui" onclick="radioFormOpen('nature-operation-surelev-form')"/>
+                        <input type="radio" name="nature-operation-surelev" value="oui" onclick="showElement('nature-operation-surelev-form')"/>
                         <label> Oui &ensp;</label>
-                        <input type="radio" name="nature-operation-surelev"value="non" onclick="radioFormClose('nature-operation-surelev-form')"/>
+                        <input type="radio" name="nature-operation-surelev"value="non" onclick="hideElement('nature-operation-surelev-form')"/>
                         <label> Non</label>
                     </span>  
                     <div id="nature-operation-surelev-form" class="hidden px-8 py-4">
@@ -48,9 +48,9 @@
                 <!-- Extension horizontale -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
-                        <input type="radio" name="nature-operation-ext-horizont" value="oui" onclick="radioFormOpen('nature-operation-ext-horizont')"/>
+                        <input type="radio" name="nature-operation-ext-horizont" value="oui" onclick="showElement('nature-operation-ext-horizont')"/>
                         <label> Oui &ensp;</label>
-                        <input type="radio" name="nature-operation-ext-horizont" value="non" onclick="radioFormClose('nature-operation-ext-horizont')"/>
+                        <input type="radio" name="nature-operation-ext-horizont" value="non" onclick="hideElement('nature-operation-ext-horizont')"/>
                         <label> Non</label>
                     </span>  
                     <div id="nature-operation-ext-horizont" class="hidden px-8 py-4">
@@ -68,9 +68,9 @@
                 <!-- Rénovation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature-operation-renovation" value="oui" onclick="radioFormOpen('nature-operation-renovation')"/>
+                        <input type="radio" name="nature-operation-renovation" value="oui" onclick="showElement('nature-operation-renovation')"/>
                         <label> Oui &ensp; </label>
-                        <input type="radio" name="nature-operation-renovation" value="non" onclick="radioFormClose('nature-operation-renovation')"/>
+                        <input type="radio" name="nature-operation-renovation" value="non" onclick="hideElement('nature-operation-renovation')"/>
                         <label> Non</label>
                     </span>  
                     <div id="nature-operation-renovation" class="hidden px-8 py-4">
@@ -121,9 +121,9 @@
                 <!-- Réhabilitation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature-operation-rehabilitation" value ="oui" onclick="radioFormOpen('nature-operation-rehabilitation')"/>
+                        <input type="radio" name="nature-operation-rehabilitation" value ="oui" onclick="showElement('nature-operation-rehabilitation')"/>
                         <label> Oui &ensp;</label>
-                        <input type="radio" name="nature-operation-rehabilitation" value="non" onclick="radioFormClose('nature-operation-rehabilitation')"/>
+                        <input type="radio" name="nature-operation-rehabilitation" value="non" onclick="hideElement('nature-operation-rehabilitation')"/>
                         <label> Non</label>
                     </span>  
                     <div id="nature-operation-rehabilitation" class="hidden px-8 py-4">
@@ -174,9 +174,9 @@
             </div>
             <div class="my-10">
                 <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
-                    <input type="radio" name="operation-sinistre" value="oui" onclick="radioFormOpen('operation-sinistre-champ-descr')"/>
+                    <input type="radio" name="operation-sinistre" value="oui" onclick="showElement('operation-sinistre-champ-descr')"/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="operation-sinistre" value="non" onclick="radioFormClose('operation-sinistre-champ-descr')"/>
+                    <input type="radio" name="operation-sinistre" value="non" onclick="hideElement('operation-sinistre-champ-descr')"/>
                     <label> Non</label>
                 </span>
                 <div id="operation-sinistre-champ-descr" class="hidden ml-10 mt-4 ">

@@ -1,7 +1,7 @@
 # Formulaire MMA Dommages-ouvrages
 
-## idées
-navigation via le stepper : désactiver les étapes suivantes non parcourues
+## navigation
+désactiver les étapes suivantes non parcourues
 
 ## Responsive !!
 A continuer à partir de l'étape 4 comprise
@@ -20,3 +20,6 @@ Assurance tous risque chantier
 ## quels champs doivent être "required" ?
 
 ## var_dump de l'ensemble
+
+## stepper
+faire apparaitre step4bis si option cochée

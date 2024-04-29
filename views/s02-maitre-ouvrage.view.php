@@ -5,9 +5,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-souscripteur" value="oui" onclick="radioFormClose('moa-souscripteur-form')"/>
+                    <input type="radio" name="moa-souscripteur" value="oui" onclick="hideElement('moa-souscripteur-form')"/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-souscripteur" value="non" onclick="radioFormOpen('moa-souscripteur-form')"/>
+                    <input type="radio" name="moa-souscripteur" value="non" onclick="showElement('moa-souscripteur-form')"/>
                     <label> Non</label>
                 </div>
             </div>  
@@ -15,9 +15,9 @@
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" name="moa-souscripteur-form-civilite" value="particulier" checked onclick="radioFormClose('siret-champ'),radioFormClose('raison-champ')">
+                        <input type="radio" name="moa-souscripteur-form-civilite" value="particulier" checked onclick="hideElement('siret-champ'),hideElement('raison-champ')">
                         <label>&ensp; Particulier &ensp;&ensp;</label>
-                        <input type="radio" name="moa-souscripteur-form-civilite" value="entreprise" onclick="radioFormOpen('siret-champ'),radioFormOpen('raison-champ')">
+                        <input type="radio" name="moa-souscripteur-form-civilite" value="entreprise" onclick="showElement('siret-champ'),showElement('raison-champ')">
                         <label>&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
@@ -52,7 +52,7 @@
                     <span><input type="radio" name="moa-qualite" value="vendeur-prive"/> Vendeur privé après achèvement</span>
                     <span><input type="radio" name="moa-qualite" value="sci"/> Société Civile Immobilière</span>
                     <span><input type="radio" name="moa-qualite" value="entreprise"/> Enterprise</span>
-                    <span><input type="radio" name="moa-qualite" value="moa-qualite-autre" onclick="radioFormOpen('moa-qualite-autre')"/> Autre qualité</span>
+                    <span><input type="radio" name="moa-qualite" value="moa-qualite-autre" onclick="buttonActivate('moa-qualite-autre')"/> Autre qualité</span>
                     <div id="moa-qualite-autre" class="hidden mt-2">
                         <label for="moa-qualite-champ" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
                         <input type="text" name="moa-qualite-champ" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
@@ -75,9 +75,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-construction" value="oui" onclick="radioFormOpen('moa-construction-form'),radioFormOpen('tableau')"/>
+                    <input type="radio" name="moa-construction" value="oui" onclick="showElement('moa-construction-form'),showElement('tableau')"/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-construction" value="non" onclick="radioFormClose('moa-construction-form'),radioFormClose('tableau')"/>
+                    <input type="radio" name="moa-construction" value="non" onclick="hideElement('moa-construction-form'),hideElement('tableau')"/>
                     <label> Non</label>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                 <div class="mb-6">
                     <div>
                         <span class="text-gray-500 font-medium">Le Maitre d'Ouvrage est-il un professionnel de la construction ? &ensp;&ensp;
-                            <input type="radio" name="moa-construction-pro" value="oui" onclick="radioFormOpen('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa-construction-pro" value="oui" onclick="showElement('moa-construction-pro-form')"/>
                             <label> Oui &ensp;</label>
-                            <input type="radio" name="moa-construction-pro" value="non" onclick="radioFormClose('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa-construction-pro" value="non" onclick="hideElement('moa-construction-pro-form')"/>
                             <label> Non</label>
                         </span>
                     </div>

@@ -75,9 +75,9 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les procédés mis en oeuvre bénéficient-ils d'un avis technique ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-pv-proc-tech"value="oui" onclick="radioFormClose('pv-etn')"/>
+                <input type="radio" name="trav-annexes-pv-proc-tech"value="oui" onclick="hideElement('pv-etn')"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-pv-proc-tech" value="non" onclick="radioFormOpen('pv-etn')"/>
+                <input type="radio" name="trav-annexes-pv-proc-tech" value="non" onclick="showElement('pv-etn')"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
             <div id="pv-etn" class="hidden">

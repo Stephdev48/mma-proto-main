@@ -68,9 +68,9 @@
             <h3 class="text-gray-500 font-medium">Si travaux sur une contruction existante ou sur existants :</h3>
                 <div class="my-2 ml-10">
                     <span class="font-normal">Si les existants datent de moins de 10 ans, ont-ils fait l'objet d'un contrat d'assurance "dommages ouvrage" ? &ensp;&ensp;
-                        <input type="radio" name="situation-do-10ans" value="oui" onclick="radioFormOpen('situation-do-10ans-contrat')"/>
+                        <input type="radio" name="situation-do-10ans" value="oui" onclick="showElement('situation-do-10ans-contrat')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="situation-do-10ans" value="non" onclick="radioFormClose('situation-do-10ans-contrat')"/>
+                        <input type="radio" name="situation-do-10ans" value="non" onclick="hideElement('situation-do-10ans-contrat')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>
                     <div id="situation-do-10ans-contrat" class="hidden ml-10 mt-4 ">
@@ -116,9 +116,9 @@
             <div class="flex flex-col lg:flex-row ml-10 mt-6">
                 <span class="font-normal">Intervention d'un bureau spécialisé ? &ensp;&ensp;</span>
                 <div class="ml-8 text-gray-500 font-medium">
-                    <input type="radio" name="situation-etude-sol" value="oui" onclick="radioFormOpen('situation-etude-sol-form')"/>
+                    <input type="radio" name="situation-etude-sol" value="oui" onclick="showElement('situation-etude-sol-form')"/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="situation-etude-sol" value="non" onclick="radioFormClose('situation-etude-sol-form')"/>
+                    <input type="radio" name="situation-etude-sol" value="non" onclick="hideElement('situation-etude-sol-form')"/>
                     <label> Non</label>
                 </div>
             </div>

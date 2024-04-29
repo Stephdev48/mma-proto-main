@@ -2,12 +2,12 @@ function alertTestJs(){
     alert("Le JS fonctionne");
 }
 
-function radioFormOpen(elementhidden){
+function showElement(elementhidden){
 var element = document.getElementById(elementhidden);
     element.classList.remove('hidden');
 }
 
-function radioFormClose(elementvisible){
+function hideElement(elementvisible){
     var element = document.getElementById(elementvisible);
         element.classList.add('hidden');
     }

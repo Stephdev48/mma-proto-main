@@ -2,7 +2,7 @@
 
     define('ROOT_PATH', dirname(__FILE__) );
     define('UPLOAD_FOLDER', "/public/uploads" );
-    define('DEBUG', false );
+    define('DEBUG', true );
 
     require 'controllers/home.controller.php';
     require 'controllers/s01-coordonnees.controller.php';
@@ -11,6 +11,7 @@
     require 'controllers/s04-informations-diverses.controller.php';
     require 'controllers/s05-maitrise-oeuvre.controller.php';
     require 'controllers/s04-bis-travaux-annexes.controller.php';
+    require 'controllers/s07-cnr-risques-chantier.controller.php';
     require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
    
@@ -44,8 +45,11 @@
             case 'step5':
                 step5Display($currentstep);
                 break;
-            case 'step8':
-                step8Display($currentstep);
+            case 'step6':
+                step6Display($currentstep);
+                break;
+            case 'step7':
+                step7Display($currentstep);
                 break;
             case 'partners':
                 require 'views/partner-companies.view.php';

@@ -13,13 +13,11 @@ home.view textarea à finir
 ## remplir les champs des étapes précédentes si retour ( voir video )
 
 ## champs et étapes manquants :
-garanties
-CNR
-Assurance tous risque chantier
+Opération construction garanties demandées
 
 ## quels champs doivent être "required" ?
 
 ## var_dump de l'ensemble
 
 ## stepper
-faire apparaitre step4bis si option cochée
+faire apparaitre step4bis si travaux annexes

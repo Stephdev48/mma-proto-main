@@ -4,11 +4,11 @@
         <div class="flex flex-col lg:flex-row">
             <span class="text-gray-500 font-medium">Nature de l'opération : </span>
             <div> <!-- Infobulle -->
-                <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
-                <div data-popover id="popover-description" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                <button data-popover-target="nature-operation-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                <div data-popover id="nature-operation-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
                     <div class="p-3 space-y-2">
                         <h3 class="font-semibold text-gray-900 dark:text-white">Rappel : </h3>
-                        <p>Le permis de construire est une autorisation délivrée à l’issue d’une procédure obligatoire destinée à vérifier la conformité d’un projet de bâtiment avec l’ensemble des dispositions législatives ou réglementaires en vigueur : règles d’urbanisme nationales ou locales (PLD, POS ou PLU local, règles de construction, impact sur les sites) et servitudes de droit public et de droit privé. La durée de validité d’un permis de construire est de 3 ans. Ce délai peut être prorogé de 2 fois 1 an.</p>
+                        <p>Le permis de construire est une autorisation délivrée à l'issue d'une procédure obligatoire destinée à vérifier la conformité d'un projet de bâtiment avec l'ensemble des dispositions législatives ou réglementaires en vigueur : règles d'urbanisme nationales ou locales (PLD, POS ou PLU local, règles de construction, impact sur les sites) et servitudes de droit public et de droit privé. La durée de validité d'un permis de construire est de 3 ans. Ce délai peut être prorogé de 2 fois 1 an.</p>
                     </div>
                 </div>
             </div>
@@ -26,30 +26,57 @@
             <h3 class="text-gray-500 font-medium mb-6">De quoi s'agit-il ?</h3>
             <div class="ml-12">
                 <!-- Surélévation -->
-                <div class="my-4">
-                    <span class="text-gray-500 font-medium">D'une surélévation &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <div class="flex flex-col my-4">
+                    <div class="flex flex-row">
+                        <span class="text-gray-500 font-medium">D'une surélévation ?</span>  
+                        <div> <!-- Infobulle -->
+                            <button data-popover-target="surelevation-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                            <div data-popover id="surelevation-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                                <div class="p-3 space-y-2">
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Surélévation : </h3>
+                                    <p>Construction rapportée après coup, en superstructure, au-dessus d'une autre</p>
+                                </div>
+                            </div>
+                        </div>
                         <input type="radio" name="nature-operation-surelev" value="oui" onclick="showElement('nature-operation-surelev-form')"/>
-                        <label> Oui &ensp;</label>
+                        <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="nature-operation-surelev"value="non" onclick="hideElement('nature-operation-surelev-form')"/>
-                        <label> Non</label>
-                    </span>  
+                        <label class="text-gray-500 font-medium"> Non</label>
+                    </div>
                     <div id="nature-operation-surelev-form" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
-                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? : &ensp;&ensp;
-                                    <input type="radio" name="nature-operation-surelev-sous-oeuvre" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature-operation-surelev-sous-oeuvre" value="non">
-                                    <label>&ensp; Non</label>
-                                </span>
+                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                                <div> <!-- Infobulle -->
+                                    <button data-popover-target="surelevation-sous-oeuvre-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                                    <div data-popover id="surelevation-sous-oeuvre-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                                        <div class="p-3 space-y-2">
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">Reprise en sous œuvre :  </h3>
+                                            <p>Consolidation ou réfection de l'assise d'un ouvrage</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="radio" name="nature-operation-surelev-sous-oeuvre" value="oui">
+                                <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
+                                <input type="radio" name="nature-operation-surelev-sous-oeuvre" value="non">
+                                <label class="text-gray-500 font-medium">&ensp; Non</label>
+
                             </div>
                             <div class="flex flex-row py-2">
-                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante (hors fondation) ? : &ensp;&ensp;
-                                    <input type="radio" name="nature-operation-surelev-hors-fond" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature-operation-surelev-hors-fond" value="non">
-                                    <label>&ensp; Non</label>
-                                </span>
+                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante (hors fondation) ? : &ensp;&ensp;</span>
+                                <div> <!-- Infobulle -->
+                                    <button data-popover-target="surelevation-existant-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                                    <div data-popover id="surelevation-existant-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                                        <div class="p-3 space-y-2">
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">Intervention sur la structure existante :   </h3>
+                                            <p>Sont visés tous les travaux :<br> - avec intervention quelle qu'elle soit, sur des éléments structurels, et/ou <br>- consistant en la suppression de poteaux, de poutres ou d'éléments structurels.<br><br>Exemples d'intervention sur la structure existante : <br> - lors d'une surélévation : création d'une nouvelle poutre ou poteau dans la partie existante qui pourra charger ou sous-charger certain élément existant <br> - lors d'une extension horizontale : nouvelle dalle repose sur un voile ou poutre existant ce qui engendrera une surcharge sur la fondation existante <br> - lors d'une rénovation : remplacement d'un mur porteur par une poutre IPN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="radio" name="nature-operation-surelev-hors-fond" value="oui">
+                                <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
+                                <input type="radio" name="nature-operation-surelev-hors-fond" value="non">
+                                <label class="text-gray-500 font-medium">&ensp; Non</label>
                             </div>
                         </div>
                     </div>
@@ -58,18 +85,18 @@
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
                         <input type="radio" name="nature-operation-ext-horizont" value="oui" onclick="showElement('nature-operation-ext-horizont')"/>
-                        <label> Oui &ensp;</label>
+                        <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="nature-operation-ext-horizont" value="non" onclick="hideElement('nature-operation-ext-horizont')"/>
-                        <label> Non</label>
+                        <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature-operation-ext-horizont" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                 <input type="radio" name="nature-operation-ext-horizont-exist" value="oui">
-                                <label>&ensp; Oui &ensp;&ensp;</label>
+                                <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                 <input type="radio" name="nature-operation-ext-horizont-exist" value="non">
-                                <label>&ensp; Non</label></span>
+                                <label class="text-gray-500 font-medium">&ensp; Non</label></span>
                             </div>
                         </div>
                     </div>
@@ -78,50 +105,50 @@
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                         <input type="radio" name="nature-operation-renovation" value="oui" onclick="showElement('nature-operation-renovation')"/>
-                        <label> Oui &ensp; </label>
+                        <label class="text-gray-500 font-medium"> Oui &ensp; </label>
                         <input type="radio" name="nature-operation-renovation" value="non" onclick="hideElement('nature-operation-renovation')"/>
-                        <label> Non</label>
+                        <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature-operation-renovation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-renovation-fond" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-renovation-fond" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-renovation-iso-therm" value="oui">
-                                    <label >&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-renovation-iso-therm" value="non">
-                                    <label >&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-renovation-refect-toit" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-renovation-refect-toit" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-renovation-etancheite" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-renovation-etancheite" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-renovation-ravalement" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-renovation-ravalement" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                         </div>
@@ -131,50 +158,50 @@
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                         <input type="radio" name="nature-operation-rehabilitation" value ="oui" onclick="showElement('nature-operation-rehabilitation')"/>
-                        <label> Oui &ensp;</label>
+                        <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="nature-operation-rehabilitation" value="non" onclick="hideElement('nature-operation-rehabilitation')"/>
-                        <label> Non</label>
+                        <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature-operation-rehabilitation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-rehabilitation-fond" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-rehabilitation-fond" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-rehabilitation-iso-therm" value="oui">
-                                    <label >&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-rehabilitation-iso-therm" value="non">
-                                    <label >&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-rehabilitation-refect-toit" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-rehabilitation-refect-toit" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-rehabilitation-etancheite" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-rehabilitation-etancheite" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
                                     <input type="radio" name="nature-operation-rehabilitation-ravalement" value="oui">
-                                    <label>&ensp; Oui &ensp;&ensp;</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                     <input type="radio" name="nature-operation-rehabilitation-ravalement" value="non">
-                                    <label>&ensp; Non</label>
+                                    <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                         </div>
@@ -184,9 +211,9 @@
             <div class="my-10">
                 <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
                     <input type="radio" name="operation-sinistre" value="oui" onclick="showElement('operation-sinistre-champ-descr')"/>
-                    <label> Oui &ensp;</label>
+                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="operation-sinistre" value="non" onclick="hideElement('operation-sinistre-champ-descr')"/>
-                    <label> Non</label>
+                    <label class="text-gray-500 font-medium"> Non</label>
                 </span>
                 <div id="operation-sinistre-champ-descr" class="hidden ml-10 mt-4 ">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez décrire le sinistre :&ensp;&ensp;</label>

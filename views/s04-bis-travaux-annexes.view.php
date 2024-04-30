@@ -11,9 +11,9 @@
     </div>
 <?php endif;?> 
 <form action="" method="post">
-        <!-- Construction bois -->
+    <!-- Construction bois -->
     <?php
-    if($_SESSION["info-situation"]['situation-construction-bois']=='oui'):
+    if(isset($_SESSION["info-situation"]['situation-construction-bois'])):
     ?>        
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
@@ -52,7 +52,7 @@
 
     <!-- Panneaux photovoltaïques -->
     <?php
-    if($_SESSION["info-situation"]['situation-pann-photo']=='oui'):
+    if(isset($_SESSION["info-situation"]['situation-pann-photo'])):
     ?>    
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
@@ -131,7 +131,7 @@
 
     <!-- Géothermie -->
     <?php
-    if($_SESSION["info-situation"]['situation-geothermie']=='oui'):
+    if(isset($_SESSION["info-situation"]['situation-geothermie'])):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
@@ -146,7 +146,7 @@
 
     <!-- Contrôleur technique-->
     <?php
-    if($_SESSION["info-situation"]['situation-control-tech']=='oui'):
+    if(isset($_SESSION["info-situation"]['situation-control-tech'])):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>

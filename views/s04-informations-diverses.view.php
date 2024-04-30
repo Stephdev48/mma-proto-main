@@ -1,15 +1,3 @@
-<?php if(DEBUG==true):?>
-    <div id="debug">
-        <pre>
-        <?php
-        //if(!empty($_POST)){ var_dump($_POST);};
-        //if(!empty($_FILES)){ var_dump($_FILES);};
-        if(!empty($_SESSION)){ var_dump($_SESSION);};        
-        ?>
-        </pre>
-    </div>
-<?php endif;?> 
-
 <section>
     <!-- Situation de l'ouvrage -->
     <form action="" method="post">

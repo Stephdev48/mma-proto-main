@@ -25,9 +25,7 @@
                     header("Location: index.php?page=step4bis");
                 }else{
                     header("Location: index.php?page=step5");
-                }
-            
-                    
+                }      
         }
 
 
@@ -41,13 +39,13 @@
 
         
         // if(isset($_SESSION['info-situation']) && ($_SESSION["info-situation"]['situation-construction-bois']=="oui"
-        //         || $_SESSION["info-situation"]['situation-pann-photo'] =="oui" 
-        //         || $_SESSION["info-situation"]['situation-geothermie'] =="oui" 
-        //         || $_SESSION["info-situation"]['situation-controle-tech'] =="oui")) {
-        //             showElement('step4bis');
-        //         }else{
-        //             hideElement('step4bis');
-        //         }
+        //     || $_SESSION["info-situation"]['situation-pann-photo'] =="oui" 
+        //     || $_SESSION["info-situation"]['situation-geothermie'] =="oui" 
+        //     || $_SESSION["info-situation"]['situation-controle-tech'] =="oui")) {
+        //         showElement('step4bis');
+        // }else{
+        //         hideElement('step4bis');
+        // }
     }
 
     

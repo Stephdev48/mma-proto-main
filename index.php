@@ -2,7 +2,7 @@
 
     define('ROOT_PATH', dirname(__FILE__) );
     define('UPLOAD_FOLDER', "/public/uploads" );
-    define('DEBUG', false );
+    define('DEBUG', true );
 
     require 'controllers/home.controller.php';
     require 'controllers/s01-coordonnees.controller.php';

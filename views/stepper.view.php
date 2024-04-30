@@ -12,8 +12,8 @@
     $currentstep4biscircle = $currentstep1circle;
     $currentstep5 = $currentstep1;
     $currentstep5circle = $currentstep1circle;
-    $currentstep7 = $currentstep1;
-    $currentstep7circle = $currentstep1circle;
+    $currentstep6 = $currentstep1;
+    $currentstep6circle = $currentstep1circle;
     $validation = $currentstep1;
     $validationcircle = $currentstep1circle;
 
@@ -45,9 +45,9 @@
             $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep5circle = "border-blue-600 border-2";
             break;
-        case'step7':
-            $currentstep7 = "text-blue-600 dark:text-blue-500 font-bold";
-            $currentstep7circle = "border-blue-600 border-2";
+        case'step6':
+            $currentstep6 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep6circle = "border-blue-600 border-2";
             break;
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
@@ -57,15 +57,6 @@
             throw new Exception ('Paramètre invalide !');
             break;
     }
-
-    // if($_SESSION["info-situation"]['situation-construction-bois']=="oui"
-    // || $_SESSION["info-situation"]['situation-pann-photo'] =="oui" 
-    // || $_SESSION["info-situation"]['situation-geothermie'] =="oui" 
-    // || $_SESSION["info-situation"]['situation-controle-tech'] =="oui") {
-    //     showElement('step4bis');
-    // }else{
-    //     hideElement('step4bis');
-    // }
 
     if(DEBUG==true){
         echo '<section id="stepper" class="flex justify-center mb-24 m-8 '.$home.'">
@@ -115,7 +106,7 @@
                         </li>
                         <li id="step4bis" class="hidden flex items-center space-x-2.5 '.$currentstep4bis.'">
                             <a href="index.php?page=step4bis" class="flex flex-row">
-                                <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep4biscircle.'">
+                                <span id="step4bis-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep4biscircle.'">
                                     4b
                                 </span>
                                 <span>
@@ -134,10 +125,10 @@
                                 </span>
                             </a>
                         </li>
-                        <li id="step7" class="flex items-center space-x-2.7 '.$currentstep7.'">
-                            <a href="index.php?page=step7" class="flex flex-row">
-                                <span id="step7-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep7circle.'">
-                                    7
+                        <li id="step6" class="flex items-center space-x-2.7 '.$currentstep6.'">
+                            <a href="index.php?page=step6" class="flex flex-row">
+                                <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep6circle.'">
+                                    6
                                 </span>
                                 <span>
                                     <h3 class="ml-2">CNR et Risques chantier</h3>
@@ -196,7 +187,7 @@
                        </span>
                </li>
                <li id="step4bis" class=" hidden flex items-center space-x-2.5 '.$currentstep4bis.'">
-                       <span id="step5-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep4biscircle.'">
+                       <span id="step4bis-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep4biscircle.'">
                            4b
                        </span>
                        <span>
@@ -212,9 +203,9 @@
                            <h3 class="ml-2">Maîtrise d\'oeuvre</h3>
                        </span>
                </li>
-               <li id="step7" class="flex items-center space-x-2.7 '.$currentstep7.'">
-                        <span id="step7-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep7circle.'">
-                            7
+               <li id="step6" class="flex items-center space-x-2.7 '.$currentstep6.'">
+                        <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep6circle.'">
+                            6
                         </span>
                         <span>
                             <h3 class="ml-2">CNR et Risques chantier</h3>
@@ -225,7 +216,7 @@
                         Val
                     </span>
                     <span>
-                        <h3 class="ml-2">Validationr</h3>
+                        <h3 class="ml-2">Validation</h3>
                     </span>
                 </li>
            </ol>

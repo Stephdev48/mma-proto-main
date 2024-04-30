@@ -17,7 +17,7 @@
             if (in_array('send-step5', $keys)) {
                 unset($_SESSION['info-'.$_POST['fields']]['send-step5']);
             }  
-            header("Location: index.php?page=step8");
+            header("Location: index.php?page=step6");
         }
 
         // Remplissage de la variable $content

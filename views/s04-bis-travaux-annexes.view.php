@@ -112,11 +112,11 @@
             <div class="ml-10">
                 <span>
                     <input type="radio" name="trav-annexes-pv-destination" value="revente"/>
-                    <label> Revente à un opérateuer dans le domaine de l'énergie</label>
+                    <label> revente à un opérateur dans le domaine de l'énergie</label>
                 </span>
                 <span class="ml-4">
                     <input type="radio" name="trav-annexes-pv-destination" value="autocons"/>
-                    <label> Autoconsommation</label>
+                    <label> autoconsommation</label>
                 </span>
             </div>
         </div>

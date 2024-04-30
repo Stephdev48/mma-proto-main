@@ -38,6 +38,16 @@
 
         $content = ob_get_clean();
         require("views/base.view.php");
+
+        
+        // if(isset($_SESSION['info-situation']) && ($_SESSION["info-situation"]['situation-construction-bois']=="oui"
+        //         || $_SESSION["info-situation"]['situation-pann-photo'] =="oui" 
+        //         || $_SESSION["info-situation"]['situation-geothermie'] =="oui" 
+        //         || $_SESSION["info-situation"]['situation-controle-tech'] =="oui")) {
+        //             showElement('step4bis');
+        //         }else{
+        //             hideElement('step4bis');
+        //         }
     }
 
     

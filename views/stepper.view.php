@@ -16,8 +16,6 @@
     $currentstep7circle = $currentstep1circle;
     $validation = $currentstep1;
     $validationcircle = $currentstep1circle;
-    $currentstep8 =  $currentstep1;
-    $currentstep8circle =  $currentstep1circle;
 
     switch ($currentstep){
         case'home':
@@ -136,16 +134,6 @@
                                 </span>
                             </a>
                         </li>
-                        <li id="step6" class="flex items-center space-x-2.5 '.$validation.'">
-                            <a href="index.php?page=validation" class="flex flex-row">
-                                <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
-                                    6
-                                </span>
-                                <span>
-                                    <h3 class="ml-2">A définir</h3>
-                                </span>
-                            </a>
-                        </li>
                         <li id="step7" class="flex items-center space-x-2.7 '.$currentstep7.'">
                             <a href="index.php?page=step7" class="flex flex-row">
                                 <span id="step7-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep7circle.'">
@@ -153,6 +141,16 @@
                                 </span>
                                 <span>
                                     <h3 class="ml-2">CNR et Risques chantier</h3>
+                                </span>
+                            </a>
+                        </li>
+                        <li id="validation" class="flex items-center space-x-2.5 '.$validation.'">
+                            <a href="index.php?page=validation" class="flex flex-row">
+                                <span id="validation-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
+                                    Val
+                                </span>
+                                <span>
+                                    <h3 class="ml-2">Validation</h3>
                                 </span>
                             </a>
                         </li>
@@ -214,22 +212,22 @@
                            <h3 class="ml-2">Maîtrise d\'oeuvre</h3>
                        </span>
                </li>
-               <li id="step6" class="flex items-center space-x-2.5 '.$validation.'">
-                       <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
-                           6
-                       </span>
-                       <span>
-                           <h3 class="ml-2">A définir</h3>
-                       </span>
-               </li>
                <li id="step7" class="flex items-center space-x-2.7 '.$currentstep7.'">
-                                <span id="step7-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep7circle.'">
-                                    7
-                                </span>
-                                <span>
-                                    <h3 class="ml-2">CNR et Risques chantier</h3>
-                                </span>
-                        </li>
+                        <span id="step7-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep7circle.'">
+                            7
+                        </span>
+                        <span>
+                            <h3 class="ml-2">CNR et Risques chantier</h3>
+                        </span>
+                </li>
+                <li id="validation" class="flex items-center space-x-2.5 '.$validation.'">
+                    <span id="validation-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
+                        Val
+                    </span>
+                    <span>
+                        <h3 class="ml-2">Validationr</h3>
+                    </span>
+                </li>
            </ol>
        </div>
    </section>';

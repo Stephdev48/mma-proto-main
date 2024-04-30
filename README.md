@@ -10,8 +10,6 @@ home.view textarea à finir
 
 ## Infobulles !
 
-## remplir les champs des étapes précédentes si retour ( voir video )
-
 ## champs et étapes manquants :
 Opération construction : garanties demandées
 

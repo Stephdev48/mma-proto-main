@@ -14,6 +14,7 @@
     require 'controllers/s07-cnr-risques-chantier.controller.php';
     require 'controllers/s08-intervenants-lots-techniques.php';
     require 'controllers/validation.controller.php';
+    require 'controllers/page-erreur.controller.php';
    
     // Vide la superglobale $_SESSION
     // $_SESSION = [];
@@ -45,14 +46,8 @@
             case 'step5':
                 step5Display($currentstep);
                 break;
-            case 'step6':
-                step6Display($currentstep);
-                break;
             case 'step7':
                 step7Display($currentstep);
-                break;
-            case 'partners':
-                require 'views/partner-companies.view.php';
                 break;
             case 'validation':
                 validDisplay($currentstep);
@@ -62,7 +57,7 @@
                 break;
         }
     }else{
-        require('views/error.view.php');
+        errorDisplay();
     }
 
 ?>

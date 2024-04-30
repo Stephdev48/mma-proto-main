@@ -62,7 +62,7 @@
                         <input type="radio" name="moe-mission-autre" value="autre">
                         <label for="moe-mission-autre" class="font-normal">Autre</label>
                         <span class="text-xs">(à décrire : 
-                            <input type="text" name="moe-mission-autre-descr" value="<?= isset($_SESSION['info-moe']['moe-mission-autre-descr']) ? $_SESSION['info-moe']['moe-mission-autre-descr'] : ''?>" style="height:10px; width: 150px; border-radius:6px;" class="bg-gray-50"/> )
+                            <input type="text" name="moe-mission-autre-descr" value="<?= isset($_SESSION['info-moe']['moe-mission-autre-descr']) ? $_SESSION['info-moe']['moe-mission-autre-descr'] : ''?>" style="height:10px; width: 350px; border-radius:6px; font-size:14px;" class="bg-gray-50"/> )
                         </span>
                     </div>
                 </div>

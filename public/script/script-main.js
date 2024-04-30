@@ -13,8 +13,8 @@ function hideElement(elementvisible){
     }
 
 function buttonActivate(elementdisabled, checkboxhome){
-    var checkbox = document.getElementById(checkboxhome);
     var element = document.getElementById(elementdisabled);
+    var checkbox = document.getElementById(checkboxhome);
     if (checkbox.checked == true){
         element.classList.remove('hidden');
     } else {

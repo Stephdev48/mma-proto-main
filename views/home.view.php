@@ -41,13 +41,13 @@
                 <input id="checkbox-approuve" type="checkbox" value="approuve" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-400 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onclick="buttonActivate('start-button', 'checkbox-approuve')">
                 <label for="checkbox-approuve" class="text-base font-medium text-gray-900 dark:text-gray-300">&nbsp;Lu et approuvé.</label>
             </div>
-            <span class="text-xs mt-2">( veuillez cocher la case pour continuer)</span>
+            <span class="text-xs mt-2">( veuillez cocher la case pour continuer )</span>
         </div><br />
 
         <!-- Bouton démarrer -->                                          
         <div class="flex space-y-4 justify-center sm:space-y-0">
             <a href="index.php?page=step1" id="start-button" class="hidden inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                Débuter
+                Commencer
                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>

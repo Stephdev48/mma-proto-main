@@ -13,11 +13,11 @@ home.view textarea à finir
 ## remplir les champs des étapes précédentes si retour ( voir video )
 
 ## champs et étapes manquants :
-Opération construction garanties demandées
+Opération construction : garanties demandées
 
 ## quels champs doivent être "required" ?
 
 ## var_dump de l'ensemble
 
 ## stepper
-faire apparaitre step4bis si travaux annexes
+faire apparaitre step4bis dans le stepper seulement si travaux annexes

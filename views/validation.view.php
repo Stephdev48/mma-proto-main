@@ -1,4 +1,4 @@
-<p style="font-size: 50px; text-align: center;">L'étape validation fonctionne</p>
+<p style="font-size: 50px; text-align: center;">A définir</p>
 
 
 <?php

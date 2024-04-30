@@ -13,7 +13,7 @@
 
 <form action="" method="post">
     <!-- Maitrise d'oeuvre -->
-    <div class="mt-20">
+    <div class="">
         <h3 class="text-gray-500 font-medium">Maitrise d'oeuvre</h3>
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Y a-t-il intervention d'un architecte ou d'un maitre d'oeuvre ? &ensp;&ensp;</span>

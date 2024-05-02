@@ -21,11 +21,11 @@
                         <label>&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
-                        <label for="moa-souscripteur-form-nom-prenom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
                         <input type="text" name="moa-souscripteur-form-nom-prenom" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-nom-prenom']) ? $_SESSION['info-moa']['moa-souscripteur-form-nom-prenom'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div class="py-4">
-                        <label for="moa-souscripteur-form-adresse" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
                         <input type="text" name="moa-souscripteur-form-adresse" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-adresse']) ? $_SESSION['info-moa']['moa-souscripteur-form-adresse'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div id="raison-champ" class="hidden py-4">
@@ -54,7 +54,7 @@
                     <span><input type="radio" name="moa-qualite" value="entreprise"/> Enterprise</span>
                     <span><input type="radio" name="moa-qualite" value="moa-qualite-autre" id="moa-qualite-autre-radio" onclick="buttonActivate('moa-qualite-autre', 'moa-qualite-autre-radio')"/> Autre qualité</span>
                     <div id="moa-qualite-autre" class="hidden mt-2">
-                        <label for="moa-qualite-champ" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
                         <input type="text" name="moa-qualite-champ" value="<?= isset($_SESSION['info-moa']['moa-qualite-champ']) ? $_SESSION['info-moa']['moa-qualite-champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>    
                 </div>
@@ -107,7 +107,7 @@
                         <label class="text-gray-500 font-medium"> Non</label>
                     </div>
                     <div id="moa-construction-pro-form" class="py-4 hidden mx-6">
-                        <label for="moa-construction-pro-champ" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
                         <input type="text" name="moa-construction-pro-champ" value="<?= isset($_SESSION['info-moa']['"moa-construction-pro-champ']) ? $_SESSION['info-moa']['"moa-construction-pro-champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                 </div>

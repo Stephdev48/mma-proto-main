@@ -27,7 +27,7 @@
         </div>
         <div id="moe-intervention-form-info" class="hidden px-8 py-4">
             <div class="ml-10">
-                <label for="moe-intervention-qualite" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa qualité, sa fonction</label>
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa qualité, sa fonction</label>
                 <input type="text" name="moe-intervention-qualite" value="<?= isset($_SESSION['info-moe']['moe-intervention-qualite']) ? $_SESSION['info-moe']['moe-intervention-qualite'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="ml-10 mt-4">
@@ -35,19 +35,19 @@
                 <div class="ml-10">
                     <div>
                         <input type="radio" name="moe-mission-conception" value="conception">
-                        <label for="moe-mission-conception" class="font-normal">Conception</label>
+                        <label class="font-normal">Conception</label>
                     </div>
                     <div>
                         <input type="radio" name="moe-mission-direction" value="direction">
-                        <label for="moe-mission-direction" class="font-normal">Direction et surveillance des travaux</label>
+                        <label class="font-normal">Direction et surveillance des travaux</label>
                     </div>
                     <div>                
                         <input type="radio" name="moe-mission-complete" value="complete">
-                        <label for="moe-mission-complete" class="font-normal">Mission complète</label>
+                        <label class="font-normal">Mission complète</label>
                     </div>
                     <div>                  
                         <input type="radio" name="moe-mission-autre" value="autre">
-                        <label for="moe-mission-autre" class="font-normal">Autre</label>
+                        <label class="font-normal">Autre</label>
                         <span class="text-xs">(à décrire : 
                             <input type="text" name="moe-mission-autre-descr" value="<?= isset($_SESSION['info-moe']['moe-mission-autre-descr']) ? $_SESSION['info-moe']['moe-mission-autre-descr'] : ''?>" style="height:10px; width: 350px; border-radius:6px; font-size:14px;" class="bg-gray-50"/> )
                         </span>

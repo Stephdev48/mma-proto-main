@@ -78,7 +78,7 @@
                                     2
                                 </span>
                                 <span>
-                                    <h3 class="ml-2">Le Maitre d\'Ouvrage</h3>
+                                    <h3 class="ml-2">Maitre d\'Ouvrage</h3>
                                 </span>
                             </a>
                         </li>
@@ -88,7 +88,7 @@
                                     3
                                 </span>
                                 <span>
-                                    <h3 class="ml-2">L\'opération de construction</h3>
+                                    <h3 class="ml-2">Opération de construction</h3>
                                     <p id="step3-p" class="text-xs font-normal ml-2 $currentstep3">Nature et type de l\'ouvrage</p>
                                 </span>
                             </a>
@@ -99,7 +99,7 @@
                                     4
                                 </span>
                                 <span>
-                                    <h3 class="ml-2">L\'opération de construction</h3>
+                                    <h3 class="ml-2">Opération de construction</h3>
                                     <p id="step4-p" class="text-xs font-normal ml-2 $currentstep4">Situation de l\'ouvrage et Travaux annexes</p>
                                 </span>
                             </a>
@@ -110,7 +110,7 @@
                                     4b
                                 </span>
                                 <span>
-                                    <h3 class="ml-2">L\'opération de construction</h3>
+                                    <h3 class="ml-2">Oopération de construction</h3>
                                     <p id="step4bis-p" class="text-xs font-normal ml-2 $currentstep4bis">Travaux annexes</p>
                                 </span>
                             </a>
@@ -165,7 +165,7 @@
                            2
                        </span>
                        <span>
-                           <h3 class="ml-2">Le Maitre d\'Ouvrage</h3>
+                           <h3 class="ml-2">Maitre d\'Ouvrage</h3>
                        </span>
                </li>
                <li id="step3" class="flex items-center space-x-2.5 '.$currentstep3.'">
@@ -173,7 +173,7 @@
                            3
                        </span>
                        <span>
-                           <h3 class="ml-2">L\'opération de construction</h3>
+                           <h3 class="ml-2">Opération de construction</h3>
                            <p id="step3-p" class="text-xs font-normal ml-2 $currentstep3">Nature et type de l\'ouvrage</p>
                        </span>
                </li>
@@ -182,7 +182,7 @@
                            4
                        </span>
                        <span>
-                           <h3 class="ml-2">L\'opération de construction</h3>
+                           <h3 class="ml-2">Opération de construction</h3>
                            <p id="step4-p" class="text-xs font-normal ml-2 $currentstep4">Situation de l\'ouvrage et Travaux annexes</p>
                        </span>
                </li>
@@ -191,7 +191,7 @@
                            4b
                        </span>
                        <span>
-                           <h3 class="ml-2">L\'opération de construction</h3>
+                           <h3 class="ml-2">Opération de construction</h3>
                            <p id="step4bis-p" class="text-xs font-normal ml-2 $currentstep4bis">Travaux annexes</p>
                        </span>
                </li>

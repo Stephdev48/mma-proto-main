@@ -106,7 +106,7 @@
         </section>
 
         <!-- Historique -->
-        <section id="" class="sectionfb">
+        <section class="sectionfb">
             <h2 class="sectionfb-title"><a href="https://flowbite.com/docs/components/accordion/">Historique</a></h2>
             <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
                 <li class="mb-10 ms-6">            

@@ -63,7 +63,7 @@
                         'nom' => 'TTRAVO',
                         'montant' => 35500,
                         'nature' => 99,
-                        'nature-autre' => "plaquiste",
+                        'nature-autre' => "chauffe-eau-solaire",
                         'debut' => '20/02/2022',
                         'fin' => '20/02/2032',                        
                         'folder' => '82f52dfc',

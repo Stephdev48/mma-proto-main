@@ -49,6 +49,9 @@
             case 'step6':
                 step6Display($currentstep);
                 break;
+            case 'step8':
+                step8Display($currentstep);
+                break;                
             case 'validation':
                 validDisplay($currentstep);
                 break;

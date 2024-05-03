@@ -1,15 +1,3 @@
-<?php if(DEBUG==true):?>
-    <div id="debug">
-        <pre>
-        <?php
-        //if(!empty($_POST)){ var_dump($_POST);};
-        //if(!empty($_FILES)){ var_dump($_FILES);};
-        if(!empty($_SESSION)){ var_dump($_SESSION);};
-        //var_dump($array_datas);
-        ?>
-        </pre>
-    </div>
-<?php endif;?> 
 <form action="" method="post">
     <!-- Construction bois -->
     <?php

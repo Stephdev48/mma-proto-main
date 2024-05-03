@@ -10,7 +10,7 @@
                 </div>
                 <div class="mx-24 my-2">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervenant en qualité de ?</label>
-                    <input type="text" name="cnr-qualite" value="<?= isset($_SESSION['info-cnr']['cnr-qualite']) ? $_SESSION['info-cnr']['cnr-qualite'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <input type="text" name="cnr-qualite" value="<?= isset($_SESSION['info-cnr']['cnr-qualite']) ? $_SESSION['info-cnr']['cnr-qualite'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
                 </div>
             </div>
             <div class="mt-10 mx-24">
@@ -18,7 +18,7 @@
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">RC Décennale - Garanties complètes (CS n°812) 
                         <span class="font-normal"> &ensp;&ensp;(RC décennale obligatoire + facultatives) &ensp;&ensp;</span>
-                        <input type="radio" name="cnr-rc-decennale" value="oui"/>
+                        <input type="radio" name="cnr-rc-decennale" value="oui" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="cnr-rc-decennale" value="non"/>
                         <label class="text-gray-500 font-medium"> Non</label>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">RC hors décennale (CS n°883) &ensp;&ensp;
-                        <input type="radio" name="cnr-rc-hors-decennale" value="oui"/>
+                        <input type="radio" name="cnr-rc-hors-decennale" value="oui" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="cnr-rc-hors-decennale" value="non"/>
                         <label class="text-gray-500 font-medium"> Non</label>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">Recours et défense pénale (CS n°886) &ensp;&ensp;
-                        <input type="radio" name="cnr-rc-recours" value="oui"/>
+                        <input type="radio" name="cnr-rc-recours" value="oui" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="cnr-rc-recours" value="non"/>
                         <label class="text-gray-500 font-medium"> Non</label>
@@ -54,7 +54,7 @@
                 <span class="font-medium">Garanties demandées</span>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">Dommages matériels à la construction (CS n°884) 
-                        <input type="radio" name="risques-chantier-materiel" value="oui"/>
+                        <input type="radio" name="risques-chantier-materiel" value="oui" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="risques-chantier-materiel" value="non"/>
                         <label class="text-gray-500 font-medium"> Non</label>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">Dommages matériels subits par les existants (CS n°884) &ensp;&ensp;
-                        <input type="radio" name="risques-chantier-existants" value="oui"/>
+                        <input type="radio" name="risques-chantier-existants" value="oui" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                         <input type="radio" name="risques-chantier-existants" value="non"/>
                         <label class="text-gray-500 font-medium"> Non</label>

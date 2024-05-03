@@ -10,7 +10,7 @@ var element = document.getElementById(elementhidden);
 function hideElement(elementvisible){
     var element = document.getElementById(elementvisible);
         element.classList.add('hidden');
-    }
+}
 
 function buttonActivate(elementdisabled, checkboxhome){
     var element = document.getElementById(elementdisabled);
@@ -19,5 +19,14 @@ function buttonActivate(elementdisabled, checkboxhome){
         element.classList.remove('hidden');
     } else {
         element.classList.add('hidden');
+    }
+}
+
+function addRemoveRequired(elementname){
+    var element = document.getElementsByName(elementname);
+    if(element.required = true){
+        element.required = false;
+    }else{
+        element.required = true;
     }
 }

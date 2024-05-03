@@ -5,7 +5,7 @@
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Y a-t-il intervention d'un architecte ou d'un maitre d'oeuvre ? &ensp;&ensp;</span>
             <div class="ml-8 text-gray-500 font-medium">
-                <input type="radio" name="moe-intervention" value="oui" onclick="showElement('moe-intervention-form')"/>
+                <input type="radio" name="moe-intervention" value="oui" onclick="showElement('moe-intervention-form')" required/>
                 <label> Oui &ensp;</label>
                 <input type="radio" name="moe-intervention" value="non" onclick="hideElement('moe-intervention-form')"/>
                 <label> Non</label>

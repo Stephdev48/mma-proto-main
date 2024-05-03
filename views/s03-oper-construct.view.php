@@ -13,7 +13,7 @@
                 </div>
             </div>
             <span class="ml-6 text-gray-500 font-medium">
-                <input type="radio" name="nature-neuf-exist" value="neuve" onclick="hideElement('nature-operation')"/>
+                <input type="radio" name="nature-neuf-exist" value="neuve" onclick="hideElement('nature-operation')" required/>
                 <label> Construction neuve &ensp;</label>
                 <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
             </span>
@@ -273,30 +273,30 @@
             <span class="text-gray-500 font-medium">Adresse de la construction</span>
             <div class="mx-8 my-2">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Escalier, résidence, bâtiment</label>
-                <input type="text" name="construction-adresse-esc-res-bat" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-esc-res-bat']) ? $_SESSION['info-ope-constr']['construction-adresse-esc-res-bat'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <input type="text" name="construction-adresse-esc-res-bat" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-esc-res-bat']) ? $_SESSION['info-ope-constr']['construction-adresse-esc-res-bat'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
             </div>
             <div class="mx-8 my-2">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro et nom de la rue</label>
-                <input type="text" name="construction-adresse-num-nom-rue" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-num-nom-rue']) ? $_SESSION['info-ope-constr']['construction-adresse-num-nom-rue'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <input type="text" name="construction-adresse-num-nom-rue" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-num-nom-rue']) ? $_SESSION['info-ope-constr']['construction-adresse-num-nom-rue'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
             </div>
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu-dit</label>
-                    <input type="text" name="construction-adresse-lieu-dit" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-lieu-dit']) ? $_SESSION['info-ope-constr']['construction-adresse-lieu-dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <input type="text" name="construction-adresse-lieu-dit" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-lieu-dit']) ? $_SESSION['info-ope-constr']['construction-adresse-lieu-dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
                 </div>
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Arrondissement</label>
-                    <input type="text" name="construction-adresse-arrond" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-arrond']) ? $_SESSION['info-ope-constr']['construction-adresse-arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <input type="text" name="construction-adresse-arrond" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-arrond']) ? $_SESSION['info-ope-constr']['construction-adresse-arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
                 </div>
             </div>
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Code postal</label>
-                    <input type="text" name="construction-adresse-code-postal" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-code-postal']) ? $_SESSION['info-ope-constr']['construction-adresse-code-postal'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <input type="text" name="construction-adresse-code-postal" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-code-postal']) ? $_SESSION['info-ope-constr']['construction-adresse-code-postal'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
                 </div>
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Commune</label>
-                    <input type="text" name="construction-adresse-commune" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-commune']) ? $_SESSION['info-ope-constr']['construction-adresse-commune'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <input type="text" name="construction-adresse-commune" value="<?= isset($_SESSION['info-ope-constr']['construction-adresse-commune']) ? $_SESSION['info-ope-constr']['construction-adresse-commune'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
                 </div>
             </div>
         </div>
@@ -305,16 +305,26 @@
         <div class="mt-10">
             <span class="text-gray-500 font-medium">Dates de l'opération de construction</span>
             <div class="mx-8 my-2">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date d'ouverture de chantier</label>
-                <input type="date" name="construction-date-debut" value="<?= isset($_SESSION['info-ope-constr']['construction-date-debut']) ? $_SESSION['info-ope-constr']['construction-date-debut'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <div class="flex flex-row">
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date d'ouverture de chantier</label>
+                    <div> <!-- Infobulle -->
+                        <button data-popover-target="date-operation-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                        <div data-popover id="date-operation-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                            <div class="p-3 space-y-2">
+                                <p>Si la date n'est pas encore établie, entrez une date approximative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="date" name="construction-date-debut" value="<?= isset($_SESSION['info-ope-constr']['construction-date-debut']) ? $_SESSION['info-ope-constr']['construction-date-debut'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
             </div>
             <div class="mx-8 mt-4">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">A défaut, date prévue de début</label>
                 <input type="date" name="construction-date-debut-prevue" value="<?= isset($_SESSION['info-ope-constr']['construction-date-debut-prevue']) ? $_SESSION['info-ope-constr']['construction-date-debut-prevue'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="mx-8 mt-4">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date de réception</label>
-                <input type="date" name="construction-date-reception" value="<?= isset($_SESSION['info-ope-constr']['construction-date-reception']) ? $_SESSION['info-ope-constr']['construction-date-reception'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date de réception prévisionnelle</label>
+                <input type="date" name="construction-date-reception" value="<?= isset($_SESSION['info-ope-constr']['construction-date-reception']) ? $_SESSION['info-ope-constr']['construction-date-reception'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
             </div>
         </div>
 
@@ -323,11 +333,15 @@
             <span class="text-gray-500 font-medium">Coût de l'opération de construction</span>
             <div class="mx-8 my-2">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Coût en €</label>
-                <input type="text" name="construction-cout-operation" value="<?= isset($_SESSION['info-ope-constr']['construction-cout-operation']) ? $_SESSION['info-ope-constr']['construction-cout-operation'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                <input type="text" name="construction-cout-operation" value="<?= isset($_SESSION['info-ope-constr']['construction-cout-operation']) ? $_SESSION['info-ope-constr']['construction-cout-operation'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
+            </div>
+            <div class="mx-8 my-2">
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Honoraires du maitre d'oeuvre en €</label>
+                <input type="text" name="construction-cout-operation-honoraires-moe" value="<?= isset($_SESSION['info-ope-constr']['construction-cout-operation-honoraires-moe']) ? $_SESSION['info-ope-constr']['construction-cout-operation-honoraires-moe'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
             </div>
             <div class="mx-8 mt-4">
                 <span class="text-sm font-medium text-gray-900">Comprend la TVA ? &ensp;&ensp;
-                    <input type="radio" name="cout-operation-tva" value="oui"/>
+                    <input type="radio" name="cout-operation-tva" value="oui" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="cout-operation-tva" value="non"/>
                     <label class="text-gray-500 font-medium"> Non</label>

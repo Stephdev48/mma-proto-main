@@ -26,3 +26,5 @@ impossible d'ajouter le remplissage auto parce que fichier html
 changer tirets par underscore
 
 ## insertion bdd après chaque étape
+
+## ternaires

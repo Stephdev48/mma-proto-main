@@ -31,9 +31,9 @@
             case 'step4bis':
                 $title = "Formulaire DO-04bis";         
                 if($_SESSION["info-situation"]['situation-construction-bois']=="non"
-                || $_SESSION["info-situation"]['situation-pann-photo'] =="non" 
-                || $_SESSION["info-situation"]['situation-geothermie'] =="non" 
-                || $_SESSION["info-situation"]['situation-controle-tech'] =="non") {
+                && $_SESSION["info-situation"]['situation-pann-photo'] =="non" 
+                && $_SESSION["info-situation"]['situation-geothermie'] =="non" 
+                && $_SESSION["info-situation"]['situation-controle-tech'] =="non") {
                     header("Location: index.php?page=step5");
                 }                         
                 $nextstep="step5";

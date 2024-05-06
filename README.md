@@ -7,6 +7,7 @@ home.view textarea à finir
 header : navbar
 
 ## Infobulles !
+fonction !
 
 ## stepper
 la fonction pour faire apparaitre step4bis dans le stepper si travaux annexes ne fonctionne pas : "undefined function" alors que le fichier JS est chargé avant l'appel à la fonction... 
@@ -20,3 +21,10 @@ l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de d
 
 ## template formulaire coordonnées
 impossible d'ajouter le remplissage auto parce que fichier html
+
+## MCD => MLD
+
+## value 0 et 1 pour les radio au lieu de oui ou non
+
+## champs underscore des names
+changer tirets par underscore

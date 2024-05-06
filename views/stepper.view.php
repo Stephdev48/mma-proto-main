@@ -16,6 +16,7 @@
     $currentstep6circle = $currentstep1circle;
     $validation = $currentstep1;
     $validationcircle = $currentstep1circle;
+ 
 
 
     $currentstep8 = $currentstep1;
@@ -37,12 +38,9 @@
             $currentstep3circle = "border-blue-600 border-2";
             break;
         case'step4':
+            case'step4bis':
             $currentstep4 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep4circle = "border-blue-600 border-2";
-            break;
-        case'step4bis':
-            $currentstep4bis = "text-blue-600 dark:text-blue-500 font-bold";
-            $currentstep4biscircle = "border-blue-600 border-2";
             break;
         case'step5':
             $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
@@ -53,9 +51,9 @@
             $currentstep6circle = "border-blue-600 border-2";
             break;
         case'step8':
-                $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
-                $currentstep8circle = "border-blue-600 border-2";
-                break;            
+            $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentstep8circle = "border-blue-600 border-2";
+            break;            
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
             $validationcircle = "border-blue-600 border-2";

@@ -5,7 +5,7 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-souscripteur" value="oui" onclick="hideElement('moa-souscripteur-form')" required/>
+                    <input type="radio" name="moa-souscripteur" value="oui"  onclick="hideElement('moa-souscripteur-form')" required/>
                     <label> Oui &ensp;</label>
                     <input type="radio" name="moa-souscripteur" value="non" onclick="showElement('moa-souscripteur-form')"/>
                     <label> Non</label>
@@ -75,9 +75,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-construction" value="oui" onclick="showElement('moa-construction-form'),showElement('tableau')" required/>
+                    <input type="radio" name="moa-construction" value="1" <?= $moa_construction ? "checked=checked" : ""; ?> onclick="showElement('moa-construction-form'),showElement('tableau')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-construction" value="non" onclick="hideElement('moa-construction-form'),hideElement('tableau')"/>
+                    <input type="radio" name="moa-construction" value="0" <?= $moa_construction ? "" : "checked=checked"; ?> onclick="hideElement('moa-construction-form'),hideElement('tableau')"/>
                     <label> Non</label>
                 </div>
             </div>

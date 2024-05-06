@@ -24,3 +24,5 @@ impossible d'ajouter le remplissage auto parce que fichier html
 
 ## champs underscore des names
 changer tirets par underscore
+
+## insertion bdd après chaque étape

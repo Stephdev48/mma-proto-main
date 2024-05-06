@@ -1,7 +1,7 @@
 <form action="" method="post">
     <!-- Construction bois -->
     <?php
-    if(isset($_SESSION["info-situation"]['situation-construction-bois'])):
+    if($_SESSION["info-situation"]['situation-construction-bois']=="oui"):
     ?>        
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
@@ -40,7 +40,7 @@
 
     <!-- Panneaux photovoltaïques -->
     <?php
-    if(isset($_SESSION["info-situation"]['situation-pann-photo'])):
+    if($_SESSION["info-situation"]['situation-pann-photo'] =="oui"):
     ?>    
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
@@ -119,7 +119,7 @@
 
     <!-- Géothermie -->
     <?php
-    if(isset($_SESSION["info-situation"]['situation-geothermie'])):
+    if($_SESSION["info-situation"]['situation-geothermie'] =="oui"):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
@@ -134,7 +134,7 @@
 
     <!-- Contrôleur technique-->
     <?php
-    if(isset($_SESSION["info-situation"]['situation-control-tech'])):
+    if($_SESSION["info-situation"]['situation-controle-tech'] =="oui"):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>

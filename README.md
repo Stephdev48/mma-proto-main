@@ -18,11 +18,12 @@ la fonction pour faire apparaitre step4bis dans le stepper si travaux annexes ne
 
 ## fonction pour ajouter "required" aux champs obligatoires
 required pas compatible avec hidden...
+form-entreprise : les required bloquent le passage à l'autre step si pas rempli
 
 ## Champs date ouverture chantier
 l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de début"
 
 ## template formulaire coordonnées
-impossible d'ajouter le remplisasge auto parce que fichier html
+impossible d'ajouter le remplissage auto parce que fichier html
 
 ## step4 ne fonctionne pas pour la step4bis...

@@ -165,9 +165,9 @@
             </div>
             <div class="ml-10 mt-2">
                 <span class="font-normal">Y a-t-il intervention d'un contrôleur technique ? &ensp;&ensp;
-                    <input type="radio" name="situation-control-tech" value="oui" required/>
+                    <input type="radio" name="situation-controle-tech" value="oui" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-control-tech" value="non"/>
+                    <input type="radio" name="situation-controle-tech" value="non"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>

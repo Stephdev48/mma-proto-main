@@ -20,9 +20,17 @@
         // Remplissage de la variable $content
         ob_start();
 
+
+        //chargement des données à afficher
+        $moa_construction       = 1;
+        $moa_construction_pro   = 0;
+
         require('views/s02-maitre-ouvrage.view.php');
 
         $content = ob_get_clean();
+
+        
+
         require("views/base.view.php");
 
     }

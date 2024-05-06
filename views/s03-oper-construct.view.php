@@ -38,9 +38,9 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="radio" name="nature-operation-surelev" value="oui" onclick="showElement('nature-operation-surelev-form')"/>
+                        <input type="radio" name="nature-operation-surelev" value="1" onclick="showElement('nature-operation-surelev-form')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="nature-operation-surelev"value="non" onclick="hideElement('nature-operation-surelev-form')"/>
+                        <input type="radio" name="nature-operation-surelev" value="0" onclick="hideElement('nature-operation-surelev-form')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </div>
                     <div id="nature-operation-surelev-form" class="hidden px-8 py-4">

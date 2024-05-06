@@ -7,10 +7,6 @@ home.view textarea à finir
 header : navbar
 
 ## Infobulles !
-fonction !
-
-## stepper
-la fonction pour faire apparaitre step4bis dans le stepper si travaux annexes ne fonctionne pas : "undefined function" alors que le fichier JS est chargé avant l'appel à la fonction... 
 
 ## fonction pour ajouter "required" aux champs obligatoires
 required pas compatible avec hidden...

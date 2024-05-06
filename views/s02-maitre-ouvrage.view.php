@@ -101,10 +101,12 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="radio" name="moa-construction-pro" value="oui" onclick="showElement('moa-construction-pro-form')"/>
-                        <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="moa-construction-pro" value="non" onclick="hideElement('moa-construction-pro-form')"/>
-                        <label class="text-gray-500 font-medium"> Non</label>
+                        <div>
+                            <input type="radio" name="moa-construction-pro" value="oui" onclick="showElement('moa-construction-pro-form')"/>
+                            <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                            <input type="radio" name="moa-construction-pro" value="non" onclick="hideElement('moa-construction-pro-form')"/>
+                            <label class="text-gray-500 font-medium"> Non</label>
+                        </div>
                     </div>
                     <div id="moa-construction-pro-form" class="py-4 hidden mx-6">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>

@@ -136,6 +136,25 @@
                 </div>
             </div>
         </div>
+            <!-- Garanties demandées -->
+        <h3 class="text-gray-500 font-medium mt-16">Garanties demandées</h3>
+        <div class="ml-10 mt-2">
+            <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
+            <span class="font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
+                <input type="radio" name="situation-garanties-completes" value="oui" required/>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <input type="radio" name="situation-garanties-completes" value="non"/>
+                <label class="text-gray-500 font-medium"> Non</label>
+            </span>
+        </div>
+        <div class="ml-10 mt-2">
+            <span class="font-normal">Dommages matériels subits par les existants (CS n°811) &ensp;&ensp;
+                <input type="radio" name="situation-garanties-dommages-existants" value="oui" required/>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <input type="radio" name="situation-garanties-dommages-existants" value="non"/>
+                <label class="text-gray-500 font-medium"> Non</label>
+            </span>
+        </div>
             <!-- Travaux annexes -->
         <div class="flex-column mt-16">
             <span class="text-gray-500 font-medium">Travaux annexes :</span>

@@ -4,17 +4,9 @@
     define('UPLOAD_FOLDER', "/public/uploads" );
     define('DEBUG', true );
 
-    require 'controllers/home.controller.php';
-    require 'controllers/do.controller.php';
-    /*require 'controllers/s01-coordonnees.controller.php';
-    require 'controllers/s02-maitre-ouvrage.controller.php';
-    require 'controllers/s03-oper-construct.controller.php';
-    require 'controllers/s04-informations-diverses.controller.php';
-    require 'controllers/s04-bis-travaux-annexes.controller.php';
-    require 'controllers/s05-maitrise-oeuvre.controller.php';
-    require 'controllers/s06-cnr-risques-chantier.controller.php';*/
     
-    require 'controllers/validation.controller.php';
+    
+    
     require 'controllers/page-erreur.controller.php';
    
     // Vide la superglobale $_SESSION
@@ -26,6 +18,7 @@
         $currentstep = $_GET['page'];
         switch($_GET['page']){
             case 'home':
+                require 'controllers/home.controller.php';
                 $_SESSION = [];
                 homeDisplay($currentstep);
                 break;
@@ -36,13 +29,15 @@
             case 'step4bis':
             case 'step5':                
             case 'step6':
+                require 'controllers/do.controller.php';    
                 stepDisplay($currentstep);
                 break;               
             case 'validation':
+                require 'controllers/validation.controller.php';
                 validDisplay($currentstep);
                 break;
             case 'step8':
-                require 'controllers/s08-intervenants-lots-techniques.php';
+                require 'controllers/lots-techniques.php';
                 step8Display($currentstep);
                 break;                 
             default:

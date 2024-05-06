@@ -1,5 +1,6 @@
 <?php
     require_once 'models/form-entreprises.model.php'; 
+    require_once 'models/do.model.php';
 
     function stepDisplay($currentstep){        
 
@@ -60,10 +61,19 @@
                 $_SESSION['info-'.$_POST['fields']][$key] = $value;
             }
             $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-            header("Location: index.php?page=".$nextstep);
+
+            if($currentstep == "step1"){
+
+            }
+            if($currentstep == "step2"){
+                $res = insert($_SESSION['info-'.$_POST['fields']]);
+            }else{
+                $res = update($_SESSION['info-'.$_POST['fields']]);
+            }
+        
+            header("Location: index.php?page=".$nextstep);            
         }
-
-
         $content = ob_get_clean();
         require("views/base.view.php");
     }
+

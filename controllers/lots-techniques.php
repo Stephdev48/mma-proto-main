@@ -2,7 +2,7 @@
     function step8Display($currentstep){
         
         // Titre personnalisé
-        $title = "Formulaire DO-08";
+        $title = "Formulaire RCD";
         
         $date = new DateTimeImmutable();
         $newfolder= hash('crc32', $date->getTimestamp());
@@ -111,7 +111,7 @@
 
         // Remplissage de la variable $content
         ob_start();
-        require 'views/step8.view.php';
+        require 'views/lots-techniques.view.php';
 
         $content = ob_get_clean();
         require("views/base.view.php");

@@ -74,9 +74,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa_construction" value="1" <?= $moa_construction ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_form'),showElement('moa_construction_pro_tableau')" required/>
+                    <input type="radio" name="moa_construction" value="1" onclick="showElement('moa_construction_form'),showElement('moa_construction_pro_tableau')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa_construction" value="0" <?= $moa_construction ? "" : "checked=checked"; ?> onclick="hideElement('moa_construction_form'),hideElement('moa_construction_pro_tableau')"/>
+                    <input type="radio" name="moa_construction" value="0" onclick="hideElement('moa_construction_form'),hideElement('moa_construction_pro_tableau')"/>
                     <label> Non</label>
                 </div>
             </div>

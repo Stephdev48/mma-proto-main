@@ -232,9 +232,9 @@
                     <span><input type="checkbox" name="type_ouvrage_mais_indiv"/> Maison individuelle</span>
                 </div>
                 <div>
-                    <span><input type="checkbox" name="type_ouvrage_ope_pav"/> Opération pavillonnaire :</span><br />
+                    <span><input type="checkbox" name="type_ouvrage_ope_pavill"/> Opération pavillonnaire :</span><br />
                     <span class="text-xs">(nombre de maisons : 
-                        <input type="text" name="type-ouvrage-mais-indiv-nombre" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_mais_indiv_nombre']) ? $_SESSION['info_ope_constr']['type_ouvrage_mais_indiv_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )
+                        <input type="text" name="type_ope_pavill_nombre" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_ope_pavill_nombre']) ? $_SESSION['info_ope_constr']['type_ouvrage_ope_pavill_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )
                     </span>
                 </div>
                 <div>

@@ -1,31 +1,31 @@
 <form action="" method="post">
     <!-- Construction bois -->
     <?php
-    if($_SESSION["info-situation"]['situation-construction-bois']=="oui"):
+    if($_SESSION["info-situation"]['situation-construction-bois']=="1"):
     ?>        
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-constr-bois" value="oui"/>
+                <input type="radio" name="trav-annexes-constr-bois" value="1"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-constr-bois" value="non"/>
+                <input type="radio" name="trav-annexes-constr-bois" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">L'enveloppe de la construction (façade, planchers et balcons) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="oui"/>
+                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="1"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="non"/>
+                <input type="radio" name="trav-annexes-constr-bois-enveloppe" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les produits utilisés bénéficient-ils d'un marquage CE ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-constr-produits-ce"  value="oui"/>
+                <input type="radio" name="trav-annexes-constr-produits-ce"  value="1"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-constr-produits-ce" value="non"/>
+                <input type="radio" name="trav-annexes-constr-produits-ce" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
@@ -40,7 +40,7 @@
 
     <!-- Panneaux photovoltaïques -->
     <?php
-    if($_SESSION["info-situation"]['situation-pann-photo'] =="oui"):
+    if($_SESSION["info-situation"]['situation-pann-photo'] =="1"):
     ?>    
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
@@ -63,25 +63,25 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les procédés mis en oeuvre bénéficient-ils d'un avis technique ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-pv-proc-tech"value="oui" onclick="hideElement('pv-etn')"/>
+                <input type="radio" name="trav-annexes-pv-proc-tech"value="1" onclick="hideElement('pv-etn')"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-pv-proc-tech" value="non" onclick="showElement('pv-etn')"/>
+                <input type="radio" name="trav-annexes-pv-proc-tech" value="0" onclick="showElement('pv-etn')"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
             <div id="pv-etn" class="hidden">
                 <span class="font-normal ml-10">Sont-ils visés par une Enquête de Technique Nouvelle (ETN) ? &ensp;&ensp;
-                    <input type="radio" name="trav-annexes-pv-etn" value="oui"/>
+                    <input type="radio" name="trav-annexes-pv-etn" value="1"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="trav-annexes-pv-etn" value="non"/>
+                    <input type="radio" name="trav-annexes-pv-etn" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">En présence d'un avis technique, les procédés figurent-ils sur la liste verte de la C2P ? &ensp;&ensp;
-                <input type="radio" name="trav-annexes-pv-liste-c2p" value="oui"/>
+                <input type="radio" name="trav-annexes-pv-liste-c2p" value="1"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav-annexes-pv-liste-c2p" value="non"/>
+                <input type="radio" name="trav-annexes-pv-liste-c2p" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>  
         </div>
@@ -119,7 +119,7 @@
 
     <!-- Géothermie -->
     <?php
-    if($_SESSION["info-situation"]['situation-geothermie'] =="oui"):
+    if($_SESSION["info-situation"]['situation-geothermie'] =="1"):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
@@ -134,7 +134,7 @@
 
     <!-- Contrôleur technique-->
     <?php
-    if($_SESSION["info-situation"]['situation-controle-tech'] =="oui"):
+    if($_SESSION["info-situation"]['situation-controle-tech'] =="1"):
     ?>
     <div class="mt-20">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>

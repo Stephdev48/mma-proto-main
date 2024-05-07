@@ -5,8 +5,6 @@
     define('DEBUG', true );
 
     
-    
-    
     require 'controllers/page-erreur.controller.php';
    
     // Vide la superglobale $_SESSION

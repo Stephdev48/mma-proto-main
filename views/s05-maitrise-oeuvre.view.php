@@ -5,9 +5,9 @@
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Y a-t-il intervention d'un architecte ou d'un maitre d'oeuvre ? &ensp;&ensp;</span>
             <div class="ml-8 text-gray-500 font-medium">
-                <input type="radio" name="moe-intervention" value="oui" onclick="showElement('moe-intervention-form')" required/>
+                <input type="radio" name="moe-intervention" value="1" onclick="showElement('moe-intervention-form')" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="moe-intervention" value="non" onclick="hideElement('moe-intervention-form')"/>
+                <input type="radio" name="moe-intervention" value="0" onclick="hideElement('moe-intervention-form')"/>
                 <label> Non</label>
             </div>
         </div>
@@ -18,9 +18,9 @@
             <div class="flex mt-16">
                 <span class="font-normal">Est-il indépendant à l'égard des autres constructeurs et du maître d'ouvrage ?</span>
                 <div class="ml-10">
-                    <input type="radio" name="moe-intervention-form" value="oui" onclick="hideElement('moe-intervention-form-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="1" onclick="hideElement('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="moe-intervention-form" value="non" onclick="showElement('moe-intervention-form-info')"/>
+                    <input type="radio" name="moe-intervention-form" value="0" onclick="showElement('moe-intervention-form-info')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </div>
             </div>
@@ -72,7 +72,7 @@
         </div>
         <!-- Bouton suivant -->
         <div class="text-center ml-6">
-            <button type="submit" name="send-step2" value="step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+            <button type="submit" name="send-step5" value="step5" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
         </div>
     </div>
 

@@ -6,9 +6,9 @@
             <!-- Zone inondable -->
         <div>
             <span class="text-gray-500 font-medium">Est-il situé dans une zone inondable ? &ensp;&ensp;
-                <input type="radio" name="situation-zone-inond" value="oui" required/>
+                <input type="radio" name="situation-zone-inond" value="1" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="situation-zone-inond" value="non"/>
+                <input type="radio" name="situation-zone-inond" value="0"/>
                 <label> Non</label>
             </span>  
         </div>
@@ -26,9 +26,9 @@
             <!-- Zone termites insectes -->
         <div class="mt-16">
             <span class="text-gray-500 font-medium">Est-il situé dans une zone contaminée par les termites ou autres insectes xylophages ? &ensp;&ensp;
-                <input type="radio" name="situation-insectes" value="oui" required/>
+                <input type="radio" name="situation-insectes" value="1" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="situation-insectes" value="non"/>
+                <input type="radio" name="situation-insectes" value="0"/>
                 <label> Non</label>
             </span>  
         </div>
@@ -36,18 +36,18 @@
             <!-- Matériaux traditionnels ou technique courante -->
         <div class="mt-16">
             <span class="text-gray-500 font-medium">Les travaux sont-ils réalisés avec des matériaux traditionnels ou selon des procédés de technique courante ? &ensp;&ensp;
-                <input type="radio" name="situation-proc-techniques" value="oui" required/>
+                <input type="radio" name="situation-proc-techniques" value="1" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="situation-proc-techniques" value="non"/>
+                <input type="radio" name="situation-proc-techniques" value="0"/>
                 <label> Non</label>
             </span>  
         </div>
             <!-- Parking -->
         <div class="mt-16">
             <span class="text-gray-500 font-medium">Y a-t-il la présence d'un parking (accessoire de l'ouvrage) desservant l'ouvrage ? &ensp;&ensp;
-                <input type="radio" name="situation-parking" value="oui" required/>
+                <input type="radio" name="situation-parking" value="1" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="situation-parking" value="non"/>
+                <input type="radio" name="situation-parking" value="0"/>
                 <label> Non</label>
             </span>  
         </div>
@@ -56,9 +56,9 @@
             <h3 class="text-gray-500 font-medium">Si travaux sur une contruction existante ou sur existants :</h3>
                 <div class="my-2 ml-10">
                     <span class="font-normal">Si les existants datent de moins de 10 ans, ont-ils fait l'objet d'un contrat d'assurance "dommages ouvrage" ? &ensp;&ensp;
-                        <input type="radio" name="situation-do-10ans" value="oui" onclick="showElement('situation-do-10ans-contrat')" required/>
+                        <input type="radio" name="situation-do-10ans" value="1" onclick="showElement('situation-do-10ans-contrat')" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="situation-do-10ans" value="non" onclick="hideElement('situation-do-10ans-contrat')"/>
+                        <input type="radio" name="situation-do-10ans" value="0" onclick="hideElement('situation-do-10ans-contrat')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>
                     <div id="situation-do-10ans-contrat" class="hidden ml-10 mt-4 ">
@@ -70,9 +70,9 @@
                 </div>
                 <div class="mt-4 ml-10">
                     <span class="font-normal">Les existants sont-ils classés monuments historiques ou font-ils l'objet d'une protection du patrimoine ? &ensp;&ensp;
-                        <input type="radio" name="situation-mon-hist" value="oui" required/>
+                        <input type="radio" name="situation-mon-hist" value="1" required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="situation-mon-hist" value="non"/>
+                        <input type="radio" name="situation-mon-hist" value="0"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>
                 </div>
@@ -83,17 +83,17 @@
             <h3 class="text-gray-500 font-medium">Label :</h3>
             <div class="my-2 ml-10">
                 <span class="font-normal">L'opération de construction bénéficie-t-elle d'un label de performance énergétique (ex. BBC...) ? &ensp;&ensp;
-                    <input type="radio" name="situation-label-energie" value="oui" required/>
+                    <input type="radio" name="situation-label-energie" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-label-energie" value="non"/>
+                    <input type="radio" name="situation-label-energie" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>  
             </div>
             <div class="my-2 ml-10">
                 <span class="font-normal">L'opération de construction bénéficie-t-elle d'un label de qualité environnementale (ex. HQE...) ? &ensp;&ensp;
-                    <input type="radio" name="situation-label-qualite" value="oui" required/>
+                    <input type="radio" name="situation-label-qualite" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-label-qualite" value="non"/>
+                    <input type="radio" name="situation-label-qualite" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
@@ -104,9 +104,9 @@
             <div class="flex flex-col lg:flex-row ml-10 mt-6">
                 <span class="font-normal">Intervention d'un bureau spécialisé ? &ensp;&ensp;</span>
                 <div class="ml-8 text-gray-500 font-medium">
-                    <input type="radio" name="situation-etude-sol" value="oui" onclick="showElement('situation-etude-sol-form')" required/>
+                    <input type="radio" name="situation-etude-sol" value="1" onclick="showElement('situation-etude-sol-form')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="situation-etude-sol" value="non" onclick="hideElement('situation-etude-sol-form')"/>
+                    <input type="radio" name="situation-etude-sol" value="0" onclick="hideElement('situation-etude-sol-form')"/>
                     <label> Non</label>
                 </div>
             </div>
@@ -129,9 +129,9 @@
                     Si présence d'un parking et/ou de voiries, l'étude de sol vise-t-elle également ces ouvrages ?  &ensp;&ensp;
                 </span>
                 <div class="text-gray-500 font-medium">
-                    <input type="radio" name="situation-etude-sol-parking" value="oui" required/>
+                    <input type="radio" name="situation-etude-sol-parking" value="1" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="situation-etude-sol-parking" value="non"/>
+                    <input type="radio" name="situation-etude-sol-parking" value="0"/>
                     <label> Non</label>
                 </div>
             </div>
@@ -141,17 +141,17 @@
         <div class="ml-10 mt-2">
             <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
             <span class="font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
-                <input type="radio" name="situation-garanties-completes" value="oui" required/>
+                <input type="radio" name="situation-garanties-completes" value="1" required/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="situation-garanties-completes" value="non"/>
+                <input type="radio" name="situation-garanties-completes" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-2">
             <span class="font-normal">Dommages matériels subits par les existants (CS n°811) &ensp;&ensp;
-                <input type="radio" name="situation-garanties-dommages-existants" value="oui" required/>
+                <input type="radio" name="situation-garanties-dommages-existants" value="1" required/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="situation-garanties-dommages-existants" value="non"/>
+                <input type="radio" name="situation-garanties-dommages-existants" value="0"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
@@ -160,33 +160,33 @@
             <span class="text-gray-500 font-medium">Travaux annexes :</span>
             <div class="ml-10 mt-2">
                 <span class="font-normal">S'agit-il d'une construction en bois ? &ensp;&ensp;
-                    <input type="radio" name="situation-construction-bois" value="oui" required/>
+                    <input type="radio" name="situation-construction-bois" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-construction-bois" value="non"/>
+                    <input type="radio" name="situation-construction-bois" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
             <div class="ml-10 mt-2">
                 <span class="font-normal">Y a-t-il la présence de panneaux photovoltaïques ? &ensp;&ensp;
-                    <input type="radio" name="situation-pann-photo" value="oui" required/>
+                    <input type="radio" name="situation-pann-photo" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-pann-photo" value="non"/>
+                    <input type="radio" name="situation-pann-photo" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
             <div class="ml-10 mt-2">
                 <span class="font-normal">L'opération de construction bénéficie-t-elle d'une installation géothermique ? &ensp;&ensp;
-                    <input type="radio" name="situation-geothermie" value="oui" required/>
+                    <input type="radio" name="situation-geothermie" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-geothermie" value="non"/>
+                    <input type="radio" name="situation-geothermie" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
             <div class="ml-10 mt-2">
                 <span class="font-normal">Y a-t-il intervention d'un contrôleur technique ? &ensp;&ensp;
-                    <input type="radio" name="situation-controle-tech" value="oui" required/>
+                    <input type="radio" name="situation-controle-tech" value="1" required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="situation-controle-tech" value="non"/>
+                    <input type="radio" name="situation-controle-tech" value="0"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>

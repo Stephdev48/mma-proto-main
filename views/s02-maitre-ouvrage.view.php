@@ -5,9 +5,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-souscripteur" value="oui"  onclick="hideElement('moa-souscripteur-form')" required/>
+                    <input type="radio" name="moa-souscripteur" value="1"  onclick="hideElement('moa-souscripteur-form')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-souscripteur" value="non" onclick="showElement('moa-souscripteur-form')"/>
+                    <input type="radio" name="moa-souscripteur" value="0" onclick="showElement('moa-souscripteur-form')"/>
                     <label> Non</label>
                 </div>
             </div>  
@@ -102,9 +102,9 @@
                             </div>
                         </div>
                         <div>
-                            <input type="radio" name="moa-construction-pro" value="oui" onclick="showElement('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa-construction-pro" value="1" onclick="showElement('moa-construction-pro-form')"/>
                             <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                            <input type="radio" name="moa-construction-pro" value="non" onclick="hideElement('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa-construction-pro" value="0" onclick="hideElement('moa-construction-pro-form')"/>
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>

@@ -30,10 +30,10 @@
                 break; 
             case 'step4bis':
                 $title = "Formulaire DO-04bis";         
-                if($_SESSION["info-situation"]['situation-construction-bois']=="non"
-                && $_SESSION["info-situation"]['situation-pann-photo'] =="non" 
-                && $_SESSION["info-situation"]['situation-geothermie'] =="non" 
-                && $_SESSION["info-situation"]['situation-controle-tech'] =="non") {
+                if($_SESSION["info-situation"]['situation-construction-bois']=="0"
+                && $_SESSION["info-situation"]['situation-pann-photo'] =="0" 
+                && $_SESSION["info-situation"]['situation-geothermie'] =="0" 
+                && $_SESSION["info-situation"]['situation-controle-tech'] =="0") {
                     header("Location: index.php?page=step5");
                 }                         
                 $nextstep="step5";

@@ -22,9 +22,8 @@ impossible d'ajouter le remplissage auto parce que fichier html
 
 ## insertion bdd après chaque étape
 
-## enum pour les radio avec plusieurs options
-
 ## champs underscore des names
 changer tirets par underscore
 
 ## ternaires
+exemple dans step2

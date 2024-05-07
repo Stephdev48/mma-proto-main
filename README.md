@@ -20,11 +20,11 @@ impossible d'ajouter le remplissage auto parce que fichier html
 
 ## MCD => MLD
 
-## value 0 et 1 pour les radio au lieu de oui ou non
+## insertion bdd après chaque étape
+
+## enum pour les radio avec plusieurs options
 
 ## champs underscore des names
 changer tirets par underscore
-
-## insertion bdd après chaque étape
 
 ## ternaires

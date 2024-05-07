@@ -32,7 +32,6 @@
                 <label> Non</label>
             </span>  
         </div>
-        
             <!-- Matériaux traditionnels ou technique courante -->
         <div class="mt-16">
             <span class="text-gray-500 font-medium">Les travaux sont-ils réalisés avec des matériaux traditionnels ou selon des procédés de technique courante ? &ensp;&ensp;
@@ -77,7 +76,6 @@
                     </span>
                 </div>
         </div>
-        
             <!-- Label -->
         <div class="mt-16">
             <h3 class="text-gray-500 font-medium">Label :</h3>
@@ -137,23 +135,25 @@
             </div>
         </div>
             <!-- Garanties demandées -->
-        <h3 class="text-gray-500 font-medium mt-16">Garanties demandées</h3>
-        <div class="ml-10 mt-2">
-            <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
-            <span class="font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
-                <input type="radio" name="situation_garanties_completes" value="1" required/>
-                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="situation_garanties_completes" value="0"/>
-                <label class="text-gray-500 font-medium"> Non</label>
-            </span>
-        </div>
-        <div class="ml-10 mt-2">
-            <span class="font-normal">Dommages matériels subits par les existants (CS n°811) &ensp;&ensp;
-                <input type="radio" name="situation_garanties_dommages_existants" value="1" required/>
-                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="situation_garanties_dommages_existants" value="0"/>
-                <label class="text-gray-500 font-medium"> Non</label>
-            </span>
+        <div>
+            <h3 class="text-gray-500 font-medium mt-16">Garanties demandées</h3>
+            <div class="ml-10 mt-2">
+                <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
+                <span class="text-sm font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
+                    <input type="radio" name="situation_garanties_completes" value="1" required/>
+                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                    <input type="radio" name="situation_garanties_completes" value="0"/>
+                    <label class="text-gray-500 font-medium"> Non</label>
+                </span>
+            </div>
+            <div class="ml-10 mt-2">
+                <span class="font-normal">Dommages matériels subits par les existants (CS n°811) &ensp;&ensp;
+                    <input type="radio" name="situation_garanties_dommages_existants" value="1" required/>
+                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                    <input type="radio" name="situation_garanties_dommages_existants" value="0"/>
+                    <label class="text-gray-500 font-medium"> Non</label>
+                </span>
+            </div>
         </div>
             <!-- Travaux annexes -->
         <div class="flex-column mt-16">

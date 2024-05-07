@@ -152,10 +152,10 @@
                     <span><input type="radio" name="trav_annexes_ct_type_controle" value="leth"/> LE + TH</span>
                 </div>
                 <div class="flex flex-col ml-12">
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lautre"/> L + Autres ( précisez : <input type="text" name="pv_puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lthautre"/> L + TH + Autres ( précisez : <input type="text" name="pv_puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leautre"/> LE + Autres ( précisez : <input type="text" name="pv_puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lethautre"/> LE + TH + Autres ( précisez : <input type="text" name="pv_puissance" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lautre"/> L + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_l_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lthautre"/> L + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_lth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leautre"/> LE + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_le_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lethautre"/> LE + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_leth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
                 </div>
             </div>
         </div>

@@ -22,8 +22,5 @@ impossible d'ajouter le remplissage auto parce que fichier html
 
 ## insertion bdd après chaque étape
 
-## champs underscore des names
-changer tirets par underscore
-
 ## ternaires
 exemple dans step2

@@ -30,10 +30,10 @@
                 break; 
             case 'step4bis':
                 $title = "Formulaire DO-04bis";         
-                if($_SESSION["info-situation"]['situation-construction-bois']=="0"
-                && $_SESSION["info-situation"]['situation-pann-photo'] =="0" 
-                && $_SESSION["info-situation"]['situation-geothermie'] =="0" 
-                && $_SESSION["info-situation"]['situation-controle-tech'] =="0") {
+                if($_SESSION["info_situation"]['situation_construction_bois']=="0"
+                && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
+                && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
+                && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
                     header("Location: index.php?page=step5");
                 }                         
                 $nextstep="step5";
@@ -58,17 +58,17 @@
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
-                $_SESSION['info-'.$_POST['fields']][$key] = $value;
+                $_SESSION['info_'.$_POST['fields']][$key] = $value;
             }
-            $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
+            $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
 
             if($currentstep == "step1"){
 
             }
             if($currentstep == "step2"){
-                $res = insert($_SESSION['info-'.$_POST['fields']]);
+                $res = insert($_SESSION['info_'.$_POST['fields']]);
             }else{
-                $res = update($_SESSION['info-'.$_POST['fields']]);
+                $res = update($_SESSION['info_'.$_POST['fields']]);
             }
         
             header("Location: index.php?page=".$nextstep);            

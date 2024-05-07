@@ -96,15 +96,15 @@
         if (isset($_POST['fields'])) {
             foreach ($_POST as $key => $value)
             {
-                $_SESSION['info-'.$_POST['fields']][$key] = $value;
+                $_SESSION['info_'.$_POST['fields']][$key] = $value;
             }
 
             if(!empty($_FILES)){
                 require "models/upload.php";
             }            
-            $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-            if (in_array('send-step8', $keys)) {
-                unset($_SESSION['info-'.$_POST['fields']]['send-step8']);
+            $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
+            if (in_array('send_step8', $keys)) {
+                unset($_SESSION['info_'.$_POST['fields']]['send_step8']);
             }  
             //header("Location: index.php?page=validation");
         }

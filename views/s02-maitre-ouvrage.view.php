@@ -5,36 +5,36 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-souscripteur" value="1"  onclick="hideElement('moa-souscripteur-form')" required/>
+                    <input type="radio" name="moa_souscripteur" value="1"  onclick="hideElement('moa_souscripteur_form')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-souscripteur" value="0" onclick="showElement('moa-souscripteur-form')"/>
+                    <input type="radio" name="moa_souscripteur" value="0" onclick="showElement('moa_souscripteur_form')"/>
                     <label> Non</label>
                 </div>
             </div>  
-            <div id="moa-souscripteur-form" class="hidden px-8 py-4">
+            <div id="moa_souscripteur_form" class="hidden px-8 py-4">
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" name="moa-souscripteur-form-civilite" value="particulier" checked onclick="hideElement('siret-champ'),hideElement('raison-champ')" required>
+                        <input type="radio" name="moa_souscripteur_form_civilite" value="particulier" checked onclick="hideElement('siret_champ'),hideElement('raison_champ')" required>
                         <label>&ensp; Particulier &ensp;&ensp;</label>
-                        <input type="radio" name="moa-souscripteur-form-civilite" value="entreprise" onclick="showElement('siret-champ'),showElement('raison-champ')">
+                        <input type="radio" name="moa_souscripteur_form_civilite" value="entreprise" onclick="showElement('siret_champ'),showElement('raison_champ')">
                         <label>&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom, Prénom</label>
-                        <input type="text" name="moa-souscripteur-form-nom-prenom" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-nom-prenom']) ? $_SESSION['info-moa']['moa-souscripteur-form-nom-prenom'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <input type="text" name="moa_souscripteur_form_nom_prenom" value="<?= isset($_SESSION['info_moa']['moa_souscripteur_form_nom_prenom']) ? $_SESSION['info_moa']['moa_souscripteur_form_nom_prenom'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                     <div class="py-4">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse actuelle</label>
-                        <input type="text" name="moa-souscripteur-form-adresse" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-adresse']) ? $_SESSION['info-moa']['moa-souscripteur-form-adresse'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <input type="text" name="moa_souscripteur_form_adresse" value="<?= isset($_SESSION['info_moa']['moa_souscripteur_form_adresse']) ? $_SESSION['info_moa']['moa_souscripteur_form_adresse'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
-                    <div id="raison-champ" class="hidden py-4">
+                    <div id="raison_champ" class="hidden py-4">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Raison sociale</label>
-                        <input type="text" name="moa-souscripteur-form-raison-sociale" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-raison-sociale']) ? $_SESSION['info-moa']['moa-souscripteur-form-raison-sociale'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <input type="text" name="moa_souscripteur_form_raison_sociale" value="<?= isset($_SESSION['info_moa']['moa_souscripteur_form_raison_sociale']) ? $_SESSION['info_moa']['moa_souscripteur_form_raison_sociale'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
-                    <div id="siret-champ" class="hidden py-4">
+                    <div id="siret_champ" class="hidden py-4">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SIRET n°</label>
-                        <input type="text" name="moa-souscripteur-form-siret" value="<?= isset($_SESSION['info-moa']['moa-souscripteur-form-siret']) ? $_SESSION['info-moa']['moa-souscripteur-form-siret'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                        <input type="text" name="moa_souscripteur_form_siret" value="<?= isset($_SESSION['info_moa']['moa_souscripteur_form_siret']) ? $_SESSION['info_moa']['moa_souscripteur_form_siret'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                     </div>
                 </div>
             </div>
@@ -46,25 +46,24 @@
             <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (choisissez l'option correspondante) :</h3>
             <div class="flex flex-col lg:flex-row mx-6 mb-2">
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="moa-qualite" value="etat" onclick="hideElement('moa-qualite-autre')" required/> Etat (services publics)</span>
-                    <span><input type="radio" name="moa-qualite" value="hlm-public" onclick="hideElement('moa-qualite-autre')"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                    <span><input type="radio" name="moa-qualite" value="syndic" onclick="hideElement('moa-qualite-autre')"/> Syndicats de copropriétaires</span>
-                    <span><input type="radio" name="moa-qualite" value="vendeur-prive" onclick="hideElement('moa-qualite-autre')"/> Vendeur privé après achèvement</span>
-                    <span><input type="radio" name="moa-qualite" value="sci" onclick="hideElement('moa-qualite-autre')"/> Société Civile Immobilière</span>
-                    <span><input type="radio" name="moa-qualite" value="entreprise" onclick="hideElement('moa-qualite-autre')"/> Enterprise</span>
-                    <span><input type="radio" name="moa-qualite" value="moa-qualite-autre" onclick="showElement('moa-qualite-autre')"/> Autre qualité</span>
-                    <div id="moa-qualite-autre" class="hidden mt-2">
-                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez précisez :</label>
-                        <input type="text" name="moa-qualite-champ" value="<?= isset($_SESSION['info-moa']['moa-qualite-champ']) ? $_SESSION['info-moa']['moa-qualite-champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                    <span><input type="radio" name="moa_qualite" value="etat" onclick="hideElement('moa_qualite_autre')" required/> Etat (services publics)</span>
+                    <span><input type="radio" name="moa_qualite" value="hlm_public" onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                    <span><input type="radio" name="moa_qualite" value="syndic" onclick="hideElement('moa_qualite_autre')"/> Syndicats de copropriétaires</span>
+                    <span><input type="radio" name="moa_qualite" value="vendeur_prive" onclick="hideElement('moa_qualite_autre')"/> Vendeur privé après achèvement</span>
+                    <span><input type="radio" name="moa_qualite" value="sci" onclick="hideElement('moa_qualite_autre')"/> Société Civile Immobilière</span>
+                    <span><input type="radio" name="moa_qualite" value="entreprise" onclick="hideElement('moa_qualite_autre')"/> Enterprise</span>
+                    <span><input type="radio" name="moa_qualite" value="moa_qualite_autre" onclick="showElement('moa_qualite_autre')"/> Autre qualité</span>
+                    <div id="moa_qualite_autre" class="hidden mt-2">
+                        <input type="text" name="moa_qualite_champ" value="<?= isset($_SESSION['info_moa']['moa_qualite_champ']) ? $_SESSION['info_moa']['moa_qualite_champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Veuillez préciser"/>
                     </div>    
                 </div>
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="moa-qualite" value="collectivites" onclick="hideElement('moa-qualite-autre')"/> Collectivités locales</span>
-                    <span><input type="radio" name="moa-qualite" value="hlm-prive" onclick="hideElement('moa-qualite-autre')"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                    <span><input type="radio" name="moa-qualite" value="vendeur-prive-imm" onclick="hideElement('moa-qualite-autre')"/> Vendeur privé d'immeubles à construire</span>
-                    <span><input type="radio" name="moa-qualite" value="particulier" onclick="hideElement('moa-qualite-autre')"/> Particulier</span>
-                    <span><input type="radio" name="moa-qualite" value="prom-prive" onclick="hideElement('moa-qualite-autre')"/> Promoteur privé immobilier</span>
-                    <span><input type="radio" name="moa-qualite" value="asso" onclick="hideElement('moa-qualite-autre')"/> Association</span>
+                    <span><input type="radio" name="moa_qualite" value="collectivites" onclick="hideElement('moa_qualite_autre')"/> Collectivités locales</span>
+                    <span><input type="radio" name="moa_qualite" value="hlm_prive" onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                    <span><input type="radio" name="moa_qualite" value="vendeur_prive_imm" onclick="hideElement('moa_qualite_autre')"/> Vendeur privé d'immeubles à construire</span>
+                    <span><input type="radio" name="moa_qualite" value="particulier" onclick="hideElement('moa_qualite_autre')"/> Particulier</span>
+                    <span><input type="radio" name="moa_qualite" value="prom_prive" onclick="hideElement('moa_qualite_autre')"/> Promoteur privé immobilier</span>
+                    <span><input type="radio" name="moa_qualite" value="asso" onclick="hideElement('moa_qualite_autre')"/> Association</span>
                 </div>
             </div>
         </div>
@@ -75,13 +74,13 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa-construction" value="1" <?= $moa_construction ? "checked=checked" : ""; ?> onclick="showElement('moa-construction-form'),showElement('tableau')" required/>
+                    <input type="radio" name="moa_construction" value="1" <?= $moa_construction ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_form'),showElement('tableau')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa-construction" value="0" <?= $moa_construction ? "" : "checked=checked"; ?> onclick="hideElement('moa-construction-form'),hideElement('tableau')"/>
+                    <input type="radio" name="moa_construction" value="0" <?= $moa_construction ? "" : "checked=checked"; ?> onclick="hideElement('moa_construction_form'),hideElement('tableau')"/>
                     <label> Non</label>
                 </div>
             </div>
-            <div id="moa-construction-form" class="hidden py-4">
+            <div id="moa_construction_form" class="hidden py-4">
                 <div class="flex flex-row p-2 mb-6">
                     <div class="flex items-center">
                         <svg class="w-6 h-6 text-blue-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
@@ -102,15 +101,15 @@
                             </div>
                         </div>
                         <div>
-                            <input type="radio" name="moa-construction-pro" value="1" onclick="showElement('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa_construction_pro" value="1" onclick="showElement('moa_construction_pro_form')"/>
                             <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                            <input type="radio" name="moa-construction-pro" value="0" onclick="hideElement('moa-construction-pro-form')"/>
+                            <input type="radio" name="moa_construction_pro" value="0" onclick="hideElement('moa_construction_pro_form')"/>
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>
                     <div id="moa-construction-pro-form" class="py-4 hidden mx-6">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
-                        <input type="text" name="moa-construction-pro-champ" value="<?= isset($_SESSION['info-moa']['"moa-construction-pro-champ']) ? $_SESSION['info-moa']['"moa-construction-pro-champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+                        <input type="text" name="moa_construction_pro_champ" value="<?= isset($_SESSION['info_moa']['moa_construction_pro_champ']) ? $_SESSION['info_moa']['moa_construction_pro_champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                 </div>
                 <div id="tableau" class="hidden mt-10">
@@ -131,70 +130,70 @@
                         </tr>
                         <tr>
                             <td class="border-r-2 border-l-2 border-b border-gray-300 p-2 pl-4">
-                                <input type="checkbox" name="moa-tab-conception"/>
+                                <input type="checkbox" name="moa_tab_conception"/>
                                 <label>&ensp; Conception</label>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-tab-conception-1"/></td>
+                                <input type="checkbox" name="moa_tab_conception_1"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-tab-conception-2"/></td>
+                                <input type="checkbox" name="moa_tab_conception_2"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-tab-conception-3"/></td>
+                                <input type="checkbox" name="moa_tab_conception_3"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" name="moa-tab-conception-4"/></td>
+                                <input type="text" name="moa_tab_conception_4"/></td>
                         </tr>
                         <tr>
                             <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4">
-                                <input type="checkbox" name="moa-direction"/>
+                                <input type="checkbox" name="moa_direction"/>
                                 <label>&ensp; Direction</label>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-direction-1"/>
+                                <input type="checkbox" name="moa_direction_1"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-direction-2"/>
+                                <input type="checkbox" name="moa_direction_2"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-direction-3"/>
+                                <input type="checkbox" name="moa_direction_3"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" name="moa-direction-4"/>
+                                <input type="text" name="moa_direction_4"/>
                             </td>
                         </tr>
                         <tr>
                             <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4">
-                                <input type="checkbox" name="moa-surveillance"/>
+                                <input type="checkbox" name="moa_surveillance"/>
                                 <label>&ensp; Surveillance</label>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-surveillance-1"/>
+                                <input type="checkbox" name="moa_surveillance_1"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-surveillance-2"/>
+                                <input type="checkbox" name="moa_surveillance_2"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-surveillance-3"/>
+                                <input type="checkbox" name="moa_surveillance_3"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" name="moa-surveillance-4"/>
+                                <input type="text" name="moa_surveillance_4"/>
                             </td>
                         </tr>
                         <tr>
                             <td class="border-r-2 border-l-2 border-b-2 border-gray-300 p-2 pl-4">
-                                <input type="checkbox" name="moa-execution"/>
+                                <input type="checkbox" name="moa_execution"/>
                                 <label>&ensp; Exécution</label>
                             </td>
                             <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-execution-1"/>
+                                <input type="checkbox" name="moa_execution_1"/>
                             </td>
                             <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-execution-2"/>
+                                <input type="checkbox" name="moa_execution_2"/>
                             </td>
                             <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
-                                <input type="checkbox" name="moa-execution-3"/>
+                                <input type="checkbox" name="moa_execution_3"/>
                             </td>
                             <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
-                                <input type="text" name="moa-execution-4"/>
+                                <input type="text" name="moa_execution_4"/>
                             </td>
                         </tr>
                     </table>
@@ -211,7 +210,7 @@
             </div>
             <!-- Bouton suivant -->
             <div class="text-center ml-6">
-                <button type="submit" name="send-step2" value="step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+                <button type="submit" name="send_step2" value="step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
             </div>
         </div>
 

@@ -5,14 +5,14 @@
         $title = "Accueil DO";
 
         // Envoi des champs du formulaire
-        if (isset($_POST['send-home'])) {
+        if (isset($_POST['send_home'])) {
             foreach ($_POST as $key => $value)
             {
-                $_SESSION['info-'.$_POST['fields']][$key] = $value;
+                $_SESSION['info_'.$_POST['fields']][$key] = $value;
             }
-            $keys = array_keys($_SESSION['info-'.$_POST['fields']]);
-            if (in_array('send-home', $keys)) {
-                unset($_SESSION['info-'.$_POST['fields']]['send-home']);
+            $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
+            if (in_array('send_home', $keys)) {
+                unset($_SESSION['info_'.$_POST['fields']]['send_home']);
             }  
             header("Location: index.php?page=step1");
         }

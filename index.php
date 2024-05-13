@@ -17,7 +17,6 @@
         switch($_GET['page']){
             case 'home':
                 require 'controllers/home.controller.php';
-                $_SESSION = [];
                 homeDisplay($currentstep);
                 break;
             case 'step1':

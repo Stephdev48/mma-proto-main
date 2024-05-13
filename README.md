@@ -18,9 +18,8 @@ l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de d
 ## template formulaire coordonnées
 impossible d'ajouter le remplissage auto parce que fichier html
 
-## MCD => MLD
+## ternaires
+exemple de ternaire pour les radio dans step2
 
 ## insertion bdd après chaque étape
 
-## ternaires
-exemple dans step2

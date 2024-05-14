@@ -3,7 +3,6 @@
     require_once 'models/do.model.php';
 
     function stepDisplay($currentstep){        
-
         //var_dump($_SESSION);
         // Remplissage de la variable $content
         ob_start();
@@ -47,32 +46,35 @@
             case 'step6':
                 $title = "Formulaire DO-06";
                 require('views/s06-cnr-risques-chantier.view.php');
-                $nextstep="validation";
+                $nextstep = "validation";
                 break;                                             
             default:
                 # code...
                 break;
         }
-        
-        // Envoi des champs du formulaire
-        if (isset($_POST['fields'])) {
+         // Envoi des champs du formulaire
+         if (isset($_POST['fields'])) {
+            //var_dump($_POST);
             foreach ($_POST as $key => $value)
             {
                 $_SESSION['info_'.$_POST['fields']][$key] = $value;
             }
             $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
-
             if($currentstep == "step1"){
-
-            }
-            if($currentstep == "step2"){
-                $res = insert($_SESSION['info_'.$_POST['fields']]);
+                $res = insert($_SESSION["info_souscripteur"]);
             }else{
                 $res = update($_SESSION['info_'.$_POST['fields']]);
             }
-        
-            header("Location: index.php?page=".$nextstep);            
+            
+            if($res == false){
+                // echo ERREUR LORS DE L'AJOUT OU MODIFICATION EN BDD
+            }else{
+                $_SESSION["DOID"] = $res;
+                header("Location: index.php?page=".$nextstep."&doid=$res"); 
+            }
+            
         }
+ 
         $content = ob_get_clean();
         require("views/base.view.php");
     }

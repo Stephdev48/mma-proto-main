@@ -23,3 +23,4 @@ exemple de ternaire pour les radio dans step2
 
 ## insertion bdd après chaque étape
 
+## Modifier DOID dans les tables qui le nécessitent

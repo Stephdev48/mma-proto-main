@@ -218,3 +218,5 @@
     </form>
 </section>
 
+<?php 
+// var_dump($_SESSION["info_souscripteur"]["souscripteur_nom_raison"]);

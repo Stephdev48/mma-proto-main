@@ -13,12 +13,12 @@
                 </div>
             </div>
             <span class="ml-6 text-gray-500 font-medium">
-                <input type="radio" name="nature_neuf_exist" value="neuve" onclick="hideElement('nature_operation')" required/>
+                <input type="radio" name="nature_neuf_exist" value="neuve" <?= $_SESSION['info_ope_constr']['nature_neuf_exist']=="neuve" ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation')" required/>
                 <label> Construction neuve &ensp;</label>
                 <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
             </span>
             <span class="ml-6 mt-2 lg:mt-0 text-gray-500 font-medium">
-                <input type="radio" name="nature_neuf_exist" value="existante" onclick="showElement('nature_operation')"/>
+                <input type="radio" name="nature_neuf_exist" value="existante" <?= $_SESSION['info_ope_constr']['nature_neuf_exist']=="existante" ? "checked=checked" : ""; ?> onclick="showElement('nature_operation')"/>
                 <label> Travaux sur construction existante</label>
             </span>
         </div>
@@ -39,9 +39,9 @@
                             </div>
                         </div>
                         <div>
-                            <input type="radio" name="nature_operation_surelev" value="1" onclick="showElement('nature_operation_surelev_form')"/>
+                            <input type="radio" name="nature_operation_surelev" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_surelev']==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_surelev_form')"/>
                             <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                            <input type="radio" name="nature_operation_surelev" value="0" onclick="hideElement('nature_operation_surelev_form')"/>
+                            <input type="radio" name="nature_operation_surelev" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_surelev']==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_surelev_form')"/>
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>
@@ -58,9 +58,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="1">
+                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeauvre']==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="0">
+                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_surelev']==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label>
 
                             </div>
@@ -75,9 +75,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="radio" name="nature_operation_surelev_hors_fond" value="1">
+                                <input type="radio" name="nature_operation_surelev_hors_fond" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond']==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_surelev_hors_fond" value="0">
+                                <input type="radio" name="nature_operation_surelev_hors_fond" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond']==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label>
                             </div>
                         </div>
@@ -86,18 +86,18 @@
                 <!-- Extension horizontale -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
-                        <input type="radio" name="nature_operation_ext_horizont" value="1" onclick="showElement('nature_operation_ext_horizont')"/>
+                        <input type="radio" name="nature_operation_ext_horizont" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_ext_horizont']==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_ext_horizont')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="nature_operation_ext_horizont" value="0" onclick="hideElement('nature_operation_ext_horizont')"/>
+                        <input type="radio" name="nature_operation_ext_horizont" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_ext_horizont']==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_ext_horizont" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                <input type="radio" name="nature_operation_ext_horizont_exist" value="1">
+                                <input type="radio" name="nature_operation_ext_horizont_exist" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist']==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_ext_horizont_exist" value="0">
+                                <input type="radio" name="nature_operation_ext_horizont_exist" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist']==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label></span>
                             </div>
                         </div>
@@ -106,50 +106,50 @@
                 <!-- Rénovation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature_operation_renovation" value="1" onclick="showElement('nature_operation_renovation')"/>
+                        <input type="radio" name="nature_operation_renovation" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation']==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_renovation')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp; </label>
-                        <input type="radio" name="nature_operation_renovation" value="0" onclick="hideElement('nature_operation_renovation')"/>
+                        <input type="radio" name="nature_operation_renovation" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation']==1 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_renovation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_fond" value="1">
+                                    <input type="radio" name="nature_operation_renovation_fond" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_fond']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_fond" value="0">
+                                    <input type="radio" name="nature_operation_renovation_fond" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_fond']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="1">
+                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="0">
+                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="1">
+                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="0">
+                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_etancheite" value="1">
+                                    <input type="radio" name="nature_operation_renovation_etancheite" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_etancheite']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_etancheite" value="0">
+                                    <input type="radio" name="nature_operation_renovation_etancheite" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_etancheite']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_ravalement" value="1">
+                                    <input type="radio" name="nature_operation_renovation_ravalement" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_ravalement']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_ravalement" value="0">
+                                    <input type="radio" name="nature_operation_renovation_ravalement" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_renovation_ravalement']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
@@ -159,50 +159,50 @@
                 <!-- Réhabilitation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature_operation_rehabilitation" value ="1" onclick="showElement('nature_operation_rehabilitation')"/>
+                        <input type="radio" name="nature_operation_rehabilitation" value ="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation']==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_rehabilitation')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="nature_operation_rehabilitation" value="0" onclick="hideElement('nature_operation_rehabilitation')"/>
+                        <input type="radio" name="nature_operation_rehabilitation" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation']==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_rehabilitation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_rehabilitation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="1">
+                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="0">
+                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="1">
+                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="0">
+                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="1">
+                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="0">
+                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="1">
+                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="0">
+                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="1">
+                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="1" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement']==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="0">
+                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="0" <?= $_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement']==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
@@ -212,9 +212,9 @@
             </div>
             <div class="my-10">
                 <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
-                    <input type="radio" name="operation_sinistre" value="1" onclick="showElement('operation_sinistre_champ_descr')"/>
+                    <input type="radio" name="operation_sinistre" value="1" <?= $_SESSION['info_ope_constr']['operation_sinistre']==1 ? "checked=checked" : ""; ?> onclick="showElement('operation_sinistre_champ_descr')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="operation_sinistre" value="0" onclick="hideElement('operation_sinistre_champ_descr')"/>
+                    <input type="radio" name="operation_sinistre" value="0" <?= $_SESSION['info_ope_constr']['operation_sinistre']==0 ? "checked=checked" : ""; ?> onclick="hideElement('operation_sinistre_champ_descr')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
                 <div id="operation_sinistre_champ_descr" class="hidden ml-10 mt-4 ">
@@ -229,26 +229,26 @@
             <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
             <div class="flex flex-col ml-8">
                 <div>
-                    <span><input type="checkbox" name="type_ouvrage_mais_indiv"/> Maison individuelle</span>
+                    <span><input type="checkbox" name="type_ouvrage_mais_indiv" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_mais_indiv']==1 ? "checked=checked" : ""; ?>/> Maison individuelle</span>
                 </div>
                 <div>
-                    <span><input type="checkbox" name="type_ouvrage_ope_pavill"/> Opération pavillonnaire :</span><br />
+                    <span><input type="checkbox" name="type_ouvrage_ope_pavill" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_ope_pavill']==1 ? "checked=checked" : ""; ?>/> Opération pavillonnaire :</span><br />
                     <span class="text-xs">(nombre de maisons : 
                         <input type="text" name="type_ope_pavill_nombre" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_ope_pavill_nombre']) ? $_SESSION['info_ope_constr']['type_ouvrage_ope_pavill_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )
                     </span>
                 </div>
                 <div>
-                    <span><input type="checkbox" name="type_ouvrage_coll_habit"/> Collectif d'habitation :</span><br />
+                    <span><input type="checkbox" name="type_ouvrage_coll_habit" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_coll_habit']==1 ? "checked=checked" : ""; ?>/> Collectif d'habitation :</span><br />
                     <span class="text-xs">(nombre d'appartements : 
                         <input type="text" name="type_ouvrage_coll_habit_nombre" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_coll_habit_nombre']) ? $_SESSION['info_ope_constr']['type_ouvrage_coll_habit_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )
                     </span>
                 </div>
                 <span>
-                    <input type="checkbox" name="type_ouvrage_bat_indus"/> Bâtiment à usage industriel ou agricole
+                    <input type="checkbox" name="type_ouvrage_bat_indus" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_bat_indus']==1 ? "checked=checked" : ""; ?>/> Bâtiment à usage industriel ou agricole
                 </span>
                 <div>
                     <span>
-                        <input type="checkbox" name="type_ouvrage_centre_com"/> Centre commercial, bâtiment à usage de vente :
+                        <input type="checkbox" name="type_ouvrage_centre_com" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_centre_com']==1 ? "checked=checked" : ""; ?>/> Centre commercial, bâtiment à usage de vente :
                     </span><br />
                     <span class="text-xs">(superficie hors oeuvre nette (SHON) : 
                         <input type="text" name="type_ouvrage_centre_com_surf" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_centre_com_surf']) ? $_SESSION['info_ope_constr']['type_ouvrage_centre_com_surf'] : ''?>" style="height:10px; width:60px; border-radius:6px;" class="bg-gray-50"/> m²)
@@ -256,12 +256,12 @@
                 </div>
             </div>
             <div class="flex flex-col ml-8">
-                <span><input type="checkbox" name="type_ouvrage_bat_bur"/> Bâtiment à usage de bureau</span>
-                <span><input type="checkbox" name="type_ouvrage_hopital"/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
-                <span><input type="checkbox" name="type_ouvrage_vrd_privatif"/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
+                <span><input type="checkbox" name="type_ouvrage_bat_bur" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_bat_bur']==1 ? "checked=checked" : ""; ?>/> Bâtiment à usage de bureau</span>
+                <span><input type="checkbox" name="type_ouvrage_hopital" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_hopital']==1 ? "checked=checked" : ""; ?>/> Bâtiment d'établissement Hospitalier, de Maison de retraite, Clinique</span>
+                <span><input type="checkbox" name="type_ouvrage_vrd_privatif" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_vrd_privatif']==1 ? "checked=checked" : ""; ?>/> Voirie réseaux Divers (VRD) à usage privatif d'un bâtiment</span>
                 <div>
                     <span>
-                        <input type="checkbox" name="type_ouvrage_autre_const"/> Autre construction :
+                        <input type="checkbox" name="type_ouvrage_autre_const" value="1" <?= $_SESSION['info_ope_constr']['type_ouvrage_autre_const']==1 ? "checked=checked" : ""; ?>/> Autre construction :
                     </span><br />
                     <span class="text-xs">(son usage : 
                         <input type="text" name="type_ouvrage_autre_const_usage" value="<?= isset($_SESSION['info_ope_constr']['type_ouvrage_autre_const_usage']) ? $_SESSION['info_ope_constr']['type_ouvrage_autre_const_usage'] : ''?>" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )
@@ -343,28 +343,26 @@
             </div>
             <div class="mx-8 mt-4">
                 <span class="text-sm font-medium text-gray-900">Comprend la TVA ? &ensp;&ensp;
-                    <input type="radio" name="cout_operation_tva" value="1" required/>
+                    <input type="radio" name="cout_operation_tva" value="1" <?= $_SESSION['info_ope_constr']['cout_operation_tva']==1 ? "checked=checked" : ""; ?> required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="cout_operation_tva" value="0"/>
+                    <input type="radio" name="cout_operation_tva" value="0" <?= $_SESSION['info_ope_constr']['cout_operation_tva']==0 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>  
             </div>
         </div>
 
 
+
         <div class="flex flex-row justify-center mt-16">
             <!-- Bouton précédent -->                                          
             <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">
-                <a href="index.php?page=step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Précédent
-                </a>
+                <button type="submit" name="page_next" value="step2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Précédent</button>
             </div>
             <!-- Bouton suivant -->
             <div class="text-center ml-6">
-                <button type="submit" name="send_step3" value="step3" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+                <button type="submit" name="page_next" value="step4" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
             </div>
         </div>
-
 
         <input type="hidden" name="fields" value="ope_constr">
     </form>

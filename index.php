@@ -3,8 +3,6 @@
     define('ROOT_PATH', dirname(__FILE__) );
     define('UPLOAD_FOLDER', "/public/uploads" );
     define('DEBUG', true );
-
-    
     require 'controllers/page-erreur.controller.php';
    
     // Vide la superglobale $_SESSION

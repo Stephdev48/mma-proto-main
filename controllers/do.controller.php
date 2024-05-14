@@ -1,7 +1,7 @@
 <?php
     require_once 'models/form-entreprises.model.php'; 
     require_once 'models/do.model.php';
-
+    
     function stepDisplay($currentstep){  
         
 

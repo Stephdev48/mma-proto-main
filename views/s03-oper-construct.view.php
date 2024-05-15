@@ -39,9 +39,9 @@
                             </div>
                         </div>
                         <div>
-                            <input type="radio" name="nature_operation_surelev" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_surelev_form')"/>
+                            <input type="radio" name="nature_operation_surelev" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev']) && ($_SESSION['info_ope_constr']['nature_operation_surelev'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_surelev_form')"/>
                             <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                            <input type="radio" name="nature_operation_surelev" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_surelev_form')"/>
+                            <input type="radio" name="nature_operation_surelev" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev']) && ($_SESSION['info_ope_constr']['nature_operation_surelev'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_surelev_form')"/>
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>
@@ -58,9 +58,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeauvre'])==1 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeuvre']) && ($_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeuvre'])==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev'])==0 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_surelev_sous_oeuvre" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeuvre']) && ($_SESSION['info_ope_constr']['nature_operation_surelev_sous_oeuvre'])==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label>
 
                             </div>
@@ -75,9 +75,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="radio" name="nature_operation_surelev_hors_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond'])==1 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_surelev_hors_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond']) && ($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond'])==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_surelev_hors_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond'])==0 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_surelev_hors_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond']) && ($_SESSION['info_ope_constr']['nature_operation_surelev_hors_fond'])==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label>
                             </div>
                         </div>
@@ -86,18 +86,18 @@
                 <!-- Extension horizontale -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;
-                        <input type="radio" name="nature_operation_ext_horizont" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_ext_horizont')"/>
+                        <input type="radio" name="nature_operation_ext_horizont" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont']) && ($_SESSION['info_ope_constr']['nature_operation_ext_horizont'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_ext_horizont')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="nature_operation_ext_horizont" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
+                        <input type="radio" name="nature_operation_ext_horizont" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont']) && ($_SESSION['info_ope_constr']['nature_operation_ext_horizont'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_ext_horizont" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                <input type="radio" name="nature_operation_ext_horizont_exist" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist'])==1 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_ext_horizont_exist" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist']) && ($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist'])==1 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                <input type="radio" name="nature_operation_ext_horizont_exist" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist'])==0 ? "checked=checked" : ""; ?>>
+                                <input type="radio" name="nature_operation_ext_horizont_exist" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist']) && ($_SESSION['info_ope_constr']['nature_operation_ext_horizont_exist'])==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label></span>
                             </div>
                         </div>
@@ -106,50 +106,50 @@
                 <!-- Rénovation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature_operation_renovation" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_renovation')"/>
+                        <input type="radio" name="nature_operation_renovation" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation']) && ($_SESSION['info_ope_constr']['nature_operation_renovation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_renovation')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp; </label>
-                        <input type="radio" name="nature_operation_renovation" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
+                        <input type="radio" name="nature_operation_renovation" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation']) && ($_SESSION['info_ope_constr']['nature_operation_renovation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_renovation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_fond'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_fond']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_fond'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_fond'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_fond']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_fond'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_iso_therm" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_iso_therm'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_refect_toit" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_refect_toit'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_etancheite" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_etancheite" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_etancheite" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_etancheite" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_etancheite'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_renovation_ravalement" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_ravalement" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_renovation_ravalement" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_renovation_ravalement" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement']) && ($_SESSION['info_ope_constr']['nature_operation_renovation_ravalement'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
@@ -159,50 +159,50 @@
                 <!-- Réhabilitation -->
                 <div class="my-4">
                     <span class="text-gray-500 font-medium">D'une réhabilitation ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                        <input type="radio" name="nature_operation_rehabilitation" value ="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_rehabilitation')"/>
+                        <input type="radio" name="nature_operation_rehabilitation" value ="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_rehabilitation')"/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="nature_operation_rehabilitation" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_rehabilitation')"/>
+                        <input type="radio" name="nature_operation_rehabilitation" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_rehabilitation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                     <div id="nature_operation_rehabilitation" class="hidden px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_fond" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_fond'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_iso_therm" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_iso_therm'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Réfection de toiture ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_refect_toit" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_refect_toit'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Travaux d'étanchéité ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_etancheite" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_etancheite'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ravalement de façade ? : &ensp;&ensp;
-                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement'])==1 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="1" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement'])==1 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
-                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement'])==0 ? "checked=checked" : ""; ?>>
+                                    <input type="radio" name="nature_operation_rehabilitation_ravalement" value="0" <?= isset($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement']) && ($_SESSION['info_ope_constr']['nature_operation_rehabilitation_ravalement'])==0 ? "checked=checked" : ""; ?>>
                                     <label class="text-gray-500 font-medium">&ensp; Non</label>
                                 </span>
                             </div>
@@ -212,9 +212,9 @@
             </div>
             <div class="my-10">
                 <span class="text-gray-500 font-medium">S'agit-il d'une réparation suite à sinistre ? &ensp;&ensp;
-                    <input type="radio" name="operation_sinistre" value="1" <?= isset($_SESSION['info_ope_constr']['operation_sinistre'])==1 ? "checked=checked" : ""; ?> onclick="showElement('operation_sinistre_champ_descr')"/>
+                    <input type="radio" name="operation_sinistre" value="1" <?= isset($_SESSION['info_ope_constr']['operation_sinistre']) && ($_SESSION['info_ope_constr']['operation_sinistre'])==1 ? "checked=checked" : ""; ?> onclick="showElement('operation_sinistre_champ_descr')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="operation_sinistre" value="0" <?= isset($_SESSION['info_ope_constr']['operation_sinistre'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('operation_sinistre_champ_descr')"/>
+                    <input type="radio" name="operation_sinistre" value="0" <?= isset($_SESSION['info_ope_constr']['operation_sinistre']) && ($_SESSION['info_ope_constr']['operation_sinistre'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('operation_sinistre_champ_descr')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
                 <div id="operation_sinistre_champ_descr" class="hidden ml-10 mt-4 ">
@@ -343,9 +343,9 @@
             </div>
             <div class="mx-8 mt-4">
                 <span class="text-sm font-medium text-gray-900">Comprend la TVA ? &ensp;&ensp;
-                    <input type="radio" name="cout_operation_tva" value="1" <?= isset($_SESSION['info_ope_constr']['cout_operation_tva'])==1 ? "checked=checked" : ""; ?> required/>
+                    <input type="radio" name="cout_operation_tva" value="1" <?= isset($_SESSION['info_ope_constr']['cout_operation_tva']) && ($_SESSION['info_ope_constr']['cout_operation_tva'])==1 ? "checked=checked" : ""; ?> required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="cout_operation_tva" value="0" <?= isset($_SESSION['info_ope_constr']['cout_operation_tva'])==0 ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="cout_operation_tva" value="0" <?= isset($_SESSION['info_ope_constr']['cout_operation_tva']) && ($_SESSION['info_ope_constr']['cout_operation_tva'])==0 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>  
             </div>

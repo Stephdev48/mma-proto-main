@@ -18,25 +18,25 @@
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">RC Décennale - Garanties complètes (CS n°812) 
                         <span class="font-normal"> &ensp;&ensp;(RC décennale obligatoire + facultatives) &ensp;&ensp;</span>
-                        <input type="radio" name="cnr_rc_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_decennale'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="cnr_rc_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_decennale']) && ($_SESSION['info_cnr']['cnr_rc_decennale'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="cnr_rc_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_decennale'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="cnr_rc_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_decennale']) && ($_SESSION['info_cnr']['cnr_rc_decennale'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">RC hors décennale (CS n°883) &ensp;&ensp;
-                        <input type="radio" name="cnr_rc_hors_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="cnr_rc_hors_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) & ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="cnr_rc_hors_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="cnr_rc_hors_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) & ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">Recours et défense pénale (CS n°886) &ensp;&ensp;
-                        <input type="radio" name="cnr_rc_recours" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_recours'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="cnr_rc_recours" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_recours']) && ($_SESSION['info_cnr']['cnr_rc_recours'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="cnr_rc_recours" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_recours'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="cnr_rc_recours" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_recours']) && ($_SESSION['info_cnr']['cnr_rc_recours'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>
@@ -54,17 +54,17 @@
                 <span class="font-medium">Garanties demandées</span>
                 <div class="mx-8 mt-4">
                     <span class="font-normal">Dommages matériels à la construction (CS n°884)  &ensp;&ensp;
-                        <input type="radio" name="risques_chantier_materiel" value="1" <?= isset($_SESSION['info_cnr']['risques_chantier_materiel'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="risques_chantier_materiel" value="1" <?= isset($_SESSION['info_cnr']['risques_chantier_materiel']) && ($_SESSION['info_cnr']['risques_chantier_materiel'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="risques_chantier_materiel" value="0" <?= isset($_SESSION['info_cnr']['risques_chantier_materiel'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="risques_chantier_materiel" value="0" <?= isset($_SESSION['info_cnr']['risques_chantier_materiel']) && ($_SESSION['info_cnr']['risques_chantier_materiel'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="font-normal">Dommages matériels subits par les existants (CS n°884) &ensp;&ensp;
-                        <input type="radio" name="risques_chantier_existants" value="1" <?= isset($_SESSION['info_cnr']['risques_chantier_existants'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="risques_chantier_existants" value="1" <?= isset($_SESSION['info_cnr']['risques_chantier_existants']) && ($_SESSION['info_cnr']['risques_chantier_existants'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="risques_chantier_existants" value="0" <?= isset($_SESSION['info_cnr']['risques_chantier_existants'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="risques_chantier_existants" value="0" <?= isset($_SESSION['info_cnr']['risques_chantier_existants']) && ($_SESSION['info_cnr']['risques_chantier_existants'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>

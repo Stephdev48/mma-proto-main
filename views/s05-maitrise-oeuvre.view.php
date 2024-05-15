@@ -5,9 +5,9 @@
         <div class="flex flex-col lg:flex-row ml-10 mt-6">
             <span class="font-normal">Y a-t-il intervention d'un architecte ou d'un maitre d'oeuvre ? &ensp;&ensp;</span>
             <div class="ml-8 text-gray-500 font-medium">
-                <input type="radio" name="moe_intervention" value="1" <?= isset($_SESSION['info_moe']['moe_intervention'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moe_intervention_form')" required/>
+                <input type="radio" name="moe_intervention" value="1" <?= isset($_SESSION['info_moe']['moe_intervention']) && ($_SESSION['info_moe']['moe_intervention'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moe_intervention_form')" required/>
                 <label> Oui &ensp;</label>
-                <input type="radio" name="moe_intervention" value="0" <?= isset($_SESSION['info_moe']['moe_intervention'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moe_intervention_form')"/>
+                <input type="radio" name="moe_intervention" value="0" <?= isset($_SESSION['info_moe']['moe_intervention']) && ($_SESSION['info_moe']['moe_intervention'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moe_intervention_form')"/>
                 <label> Non</label>
             </div>
         </div>
@@ -18,9 +18,9 @@
             <div class="flex mt-16">
                 <span class="font-normal">Est-il indépendant à l'égard des autres constructeurs et du maître d'ouvrage ?</span>
                 <div class="ml-10">
-                    <input type="radio" name="moe_intervention_independant" value="1" <?= isset($_SESSION['info_moe']['moe_intervention_independant'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moe_intervention_independant_info')"/>
+                    <input type="radio" name="moe_intervention_independant" value="1" <?= isset($_SESSION['info_moe']['moe_intervention_independant']) && ($_SESSION['info_moe']['moe_intervention_independant'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moe_intervention_independant_info')"/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="moe_intervention_independant" value="0" <?= isset($_SESSION['info_moe']['moe_intervention_independant'])==0 ? "checked=checked" : ""; ?> onclick="showElement('moe_intervention_independant_info')"/>
+                    <input type="radio" name="moe_intervention_independant" value="0" <?= isset($_SESSION['info_moe']['moe_intervention_independant']) && ($_SESSION['info_moe']['moe_intervention_independant'])==0 ? "checked=checked" : ""; ?> onclick="showElement('moe_intervention_independant_info')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </div>
             </div>
@@ -34,19 +34,19 @@
                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa mission</span>
                 <div class="ml-10">
                     <div>
-                        <input type="radio" name="moe_intervention_independant_mission" value="conception" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission'])=="conception" ? "checked=checked" : ""; ?>>
+                        <input type="radio" name="moe_intervention_independant_mission" value="conception" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission']) && ($_SESSION['info_moe']['moe_intervention_independant_mission'])=="conception" ? "checked=checked" : ""; ?>>
                         <label class="font-normal">Conception</label>
                     </div>
                     <div>
-                        <input type="radio" name="moe_intervention_independant_mission" value="direction" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission'])=="direction" ? "checked=checked" : ""; ?>>
+                        <input type="radio" name="moe_intervention_independant_mission" value="direction" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission']) && ($_SESSION['info_moe']['moe_intervention_independant_mission'])=="direction" ? "checked=checked" : ""; ?>>
                         <label class="font-normal">Direction et surveillance des travaux</label>
                     </div>
                     <div>                
-                        <input type="radio" name="moe_intervention_independant_mission" value="complete" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission'])=="complete" ? "checked=checked" : ""; ?>>
+                        <input type="radio" name="moe_intervention_independant_mission" value="complete" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission']) && ($_SESSION['info_moe']['moe_intervention_independant_mission'])=="complete" ? "checked=checked" : ""; ?>>
                         <label class="font-normal">Mission complète</label>
                     </div>
                     <div>                  
-                        <input type="radio" name="moe_intervention_independant_mission" value="autre" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission'])=="autre" ? "checked=checked" : ""; ?>>
+                        <input type="radio" name="moe_intervention_independant_mission" value="autre" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission']) && ($_SESSION['info_moe']['moe_intervention_independant_mission'])=="autre" ? "checked=checked" : ""; ?>>
                         <label class="font-normal">Autre</label>
                         <span class="text-xs">(à décrire : 
                             <input type="text" name="moe_intervention_independant_mission_autre_descr" value="<?= isset($_SESSION['info_moe']['moe_intervention_mission_autre_descr']) ? $_SESSION['info_moe']['moe_intervention_mission_autre_descr'] : ''?>" style="height:10px; width: 350px; border-radius:6px; font-size:14px;" class="bg-gray-50"/> )
@@ -67,8 +67,6 @@
                     $nextstep = "step4";
                 }
             ?>
-
-
 
         <div class="flex flex-row justify-center mt-16">
             <!-- Bouton précédent -->                                          

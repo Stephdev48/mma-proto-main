@@ -7,25 +7,25 @@
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="trav_annexes_constr_bois" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois'])==1 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_bois" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois'])==1 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav_annexes_constr_bois" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois'])==0 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_bois" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois'])==0 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">L'enveloppe de la construction (façade, planchers et balcons) est-elle en bois ? &ensp;&ensp;
-                <input type="radio" name="trav_annexes_constr_bois_enveloppe" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe'])==1 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_bois_enveloppe" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe'])==1 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav_annexes_constr_bois_enveloppe" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe'])==0 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_bois_enveloppe" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_bois_enveloppe'])==0 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les produits utilisés bénéficient-ils d'un marquage CE ? &ensp;&ensp;
-                <input type="radio" name="trav_annexes_constr_produits_ce"  value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce'])==1 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_produits_ce"  value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce'])==1 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav_annexes_constr_produits_ce" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce'])==0 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_constr_produits_ce" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce']) && ($_SESSION['info_travaux_annexes']['trav_annexes_constr_produits_ce'])==0 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
         </div>
@@ -48,40 +48,40 @@
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
             <div class="ml-10">
                 <span>
-                    <input type="radio" name="trav_annexes_pv_montage" value="integre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="integre" ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="trav_annexes_pv_montage" value="integre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="integre" ? "checked=checked" : ""; ?>/>
                     <label> intégrés à la toiture</label>
                 </span>
                 <span class="ml-4">
-                    <input type="radio" name="trav_annexes_pv_montage" value="surimpose" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="surimpose" ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="trav_annexes_pv_montage" value="surimpose" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="surimpose" ? "checked=checked" : ""; ?>/>
                     <label> surimposés à la toiture</label>
                 </span>
                 <span class="ml-4">
-                    <input type="radio" name="trav_annexes_pv_montage" value="autre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="autre" ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="trav_annexes_pv_montage" value="autre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_montage'])=="autre" ? "checked=checked" : ""; ?>/>
                     <label> autres (ex : façade... )</label>
                 </span>
             </div>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Les procédés mis en oeuvre bénéficient-ils d'un avis technique ? &ensp;&ensp;
-                <input type="radio" name="trav_annexes_pv_proc_tech" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('pv_etn')"/>
+                <input type="radio" name="trav_annexes_pv_proc_tech" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('pv_etn')"/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav_annexes_pv_proc_tech" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech'])==0 ? "checked=checked" : ""; ?> onclick="showElement('pv_etn')"/>
+                <input type="radio" name="trav_annexes_pv_proc_tech" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_proc_tech'])==0 ? "checked=checked" : ""; ?> onclick="showElement('pv_etn')"/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>
             <div id="pv_etn" class="hidden">
                 <span class="font-normal ml-10">Sont-ils visés par une Enquête de Technique Nouvelle (ETN) ? &ensp;&ensp;
-                    <input type="radio" name="trav_annexes_pv_etn" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn'])==1 ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="trav_annexes_pv_etn" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn'])==1 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="trav_annexes_pv_etn" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn'])==0 ? "checked=checked" : ""; ?>/>
+                    <input type="radio" name="trav_annexes_pv_etn" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_etn'])==0 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">En présence d'un avis technique, les procédés figurent-ils sur la liste verte de la C2P ? &ensp;&ensp;
-                <input type="radio" name="trav_annexes_pv_liste_c2p" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p'])==1 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_pv_liste_c2p" value="1" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p'])==1 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                <input type="radio" name="trav_annexes_pv_liste_c2p" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p'])==0 ? "checked=checked" : ""; ?>/>
+                <input type="radio" name="trav_annexes_pv_liste_c2p" value="0" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p']) && ($_SESSION['info_travaux_annexes']['trav_annexes_pv_liste_c2p'])==0 ? "checked=checked" : ""; ?>/>
                 <label class="text-gray-500 font-medium"> Non</label>
             </span>  
         </div>
@@ -146,16 +146,16 @@
             <h3 class="font-normal mb-4">Type de contrôle (choisissez l'option correspondante):</h3>
             <div class="flex flex-row ml-10">
                 <div class="flex flex-col">
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="l" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="l" ? "checked=checked" : ""; ?>/> L</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lth" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lth" ? "checked=checked" : ""; ?>/> L + TH</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="le" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="le" ? "checked=checked" : ""; ?>/> LE</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leth" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="leth" ? "checked=checked" : ""; ?>/> LE + TH</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="l" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="l" ? "checked=checked" : ""; ?>/> L</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lth" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lth" ? "checked=checked" : ""; ?>/> L + TH</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="le" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="le" ? "checked=checked" : ""; ?>/> LE</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leth" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="leth" ? "checked=checked" : ""; ?>/> LE + TH</span>
                 </div>
                 <div class="flex flex-col ml-12">
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lautre" ? "checked=checked" : ""; ?>/> L + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_l_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lthautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lthautre" ? "checked=checked" : ""; ?>/> L + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_lth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="leautre" ? "checked=checked" : ""; ?>/> LE + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_le_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
-                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lethautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lethautre" ? "checked=checked" : ""; ?>/> LE + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_leth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lautre" ? "checked=checked" : ""; ?>/> L + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_l_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lthautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lthautre" ? "checked=checked" : ""; ?>/> L + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_lth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="leautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="leautre" ? "checked=checked" : ""; ?>/> LE + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_le_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
+                    <span><input type="radio" name="trav_annexes_ct_type_controle" value="lethautre" <?= isset($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle']) && ($_SESSION['info_travaux_annexes']['trav_annexes_ct_type_controle'])=="lethautre" ? "checked=checked" : ""; ?>/> LE + TH + Autres ( précisez : <input type="text" name="trav_annexes_ct_type_controle_leth_autres" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50 ml-4"/> )</span>
                 </div>
             </div>
         </div>

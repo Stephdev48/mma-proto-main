@@ -5,9 +5,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa_souscripteur" value="1" <?= isset($_SESSION['info_moa']['moa_souscripteur'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moa_souscripteur_form')" required/>
+                    <input type="radio" name="moa_souscripteur" value="1" <?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moa_souscripteur_form')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa_souscripteur" value="0" <?= isset($_SESSION['info_moa']['moa_souscripteur'])==0 ? "checked=checked" : ""; ?> onclick="showElement('moa_souscripteur_form')"/>
+                    <input type="radio" name="moa_souscripteur" value="0" <?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==0 ? "checked=checked" : ""; ?> onclick="showElement('moa_souscripteur_form')"/>
                     <label> Non</label>
                 </div>
             </div>  
@@ -15,7 +15,7 @@
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" name="moa_souscripteur_form_civilite" value="particulier" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('siret_champ'),hideElement('raison_champ')" required>
+                        <input type="radio" name="moa_souscripteur_form_civilite" value="particulier" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('siret_champ'),hideElement('raison_champ')">
                         <label>&ensp; Particulier &ensp;&ensp;</label>
                         <input type="radio" name="moa_souscripteur_form_civilite" value="entreprise" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="entreprise" ? "checked=checked" : ""; ?> onclick="showElement('siret_champ'),showElement('raison_champ')">
                         <label>&ensp; Entreprise</label></span>
@@ -46,24 +46,24 @@
             <h3 class="mb-2 text-gray-500 font-medium">Qualité du maitre d'ouvrage (choisissez l'option correspondante) :</h3>
             <div class="flex flex-col lg:flex-row mx-6 mb-2">
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="moa_qualite" value="etat" <?= isset($_SESSION['info_moa']['moa_qualite'])=="etat" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')" required/> Etat (services publics)</span>
-                    <span><input type="radio" name="moa_qualite" value="hlm_public" <?= isset($_SESSION['info_moa']['moa_qualite'])=="hlm_public" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur public)</span>
-                    <span><input type="radio" name="moa_qualite" value="syndic" <?= isset($_SESSION['info_moa']['moa_qualite'])=="syndic" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Syndicats de copropriétaires</span>
-                    <span><input type="radio" name="moa_qualite" value="vendeur_prive" <?= isset($_SESSION['info_moa']['moa_qualite'])=="vendeur_prive" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Vendeur privé après achèvement</span>
-                    <span><input type="radio" name="moa_qualite" value="sci" <?= isset($_SESSION['info_moa']['moa_qualite'])=="sci" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Société Civile Immobilière</span>
-                    <span><input type="radio" name="moa_qualite" value="entreprise" <?= isset($_SESSION['info_moa']['moa_qualite'])=="entreprise" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Enterprise</span>
-                    <span><input type="radio" name="moa_qualite" value="moa_qualite_autre" <?= isset($_SESSION['info_moa']['moa_qualite'])=="moa_qualite_autre" ? "checked=checked" : ""; ?> onclick="showElement('moa_qualite_autre')"/> Autre qualité</span>
+                    <span><input type="radio" name="moa_qualite" value="etat" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="etat" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')" required/> Etat (services publics)</span>
+                    <span><input type="radio" name="moa_qualite" value="hlm_public" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="hlm_public" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur public)</span>
+                    <span><input type="radio" name="moa_qualite" value="syndic" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="syndic" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Syndicats de copropriétaires</span>
+                    <span><input type="radio" name="moa_qualite" value="vendeur_prive" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="vendeur_prive" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Vendeur privé après achèvement</span>
+                    <span><input type="radio" name="moa_qualite" value="sci" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="sci" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Société Civile Immobilière</span>
+                    <span><input type="radio" name="moa_qualite" value="entreprise" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="entreprise" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Enterprise</span>
+                    <span><input type="radio" name="moa_qualite" value="moa_qualite_autre" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="moa_qualite_autre" ? "checked=checked" : ""; ?> onclick="showElement('moa_qualite_autre')"/> Autre qualité</span>
                     <div id="moa_qualite_autre" class="hidden mt-2">
                         <input type="text" name="moa_qualite_champ" value="<?= isset($_SESSION['info_moa']['moa_qualite_champ']) ? $_SESSION['info_moa']['moa_qualite_champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Veuillez préciser"/>
                     </div>    
                 </div>
                 <div class="flex flex-col ml-8">
-                    <span><input type="radio" name="moa_qualite" value="collectivites" <?= isset($_SESSION['info_moa']['moa_qualite'])=="collectivites" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Collectivités locales</span>
-                    <span><input type="radio" name="moa_qualite" value="hlm_prive" <?= isset($_SESSION['info_moa']['moa_qualite'])=="hlm_prive" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
-                    <span><input type="radio" name="moa_qualite" value="vendeur_prive_imm" <?= isset($_SESSION['info_moa']['moa_qualite'])=="vendeur_prive_imm" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Vendeur privé d'immeubles à construire</span>
-                    <span><input type="radio" name="moa_qualite" value="particulier" <?= isset($_SESSION['info_moa']['moa_qualite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Particulier</span>
-                    <span><input type="radio" name="moa_qualite" value="prom_prive" <?= isset($_SESSION['info_moa']['moa_qualite'])=="prom_priv" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Promoteur privé immobilier</span>
-                    <span><input type="radio" name="moa_qualite" value="asso" <?= isset($_SESSION['info_moa']['moa_qualite'])=="asso" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Association</span>
+                    <span><input type="radio" name="moa_qualite" value="collectivites" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="collectivites" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Collectivités locales</span>
+                    <span><input type="radio" name="moa_qualite" value="hlm_prive" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="hlm_prive" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Organismes d'habitations à loyer modéré (secteur privé)</span>
+                    <span><input type="radio" name="moa_qualite" value="vendeur_prive_imm" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="vendeur_prive_imm" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Vendeur privé d'immeubles à construire</span>
+                    <span><input type="radio" name="moa_qualite" value="particulier" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Particulier</span>
+                    <span><input type="radio" name="moa_qualite" value="prom_prive" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="prom_priv" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Promoteur privé immobilier</span>
+                    <span><input type="radio" name="moa_qualite" value="asso" <?= isset($_SESSION['info_moa']['moa_qualite']) && ($_SESSION['info_moa']['moa_qualite'])=="asso" ? "checked=checked" : ""; ?> onclick="hideElement('moa_qualite_autre')"/> Association</span>
                 </div>
             </div>
         </div>
@@ -74,9 +74,9 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage participe à la construction ? &ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa_construction" value="1" <?= isset($_SESSION['info_moa']['moa_construction'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_form'),showElement('moa_construction_pro_tableau')" required/>
+                    <input type="radio" name="moa_construction" value="1" <?= isset($_SESSION['info_moa']['moa_construction']) && ($_SESSION['info_moa']['moa_construction'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_form'),showElement('moa_construction_pro_tableau')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="moa_construction" value="0" <?= isset($_SESSION['info_moa']['moa_construction'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moa_construction_form'),hideElement('moa_construction_pro_tableau')"/>
+                    <input type="radio" name="moa_construction" value="0" <?= isset($_SESSION['info_moa']['moa_construction']) && ($_SESSION['info_moa']['moa_construction'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moa_construction_form'),hideElement('moa_construction_pro_tableau')"/>
                     <label> Non</label>
                 </div>
             </div>
@@ -101,9 +101,9 @@
                             </div>
                         </div>
                         <div>
-                            <input type="radio" name="moa_construction_pro" value="1" <?= isset($_SESSION['info_moa']['moa_construction_pro'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_pro_form')"/>
+                            <input type="radio" name="moa_construction_pro" value="1" <?= isset($_SESSION['info_moa']['moa_construction_pro']) && ($_SESSION['info_moa']['moa_construction_pro'])==1 ? "checked=checked" : ""; ?> onclick="showElement('moa_construction_pro_form')"/>
                             <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                            <input type="radio" name="moa_construction_pro" value="0" <?= isset($_SESSION['info_moa']['moa_construction_pro'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moa_construction_pro_form')"/>
+                            <input type="radio" name="moa_construction_pro" value="0" <?= isset($_SESSION['info_moa']['moa_construction_pro']) && ($_SESSION['info_moa']['moa_construction_pro'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('moa_construction_pro_form')"/>
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>

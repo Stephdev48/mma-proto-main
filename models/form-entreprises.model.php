@@ -7,3 +7,9 @@
             return $coordform;
         }
         
+
+        function insertEntreprise(){
+            
+            $entreprise_id = mysqli_insert_id($GLOBALS["conn"]);
+            return $entreprise_id;
+        };

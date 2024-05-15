@@ -130,17 +130,17 @@
                         </tr>
                         <tr>
                             <td class="border-r-2 border-l-2 border-b border-gray-300 p-2 pl-4">
-                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception'])==1 ? "checked=checked" : ""; ?> name="moa_tab_conception"/>
+                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception'])==1 ? "checked=checked" : ""; ?> name="moa_conception"/>
                                 <label>&ensp; Conception</label>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_1'])==1 ? "checked=checked" : ""; ?> name="moa_tab_conception_1"/></td>
+                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_1'])==1 ? "checked=checked" : ""; ?> name="moa_conception_1"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_2'])==1 ? "checked=checked" : ""; ?> name="moa_tab_conception_2"/></td>
+                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_2'])==1 ? "checked=checked" : ""; ?> name="moa_conception_2"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_3'])==1 ? "checked=checked" : ""; ?> name="moa_tab_conception_3"/></td>
+                                <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_conception_3'])==1 ? "checked=checked" : ""; ?> name="moa_conception_3"/></td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" name="moa_tab_conception_4" value="<?= isset($_SESSION['info_moa']['moa_tab_conception_4']) ? $_SESSION['info_moa']['moa_tab_conception_4'] : ''?>"/></td>
+                                <input type="text" name="moa_conception_4" value="<?= isset($_SESSION['info_moa']['moa_conception_4']) ? $_SESSION['info_moa']['moa_conception_4'] : ''?>"/></td>
                         </tr>
                         <tr>
                             <td class="border-r-2 border-b border-l-2 border-gray-300 p-2 pl-4">

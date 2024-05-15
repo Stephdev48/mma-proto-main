@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 14 mai 2024 à 11:51
--- Version du serveur : 10.4.32-MariaDB
--- Version de PHP : 8.2.12
+-- Généré le : mer. 15 mai 2024 à 14:30
+-- Version du serveur : 10.4.28-MariaDB
+-- Version de PHP : 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -98,11 +98,11 @@ CREATE TABLE `moa` (
   `moa_construction` tinyint(1) DEFAULT NULL,
   `moa_construction_pro` tinyint(1) DEFAULT NULL,
   `moa_construction_pro_champ` varchar(255) DEFAULT NULL,
-  `moa_tab_conception` tinyint(1) DEFAULT NULL,
-  `moa_tab_conception_1` tinyint(1) DEFAULT NULL,
-  `moa_tab_conception_2` tinyint(1) DEFAULT NULL,
-  `moa_tab_conception_3` tinyint(1) DEFAULT NULL,
-  `moa_tab_conception_4` varchar(255) DEFAULT NULL,
+  `moa_conception` tinyint(1) DEFAULT NULL,
+  `moa_conception_1` tinyint(1) DEFAULT NULL,
+  `moa_conception_2` tinyint(1) DEFAULT NULL,
+  `moa_conception_3` tinyint(1) DEFAULT NULL,
+  `moa_conception_4` varchar(255) DEFAULT NULL,
   `moa_direction` tinyint(1) DEFAULT NULL,
   `moa_direction_1` tinyint(1) DEFAULT NULL,
   `moa_direction_2` tinyint(1) DEFAULT NULL,
@@ -334,6 +334,7 @@ CREATE TABLE `travaux_annexes` (
 -- Index pour la table `cnr`
 --
 ALTER TABLE `cnr`
+  ADD PRIMARY KEY (`DOID`),
   ADD KEY `cnr_entreprise_id` (`cnr_entreprise_id`);
 
 --
@@ -414,7 +415,7 @@ ALTER TABLE `travaux_annexes`
 -- AUTO_INCREMENT pour la table `dommage_ouvrage`
 --
 ALTER TABLE `dommage_ouvrage`
-  MODIFY `DOID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `DOID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT pour la table `entreprise`
@@ -438,7 +439,7 @@ ALTER TABLE `rcd_nature`
 -- AUTO_INCREMENT pour la table `souscripteur`
 --
 ALTER TABLE `souscripteur`
-  MODIFY `souscripteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `souscripteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- Contraintes pour les tables déchargées

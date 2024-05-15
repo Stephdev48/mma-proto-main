@@ -18,4 +18,6 @@ l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de d
 ## template formulaire coordonnées
 impossible d'ajouter le remplissage auto parce que fichier html
 
+## garder les champs cachés ouvert si retour sur étape précédente
+
 ## insertion bdd après chaque étape

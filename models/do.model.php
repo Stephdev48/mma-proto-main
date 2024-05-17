@@ -52,15 +52,16 @@
         foreach ($array_SESSION as $field => $value) {  
             //on ignore certains champs qui ne sont pas en base de données            
             if($field != "fields" &&  $field != "page_next" 
-            && $field !="construction_cout_operation_honoraires_moe" 
-            && !str_starts_with($field, "situation_etude_sol_entreprise") //l'entreprise de sol doit utilisé la table entreprise, on ignore ces champs là
+            && $field !="construction_cout_operation_honoraires_moe" && $field !="sol" 
+            && !str_starts_with($field, "sol_entreprise") //l'entreprise de sol doit utilisé la table entreprise, on ignore ces champs là
             && !str_starts_with($field, "bois_entreprise")    //idem pour bois
             && !str_starts_with($field, "pv_entreprise")    //idem pour le photovoltaique
             && !str_starts_with($field, "geo_entreprise")    //idem pour géothermie
             && !str_starts_with($field, "ct_entreprise")    //idem pour controleur technique
             && !str_starts_with($field, "moe_entreprise")    //idem pour moe    
             && !str_starts_with($field, "cnr_entreprise")    //idem pour cnr    
-            
+
+            && !str_starts_with($field, "situation_etude_sol_entreprise") //A SUPPRIMER
             ){   
                 if($i == 0){
                     $sqlupdate.=" SET $field = ? ";

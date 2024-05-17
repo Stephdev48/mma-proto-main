@@ -20,7 +20,7 @@
     echo "<div class='mt-24'>
     <p class='font-medium mb-6'>Récapitulatif des champs soumis :</p>
     <pre class='ml-12'>";
-    var_dump($_SESSION);
+    print_r($_SESSION);
     echo "</pre></div>";
 endif;?> 
 

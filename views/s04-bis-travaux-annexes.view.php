@@ -31,7 +31,7 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant la construction : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay('bois'); ?></div>
+            <div><?php echo coordFormDisplay('bois', $_SESSION['info_travaux_annexes']); ?></div>
         </div>
     </div>
     <?php
@@ -110,7 +110,7 @@
         </div>
         <div class="ml-10 mt-4">
             <span class="font-normal">Nom de l'entreprise réalisant l'installation' : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay('pv'); ?></div>
+            <div><?php echo coordFormDisplay('pv', $_SESSION['info_travaux_annexes']); ?></div>
         </div>
     </div>
     <?php
@@ -125,7 +125,7 @@
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay('geo'); ?></div>
+            <div><?php echo coordFormDisplay('geo', $_SESSION['info_travaux_annexes']); ?></div>
         </div>
     </div>
     <?php
@@ -140,7 +140,7 @@
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
-            <div><?php echo coordFormDisplay('ct'); ?></div>
+            <div><?php echo coordFormDisplay('ct', $_SESSION['info_travaux_annexes']); ?></div>
         </div>
         <div class="ml-10 mt-14">
             <h3 class="font-normal mb-4">Type de contrôle (choisissez l'option correspondante):</h3>

@@ -3,6 +3,8 @@
     define('ROOT_PATH', dirname(__FILE__) );
     define('UPLOAD_FOLDER', "/public/uploads" );
     define('DEBUG', true );
+
+    define('PASSWORD_ADMIN', "9%VBV!7zFkbH" );
     require 'controllers/page-erreur.controller.php';
    
     session_start();
@@ -35,6 +37,10 @@
             case 'step8':
                 require 'controllers/lots-techniques.php';
                 step8Display($currentstep);
+                break;                 
+            case 'admin':
+                require 'controllers/admin.controller.php';
+                adminDisplay();
                 break;                 
             default:
                 throw new Exception ('Paramètre invalide !');

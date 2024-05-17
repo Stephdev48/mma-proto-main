@@ -57,7 +57,7 @@
             if($currentstep == "step1"){
                 $res = insert($_SESSION["info_souscripteur"]);
             }else{
-                $res = update($_SESSION['info_'.$_POST['fields']], $currentstep);
+                $res = update($_SESSION['info_'.$_POST['fields']], $_POST['fields']);
             }
             
             if($res == false){

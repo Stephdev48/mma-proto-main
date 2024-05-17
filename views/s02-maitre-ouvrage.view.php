@@ -11,7 +11,7 @@
                     <label> Non</label>
                 </div>
             </div>  
-            <div id="moa_souscripteur_form" class="hidden px-8 py-4">
+            <div id="moa_souscripteur_form" class="<?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==0 ? "" : "hidden"; ?> px-8 py-4">
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
@@ -80,7 +80,7 @@
                     <label> Non</label>
                 </div>
             </div>
-            <div id="moa_construction_form" class="hidden py-4">
+            <div id="moa_construction_form" class="<?= isset($_SESSION['info_moa']['moa_construction']) && ($_SESSION['info_moa']['moa_construction'])==1 ? "" : "hidden"; ?> py-4">
                 <div class="flex flex-row p-2 mb-6">
                     <div class="flex items-center">
                         <svg class="w-6 h-6 text-blue-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
@@ -107,12 +107,12 @@
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>
-                    <div id="moa_construction_pro_form" class="py-4 hidden mx-6">
+                    <div id="moa_construction_pro_form" class="py-4 <?= isset($_SESSION['info_moa']['moa_construction_pro']) && ($_SESSION['info_moa']['moa_construction_pro'])==1 ? "" : "hidden"; ?> mx-6">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez indiquer sa profession :</label>
                         <input type="text" name="moa_construction_pro_champ" value="<?= isset($_SESSION['info_moa']['moa_construction_pro_champ']) ? $_SESSION['info_moa']['moa_construction_pro_champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                     </div>
                 </div>
-                <div id="moa_construction_pro_tableau" class="hidden mt-10">
+                <div id="moa_construction_pro_tableau" class="<?= isset($_SESSION['info_moa']['moa_construction']) && ($_SESSION['info_moa']['moa_construction'])==1 ? "" : "hidden"; ?> mt-10">
                     <span class="text-gray-500 font-medium">Complétez le tableau ci-dessous en cochant les cases correspondantes :</span>
                     <table class="text-sm font-light ml-6 mt-2">
                         <tr>
@@ -158,7 +158,7 @@
                                 <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_direction_3'])==1 ? "checked=checked" : ""; ?> name="moa_direction_3"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" value="<?= isset($_SESSION['info_moa']['moa_tab_direction_4']) ? $_SESSION['info_moa']['moa_tab_direction_4'] : ''?>" name="moa_direction_4"/>
+                                <input type="text" value="<?= isset($_SESSION['info_moa']['moa_direction_4']) ? $_SESSION['info_moa']['moa_direction_4'] : ''?>" name="moa_direction_4"/>
                             </td>
                         </tr>
                         <tr>
@@ -176,7 +176,7 @@
                                 <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_surveillance_3'])==1 ? "checked=checked" : ""; ?> name="moa_surveillance_3"/>
                             </td>
                             <td class="border-r-2 border-b border-gray-300 text-center p-2">
-                                <input type="text" name="moa_surveillance_4" value="<?= isset($_SESSION['info_moa']['moa_tab_surveillance_4']) ? $_SESSION['info_moa']['moa_tab_surveillance_4'] : ''?>"/>
+                                <input type="text" name="moa_surveillance_4" value="<?= isset($_SESSION['info_moa']['moa_surveillance_4']) ? $_SESSION['info_moa']['moa_surveillance_4'] : ''?>"/>
                             </td>
                         </tr>
                         <tr>
@@ -194,7 +194,7 @@
                                 <input type="checkbox" value="1" <?= isset($_SESSION['info_moa']['moa_execution_3'])==1 ? "checked=checked" : ""; ?> name="moa_execution_3"/>
                             </td>
                             <td class="border-b-2 border-r-2 border-gray-300 text-center p-2">
-                                <input type="text" name="moa_execution_4" value="<?= isset($_SESSION['info_moa']['moa_tab_execution_4']) ? $_SESSION['info_moa']['moa_tab_execution_4'] : ''?>"/>
+                                <input type="text" name="moa_execution_4" value="<?= isset($_SESSION['info_moa']['moa_execution_4']) ? $_SESSION['info_moa']['moa_execution_4'] : ''?>"/>
                             </td>
                         </tr>
                     </table>

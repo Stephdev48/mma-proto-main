@@ -5,10 +5,10 @@
     define('DEBUG', true );
     require 'controllers/page-erreur.controller.php';
    
-    // Vide la superglobale $_SESSION
-    // $_SESSION = [];
-
     session_start();
+    // Vide la superglobale $_SESSION
+    //session_destroy();
+    // $_SESSION = [];
 
     if (isset($_GET['page'])){
         $currentstep = $_GET['page'];

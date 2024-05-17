@@ -22,3 +22,8 @@ impossible d'ajouter le remplissage auto avec les ternaires. La fonction file_ge
 modifier les onclick par if(checked) ou autre...
 
 ## insertion bdd après chaque étape
+
+## à corriger :
+si après avoir rempli les coordonnées souscripteur en step1, on fait précédent à partir de la step2, il y aura à nouveau ajout du souscripteur, et donc doublon...
+
+## Supprimer les required en mode DEBUG

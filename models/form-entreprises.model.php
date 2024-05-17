@@ -13,6 +13,7 @@
             $adresse ="";
             $commune ="";
             $numero_siret ="";
+            
             if(!empty($array_session[$type.'_entreprise_raison_social'])){$raison_social = $array_session[$type.'_entreprise_raison_social'];}
             if(!empty($array_session[$type.'_entreprise_nom'])){$nom = $array_session[$type.'_entreprise_nom'];}
             if(!empty($array_session[$type.'_entreprise_prenom'])){$prenom = $array_session[$type.'_entreprise_prenom'];}

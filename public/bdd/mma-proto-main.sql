@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 15 mai 2024 à 14:30
--- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.2.4
+-- Généré le : ven. 17 mai 2024 à 15:47
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,6 +38,16 @@ CREATE TABLE `cnr` (
   `risques_chantier_existants` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `cnr`
+--
+
+INSERT INTO `cnr` (`DOID`, `cnr_entreprise_id`, `cnr_qualite`, `cnr_rc_decennale`, `cnr_rc_hors_decennale`, `cnr_rc_recours`, `risques_chantier_materiel`, `risques_chantier_existants`) VALUES
+(46, 0, 'CT', 1, 0, 1, 1, 1),
+(47, 0, 'CT', 1, 0, 1, 1, 1),
+(48, 0, 'CT', 1, 0, 1, 1, 1),
+(49, 0, '', 0, 0, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -51,6 +61,16 @@ CREATE TABLE `dommage_ouvrage` (
   `date_modification` date DEFAULT NULL,
   `date_validation` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `dommage_ouvrage`
+--
+
+INSERT INTO `dommage_ouvrage` (`DOID`, `souscripteur_id`, `date_creation`, `date_modification`, `date_validation`) VALUES
+(46, 46, '2024-05-17', NULL, NULL),
+(47, 48, '2024-05-17', NULL, NULL),
+(48, 49, '2024-05-17', NULL, NULL),
+(49, 50, '2024-05-17', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -120,6 +140,16 @@ CREATE TABLE `moa` (
   `moa_execution_4` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `moa`
+--
+
+INSERT INTO `moa` (`DOID`, `moa_souscripteur`, `moa_souscripteur_form_civilite`, `moa_souscripteur_form_nom_prenom`, `moa_souscripteur_form_adresse`, `moa_souscripteur_form_raison_sociale`, `moa_souscripteur_form_siret`, `moa_qualite`, `moa_qualite_champ`, `moa_construction`, `moa_construction_pro`, `moa_construction_pro_champ`, `moa_conception`, `moa_conception_1`, `moa_conception_2`, `moa_conception_3`, `moa_conception_4`, `moa_direction`, `moa_direction_1`, `moa_direction_2`, `moa_direction_3`, `moa_direction_4`, `moa_surveillance`, `moa_surveillance_1`, `moa_surveillance_2`, `moa_surveillance_3`, `moa_surveillance_4`, `moa_execution`, `moa_execution_1`, `moa_execution_2`, `moa_execution_3`, `moa_execution_4`) VALUES
+(46, 1, 'entreprise', NULL, NULL, NULL, NULL, 'syndic', NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, 1, NULL),
+(47, 1, 'entreprise', NULL, NULL, NULL, NULL, 'syndic', NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(48, 1, 'entreprise', NULL, NULL, NULL, NULL, 'syndic', NULL, NULL, 1, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(49, 1, NULL, NULL, NULL, NULL, NULL, 'syndic', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -135,6 +165,16 @@ CREATE TABLE `moe` (
   `moe_intervention_independant_mission` enum('conception','direction','complete','autre') DEFAULT NULL,
   `moe_intervention_independant_mission_autre_descr` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `moe`
+--
+
+INSERT INTO `moe` (`DOID`, `moe_intervention`, `moe_entreprise_id`, `moe_intervention_independant`, `moe_intervention_independant_qualite`, `moe_intervention_independant_mission`, `moe_intervention_independant_mission_autre_descr`) VALUES
+(46, 1, NULL, NULL, NULL, NULL, NULL),
+(47, 1, NULL, NULL, NULL, NULL, NULL),
+(48, 1, NULL, NULL, NULL, NULL, NULL),
+(49, 1, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -190,6 +230,16 @@ CREATE TABLE `operation_construction` (
   `construction_cout_honoraires_moe` decimal(10,0) DEFAULT NULL,
   `cout_operation_tva` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `operation_construction`
+--
+
+INSERT INTO `operation_construction` (`DOID`, `nature_neuf_exist`, `nature_operation_surelev`, `nature_operation_surelev_sous_oeuvre`, `nature_operation_surelev_hors_fond`, `nature_operation_ext_horizont`, `nature_operation_ext_horizont_exist`, `nature_operation_renovation`, `nature_operation_renovation_fond`, `nature_operation_renovation_iso_therm`, `nature_operation_renovation_refect_toit`, `nature_operation_renovation_etancheite`, `nature_operation_renovation_ravalement`, `nature_operation_rehabilitation`, `nature_operation_rehabilitation_fond`, `nature_operation_rehabilitation_iso_therm`, `nature_operation_rehabilitation_refect_toit`, `nature_operation_rehabilitation_etancheite`, `nature_operation_rehabilitation_ravalement`, `operation_sinistre`, `operation_sinistre_descr`, `type_ouvrage_mais_indiv`, `type_ouvrage_ope_pavill`, `type_ouvrage_ope_pavill_nombre`, `type_ouvrage_coll_habit`, `type_ouvrage_coll_habit_nombre`, `type_ouvrage_bat_indus`, `type_ouvrage_centre_com`, `type_ouvrage_centre_com_surf`, `type_ouvrage_bat_bur`, `type_ouvrage_hopital`, `type_ouvrage_vrd_privatif`, `type_ouvrage_autre_const`, `type_ouvrage_autre_const_usage`, `construction_adresse_esc_res_bat`, `construction_adresse_num_nom_rue`, `construction_adresse_lieu_dit`, `construction_adresse_arrond`, `construction_adresse_code_postal`, `construction_adresse_commune`, `construction_date_debut`, `construction_date_debut_prevue`, `construction_date_reception`, `construction_cout_operation`, `construction_cout_honoraires_moe`, `cout_operation_tva`) VALUES
+(46, 'neuve', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 'dza', 'dza', 'dza', 'dza', 456, 'dzd', '2024-05-18', '2024-05-16', '2024-05-08', 0, 51561, NULL),
+(47, 'neuve', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 'dza', 'dza', 'dza', 'dza', 456, 'dzd', '2024-05-18', '2024-05-16', '2024-05-08', 0, 51561, NULL),
+(48, 'neuve', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 'dza', 'dza', 'dza', 'dza', 456, 'dzd', '2024-05-18', '2024-05-16', '2024-05-08', 0, 51561, NULL),
+(49, 'neuve', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, 'dza', 'dza', 'dza', 'dza', 456, 'dzd', '2024-05-18', '2024-05-16', '2024-05-08', 0, 51561, NULL);
 
 -- --------------------------------------------------------
 
@@ -266,16 +316,26 @@ CREATE TABLE `situation` (
   `situation_label_qualite` tinyint(1) DEFAULT NULL,
   `situation_etude_sol` tinyint(1) DEFAULT NULL,
   `sol_entreprise_id` int(11) DEFAULT NULL,
-  `situation_etude_sol_bureau_mission` enum('g2_amp','g2_pro','etude_sol_autre') DEFAULT NULL,
-  `situation_etude_sol_bureau_mission_champ` varchar(255) DEFAULT NULL,
-  `situation_etude_sol_parking` tinyint(1) DEFAULT NULL,
-  `situation_garanties_complètes` tinyint(1) DEFAULT NULL,
+  `situation_etude_sol_bureau_mission_champ` enum('g2_amp','g2_pro','etude_sol_autre') DEFAULT NULL,
+  `sol_bureau_mission_champ` varchar(255) DEFAULT NULL,
+  `sol_parking` tinyint(1) DEFAULT NULL,
+  `situation_garanties_completes` tinyint(1) DEFAULT NULL,
   `situation_garanties_dommages_existants` tinyint(1) DEFAULT NULL,
   `situation_construction_bois` tinyint(1) DEFAULT NULL,
   `situation_pann_photo` tinyint(1) DEFAULT NULL,
   `situation_geothermie` tinyint(1) DEFAULT NULL,
   `situation_controle_tech` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `situation`
+--
+
+INSERT INTO `situation` (`DOID`, `situation_zone_inond`, `situation_sismique`, `situation_insectes`, `situation_proc_techniques`, `situation_parking`, `situation_do_10ans`, `situation_do_10ans_contrat_assureur`, `situation_do_10ans_contrat_numero`, `situation_mon_hist`, `situation_label_energie`, `situation_label_qualite`, `situation_etude_sol`, `sol_entreprise_id`, `situation_etude_sol_bureau_mission_champ`, `sol_bureau_mission_champ`, `sol_parking`, `situation_garanties_completes`, `situation_garanties_dommages_existants`, `situation_construction_bois`, `situation_pann_photo`, `situation_geothermie`, `situation_controle_tech`) VALUES
+(46, NULL, 5, 1, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 1, 1, 1, 1),
+(47, NULL, 5, 1, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 1, 1, 1, 1),
+(48, NULL, 5, 1, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 1, 1, 1, 1),
+(49, NULL, 5, 1, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, 1, NULL, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -296,6 +356,17 @@ CREATE TABLE `souscripteur` (
   `souscripteur_ancien_client_date` date NOT NULL,
   `souscripteur_ancien_client_num` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `souscripteur`
+--
+
+INSERT INTO `souscripteur` (`souscripteur_id`, `souscripteur_nom_raison`, `souscripteur_siret`, `souscripteur_adresse`, `souscripteur_code_postal`, `souscripteur_commune`, `souscripteur_profession`, `souscripteur_telephone`, `souscripteur_email`, `souscripteur_ancien_client_date`, `souscripteur_ancien_client_num`) VALUES
+(46, 'Christophe Leydier', '5465456456', '20 Rue de la Margeride', 48300, 'Langogne', 'Informatique', '0664824793', 'christophe_leydier@hotmail.com', '2024-05-31', ''),
+(47, 'test', '', '', 0, '', '', '', '', '0000-00-00', ''),
+(48, 'Christophe Leydier', '5465456456', '20 Rue de la Margeride', 48300, 'Langogne', 'Informatique', '0664824793', 'christophe_leydier@hotmail.com', '0000-00-00', ''),
+(49, 'Christophe Leydier', '5465456456', '20 Rue de la Margeride', 48300, 'Langogne', 'Informatique', '0664824793', 'christophe_leydier@hotmail.com', '0000-00-00', ''),
+(50, 'Christophe LEYDIER', 'dza', 'dza', 456, 'dzd', 'dazdza', '56456', 'christophe_leydier@hotmail.com', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -325,6 +396,16 @@ CREATE TABLE `travaux_annexes` (
   `trav_annexes_ct_type_controle_le_autres` varchar(255) DEFAULT NULL,
   `trav_annexes_ct_type_controle_leth_autres` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `travaux_annexes`
+--
+
+INSERT INTO `travaux_annexes` (`DOID`, `trav_annexes_constr_bois`, `trav_annexes_constr_bois_enveloppe`, `trav_annexes_constr_produits_ce`, `bois_entreprise_id`, `trav_annexes_pv_montage`, `trav_annexes_pv_proc_tech`, `trav_annexes_pv_etn`, `trav_annexes_pv_liste_c2p`, `trav_annexes_pv_surface`, `trav_annexes_pv_puissance`, `trav_annexes_pv_destination`, `pv_entreprise_id`, `geo_entreprise_id`, `ct_entreprise_id`, `trav_annexes_ct_type_controle`, `trav_annexes_ct_type_controle_l_autres`, `trav_annexes_ct_type_controle_lth_autres`, `trav_annexes_ct_type_controle_le_autres`, `trav_annexes_ct_type_controle_leth_autres`) VALUES
+(46, 1, 1, NULL, NULL, 'autre', 1, NULL, 1, NULL, NULL, 'autocons', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(47, 1, 1, NULL, NULL, 'autre', 1, NULL, 1, NULL, NULL, 'autocons', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(48, 1, 1, NULL, NULL, 'autre', 1, NULL, 1, NULL, NULL, 'autocons', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(49, 1, 1, NULL, NULL, 'autre', 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -415,7 +496,7 @@ ALTER TABLE `travaux_annexes`
 -- AUTO_INCREMENT pour la table `dommage_ouvrage`
 --
 ALTER TABLE `dommage_ouvrage`
-  MODIFY `DOID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `DOID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT pour la table `entreprise`
@@ -439,7 +520,7 @@ ALTER TABLE `rcd_nature`
 -- AUTO_INCREMENT pour la table `souscripteur`
 --
 ALTER TABLE `souscripteur`
-  MODIFY `souscripteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `souscripteur_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- Contraintes pour les tables déchargées

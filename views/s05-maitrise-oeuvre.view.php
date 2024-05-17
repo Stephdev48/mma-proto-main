@@ -13,7 +13,7 @@
         </div>
         <div id="moe_intervention_form" class="hidden px-8 py-4">
             <div>
-                <?php echo coordFormDisplay('moe'); ?>
+                <?php echo coordFormDisplay('moe',$_SESSION['info_moe']); ?>
             </div>
             <div class="flex mt-16">
                 <span class="font-normal">Est-il indépendant à l'égard des autres constructeurs et du maître d'ouvrage ?</span>

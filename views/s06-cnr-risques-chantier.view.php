@@ -26,9 +26,9 @@
                 </div>
                 <div class="mx-8 mt-4">
                     <span class="text-sm font-medium text-gray-900">RC hors décennale (CS n°883) &ensp;&ensp;
-                        <input type="radio" name="cnr_rc_hors_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) & ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==1 ? "checked=checked" : ""; ?> required/>
+                        <input type="radio" name="cnr_rc_hors_decennale" value="1" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) && ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==1 ? "checked=checked" : ""; ?> required/>
                         <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                        <input type="radio" name="cnr_rc_hors_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) & ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==0 ? "checked=checked" : ""; ?>/>
+                        <input type="radio" name="cnr_rc_hors_decennale" value="0" <?= isset($_SESSION['info_cnr']['cnr_rc_hors_decennale']) && ($_SESSION['info_cnr']['cnr_rc_hors_decennale'])==0 ? "checked=checked" : ""; ?>/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
                 </div>

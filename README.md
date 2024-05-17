@@ -16,8 +16,9 @@ form-entreprise : les required bloquent le passage à l'autre step si pas rempli
 l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de début"
 
 ## template formulaire coordonnées
-impossible d'ajouter le remplissage auto parce que fichier html
+impossible d'ajouter le remplissage auto avec les ternaires. La fonction file_get_contents affiche en string les balises php et leur contenu dans l'attribut value des inputs.
 
-## garder les champs cachés ouvert si retour sur étape précédente
+## garder les champs cachés ouverts si retour sur étape précédente
+modifier les onclick par if(checked) ou autre...
 
 ## insertion bdd après chaque étape

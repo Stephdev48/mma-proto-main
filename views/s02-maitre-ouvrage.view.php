@@ -15,9 +15,9 @@
                 <div class="mb-6 md:grid-cols-2">
                     <div class="flex flex-row py-4">
                         <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Civilité : &ensp;&ensp;
-                        <input type="radio" name="moa_souscripteur_form_civilite" value="particulier" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('siret_champ'),hideElement('raison_champ')">
+                        <input type="radio" name="moa_souscripteur_form_civilite" value="particulier" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite']) && ($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="particulier" ? "checked=checked" : ""; ?> onclick="hideElement('siret_champ'),hideElement('raison_champ')">
                         <label>&ensp; Particulier &ensp;&ensp;</label>
-                        <input type="radio" name="moa_souscripteur_form_civilite" value="entreprise" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="entreprise" ? "checked=checked" : ""; ?> onclick="showElement('siret_champ'),showElement('raison_champ')">
+                        <input type="radio" name="moa_souscripteur_form_civilite" value="entreprise" <?= isset($_SESSION['info_moa']['moa_souscripteur_form_civilite']) && ($_SESSION['info_moa']['moa_souscripteur_form_civilite'])=="entreprise" ? "checked=checked" : ""; ?> onclick="showElement('siret_champ'),showElement('raison_champ')">
                         <label>&ensp; Entreprise</label></span>
                     </div>
                     <div class="py-4">

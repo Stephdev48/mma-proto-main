@@ -102,9 +102,9 @@
             <div class="flex flex-col lg:flex-row ml-10 mt-6">
                 <span class="font-normal">Intervention d'un bureau spécialisé ? &ensp;&ensp;</span>
                 <div class="ml-8 text-gray-500 font-medium">
-                    <input type="radio" name="situation_etude_sol" value="1" <?= isset($_SESSION['info_situation']['sol']) && ($_SESSION['info_situation']['sol'])==1 ? "checked=checked" : ""; ?> onclick="showElement('sol_form')" required/>
+                    <input type="radio" name="sol" value="1" <?= isset($_SESSION['info_situation']['sol']) && ($_SESSION['info_situation']['sol'])==1 ? "checked=checked" : ""; ?> onclick="showElement('sol_form')" required/>
                     <label> Oui &ensp;</label>
-                    <input type="radio" name="situation_etude_sol" value="0" <?= isset($_SESSION['info_situation']['sol']) && ($_SESSION['info_situation']['sol'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('sol_form')"/>
+                    <input type="radio" name="sol" value="0" <?= isset($_SESSION['info_situation']['sol']) && ($_SESSION['info_situation']['sol'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('sol_form')"/>
                     <label> Non</label>
                 </div>
             </div>
@@ -141,9 +141,9 @@
                 <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
                 <span class="text-sm font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
                     <input type="radio" name="situation_garanties_completes" value="1" <?= isset($_SESSION['info_situation']['situation_garanties_completes']) && ($_SESSION['info_situation']['situation_garanties_completes'])==1 ? "checked=checked" : ""; ?> required/>
-                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                    <label class="text-base text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="situation_garanties_completes" value="0" <?= isset($_SESSION['info_situation']['situation_garanties_completes']) && ($_SESSION['info_situation']['situation_garanties_completes'])==0 ? "checked=checked" : ""; ?>/>
-                    <label class="text-gray-500 font-medium"> Non</label>
+                    <label class="text-base text-gray-500 font-medium"> Non</label>
                 </span>
             </div>
             <div class="ml-10 mt-2">

@@ -6,7 +6,7 @@
             <div class="mt-20">
                 <h3 class="text-gray-500 font-medium">Désignation du constructeur non réalisateur</h3>
                 <div>
-                    <?php echo coordFormDisplay('cnr'); ?>
+                    <?php echo coordFormDisplay('cnr',$_SESSION['info_cnr'] ); ?>
                 </div>
                 <div class="mx-24 my-2">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervenant en qualité de ?</label>

@@ -61,7 +61,6 @@
             && !str_starts_with($field, "moe_entreprise")    //idem pour moe    
             && !str_starts_with($field, "cnr_entreprise")    //idem pour cnr    
 
-            && !str_starts_with($field, "situation_etude_sol_entreprise") //A SUPPRIMER
             ){   
                 if($i == 0){
                     $sqlupdate.=" SET $field = ? ";

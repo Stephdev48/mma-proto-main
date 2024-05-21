@@ -28,5 +28,6 @@ lorsque radio value=0, la requête insère null dans les tables sauf pour cnr o�
 
 ## Récapitulatif étape validation
 récapitulatif des infos pour l'utilisateur avant validation finale
-
+avec fonction read
+templates pour chaque étape
 ## Insertion des coordonnées entreprises

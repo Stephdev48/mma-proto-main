@@ -9,36 +9,38 @@
         switch ($currentstep) {
             case 'step1':
                 $title = "Formulaire DO-01";
-                require('views/s01-coordonnees.view.php');
+                require('views/templates/form/s01-coordonnees.view.php');
                 break;
             case 'step2':
                 $title = "Formulaire DO-02";
-                require('views/s02-maitre-ouvrage.view.php');
+                require('views/templates/form/s02-maitre-ouvrage.view.php');
                 break;           
             case 'step3':
                 $title = "Formulaire DO-03";
-                require('views/s03-oper-construct.view.php');
+                require('views/templates/form/s03-oper-construct.view.php');
                 break;
             case 'step4':
                 $title = "Formulaire DO-04";
-                require('views/s04-informations-diverses.view.php');
+                require('views/templates/form/s04-informations-diverses.view.php');
                 break; 
             case 'step4bis':
                 $title = "Formulaire DO-04bis";                                
-                require('views/s04-bis-travaux-annexes.view.php');     
+                require('views/templates/form/s04-bis-travaux-annexes.view.php');     
                 break;                
             case 'step5':
                 $title = "Formulaire DO-05";
-                require('views/s05-maitrise-oeuvre.view.php');
+                require('views/templates/form/s05-maitrise-oeuvre.view.php');
                 break;    
             case 'step6':
                 $title = "Formulaire DO-06";
-                require('views/s06-cnr-risques-chantier.view.php');
+                require('views/templates/form/s06-cnr-risques-chantier.view.php');
                 break;                                             
             default:
                 # code...
                 break;
         }
+
+
          // Envoi des champs du formulaire
          if (isset($_POST['fields'])) {
             //var_dump($_POST);
@@ -50,6 +52,7 @@
             $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
             if($currentstep == "step1"){
                 $res = insert($_SESSION["info_souscripteur"]);
+                $_SESSION["DOID"] = $res;
             }else{
                 $res = update($_SESSION['info_'.$_POST['fields']], $_POST['fields']);
             }
@@ -57,25 +60,26 @@
             if($res == false){
                 // echo ERREUR LORS DE L'AJOUT OU MODIFICATION EN BDD
             }else{
-                $_SESSION["DOID"] = $res;
-
+                
                 if(!empty($_POST['page_next'])){
                     $nextstep = $_POST['page_next'];
                 }    
-                if($currentstep == 'step4bis'){
-                    if($_SESSION["info_situation"]['situation_construction_bois']=="0"
-                    && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
-                    && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
-                    && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
-                        header("Location: index.php?page=step5");
-                    }  
-                }
 
                 
                 header("Location: index.php?page=".$nextstep."&doid=$res"); 
             }
             
         }
+
+        if($currentstep == 'step4bis'){
+            if($_SESSION["info_situation"]['situation_construction_bois']=="0"
+            && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
+            && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
+            && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
+                header("Location: index.php?page=step5");
+            }  
+        }
+
  
         $content = ob_get_clean();
         require("views/base.view.php");

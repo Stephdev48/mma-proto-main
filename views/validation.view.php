@@ -1,13 +1,8 @@
-<div class="flex flex-row justify-center mt-16">
-    Le Maitre d'Ouvrage est-il le souscripteur ? Oui
-    Civilité : Entreprise
-</div>
+<h2 class="text-center font-medium mt-32">Cliquez sur Valider pour envoyer le fomulaire ou sur précédent pour revenir en arrière</h2>
 
 
 
-<h1 class="text-center font-medium">Cliquez sur Valider pour envoyer le fomulaire ou sur précédent pour revenir en arrière</h1>
-
-<div class="flex flex-row justify-center mt-16">
+<div class="flex flex-row justify-center mt-8">
     <!-- Bouton précédent -->                                          
     <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">
         <a href="index.php?page=step6" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

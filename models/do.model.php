@@ -2,11 +2,19 @@
     require_once 'connect.db.php';
 
     //création du souscripteur et de la demande ouvrage + doid dans chaque table
-    function read(){
-        /*$sql = "SELECT * FROM TOUTE LA BASE WHERE DOID=1111";
-        $query = mysqli_query($GLOBALS["conn"], $sql);*/
-        
-        return "voir toutes les données de la bdd";
+    function read($doid){
+        $sql = "SELECT * FROM souscripteur, dommage_ouvrage, moa, operation_construction, situation, travaux_annexes, moe, cnr
+                WHERE dommage_ouvrage.DOID = $doid
+                AND dommage_ouvrage.souscripteur_id = souscripteur.souscripteur_id
+                AND moa.DOID = dommage_ouvrage.DOID
+                AND moe.DOID = dommage_ouvrage.DOID
+                AND operation_construction.DOID = dommage_ouvrage.DOID
+                AND travaux_annexes.DOID = dommage_ouvrage.DOID
+                AND situation.DOID = dommage_ouvrage.DOID
+                AND cnr.DOID = dommage_ouvrage.DOID;";
+        $resquery = mysqli_query($GLOBALS["conn"], $sql);
+        $DATA = mysqli_fetch_array($resquery, MYSQLI_ASSOC);
+        return $DATA;
     }
     
     //création du souscripteur et de la demande ouvrage + doid dans chaque table

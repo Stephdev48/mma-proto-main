@@ -4,7 +4,6 @@
     
     function stepDisplay($currentstep){  
         
-
         // Remplissage de la variable $content
         ob_start();
         switch ($currentstep) {
@@ -25,13 +24,7 @@
                 require('views/s04-informations-diverses.view.php');
                 break; 
             case 'step4bis':
-                $title = "Formulaire DO-04bis";         
-                if($_SESSION["info_situation"]['situation_construction_bois']=="0"
-                && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
-                && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
-                && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
-                    header("Location: index.php?page=step5");
-                }                         
+                $title = "Formulaire DO-04bis";                                
                 require('views/s04-bis-travaux-annexes.view.php');     
                 break;                
             case 'step5':
@@ -52,6 +45,7 @@
             foreach ($_POST as $key => $value)
             {
                 $_SESSION['info_'.$_POST['fields']][$key] = $value;
+                
             }
             $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
             if($currentstep == "step1"){
@@ -67,7 +61,16 @@
 
                 if(!empty($_POST['page_next'])){
                     $nextstep = $_POST['page_next'];
-                }      
+                }    
+                if($currentstep == 'step4bis'){
+                    if($_SESSION["info_situation"]['situation_construction_bois']=="0"
+                    && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
+                    && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
+                    && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
+                        header("Location: index.php?page=step5");
+                    }  
+                }
+
                 
                 header("Location: index.php?page=".$nextstep."&doid=$res"); 
             }

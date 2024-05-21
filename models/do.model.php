@@ -79,7 +79,6 @@
                     $value=null;
                 }
                 array_push($array_values,$value);
-                $strparams .="s";
                 $i++;
             }
             

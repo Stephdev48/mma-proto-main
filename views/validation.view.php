@@ -1,5 +1,8 @@
 <h1 class="text-center font-medium">Cliquez sur Valider pour envoyer le fomulaire ou sur précédent pour revenir en arrière</h1>
-
+<div class="flex flex-row justify-center mt-16">
+    Le Maitre d'Ouvrage est-il le souscripteur ? Oui
+    Civilité : Entreprise
+</div>
 <div class="flex flex-row justify-center mt-16">
     <!-- Bouton précédent -->                                          
     <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">

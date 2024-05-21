@@ -2,6 +2,14 @@
     require_once 'connect.db.php';
 
     //création du souscripteur et de la demande ouvrage + doid dans chaque table
+    function read(){
+        /*$sql = "SELECT * FROM TOUTE LA BASE WHERE DOID=1111";
+        $query = mysqli_query($GLOBALS["conn"], $sql);*/
+        
+        return "voir toutes les données de la bdd";
+    }
+    
+    //création du souscripteur et de la demande ouvrage + doid dans chaque table
     function insert($array_SESSION){
 
         $DOID = false;

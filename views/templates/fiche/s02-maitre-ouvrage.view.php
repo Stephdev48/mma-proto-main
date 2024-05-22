@@ -97,11 +97,11 @@
                         (isset($DATA['moa_direction']) && $DATA['moa_direction'] == 1) || 
                         (isset($DATA['moa_surveillance']) && $DATA['moa_surveillance'] == 1) || 
                         (isset($DATA['moa_execution']) && $DATA['moa_execution'] == 1)){
-                            echo "<h3 class='mt-6'>Ses activités et/ou missions</h3>";
+                            echo "<h3 class='mt-6 mb-2'>Ses activités et/ou missions</h3>";
                         
                         if(isset($DATA['moa_conception']) && $DATA['moa_conception'] == 1){
-                            $content = boxDisplay("Conception");
-                            echo $content;
+                            $content = boxDisplay("Conception :");
+                            echo "<div class='flex flex-row flex-wrap'>".$content;
                             if(isset($DATA['moa_conception_1']) && $DATA['moa_conception_1'] == 1){
                                 $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
                                 echo $content;
@@ -112,14 +112,15 @@
                             }
                             if(isset($DATA['moa_conception_3']) && $DATA['moa_conception_3'] == 1){
                                 $content = boxDisplay("Autres travaux :");
-                                echo $content.$DATA['moa_conception_4'];
+                                echo $content."<strong>".$DATA['moa_conception_4']."</strong>";
                             }
+                            echo "</div>";
                         }
 
 
                         if(isset($DATA['moa_direction']) && $DATA['moa_direction'] == 1){
-                            $content = boxDisplay("Direction");
-                            echo $content;
+                            $content = boxDisplay("Direction :");
+                            echo "<div class='flex flex-row flex-wrap mt-2'>".$content;
                             if(isset($DATA['moa_direction_1']) && $DATA['moa_direction_1'] == 1){
                                 $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
                                 echo $content;
@@ -130,13 +131,14 @@
                             }
                             if(isset($DATA['moa_direction_3']) && $DATA['moa_direction_3'] == 1){
                                 $content = boxDisplay("Autres travaux :");
-                                echo $content.$DATA['moa_direction_4'];
+                                echo $content."<strong>".$DATA['moa_direction_4']."</strong>";
                             }
+                            echo "</div>";
                         }
 
                         if(isset($DATA['moa_surveillance']) && $DATA['moa_surveillance'] == 1){
-                            $content = boxDisplay("surveillance");
-                            echo $content;
+                            $content = boxDisplay("Surveillance :");
+                            echo "<div class='flex flex-row flex-wrap mt-2'>".$content;
                             if(isset($DATA['moa_surveillance_1']) && $DATA['moa_surveillance_1'] == 1){
                                 $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
                                 echo $content;
@@ -147,13 +149,14 @@
                             }
                             if(isset($DATA['moa_surveillance_3']) && $DATA['moa_surveillance_3'] == 1){
                                 $content = boxDisplay("Autres travaux :");
-                                echo $content.$DATA['moa_surveillance_4'];
+                                echo $content."<strong>".$DATA['moa_surveillance_4']."</strong>";
                             }
+                            echo "</div>";
                         }
 
                         if(isset($DATA['moa_execution']) && $DATA['moa_execution'] == 1){
-                            $content = boxDisplay("execution");
-                            echo $content;
+                            $content = boxDisplay("Execution :");
+                            echo "<div class='flex flex-row flex-wrap mt-2'>".$content;
                             if(isset($DATA['moa_execution_1']) && $DATA['moa_execution_1'] == 1){
                                 $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
                                 echo $content;
@@ -164,8 +167,9 @@
                             }
                             if(isset($DATA['moa_execution_3']) && $DATA['moa_execution_3'] == 1){
                                 $content = boxDisplay("Autres travaux :");
-                                echo $content.$DATA['moa_execution_4'];
+                                echo $content."<strong>".$DATA['moa_execution_4']."</strong>";
                             }
+                            echo "</div>";
                         }
                     }
                     

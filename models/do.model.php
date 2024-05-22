@@ -119,8 +119,8 @@
 
     // Affichage des intitulés des radio et checkbox
     function boxDisplay($fieldcontent){
-        $display = "<div class='flex flex-row mt-6'>
-        <strong class='pl-4'>".$fieldcontent."</strong>
+        $display = "<div class='flex flex-row'>
+        <strong class='pl-6'>".$fieldcontent."</strong>
         </div>";
         return $display;
     };

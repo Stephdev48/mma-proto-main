@@ -6,7 +6,7 @@
 
         <div class="">
             <?php 
-                if($DATA['moa_souscripteur'] == 1){
+                if(isset($DATA['moa_souscripteur']) && ($DATA['moa_souscripteur']) == 1){
                     echo "<strong>Le maitre d'ouvrage est le souscripteur</strong>";
                 }else{
                     echo "<div class='flex flex-row'>
@@ -80,10 +80,10 @@
 
         <div class="flex flex-col">
             <?php
-                if($DATA['moa_construction'] == 1){
+                if(isset($DATA['moa_construction']) && ($DATA['moa_construction']) == 1){
                     echo "<strong>Le maitre d'ouvrage participe à la construction</strong>";
 
-                    if($DATA['moa_construction_pro'] == 1){
+                    if(isset($DATA['moa_construction_pro']) && ($DATA['moa_construction_pro']) == 1){
                         echo "<div class='flex flex-row mt-6'>
                                 <h3>Sa profession</h3>
                                 <strong class='pl-4'>".$DATA['moa_construction_pro_champ']."</strong>
@@ -93,79 +93,79 @@
                     };
 
                     
-                    if((($DATA['moa_conception']) == 1) || 
-                        (($DATA['moa_direction']) == 1 ) || 
-                        (($DATA['moa_surveillance']) == 1 ) || 
-                        (($DATA['moa_execution']) == 1 )){
-                            echo "<h3 class='mt-6'>Ses activités ou missions</h3>";
+                    if((isset($DATA['moa_conception']) && $DATA['moa_conception'] == 1) || 
+                        (isset($DATA['moa_direction']) && $DATA['moa_direction'] == 1) || 
+                        (isset($DATA['moa_surveillance']) && $DATA['moa_surveillance'] == 1) || 
+                        (isset($DATA['moa_execution']) && $DATA['moa_execution'] == 1)){
+                            echo "<h3 class='mt-6'>Ses activités et/ou missions</h3>";
                         
-                        if($DATA['moa_conception'] == 1){
+                        if(isset($DATA['moa_conception']) && $DATA['moa_conception'] == 1){
                             $content = boxDisplay("Conception");
                             echo $content;
-                                if($DATA['moa_conception_1'] == 1){
-                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
-                                    echo $content;
-                                }
-                                if($DATA['moa_conception_2'] == 1){
-                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
-                                    echo $content;
-                                }
-                                if($DATA['moa_conception_3'] == 1){
-                                    $content = boxDisplay("Autres travaux :");
-                                    echo $content.$DATA['moa_conception_4'];
-                                }
+                            if(isset($DATA['moa_conception_1']) && $DATA['moa_conception_1'] == 1){
+                                $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_conception_2']) && $DATA['moa_conception_2'] == 1){
+                                $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_conception_3']) && $DATA['moa_conception_3'] == 1){
+                                $content = boxDisplay("Autres travaux :");
+                                echo $content.$DATA['moa_conception_4'];
+                            }
                         }
 
 
-                        if($DATA['moa_direction'] == 1){
-                            $content = boxDisplay("direction");
+                        if(isset($DATA['moa_direction']) && $DATA['moa_direction'] == 1){
+                            $content = boxDisplay("Direction");
                             echo $content;
-                                if($DATA['moa_direction_1'] == 1){
-                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
-                                    echo $content;
-                                }
-                                if($DATA['moa_direction_2'] == 1){
-                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
-                                    echo $content;
-                                }
-                                if($DATA['moa_direction_3'] == 1){
-                                    $content = boxDisplay("Autres travaux :");
-                                    echo $content.$DATA['moa_direction_4'];
-                                }
+                            if(isset($DATA['moa_direction_1']) && $DATA['moa_direction_1'] == 1){
+                                $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_direction_2']) && $DATA['moa_direction_2'] == 1){
+                                $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_direction_3']) && $DATA['moa_direction_3'] == 1){
+                                $content = boxDisplay("Autres travaux :");
+                                echo $content.$DATA['moa_direction_4'];
+                            }
                         }
 
-                        if($DATA['moa_surveillance'] == 1){
+                        if(isset($DATA['moa_surveillance']) && $DATA['moa_surveillance'] == 1){
                             $content = boxDisplay("surveillance");
                             echo $content;
-                                if($DATA['moa_surveillance_1'] == 1){
-                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
-                                    echo $content;
-                                }
-                                if($DATA['moa_surveillance_2'] == 1){
-                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
-                                    echo $content;
-                                }
-                                if($DATA['moa_surveillance_3'] == 1){
-                                    $content = boxDisplay("Autres travaux :");
-                                    echo $content.$DATA['moa_surveillance_4'];
-                                }
+                            if(isset($DATA['moa_surveillance_1']) && $DATA['moa_surveillance_1'] == 1){
+                                $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_surveillance_2']) && $DATA['moa_surveillance_2'] == 1){
+                                $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_surveillance_3']) && $DATA['moa_surveillance_3'] == 1){
+                                $content = boxDisplay("Autres travaux :");
+                                echo $content.$DATA['moa_surveillance_4'];
+                            }
                         }
 
-                        if($DATA['moa_execution'] == 1){
+                        if(isset($DATA['moa_execution']) && $DATA['moa_execution'] == 1){
                             $content = boxDisplay("execution");
                             echo $content;
-                                if($DATA['moa_execution_1'] == 1){
-                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
-                                    echo $content;
-                                }
-                                if($DATA['moa_execution_2'] == 1){
-                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
-                                    echo $content;
-                                }
-                                if($DATA['moa_execution_3'] == 1){
-                                    $content = boxDisplay("Autres travaux :");
-                                    echo $content.$DATA['moa_execution_4'];
-                                }
+                            if(isset($DATA['moa_execution_1']) && $DATA['moa_execution_1'] == 1){
+                                $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_execution_2']) && $DATA['moa_execution_2'] == 1){
+                                $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                echo $content;
+                            }
+                            if(isset($DATA['moa_execution_3']) && $DATA['moa_execution_3'] == 1){
+                                $content = boxDisplay("Autres travaux :");
+                                echo $content.$DATA['moa_execution_4'];
+                            }
                         }
                     }
                     

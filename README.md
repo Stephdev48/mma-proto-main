@@ -36,3 +36,5 @@ templates pour chaque étape
 ## Backoffice
 Tableau Flowbite qui reprend les templates de chaque étape
 
+## Ternaires pour ouverture champs 'hidden'
+

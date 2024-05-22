@@ -115,3 +115,12 @@
     function dateFormat($date){
         return date('d-m-Y', strtotime($date));
     }
+
+
+    // Affichage des intitulés des radio et checkbox
+    function boxDisplay($fieldcontent){
+        $display = "<div class='flex flex-row mt-6'>
+        <strong class='pl-4'>".$fieldcontent."</strong>
+        </div>";
+        return $display;
+    };

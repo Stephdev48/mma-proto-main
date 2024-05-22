@@ -100,87 +100,71 @@
                             echo "<h3 class='mt-6'>Ses activités ou missions</h3>";
                         
                         if($DATA['moa_conception'] == 1){
-                            echo "<div class='flex flex-row mt-6'>
-                                <strong class='pl-4'>Conception :</strong>
-                                </div>";
+                            $content = boxDisplay("Conception");
+                            echo $content;
                                 if($DATA['moa_conception_1'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Papiers peints et/ou Peintures intérieures</strong>
-                                            </div>";
+                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                    echo $content;
                                 }
                                 if($DATA['moa_conception_2'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</strong>
-                                            </div>";
+                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                    echo $content;
                                 }
                                 if($DATA['moa_conception_3'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Autres travaux :".$DATA['moa_conception_4']."</strong>
-                                            </div>";
+                                    $content = boxDisplay("Autres travaux :");
+                                    echo $content.$DATA['moa_conception_4'];
                                 }
                         }
 
 
                         if($DATA['moa_direction'] == 1){
-                            echo "<div class='flex flex-row mt-6'>
-                                <strong class='pl-4'>Direction :</strong>
-                                </div>";
+                            $content = boxDisplay("direction");
+                            echo $content;
                                 if($DATA['moa_direction_1'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Papiers peints et/ou Peintures intérieures</strong>
-                                            </div>";
+                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                    echo $content;
                                 }
                                 if($DATA['moa_direction_2'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</strong>
-                                            </div>";
+                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                    echo $content;
                                 }
                                 if($DATA['moa_direction_3'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Autres travaux :".$DATA['moa_direction_4']."</strong>
-                                            </div>";
+                                    $content = boxDisplay("Autres travaux :");
+                                    echo $content.$DATA['moa_direction_4'];
                                 }
                         }
 
                         if($DATA['moa_surveillance'] == 1){
-                            echo "<div class='flex flex-row mt-6'>
-                                <strong class='pl-4'>Surveillance :</strong>
-                                </div>";
+                            $content = boxDisplay("surveillance");
+                            echo $content;
                                 if($DATA['moa_surveillance_1'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Papiers peints et/ou Peintures intérieures</strong>
-                                            </div>";
+                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                    echo $content;
                                 }
                                 if($DATA['moa_surveillance_2'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</strong>
-                                            </div>";
+                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                    echo $content;
                                 }
                                 if($DATA['moa_surveillance_3'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Autres travaux :".$DATA['moa_surveillance_4']."</strong>
-                                            </div>";
+                                    $content = boxDisplay("Autres travaux :");
+                                    echo $content.$DATA['moa_surveillance_4'];
                                 }
                         }
 
                         if($DATA['moa_execution'] == 1){
-                            echo "<div class='flex flex-row mt-6'>
-                                <strong class='pl-4'>Execution :</strong>
-                                </div>";
+                            $content = boxDisplay("execution");
+                            echo $content;
                                 if($DATA['moa_execution_1'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Papiers peints et/ou Peintures intérieures</strong>
-                                            </div>";
+                                    $content = boxDisplay("Papiers peints et/ou Peintures intérieures");
+                                    echo $content;
                                 }
                                 if($DATA['moa_execution_2'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Gros oeuvre fondations, Charpente - Couverture, Etanchéité</strong>
-                                            </div>";
+                                    $content = boxDisplay("Gros oeuvre fondations, Charpente - Couverture, Etanchéité");
+                                    echo $content;
                                 }
                                 if($DATA['moa_execution_3'] == 1){
-                                    echo "<div class='flex flex-row mt-6 pl-4'>
-                                            <strong class='pl-4'>Autres travaux :".$DATA['moa_execution_4']."</strong>
-                                            </div>";
+                                    $content = boxDisplay("Autres travaux :");
+                                    echo $content.$DATA['moa_execution_4'];
                                 }
                         }
                     }
@@ -190,7 +174,7 @@
                 }
             ?>
         </div>
-        
+
     </fieldset>
 </div>
 

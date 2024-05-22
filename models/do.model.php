@@ -109,4 +109,9 @@
         
         return $res;
     }
-?>
+
+
+    // changement du format de la date
+    function dateFormat($date){
+        return date('d-m-Y', strtotime($date));
+    }

@@ -38,3 +38,5 @@ Tableau Flowbite qui reprend les templates de chaque étape
 
 ## Ternaires pour ouverture champs 'hidden'
 
+## Les ternaires pour les champs input ne fonctionnent pas
+

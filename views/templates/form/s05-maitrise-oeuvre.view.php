@@ -49,7 +49,7 @@
                         <input type="radio" name="moe_intervention_independant_mission" value="autre" <?= isset($_SESSION['info_moe']['moe_intervention_independant_mission']) && ($_SESSION['info_moe']['moe_intervention_independant_mission'])=="autre" ? "checked=checked" : ""; ?>>
                         <label class="font-normal">Autre</label>
                         <span class="text-xs">(à décrire : 
-                            <input type="text" name="moe_intervention_independant_mission_autre_descr" value="<?= isset($_SESSION['info_moe']['moe_intervention_mission_autre_descr']) ? $_SESSION['info_moe']['moe_intervention_mission_autre_descr'] : ''?>" style="height:10px; width: 350px; border-radius:6px; font-size:14px;" class="bg-gray-50"/> )
+                            <input type="text" name="moe_intervention_independant_mission_autre_descr" value="<?= isset($_SESSION['info_moe']['moe_intervention_mission_autre_descr']) ? $_SESSION['info_moe']['moe_intervention_mission_autre_descr'] : ''; ?>" style="height:10px; width: 350px; border-radius:6px; font-size:14px;" class="bg-gray-50"/> )
                         </span>
                     </div>
                 </div>

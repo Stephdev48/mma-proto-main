@@ -1,6 +1,6 @@
 
 <div>
-    <!-- Operation de construction -->
+    <!-- Operation de construction : nature de l'ouvrage -->
     <fieldset class="grid md:gap-6 border-2 border-gray-400 p-4 m-6">
         <legend class="mx-2 p-2 text-xl font-medium">Opération de construction : nature et type de l'ouvrage</legend>
 
@@ -10,7 +10,7 @@
                 <?php 
                     if(isset($DATA['nature_neuf_exist']) && $DATA['nature_neuf_exist'] == "neuve"){
                         echo "<strong>Construction neuve</strong>";
-                    }else{
+                    }elseif(isset($DATA['nature_neuf_exist']) && $DATA['nature_neuf_exist'] == "existante"){
                         echo "<div class='flex flex-row'>
                                 <strong>Travaux sur construction existante </strong>
                                 <div class='flex flex-col'>";
@@ -215,6 +215,7 @@
                 </strong>
             </div>
         </div>
+
     </fieldset>
 </div>
 

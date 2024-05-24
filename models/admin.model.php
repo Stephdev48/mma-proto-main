@@ -1,4 +1,5 @@
 <?php
+    require_once 'connect.db.php';
 
     function getListDO(){
         $boardsql = "SELECT DOID, date_creation FROM dommage_ouvrage;

@@ -6,12 +6,13 @@
         <div class="flex flex-col">
             <div class='ml-6'>
                 <?php 
-                    if(isset($DATA['moe_intervention']) && $DATA['moe_intervention'] == 0)
+                    // echo $DATA['moe_intervention'];
+                    if(isset($DATA['moe_intervention']) && ($DATA['moe_intervention'] == 0))
                     {
-                        echo "<strong>Aucun architecte ou maitre d'oeuvre n'intervient</strong>";
+                        echo "<strong>Aucun architecte ou maitre d'oeuvre n'intervient dans l'opération de construction</strong>";
 
                     }
-                    elseif((isset($DATA['moe_intervention']) && $DATA['moe_intervention'] == 1))
+                    elseif(isset($DATA['moe_intervention']) && ($DATA['moe_intervention'] == 1))
                     {       
                         echo "<strong>Architecte ou maitre d'oeuvre :</strong>";
                         echo "<div class='ml-6'>

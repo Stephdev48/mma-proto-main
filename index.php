@@ -2,12 +2,23 @@
 
     define('ROOT_PATH', dirname(__FILE__) );
     define('UPLOAD_FOLDER', "/public/uploads" );
-    define('DEBUG', true );
+
+
+
 
     define('PASSWORD_ADMIN', "9%VBV!7zFkbH" );
     require 'controllers/page-erreur.controller.php';
    
     session_start();
+    $_SESSION['env'] = 'prod'; //dev
+
+    if($_SESSION['env'] == 'prod'){
+        define('DEBUG', false );
+    }else{
+        define('DEBUG', true );
+    }
+
+    //$_SESSION['env'] = 'dev';
     // Vide la superglobale $_SESSION
     //session_destroy();
     // $_SESSION = [];

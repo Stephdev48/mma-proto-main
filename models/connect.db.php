@@ -7,9 +7,9 @@ if($_SESSION['env'] == 'dev'){
     define("BDD",       "mma-proto-main");
 }else{
     define("SERVER",    "localhost");
-    define("USER",      "ruki5964_riobat");
+    define("USER",      "favoris_user");
     define("PASSWORD",  "YNJuzTq/(WqE5lVR");
-    define("BDD",       "ruki5964_riobat");
+    define("BDD",       "mma-proto-main");
 
 }
     

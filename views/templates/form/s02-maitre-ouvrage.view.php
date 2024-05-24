@@ -114,7 +114,7 @@
                 </div>
                 <div id="moa_construction_pro_tableau" class="<?= isset($_SESSION['info_moa']['moa_construction']) && ($_SESSION['info_moa']['moa_construction'])==1 ? "" : "hidden"; ?> mt-10">
                     <span class="text-gray-500 font-medium">Complétez le tableau ci-dessous en cochant les cases correspondantes :</span>
-                    <table class="text-sm font-light ml-6 mt-2">
+                    <table class="text-sm font-light ml-6 mt-4">
                         <tr>
                             <td></td>
                             <td class="bg-gray-50 border-t-2 border-b-2 border-l-2 border-gray-300 p-2"></td>

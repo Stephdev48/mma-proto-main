@@ -35,8 +35,12 @@ templates pour chaque étape
 
 ## Backoffice
 Tableau Flowbite qui reprend les templates de chaque étape
+Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiquement un DOID.
 
 ## Ternaires pour ouverture champs 'hidden'
 
 ## Les ternaires pour les champs input ne fonctionnent pas
+
+## Des données sont écrasées par le souscripteur suivant !
+Voir adresse construction dans la table operation_construction
 

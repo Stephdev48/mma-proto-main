@@ -2,7 +2,7 @@
     require "models/admin.model.php";
 
     function adminDisplay(){
-        $title = "Adminstation des demandes Dommage Ouvrage";
+        $title = "Administration des demandes Dommage Ouvrage";
         require 'views/header.view.php';
 
         $dos = getListDO();

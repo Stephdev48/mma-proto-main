@@ -10,7 +10,7 @@
     require 'controllers/page-erreur.controller.php';
    
     session_start();
-    $_SESSION['env'] = 'prod'; //dev
+    $_SESSION['env'] = 'prod'; //prod
 
     if($_SESSION['env'] == 'prod'){
         define('DEBUG', false );

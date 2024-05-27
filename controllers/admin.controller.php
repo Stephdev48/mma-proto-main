@@ -5,9 +5,16 @@
     function adminDisplay(){
         $title = "Administration des demandes Dommage Ouvrage";
         require 'views/header.view.php';
-
         $dos = getListDO();
         if(!empty($_SESSION['admin'])){
+
+            if(isset($_GET['doid_delete'])){
+
+                //delete($_GET['doid_delete']);
+                $infodelete = infoAlerts('suppression réalisée avec succès');
+            }
+            
+
             require 'views/admin.view.php';
         }else{
             if(!empty($_POST['password'])){
@@ -37,5 +44,22 @@
         require 'views/footer.view.php';
         echo "</div>
         </div>";
+    }
+
+    function infoAlerts($message, $type="success"){
+
+        switch ($type) {
+            case 'error':
+                $rtn = '<div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <span class="font-medium">'.$message.'</div>';
+                break;
+
+            case 'success':
+            default:
+                $rtn = '<div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                <span class="font-medium">'.$message.'</span></div>';
+                break;
+        }
+        return $rtn;
     }
 

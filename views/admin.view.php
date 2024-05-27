@@ -5,12 +5,15 @@ echo "</pre>"; ?> -->
 <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
 <p class="text-center font-medium text-xl mt-6">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
+        MESSAGE<?= $infodelete; ?>
+    </div>
+    <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
                 <div class="w-full md:w-1/2">
                     <form class="flex items-center">
-                        <label for="simple-search" class="sr-only">Recherche</label>
+                        <label for="simple-search" class="sr-only">Recherche !</label>
                         <div class="relative w-full">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

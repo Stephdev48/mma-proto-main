@@ -9,9 +9,9 @@
         AND operation_construction.DOID = dommage_ouvrage.DOID;";
 
         $resquery = mysqli_query($GLOBALS["conn"], $boardsql);
-        $boardata = mysqli_fetch_array($resquery, MYSQLI_ASSOC);
+        $boardata = mysqli_fetch_all($resquery, MYSQLI_ASSOC);
 
-        return array($boardata);
+        return $boardata;
 
          //return array( 1 => "DO156415", 2 => "DO564456");
     }

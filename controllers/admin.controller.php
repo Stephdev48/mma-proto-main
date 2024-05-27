@@ -7,6 +7,7 @@
         require 'views/header.view.php';
         $dos = getListDO();
         if(!empty($_SESSION['admin'])){
+<<<<<<< Updated upstream
 
             if(isset($_GET['doid_delete'])){
 
@@ -15,6 +16,11 @@
             }
             
 
+=======
+            if(isset($_GET['deletedo'])){
+                deleteDo($_GET['deletedo']);
+            }
+>>>>>>> Stashed changes
             require 'views/admin.view.php';
         }else{
             if(!empty($_POST['password'])){

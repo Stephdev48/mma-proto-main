@@ -133,7 +133,7 @@ echo "</pre>"; ?> -->
                                             </li>
                                         </ul>
                                         <div class="py-1">
-                                            <a href="views/delete.view.php?doid=<?php echo $do['DOID']; ?>" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Supprimer</a>
+                                            <a href="index.php?page=admin&deletedo=<?php echo $do['DOID']; ?>" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Supprimer</a>
                                         </div>
                                     </div>
                                 </td>

@@ -129,6 +129,29 @@
     };
 
 
+    function deleteDo($doid){
+
+        $deletesql = "DELETE FROM dommage_ouvrage WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM moa WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM moe WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM operation_construction WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM situation WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM cnr WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+        $deletesql = "DELETE FROM travaux_annexes WHERE DOID = '$doid'";
+        mysqli_query($GLOBALS["conn"], $deletesql);
+
+        header( "Location: index.php?page=admin" );
+
+        return true;
+    }
+
+
     // récupération des noms de colonne
     /*function get_column_names($table) {
         $sql = 'DESCRIBE '.$table;

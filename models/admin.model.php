@@ -17,38 +17,4 @@
     }
 
 
-    function deleteDo($doid){
-
-        $deletesql = "DELETE FROM dommage_ouvrage WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM moa WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM moe WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM operation_construction WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM situation WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM cnr WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-        $deletesql = "DELETE FROM travaux_annexes WHERE DOID = '$doid'";
-        $stmt = mysqli_prepare($GLOBALS["conn"], $deletesql);
-        $res = mysqli_stmt_execute($stmt, $doid);
-        mysqli_stmt_close($stmt);
-
-        header( "Location: index.php?page=admin" );
-
-        return true;
-    }
+   

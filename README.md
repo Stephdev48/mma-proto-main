@@ -31,4 +31,6 @@ Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiqueme
 
 ## Les ternaires pour les champs input ne fonctionnent pas
 
+## Fiche individuelle
+Ajouter numéro DO dans le titre h3
 

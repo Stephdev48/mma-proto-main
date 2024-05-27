@@ -284,11 +284,11 @@
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu-dit</label>
-                    <input type="text" name="construction_adresse_lieu_dit" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_lieu_dit']) ? $_SESSION['info_operation_construction']['construction_adresse_lieu_dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
+                    <input type="text" name="construction_adresse_lieu_dit" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_lieu_dit']) ? $_SESSION['info_operation_construction']['construction_adresse_lieu_dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 </div>
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Arrondissement</label>
-                    <input type="text" name="construction_adresse_arrond" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_arrond']) ? $_SESSION['info_operation_construction']['construction_adresse_arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
+                    <input type="text" name="construction_adresse_arrond" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_arrond']) ? $_SESSION['info_operation_construction']['construction_adresse_arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 </div>
             </div>
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">

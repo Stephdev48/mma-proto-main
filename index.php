@@ -45,9 +45,9 @@
                 require 'controllers/validation.controller.php';
                 validDisplay($currentstep);
                 break;
-            case 'step8':
-                require 'controllers/lots-techniques.php';
-                step8Display($currentstep);
+            case 'rcd':
+                require 'controllers/rcd.controller.php';
+                rcdDisplay($currentstep);
                 break;                 
             case 'admin':
                 require 'controllers/admin.controller.php';

@@ -55,10 +55,10 @@
                     <select onchange="autre();" name="nature[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option>-- Lot technique --</option>
                             <?php
-                            foreach ($array_natures as $keyn => $value) {
+                            foreach ($array_natures as $nature) {
                                 $selected= "";
-                                if($item['nature'] == $keyn){$selected= "selected";}
-                                echo "<option $selected value='$keyn'>$value</option>";
+                                if($item['nature'] == $nature['rcd_nature_id']){$selected= "selected";}
+                                echo "<option $selected value=\"".$nature['rcd_nature_id']."\">".$nature['rcd_nature_nom']."</option>";
                             }
                             ?>
                             <option value='99' <?php if($item['nature'] == 99){echo "selected";}?>>-Autre-</option>

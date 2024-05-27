@@ -127,3 +127,19 @@
         </div>";
         return $display;
     };
+
+
+    // récupération des noms de colonne
+    /*function get_column_names($table) {
+        $sql = 'DESCRIBE '.$table;
+        $result = mysqli_query($GLOBALS["conn"], $sql);
+    
+        $rows = array();
+        while($row = mysqli_fetch_assoc($result)) {
+            $rows[] = $row['Field'];
+        }
+    
+        return $rows;
+    }*/
+  
+  

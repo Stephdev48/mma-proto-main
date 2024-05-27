@@ -1,5 +1,8 @@
 <?php 
-    function step8Display($currentstep){
+    //require_once 'models/do.model.php';
+    require_once 'models/rcd.model.php';
+
+    function rcdDisplay($currentstep){
         
         // Titre personnalisé
         $title = "Formulaire RCD";
@@ -7,24 +10,7 @@
         $date = new DateTimeImmutable();
         $newfolder= hash('crc32', $date->getTimestamp());
 
-        $array_natures = array
-        (
-            1   => "BET",
-            2   => "Ingénieur conseil",
-            3   => "Maçonnerie",
-            4   => "Enduit",
-            5   => "Charpente bois",
-            6   => "Charpente métallique",
-            7   => "Couverture / étanchéité",
-            8   => "Plomberie",
-            9   => "Carrelage",
-            10  => "Menuiseries",
-            11  => "Plaques de plâtres",
-            12  => "Revêtements souples sols murs",
-            13  => "Électricité",
-            14  => "Fondation",
-            15  => "Terrassement"
-        );
+        $array_natures = getListNature();
 
         $array_fake_data = array
         (
@@ -111,8 +97,8 @@
 
         // Remplissage de la variable $content
         ob_start();
-        require 'views/lots-techniques.view.php';
-
+        require 'views/rcd.view.php';
+        
         $content = ob_get_clean();
         require("views/base.view.php");
     }

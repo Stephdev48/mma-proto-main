@@ -19,8 +19,8 @@
  
 
 
-    $currentstep8 = $currentstep1;
-    $currentstep8circle = $currentstep1circle;
+    $currentrcd = $currentstep1;
+    $currentrcdcircle = $currentstep1circle;
     switch ($currentstep){
         case'home':
             $home = 'hidden';
@@ -50,9 +50,9 @@
             $currentstep6 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep6circle = "border-blue-600 border-2";
             break;
-        case'step8':
-            $currentstep8 = "text-blue-600 dark:text-blue-500 font-bold";
-            $currentstep8circle = "border-blue-600 border-2";
+        case'rcd':
+            $currentrcd = "text-blue-600 dark:text-blue-500 font-bold";
+            $currentrcdcircle = "border-blue-600 border-2";
             break;            
         case 'validation':
             $validation = "text-blue-600 dark:text-blue-500 font-bold";
@@ -62,7 +62,7 @@
             throw new Exception ('Paramètre invalide !');
             break;
     }
-    if($currentstep != 'step8'):
+    if($currentstep != 'rcd'):
         if(DEBUG==true){
             echo '<section id="stepper" class="flex justify-center mb-24 m-8 '.$home.'">
                     <div class="flex justify-center mt-16">   

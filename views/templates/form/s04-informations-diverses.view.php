@@ -60,7 +60,7 @@
                         <input type="radio" name="situation_do_10ans" value="0" <?= isset($_SESSION['info_situation']['situation_do_10ans']) && ($_SESSION['info_situation']['situation_do_10ans'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('situation_do_10ans_contrat')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>
-                    <div id="situation_do_10ans_contrat" class="hidden ml-10 mt-4 ">
+                    <div id="situation_do_10ans_contrat" class="<?= isset($_SESSION['info_situation']['situation_do_10ans']) && ($_SESSION['info_situation']['situation_do_10ans'])==1 ? "" : "hidden"; ?> ml-10 mt-4 ">
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom de l'assureur :&ensp;&ensp;</label>
                         <input type="text" name="situation_do_10ans_contrat_assureur" value="<?= isset($_SESSION['info_situation']['situation_do_10ans_contrat_assureur']) ? $_SESSION['info_situation']['situation_do_10ans_contrat_assureur'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">N° de contrat :&ensp;&ensp;</label>
@@ -108,7 +108,7 @@
                     <label> Non</label>
                 </div>
             </div>
-            <div id="sol_form" class="hidden px-8 py-4">
+            <div id="sol_form" class="<?= isset($_SESSION['info_situation']['sol']) && ($_SESSION['info_situation']['sol'])==1 ? "" : "hidden"; ?> px-8 py-4">
                 <?php echo coordFormDisplay('sol',$_SESSION['info_situation'] ); ?>
                 <div class="flex flex-col lg:flex-row ml-24 mt-2">
                     <span class="text-sm font-medium mt-2">Mission : &ensp;&ensp;</span>
@@ -117,7 +117,7 @@
                         <span class="ml-6"><input type="radio" name="sol_bureau_mission" value="g2_pro" <?= isset($_SESSION['info_situation']['sol_bureau_mission']) && ($_SESSION['info_situation']['sol_bureau_mission'])=="g2_pro" ? "checked=checked" : ""; ?> onclick="hideElement('sol_bureau_mission_autre')"/> G2 Pro</span>
                         <span class="ml-6"><input type="radio" name="sol_bureau_mission" value="etude_sol_autre" <?= isset($_SESSION['info_situation']['sol_bureau_mission']) && ($_SESSION['info_situation']['sol_bureau_mission'])=="etude_sol_autre" ? "checked=checked" : ""; ?> onclick="showElement('sol_bureau_mission_autre')"/> Autre </span>
                     </div>
-                    <div id="sol_bureau_mission_autre" class="hidden ml-4">
+                    <div id="sol_bureau_mission_autre" class="<?= isset($_SESSION['info_situation']['sol_bureau_mission']) && ($_SESSION['info_situation']['sol_bureau_mission'])=="etude_sol_autre" ? "" : "hidden"; ?> ml-4">
                         <input type="text" name="sol_bureau_mission_champ" value="<?= isset($_SESSION['info_situation']['sol_bureau_mission_champ']) ? $_SESSION['info_situation']['sol_bureau_mission_champ'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Veuillez précisez"/>
                     </div>    
                 </div>

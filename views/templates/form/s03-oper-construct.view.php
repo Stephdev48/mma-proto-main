@@ -22,7 +22,7 @@
                 <label> Travaux sur construction existante</label>
             </span>
         </div>
-        <div id="nature_operation" class="hidden mt-8">
+        <div id="nature_operation" class="<?= isset($_SESSION['info_operation_construction']['nature_neuf_exist']) && ($_SESSION['info_operation_construction']['nature_neuf_exist'])=="existante" ? "" : "hidden"; ?> mt-8">
             <h3 class="text-gray-500 font-medium mb-6">De quoi s'agit-il ?</h3>
             <div class="ml-12">
                 <!-- Surélévation -->
@@ -45,7 +45,7 @@
                             <label class="text-gray-500 font-medium"> Non</label>
                         </div>
                     </div>
-                    <div id="nature_operation_surelev_form" class="hidden px-8 py-4">
+                    <div id="nature_operation_surelev_form" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_surelev']) && ($_SESSION['info_operation_construction']['nature_operation_surelev'])==1 ? "" : "hidden"; ?>">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reprise en sous-oeuvre / Travaux sur fondation ? :&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
@@ -91,7 +91,7 @@
                         <input type="radio" name="nature_operation_ext_horizont" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
-                    <div id="nature_operation_ext_horizont" class="hidden px-8 py-4">
+                    <div id="nature_operation_ext_horizont" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
@@ -111,7 +111,7 @@
                         <input type="radio" name="nature_operation_renovation" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
-                    <div id="nature_operation_renovation" class="hidden px-8 py-4">
+                    <div id="nature_operation_renovation" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
@@ -164,7 +164,7 @@
                         <input type="radio" name="nature_operation_rehabilitation" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_rehabilitation']) && ($_SESSION['info_operation_construction']['nature_operation_rehabilitation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_rehabilitation')"/>
                         <label class="text-gray-500 font-medium"> Non</label>
                     </span>  
-                    <div id="nature_operation_rehabilitation" class="hidden px-8 py-4">
+                    <div id="nature_operation_rehabilitation" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_rehabilitation']) && ($_SESSION['info_operation_construction']['nature_operation_rehabilitation'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
@@ -217,7 +217,7 @@
                     <input type="radio" name="operation_sinistre" value="0" <?= isset($_SESSION['info_operation_construction']['operation_sinistre']) && ($_SESSION['info_operation_construction']['operation_sinistre'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('operation_sinistre_champ_descr')"/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
-                <div id="operation_sinistre_champ_descr" class="hidden ml-10 mt-4 ">
+                <div id="operation_sinistre_champ_descr" class="<?= isset($_SESSION['info_operation_construction']['operation_sinistre']) && ($_SESSION['info_operation_construction']['operation_sinistre'])==1 ? "" : "hidden"; ?> ml-10 mt-4 ">
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Veuillez décrire le sinistre :&ensp;&ensp;</label>
                     <input type="text" name="operation_sinistre_descr" value="<?= isset($_SESSION['info_operation_construction']['operation_sinistre_descr']) ? $_SESSION['info_operation_construction']['operation_sinistre_descr'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>

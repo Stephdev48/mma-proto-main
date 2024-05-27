@@ -40,33 +40,31 @@
                 break;
         }
 
-
          // Envoi des champs du formulaire
          if (isset($_POST['fields'])) {
             //var_dump($_POST);
             foreach ($_POST as $key => $value)
             {
-                $_SESSION['info_'.$_POST['fields']][$key] = $value;
-                
+                $_SESSION['info_'.$_POST['fields']][$key] = $value;                
             }
             $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
+
+            //var_dump($_SESSION['info_'.$_POST['fields']]);
             if($currentstep == "step1"){
                 $res = insert($_SESSION["info_souscripteur"]);
                 $_SESSION["DOID"] = $res;
             }else{
-                $res = update($_SESSION['info_'.$_POST['fields']], $_POST['fields']);
+                $res = update($_SESSION['info_'.$_POST['fields']], $_POST['fields'], $_SESSION["DOID"] );
+                $doid = $_SESSION["DOID"];
             }
             
             if($res == false){
                 // echo ERREUR LORS DE L'AJOUT OU MODIFICATION EN BDD
-            }else{
-                
+            }else{                
                 if(!empty($_POST['page_next'])){
                     $nextstep = $_POST['page_next'];
-                }    
-
-                
-                header("Location: index.php?page=".$nextstep."&doid=$res"); 
+                }                    
+                header("Location: index.php?page=".$nextstep."&doid=$doid"); 
             }
             
         }

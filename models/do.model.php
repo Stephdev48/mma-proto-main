@@ -57,14 +57,11 @@
     }
 
     //mise à jour de la base à chaque étape
-    function update($array_SESSION, $table){
-        // var_dump($array_SESSION);
-        //var_dump($array_SESSION);
+    function update($array_SESSION, $table, $DOID){
         $array_values = array();
         $sqlupdate = "UPDATE $table";
         $strparams = "";
         $i =0;
-        
         foreach ($array_SESSION as $field => $value) {  
             //on ignore certains champs qui ne sont pas en base de données            
             if($field != "fields" &&  $field != "page_next" 
@@ -91,21 +88,27 @@
             }
             
         }
-
-        if(DEBUG == true){
+        $sqlupdate.=" WHERE $table.DOID = $DOID;";
+        if(DEBUG == false){
             echo "<pre>";
-                print_r($array_SESSION);
+                echo "<br>SQL:<strong>$sqlupdate</strong><br>";
+                print_r($array_values);
             echo "</pre>";
         }
-
-        /* Crée une requête préparée */
-        if ($stmt = mysqli_prepare($GLOBALS["conn"], $sqlupdate)) {
-            /* Exécution de la requête */
-            $res = mysqli_stmt_execute($stmt, $array_values);
-
-            /* Fermeture du traitement */
-            mysqli_stmt_close($stmt);
+        try {
+            /* Crée une requête préparée */
+            if ($stmt = mysqli_prepare($GLOBALS["conn"], $sqlupdate)) {
+                /* Exécution de la requête */
+                    print_r($stmt);
+                    $res = mysqli_stmt_execute($stmt, $array_values);
+                
+                    /* Fermeture du traitement */
+                    mysqli_stmt_close($stmt);                
+            }
+        }catch (Exception $e) {
+            echo 'Exception reçue : ',  $e->getMessage(), "\n";
         }
+
         
         return $res;
     }

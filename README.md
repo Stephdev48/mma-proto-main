@@ -15,9 +15,6 @@ form-entreprise : les required bloquent le passage à l'autre step si pas rempli
 ## Champs date ouverture chantier
 l'infobulle fait doublon avec le champ du dessous : "A défaut date prévue de début"
 
-## garder les champs cachés ouverts si retour sur étape précédente
-modifier les onclick par if(checked) ou autre...
-
 ## à corriger :
 si après avoir rempli les coordonnées souscripteur en step1, on fait précédent à partir de la step2, il y aura à nouveau ajout du souscripteur, et donc doublon...
 
@@ -35,9 +32,7 @@ templates pour chaque étape
 
 ## Backoffice
 Tableau Flowbite qui reprend les templates de chaque étape
-Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiquement un DOID.
-
-## Ternaires pour ouverture champs 'hidden'
+Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiquement un DOID ?
 
 ## Les ternaires pour les champs input ne fonctionnent pas
 

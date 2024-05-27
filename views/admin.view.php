@@ -1,11 +1,10 @@
-<p class="text-center font-medium text-xl">Bienvenue sur la page d'administration</p>
-
-<?php echo "<pre>";
+<!-- <?php echo "<pre>";
 var_dump($dos);
-echo "</pre>"; ?>
+echo "</pre>"; ?> -->
 
 <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
-    <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
+<p class="text-center font-medium text-xl mt-6">Bienvenue sur la page d'administration</p>
+    <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
@@ -84,7 +83,7 @@ echo "</pre>"; ?>
                 </div>
             </div>
             <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <table class="w-full text-sm text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-4 py-3">Demande DO n°</th>
@@ -105,16 +104,16 @@ echo "</pre>"; ?>
                                 <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     <?php echo $do['DOID']; ?>
                                 </th>
-                                <td class="px-4 py-3"><?php echo $do['date_creation']; ?></td>
-                                <td class="px-4 py-3"><?php echo $do['souscripteur_nom_raison']; ?></td>
-                                <td class="px-4 py-3">
+                                <td class="px-4 py-3 text-center"><?php echo $do['date_creation']; ?></td>
+                                <td class="px-4 py-3 text-center"><?php echo $do['souscripteur_nom_raison']; ?></td>
+                                <td class="px-4 py-3 flex justify-center">
                                     <div class="flex flex-col">
                                         <?php echo "<span>".$do['construction_adresse_num_nom_rue']."</span>"; ?>
-                                        <?php echo "<span>".$do['construction_adresse_code_postal']."</span>"; ?>
-                                        <?php echo "<span>".$do['construction_adresse_commune']."</span>"; ?>
+
+                                        <?php echo "<span>".$do['construction_adresse_code_postal']."&nbsp;". $do['construction_adresse_commune'] ."</span>"; ?>
                                     </div>
                                 </td>
-                                <td class="px-4 py-3"><?php echo $do['construction_cout_operation']; ?></td>
+                                <td class="px-4 py-3 text-center"><?php echo $do['construction_cout_operation']; ?></td>
                                 <td class="px-4 py-3 flex items-center justify-end">
                                     <button id="<?php echo $do['DOID']."-dropdown-button"; ?>" data-dropdown-toggle="<?php echo $do['DOID']."-dropdown"; ?>" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                         <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

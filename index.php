@@ -52,7 +52,11 @@
             case 'admin':
                 require 'controllers/admin.controller.php';
                 adminDisplay();
-                break;                 
+                break; 
+            case 'fiche':
+                require 'controllers/admin.controller.php';
+                singleDoDisplay();
+                break;        
             default:
                 throw new Exception ('Paramètre invalide !');
                 break;

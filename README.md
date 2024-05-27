@@ -8,7 +8,7 @@ header : navbar
 
 ## Infobulles !
 
-## fonction pour ajouter "required" aux champs obligatoires
+## Fonction pour ajouter "required" aux champs obligatoires
 required pas compatible avec hidden...
 form-entreprise : les required bloquent le passage à l'autre step si pas remplis
 
@@ -23,11 +23,6 @@ si après avoir rempli les coordonnées souscripteur en step1, on fait précéde
 ## Fonctionnement général : remarques :
 lorsque radio value=0, la requête insère null dans les tables sauf pour cnr où elle insère 0...
 
-## Récapitulatif étape validation
-récapitulatif des infos pour l'utilisateur avant validation finale
-avec fonction read
-templates pour chaque étape
-
 ## Insertion des coordonnées entreprises
 
 ## Backoffice
@@ -36,6 +31,4 @@ Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiqueme
 
 ## Les ternaires pour les champs input ne fonctionnent pas
 
-## Des données sont écrasées par le souscripteur suivant !
-Voir adresse construction dans la table operation_construction
 

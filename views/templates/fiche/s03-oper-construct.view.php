@@ -109,8 +109,15 @@
             <div class="flex flex-col pl-8 mt-4">
                 <?php 
                     if(isset($DATA['type_ouvrage_mais_indiv']) && $DATA['type_ouvrage_mais_indiv'] == 1){
-                        $content = boxDisplay("Maison individuelle");
-                        echo $content;
+                        echo "<div class='flex flex-row ml-6'>
+                                <strong>Maison individuelle</strong>";
+                        echo "<span class='flex flex-row'>";
+                            if(isset($DATA['type_ouvrage_mais_indiv_piscine']) && $DATA['type_ouvrage_mais_indiv_piscine'] == 1){
+                                echo "<span class='font-medium ml-2'>: présence d'une piscine</span>";
+                                echo "<span class='font-medium ml-4'>( ".$DATA['type_ouvrage_mais_indiv_piscine_situation']." )</span>";
+                            }
+                        echo "</span>
+                            </div>";
                     }
                     if(isset($DATA['type_ouvrage_ope_pavill']) && $DATA['type_ouvrage_ope_pavill'] == 1){
                         $content = boxDisplay("Opération pavillonnaire :");

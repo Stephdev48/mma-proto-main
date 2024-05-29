@@ -13,12 +13,12 @@
                 </div>
             </div>
             <span class="ml-6 text-gray-500 font-medium">
-                <input type="radio" name="nature_neuf_exist" value="neuve" <?= isset($_SESSION['info_operation_construction']['nature_neuf_exist'])=="neuve" ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation')" required/>
+                <input type="radio" name="nature_neuf_exist" value="neuve" <?= isset($_SESSION['info_operation_construction']['nature_neuf_exist']) && $_SESSION['info_operation_construction']['nature_neuf_exist']=="neuve" ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation')" required/>
                 <label> Construction neuve &ensp;</label>
                 <p class="text-xs text-gray-500 font-normal">(indépendante de tout bâtiment existant)</p>
             </span>
             <span class="ml-6 mt-2 lg:mt-0 text-gray-500 font-medium">
-                <input type="radio" name="nature_neuf_exist" value="existante" <?= isset($_SESSION['info_operation_construction']['nature_neuf_exist'])=="existante" ? "checked=checked" : ""; ?> onclick="showElement('nature_operation')"/>
+                <input type="radio" name="nature_neuf_exist" value="existante" <?= isset($_SESSION['info_operation_construction']['nature_neuf_exist']) && $_SESSION['info_operation_construction']['nature_neuf_exist']=="existante" ? "checked=checked" : ""; ?> onclick="showElement('nature_operation')"/>
                 <label> Travaux sur construction existante</label>
             </span>
         </div>
@@ -228,8 +228,20 @@
         <fieldset class="flex flex-col lg:flex-row mb-2 mt-10">
             <legend class="mb-2 text-gray-500 font-medium">Type de l'ouvrage (cochez la ou les cases correspondantes) :</legend>
             <div class="flex flex-col ml-8">
-                <div>
+                <div class="flex flex-col">
                     <span><input type="checkbox" name="type_ouvrage_mais_indiv" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_mais_indiv'])==1 ? "checked=checked" : ""; ?>/> Maison individuelle</span>
+                    <div class="flex flex-row text-gray-500 font-medium">
+                        <span class="text-xs text-black font-normal">Présence d'une piscine ?</span> &ensp;&ensp;
+                        <input type="radio" name="type_ouvrage_mais_indiv_piscine" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']) && $_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']=="1" ? "checked=checked" : ""; ?> onclick="showElement('situation_piscine')"/>
+                        <label class="text-xs text-black ml-2"> Oui &ensp;</label>
+                        <input type="radio" name="type_ouvrage_mais_indiv_piscine" value="0" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']) && $_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']=="0" ? "checked=checked" : ""; ?> onclick="hideElement('situation_piscine')"/>
+                        <label class="text-xs text-black ml-2"> Non &ensp;</label>
+                    </div>
+                    <div id="situation_piscine" class="flex flex-col ml-6 <?= isset($_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']) && $_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine']=="1" ? "" : "hidden"; ?>">
+                        <span class="text-xs">Veuillez préciser sa situation (intérieure, extérieure,...) :</span>
+                        <input type="text" name="type_ouvrage_mais_indiv_piscine_situation" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine_situation']) ? $_SESSION['info_operation_construction']['type_ouvrage_mais_indiv_piscine_situation'] : ''?>" style="height:10px; width: 250px; border-radius:6px;" class="text-sm bg-gray-50"/>
+
+                    </div>
                 </div>
                 <div>
                     <span><input type="checkbox" name="type_ouvrage_ope_pavill" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_ope_pavill'])==1 ? "checked=checked" : ""; ?>/> Opération pavillonnaire :</span><br />
@@ -240,7 +252,7 @@
                 <div>
                     <span><input type="checkbox" name="type_ouvrage_coll_habit" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_coll_habit'])==1 ? "checked=checked" : ""; ?>/> Collectif d'habitation :</span><br />
                     <span class="text-xs">(nombre d'appartements : 
-                        <input type="text" name="type_ouvrage_coll_habit_nombre" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_coll_habit_nombre']) ? $_SESSION['info_operation_construction']['type_ouvrage_coll_habit_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="bg-gray-50"/> )
+                        <input type="text" name="type_ouvrage_coll_habit_nombre" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_coll_habit_nombre']) ? $_SESSION['info_operation_construction']['type_ouvrage_coll_habit_nombre'] : ''?>" style="height:10px; width: 60px; border-radius:6px;" class="text-sm bg-gray-50"/> )
                     </span>
                 </div>
                 <span>
@@ -251,7 +263,7 @@
                         <input type="checkbox" name="type_ouvrage_centre_com" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_centre_com'])==1 ? "checked=checked" : ""; ?>/> Centre commercial, bâtiment à usage de vente :
                     </span><br />
                     <span class="text-xs">(superficie hors oeuvre nette (SHON) : 
-                        <input type="text" name="type_ouvrage_centre_com_surf" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_centre_com_surf']) ? $_SESSION['info_operation_construction']['type_ouvrage_centre_com_surf'] : ''?>" style="height:10px; width:60px; border-radius:6px;" class="bg-gray-50"/> m²)
+                        <input type="text" name="type_ouvrage_centre_com_surf" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_centre_com_surf']) ? $_SESSION['info_operation_construction']['type_ouvrage_centre_com_surf'] : ''?>" style="height:10px; width:60px; border-radius:6px;" class="text-sm bg-gray-50"/> m²)
                     </span>
                 </div>
             </div>
@@ -264,7 +276,7 @@
                         <input type="checkbox" name="type_ouvrage_autre_const" value="1" <?= isset($_SESSION['info_operation_construction']['type_ouvrage_autre_const'])==1 ? "checked=checked" : ""; ?>/> Autre construction :
                     </span><br />
                     <span class="text-xs">(son usage : 
-                        <input type="text" name="type_ouvrage_autre_const_usage" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_autre_const_usage']) ? $_SESSION['info_operation_construction']['type_ouvrage_autre_const_usage'] : ''?>" style="height:10px; width:200px; border-radius:6px;" class="bg-gray-50"/> )
+                        <input type="text" name="type_ouvrage_autre_const_usage" value="<?= isset($_SESSION['info_operation_construction']['type_ouvrage_autre_const_usage']) ? $_SESSION['info_operation_construction']['type_ouvrage_autre_const_usage'] : ''?>" style="height:10px; width:200px; border-radius:6px;" class="text-sm bg-gray-50"/> )
                     </span>
                 </div>
             </div>

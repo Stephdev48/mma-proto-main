@@ -275,7 +275,7 @@
             <span class="text-gray-500 font-medium">Adresse de la construction</span>
             <div class="mx-8 my-2">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Escalier, résidence, bâtiment</label>
-                <input type="text" name="construction_adresse_esc_res_bat" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_esc_res_bat']) ? $_SESSION['info_operation_construction']['construction_adresse_esc_res_bat'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
+                <input type="text" name="construction_adresse_esc_res_bat" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_esc_res_bat']) ? $_SESSION['info_operation_construction']['construction_adresse_esc_res_bat'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
             </div>
             <div class="mx-8 my-2">
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numéro et nom de la rue</label>
@@ -284,11 +284,11 @@
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lieu-dit</label>
-                    <input type="text" name="construction_adresse_lieu_dit" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_lieu_dit']) ? $_SESSION['info_operation_construction']['construction_adresse_lieu_dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    <input type="text" name="construction_adresse_lieu_dit" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_lieu_dit']) ? $_SESSION['info_operation_construction']['construction_adresse_lieu_dit'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>
                 <div>
                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Arrondissement</label>
-                    <input type="text" name="construction_adresse_arrond" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_arrond']) ? $_SESSION['info_operation_construction']['construction_adresse_arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    <input type="text" name="construction_adresse_arrond" value="<?= isset($_SESSION['info_operation_construction']['construction_adresse_arrond']) ? $_SESSION['info_operation_construction']['construction_adresse_arrond'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                 </div>
             </div>
             <div class="grid gap-6 mb-2 mx-8 md:grid-cols-2">
@@ -343,7 +343,7 @@
             </div>
             <div class="mx-8 mt-4">
                 <span class="text-sm font-medium text-gray-900">Comprend la TVA ? &ensp;&ensp;
-                    <input type="radio" name="cout_operation_tva" value="1" <?= isset($_SESSION['info_operation_construction']['cout_operation_tva']) && ($_SESSION['info_operation_construction']['cout_operation_tva'])==1 ? "checked=checked" : ""; ?> required/>
+                    <input type="radio" name="cout_operation_tva" value="1" <?= isset($_SESSION['info_operation_construction']['cout_operation_tva']) && ($_SESSION['info_operation_construction']['cout_operation_tva'])==1 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="cout_operation_tva" value="0" <?= isset($_SESSION['info_operation_construction']['cout_operation_tva']) && ($_SESSION['info_operation_construction']['cout_operation_tva'])==0 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Non</label>

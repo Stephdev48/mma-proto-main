@@ -5,7 +5,7 @@
             <div class="flex flex-col lg:flex-row text-gray-500 font-medium">
                 <span>Le Maitre d'Ouvrage est-il le souscripteur ? &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
                 <div class="ml-8">
-                    <input type="radio" name="moa_souscripteur" value="1" <?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moa_souscripteur_form')" required/>
+                    <input type="radio" name="moa_souscripteur" value="1" <?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==1 ? "checked=checked" : ""; ?> onclick="hideElement('moa_souscripteur_form')"/>
                     <label> Oui &ensp;</label>
                     <input type="radio" name="moa_souscripteur" value="0" <?= isset($_SESSION['info_moa']['moa_souscripteur']) && ($_SESSION['info_moa']['moa_souscripteur'])==0 ? "checked=checked" : ""; ?> onclick="showElement('moa_souscripteur_form')"/>
                     <label> Non</label>

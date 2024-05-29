@@ -1,7 +1,4 @@
-
-
-
-<section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
+<section class="bg-slate-100 dark:bg-gray-900 p-3 sm:p-5">
 <p class="text-center font-medium text-xl mt-6">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <?php if(!empty($infodelete)){ echo $infodelete; }; ?>

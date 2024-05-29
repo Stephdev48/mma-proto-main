@@ -46,10 +46,6 @@
             $currentstep5 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep5circle = "border-blue-600 border-2";
             break;
-        case'step6':
-            $currentstep6 = "text-blue-600 dark:text-blue-500 font-bold";
-            $currentstep6circle = "border-blue-600 border-2";
-            break;
         case'rcd':
             $currentrcd = "text-blue-600 dark:text-blue-500 font-bold";
             $currentrcdcircle = "border-blue-600 border-2";
@@ -126,17 +122,7 @@
                                         5
                                     </span>
                                     <span>
-                                        <h3 class="ml-2">Maîtrise d\'oeuvre</h3>
-                                    </span>
-                                </a>
-                            </li>
-                            <li id="step6" class="flex items-center space-x-2.7 '.$currentstep6.'">
-                                <a href="index.php?page=step6" class="flex flex-row">
-                                    <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep6circle.'">
-                                        6
-                                    </span>
-                                    <span>
-                                        <h3 class="ml-2">CNR et Risques chantier</h3>
+                                        <h3 class="ml-2">Maîtrise d\'oeuvre et Garanties demandées</h3>
                                     </span>
                                 </a>
                             </li>
@@ -205,25 +191,17 @@
                             5
                         </span>
                         <span>
-                            <h3 class="ml-2">Maîtrise d\'oeuvre</h3>
+                            <h3 class="ml-2">Maîtrise d\'oeuvre et Garanties demandées</h3>
                         </span>
                 </li>
-                <li id="step6" class="flex items-center space-x-2.7 '.$currentstep6.'">
-                            <span id="step6-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$currentstep6circle.'">
-                                6
-                            </span>
-                            <span>
-                                <h3 class="ml-2">CNR et Risques chantier</h3>
-                            </span>
-                    </li>
-                    <li id="validation" class="flex items-center space-x-2.5 '.$validation.'">
-                        <span id="validation-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
-                            Val
-                        </span>
-                        <span>
-                            <h3 class="ml-2">Validation</h3>
-                        </span>
-                    </li>
+                <li id="validation" class="flex items-center space-x-2.5 '.$validation.'">
+                    <span id="validation-circle" class="flex items-center justify-center w-8 h-8 border rounded-full shrink-0 '.$validationcircle.'">
+                        Val
+                    </span>
+                    <span>
+                        <h3 class="ml-2">Validation</h3>
+                    </span>
+                </li>
             </ol>
         </div>
     </section>';

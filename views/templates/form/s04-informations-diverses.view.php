@@ -138,7 +138,7 @@
         <div>
             <h3 class="text-gray-500 font-medium mt-16">Garanties demandées</h3>
             <div class="ml-10 mt-2">
-                <h4 class="font-normal">Garanties complètes (CS n°811) </h4>
+                <h4 class="font-normal">Garanties complètes </h4>
                 <span class="text-sm font-normal ml-6">Dommages ouvrages obligatoire + dommages aux éléments d'équipement et immatériels &ensp;&ensp;
                     <input type="radio" name="situation_garanties_completes" value="1" <?= isset($_SESSION['info_situation']['situation_garanties_completes']) && ($_SESSION['info_situation']['situation_garanties_completes'])==1 ? "checked=checked" : ""; ?> required/>
                     <label class="text-base text-gray-500 font-medium"> Oui &ensp;</label>
@@ -147,7 +147,7 @@
                 </span>
             </div>
             <div class="ml-10 mt-2">
-                <span class="font-normal">Dommages matériels subits par les existants (CS n°811) &ensp;&ensp;
+                <span class="font-normal">Dommages matériels subits par les existants &ensp;&ensp;
                     <input type="radio" name="situation_garanties_dommages_existants" value="1" <?= isset($_SESSION['info_situation']['situation_garanties_dommages_existants']) && ($_SESSION['info_situation']['situation_garanties_dommages_existants'])==1 ? "checked=checked" : ""; ?>  required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="situation_garanties_dommages_existants" value="0" <?= isset($_SESSION['info_situation']['situation_garanties_dommages_existants']) && ($_SESSION['info_situation']['situation_garanties_dommages_existants'])==0 ? "checked=checked" : ""; ?>/>
@@ -187,6 +187,14 @@
                     <input type="radio" name="situation_controle_tech" value="1" <?= isset($_SESSION['info_situation']['situation_controle_tech']) && ($_SESSION['info_situation']['situation_controle_tech'])==1 ? "checked=checked" : ""; ?> required/>
                     <label class="text-gray-500 font-medium"> Oui &ensp;</label>
                     <input type="radio" name="situation_controle_tech" value="0" <?= isset($_SESSION['info_situation']['situation_controle_tech']) && ($_SESSION['info_situation']['situation_controle_tech'])==0 ? "checked=checked" : ""; ?>/>
+                    <label class="text-gray-500 font-medium"> Non</label>
+                </span>
+            </div>
+            <div class="ml-10 mt-2">
+                <span class="font-normal">Y a-t-il désignation d'un Constructeur Non Réalisateur ? &ensp;&ensp;
+                    <input type="radio" name="situation_cnr" value="1" <?= isset($_SESSION['info_situation']['situation_cnr']) && ($_SESSION['info_situation']['situation_cnr'])==1 ? "checked=checked" : ""; ?> required/>
+                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                    <input type="radio" name="situation_cnr" value="0" <?= isset($_SESSION['info_situation']['situation_cnr']) && ($_SESSION['info_situation']['situation_cnr'])==0 ? "checked=checked" : ""; ?>/>
                     <label class="text-gray-500 font-medium"> Non</label>
                 </span>
             </div>

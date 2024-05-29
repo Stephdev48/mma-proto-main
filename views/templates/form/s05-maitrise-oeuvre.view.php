@@ -57,6 +57,44 @@
         </div>
     </div>
 
+    <!-- Garanties -->
+    <div class="mt-8">
+        <h3 class="text-gray-500 font-medium">Garanties demandées</h3>
+        <div class="mx-10 mt-4">
+            <span class="font-normal text-gray-900">Dommage Ouvrage  &ensp;&ensp;</span>
+                <input type="radio" name="moe_garantie_do" value="1" <?= isset($_SESSION['info_moe']['moe_garantie_do']) && ($_SESSION['info_moe']['moe_garantie_do'])==1 ? "checked=checked" : ""; ?> required/>
+                <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                <input type="radio" name="moe_garantie_do" value="0" <?= isset($_SESSION['info_moe']['moe_garantie_do']) && ($_SESSION['info_moe']['moe_garantie_do'])==0 ? "checked=checked" : ""; ?>/>
+                <label class="text-gray-500 font-medium"> Non</label>
+            </span>  
+        </div>
+        <div class='<?= isset($_SESSION['info_situation']['situation_cnr']) && ($_SESSION['info_situation']['situation_cnr'])==1 ? "" : "hidden"; ?> mx-10 mt-4' id="garantie_cnr">
+            <span class='font-normal text-gray-900'>Responsabilité du Constructeur Non Réalisateur &ensp;&ensp;
+                <input type='radio' name='moe_garantie_cnr' value='1' <?= isset($_SESSION['info_moe']['moe_garantie_cnr']) && ($_SESSION['info_moe']['moe_garantie_cnr'])==1 ? 'checked=checked' : ''; ?> required/>
+                <label class='text-gray-500 font-medium'> Oui &ensp;</label>
+                <input type='radio' name='moe_garantie_cnr' value='0' <?= isset($_SESSION['info_moe']['moe_garantie_cnr']) && ($_SESSION['info_moe']['moe_garantie_cnr'])==0 ? 'checked=checked' : ''; ?>/>
+                <label class='text-gray-500 font-medium'> Non</label>
+            </span>  
+        </div>
+        <div class='mx-10 mt-4'>
+            <span class='font-normal text-gray-900'>Tous risques chantier &ensp;&ensp;
+                <input type='radio' name='moe_garantie_chantier' value='1' <?= isset($_SESSION['info_moe']['moe_garantie_chantier']) && ($_SESSION['info_moe']['moe_garantie_chantier'])==1 ? 'checked=checked' : ''; ?> required/>
+                <label class='text-gray-500 font-medium'> Oui &ensp;</label>
+                <input type='radio' name='moe_garantie_chantier' value='0' <?= isset($_SESSION['info_moe']['moe_garantie_chantier']) && ($_SESSION['info_moe']['moe_garantie_chantier'])==0 ? 'checked=checked' : ''; ?>/>
+                <label class='text-gray-500 font-medium'> Non</label>
+            </span>  
+        </div>
+        <div class='mx-10 mt-4'>
+            <span class='font-normal text-gray-900'>Protection juridique &ensp;&ensp;
+                <input type='radio' name='moe_garantie_juridique' value='1' <?= isset($_SESSION['info_moe']['moe_garantie_juridique']) && ($_SESSION['info_moe']['moe_garantie_juridique'])==1 ? 'checked=checked' : ''; ?> required/>
+                <label class='text-gray-500 font-medium'> Oui &ensp;</label>
+                <input type='radio' name='moe_garantie_juridique' value='0' <?= isset($_SESSION['info_moe']['moe_garantie_juridique']) && ($_SESSION['info_moe']['moe_garantie_juridique'])==0 ? 'checked=checked' : ''; ?>/>
+                <label class='text-gray-500 font-medium'> Non</label>
+            </span>  
+        </div>
+    </div>
+
+
     <div class="flex flex-row justify-center mt-16">
         <!-- Bouton précédent -->                                          
         <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">
@@ -75,7 +113,7 @@
             </div>
             <!-- Bouton suivant -->
             <div class="text-center ml-6">
-                <button type="submit" name="page_next" value="step6" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+                <button type="submit" name="page_next" value="validation" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
             </div>
         </div>
     </div>

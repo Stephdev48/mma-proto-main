@@ -3,15 +3,14 @@
 
     //création du souscripteur et de la demande ouvrage + doid dans chaque table
     function read($doid){
-        $sql = "SELECT * FROM souscripteur, dommage_ouvrage, moa, operation_construction, situation, travaux_annexes, moe, cnr
+        $sql = "SELECT * FROM souscripteur, dommage_ouvrage, moa, operation_construction, situation, travaux_annexes, moe
                 WHERE dommage_ouvrage.DOID = $doid
                 AND dommage_ouvrage.souscripteur_id = souscripteur.souscripteur_id
                 AND moa.DOID = dommage_ouvrage.DOID
                 AND moe.DOID = dommage_ouvrage.DOID
                 AND operation_construction.DOID = dommage_ouvrage.DOID
                 AND travaux_annexes.DOID = dommage_ouvrage.DOID
-                AND situation.DOID = dommage_ouvrage.DOID
-                AND cnr.DOID = dommage_ouvrage.DOID;";
+                AND situation.DOID = dommage_ouvrage.DOID;";
         $resquery = mysqli_query($GLOBALS["conn"], $sql);
         $DATA = mysqli_fetch_array($resquery, MYSQLI_ASSOC);
         return $DATA;
@@ -48,8 +47,6 @@
             $query = mysqli_query($GLOBALS["conn"], $sql);
             $sql = "INSERT INTO moe (DOID) VALUES ('$DOID');";
             $query = mysqli_query($GLOBALS["conn"], $sql);
-            $sql = "INSERT INTO cnr (DOID) VALUES ('$DOID')";
-            $query = mysqli_query($GLOBALS["conn"], $sql);
 
         }
 
@@ -71,8 +68,8 @@
             && !str_starts_with($field, "pv_entreprise")    //idem pour le photovoltaique
             && !str_starts_with($field, "geo_entreprise")    //idem pour géothermie
             && !str_starts_with($field, "ct_entreprise")    //idem pour controleur technique
-            && !str_starts_with($field, "moe_entreprise")    //idem pour moe    
-            && !str_starts_with($field, "cnr_entreprise")    //idem pour cnr    
+            && !str_starts_with($field, "moe_entreprise")    //idem pour moe 
+            && !str_starts_with($field, "cnr_entreprise")    //idem pour cnr      
 
             ){   
                 if($i == 0){
@@ -140,8 +137,6 @@
         $deletesql = "DELETE FROM operation_construction WHERE DOID = '$doid'";
         mysqli_query($GLOBALS["conn"], $deletesql);
         $deletesql = "DELETE FROM situation WHERE DOID = '$doid'";
-        mysqli_query($GLOBALS["conn"], $deletesql);
-        $deletesql = "DELETE FROM cnr WHERE DOID = '$doid'";
         mysqli_query($GLOBALS["conn"], $deletesql);
         $deletesql = "DELETE FROM travaux_annexes WHERE DOID = '$doid'";
         mysqli_query($GLOBALS["conn"], $deletesql);

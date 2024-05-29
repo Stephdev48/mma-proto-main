@@ -30,11 +30,7 @@
             case 'step5':
                 $title = "Formulaire DO-05";
                 require('views/templates/form/s05-maitrise-oeuvre.view.php');
-                break;    
-            case 'step6':
-                $title = "Formulaire DO-06";
-                require('views/templates/form/s06-cnr-risques-chantier.view.php');
-                break;                                             
+                break;                                               
             default:
                 # code...
                 break;
@@ -73,7 +69,8 @@
             if($_SESSION["info_situation"]['situation_construction_bois']=="0"
             && $_SESSION["info_situation"]['situation_pann_photo'] =="0" 
             && $_SESSION["info_situation"]['situation_geothermie'] =="0" 
-            && $_SESSION["info_situation"]['situation_controle_tech'] =="0") {
+            && $_SESSION["info_situation"]['situation_controle_tech'] =="0"
+            && $_SESSION["info_situation"]['situation_cnr'] =="0") {
                 header("Location: index.php?page=step5");
             }  
         }

@@ -1,16 +1,15 @@
-<!-- <?php echo "<pre>";
-var_dump($dos);
-echo "</pre>"; ?> -->
+
+
 
 <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
 <p class="text-center font-medium text-xl mt-6">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
-        MESSAGE<?= $infodelete; ?>
+        <?php if(!empty($infodelete)){ echo $infodelete; }; ?>
     </div>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
-            <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
+            <!-- <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
                 <div class="w-full md:w-1/2">
                     <form class="flex items-center">
                         <label for="simple-search" class="sr-only">Recherche !</label>
@@ -84,7 +83,7 @@ echo "</pre>"; ?> -->
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="overflow-x-auto">
                 <table class="w-full text-sm text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

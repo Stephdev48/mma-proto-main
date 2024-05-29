@@ -25,12 +25,4 @@ lorsque radio value=0, la requête insère null dans les tables sauf pour cnr o�
 
 ## Insertion des coordonnées entreprises
 
-## Backoffice
-Tableau Flowbite qui reprend les templates de chaque étape
-Fonctionnalité qui permet d'entrer une adresse mail, et de créer automatiquement un DOID ?
-
 ## Les ternaires pour les champs input ne fonctionnent pas
-
-## Fiche individuelle
-Ajouter numéro DO dans le titre h3
-

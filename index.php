@@ -37,7 +37,6 @@
             case 'step4':
             case 'step4bis':
             case 'step5':                
-            case 'step6':
                 require 'controllers/do.controller.php';    
                 stepDisplay($currentstep);
                 break;               

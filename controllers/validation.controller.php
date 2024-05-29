@@ -18,7 +18,6 @@
             require 'views/templates/fiche/s04-informations-diverses.view.php';
             require 'views/templates/fiche/s04-bis-travaux-annexes.view.php';
             require 'views/templates/fiche/s05-maitrise-oeuvre.view.php';
-            require 'views/templates/fiche/s06-cnr-risques-chantier.view.php';
             require 'views/validation.view.php';
             $content = ob_get_clean();
             require("views/base.view.php");

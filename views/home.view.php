@@ -1,10 +1,30 @@
+<section class="flex flex-col lg:flex-row my-16 mx-8">
+    <div>
+        <img src="public/pictures/home_picture_2.jpg" alt="home-picture" class="w-[550px] "/>
+    </div>
+    <div class="flex flex-col text-center justify-center pt-4 lg:pt-0 lg:ml-10">
+        <strong>CABINET COTTON</strong>
+        <span>CC ASSUR</span>
+        <span>5, Bd du Soubeyran - BP 111</span>
+        <span>48003 MENDE Cedex</span>
+        <span>Tél : 04 66 65 79 79 - Fax 04 66 65 79 80</span>
+        <span>Mail : <a href="mailto:cabinetcotton@outlook.fr" class="text-blue-400">cabinetcotton@outlook.fr</a>
+        <span class="flex flex-row align-items justify-center">
+            <img src="public/pictures/square-facebook.svg" width="20px"></img>
+            <a href="https://www.facebook.com/people/MMA-Cabinets-Cotton/100063516304580/" target="_blank" class="pl-2 text-blue-400">MMA Cabinets Cotton</a>
+        </span>
+    </div>
+</section>
+    
+    
+    
     <!-- CGU, RGPD et checkbox -->
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-slate-100 my-16">
     <div class="py-8 text-center lg:py-16">
 
         <!-- Champ texte CGU -->
-        <h1 class="mb-4 text-3xl md:text-4xl lg:text-2xl font-extrabold tracking-tight leading-none text-gray-900 dark:text-white">Dommage Ouvrage</h1>
-        <textarea id="cgu" rows="8" cols="80" class="mb-8 font-normal text-sm lg:text-lg text-gray-500 sm:px-4 lg:px-16 dark:text-gray-400">
+        <h1 class="mb-4 text-xl lg:text-2xl font-extrabold tracking-tight leading-none text-gray-800 dark:text-white">Dommage Ouvrage</h1>
+        <textarea id="cgu" class="p-2 w-[300px] h-[150px] lg:w-[700px] mb-8 font-normal text-xs sm:text-sm lg:text-lg text-gray-500 sm:px-4 lg:px-16 dark:text-gray-400">
             Ce contrat est commercialisé par la société Cabinet Cotton Alexandre, courtier/agent d'assurance -  immatriculé  à  l'Orias  (Registre  unique  des  intermédiaires  en  assurance)  sous  le  numéro  18002947 (www.orias.fr) et au RCS de Mende n° 840 357 743.  
             Le siège social de la société Cabinet Cotton Alexandre est situé au 5, rue Boulevard du Soubeyran 48000 MENDE. La forme juridique de la société Cabinet Cotton Alexandre est une EIRL. 
 
@@ -17,8 +37,8 @@
         </textarea>
             
         <!-- Champ texte RGPD -->
-        <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-2xl dark:text-white">Mentions légales RGPD</h1>
-        <textarea id="rgpd" rows="8" cols="80" class="mb-8 font-normal text-sm lg:text-lg text-gray-500 sm:px-4 lg:px-16 dark:text-gray-400">
+        <h1 class="mb-4 text-xl font-extrabold tracking-tight leading-none text-gray-800 lg:text-2xl dark:text-white">Mentions légales RGPD</h1>
+        <textarea id="rgpd" class="p-2 w-[300px] h-[150px] lg:w-[700px] mb-8 font-normal text-xs sm:text-sm lg:text-lg text-gray-500 sm:px-4 lg:px-16 dark:text-gray-400">
             Accordant une grande importance au respect de la vie privée de ses clients (ci-après « Vous »), La société Cabinet Cotton Alexandre vous informe de la façon la plus transparente possible, des traite-ments mis en œuvre dans le cadre de l'utilisation des données personnelles que vous lui confiez.
             Le présent document a pour but de répondre à la réglementation en vigueur et notamment au Règlement (UE) 2016/679 du Parlement Européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données (RGPD), et abrogeant la directive 95/46/CE.
             Ainsi, dans le cadre de nos relations professionnelles, nous sommes amenés à collecter, traiter et détenir des informations vous concernant :
@@ -39,7 +59,7 @@
         <div class="flex flex-col justify-center mb-4">
             <div>
                 <input id="checkbox-approuve" type="checkbox" value="approuve" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-400 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onclick="buttonActivate('start-button', 'checkbox-approuve')">
-                <label for="checkbox-approuve" class="text-base font-medium text-gray-900 dark:text-gray-300">&nbsp;Lu et approuvé.</label>
+                <label for="checkbox-approuve" class="text-base font-medium text-black dark:text-gray-300">&nbsp;Lu et approuvé.</label>
             </div>
             <span class="text-xs mt-2">( veuillez cocher la case pour continuer )</span>
         </div><br />

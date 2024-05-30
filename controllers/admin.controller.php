@@ -46,9 +46,9 @@
     
     function singleDoDisplay(){
         $DATA = read($_GET['doid']);
-        echo "<div class='mx-auto max-w-screen-xl'>";
+        echo "<div class=''>";
         require 'views/header.view.php';
-        echo "<div class='my-12'>
+        echo "<div class='bg-slate-100 my-12 mx-auto max-w-screen-xl'>
             <h3 class='text-center text-2xl font-medium'>Fiche Dommage Ouvrage n° ".$DATA['DOID']."</h3>";
         require 'views/templates/fiche/s01-coordonnees.view.php';
         require 'views/templates/fiche/s02-maitre-ouvrage.view.php';

@@ -1,5 +1,5 @@
-<section class="bg-slate-100 dark:bg-gray-900 p-3 sm:p-5">
-<p class="text-center font-medium text-xl mt-6">Bienvenue sur la page d'administration</p>
+<section class="dark:bg-gray-900 p-3 sm:p-5">
+<p class="text-center font-medium text-2xl mt-12">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <?php if(!empty($infodelete)){ echo $infodelete; }; ?>
     </div>
@@ -82,8 +82,8 @@
                 </div>
             </div> -->
             <div class="overflow-x-auto">
-                <table class="w-full text-sm text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table class="bg-slate-50 w-full text-sm text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-4 py-3">Demande DO n°</th>
                             <th scope="col" class="px-4 py-3">Date de création</th>

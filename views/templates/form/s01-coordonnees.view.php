@@ -1,4 +1,4 @@
-<form action="" method="post" class="max-w-md mx-auto mt-16">
+<form action="" method="post" class="max-w-lg mx-auto mt-8">
     
     <!-- Informations souscripteur -->
     <div class="relative z-0 w-full mb-5 group">

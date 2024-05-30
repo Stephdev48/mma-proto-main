@@ -1,4 +1,4 @@
-<h2 class="text-center font-medium mt-32">Cliquez sur Valider pour envoyer le fomulaire ou sur précédent pour revenir en arrière</h2>
+<h2 class="text-center font-medium mt-16">Cliquez sur Valider pour envoyer le fomulaire ou sur précédent pour revenir en arrière</h2>
 
 
 

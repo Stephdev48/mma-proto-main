@@ -1,4 +1,4 @@
-<section class="flex flex-col lg:flex-row my-16 mx-8">
+<div class="flex flex-col lg:flex-row my-8 mx-8">
     <div>
         <img src="public/pictures/home_picture_2.jpg" alt="home-picture" class="w-[550px] "/>
     </div>
@@ -14,12 +14,12 @@
             <a href="https://www.facebook.com/people/MMA-Cabinets-Cotton/100063516304580/" target="_blank" class="pl-2 text-blue-400">MMA Cabinets Cotton</a>
         </span>
     </div>
-</section>
+</div>
     
     
     
     <!-- CGU, RGPD et checkbox -->
-<section class="bg-slate-100 my-16">
+<div class="bg-white my-16">
     <div class="py-8 text-center lg:py-16">
 
         <!-- Champ texte CGU -->
@@ -75,4 +75,4 @@
         </div>
 
     </div>
-</section>
+</div>

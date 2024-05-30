@@ -3,7 +3,7 @@
     <?php
     if($_SESSION["info_situation"]['situation_construction_bois']=="1"):
     ?>        
-    <div class="mt-20">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Construction en bois</h3>
         <div class="ml-10 mt-4">
             <span class="font-normal">La structure de la construction (poteaux, poutres et voiles) est-elle en bois ? &ensp;&ensp;
@@ -42,7 +42,7 @@
     <?php
     if($_SESSION["info_situation"]['situation_pann_photo'] =="1"):
     ?>    
-    <div class="mt-20">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Panneaux photovoltaïques</h3>
         <div class="ml-10 mt-6">
             <h3 class="font-normal">Quel est le système de montage des panneaux ? &ensp;&ensp;</h3>
@@ -121,7 +121,7 @@
     <?php
     if($_SESSION["info_situation"]['situation_geothermie'] =="1"):
     ?>
-    <div class="mt-20">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Géothermie</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom de l'entreprise réalisant les forages : &ensp;&ensp;</span>
@@ -136,7 +136,7 @@
     <?php
     if($_SESSION["info_situation"]['situation_controle_tech'] =="1"):
     ?>
-    <div class="mt-20">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Contrôleur technique</h3>
         <div class="ml-10 mt-6">
             <span class="font-normal">Nom du contrôleur technique : &ensp;&ensp;</span>
@@ -168,7 +168,7 @@
     <?php
     if($_SESSION["info_situation"]['situation_cnr'] =="1"):
     ?>
-    <div class="mt-20">
+    <div class="mt-16">
         <h3 class="text-gray-500 font-medium">Désignation du constructeur non réalisateur</h3>
         <div>
             <?php echo coordFormDisplay('cnr',$_SESSION['info_travaux_annexes'] ); ?>

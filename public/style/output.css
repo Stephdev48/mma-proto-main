@@ -13,4 +13,9 @@
     color:darkorange;
 }
 
+.home_bg{
+    background-image: url("../pictures/ciment-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 

@@ -26,3 +26,7 @@ lorsque radio value=0, la requête insère null dans les tables sauf pour cnr o�
 ## Insertion des coordonnées entreprises
 
 ## Les ternaires pour les champs input ne fonctionnent pas
+
+## Confirmation suppression
+Il faut une alert() pour le bouton supprimer du tableau admin
+

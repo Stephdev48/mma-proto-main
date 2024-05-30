@@ -1,5 +1,5 @@
 <section class="dark:bg-gray-900 p-3 sm:p-5">
-<p class="text-center font-medium text-2xl mt-12">Bienvenue sur la page d'administration</p>
+<p class="text-center font-medium text-2xl mt-16">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <?php if(!empty($infodelete)){ echo $infodelete; }; ?>
     </div>
@@ -105,32 +105,18 @@
                                 </th>
                                 <td class="px-4 py-3 text-center"><?php echo $do['date_creation']; ?></td>
                                 <td class="px-4 py-3 text-center"><?php echo $do['souscripteur_nom_raison']; ?></td>
-                                <td class="px-4 py-3 flex justify-center">
-                                    <div class="flex flex-col">
+                                <td class="px-4 py-3">
+                                    <div class="flex flex-col text-center">
                                         <?php echo "<span>".$do['construction_adresse_num_nom_rue']."</span>"; ?>
-
                                         <?php echo "<span>".$do['construction_adresse_code_postal']."&nbsp;". $do['construction_adresse_commune'] ."</span>"; ?>
                                     </div>
                                 </td>
                                 <td class="px-4 py-3 text-center"><?php echo $do['construction_cout_operation']; ?></td>
-                                <td class="px-4 py-3 flex items-center justify-end">
-                                    <button id="<?php echo $do['DOID']."-dropdown-button"; ?>" data-dropdown-toggle="<?php echo $do['DOID']."-dropdown"; ?>" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
-                                        <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                        </svg>
-                                    </button>
-                                    <div id="<?php echo $do['DOID']."-dropdown"; ?>" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="<?php echo $do['DOID']."-dropdown-button"; ?>-button">
-                                            <li>
-                                                <a href="index.php?page=fiche&doid=<?php echo $do['DOID']; ?>" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Voir</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Editer</a>
-                                            </li>
-                                        </ul>
-                                        <div class="py-1">
-                                            <a href="index.php?page=admin&deletedo=<?php echo $do['DOID']; ?>" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Supprimer</a>
-                                        </div>
+                                <td class="px-4 py-3 flex justify-center">
+                                    <div class="flex flex-row py-1 text-sm text-gray-700 dark:text-gray-200">
+                                        <a href="index.php?page=fiche&doid=<?php echo $do['DOID']; ?>" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"><img src="public/pictures/eye-solid.svg" alt="see-pic" width="20px"/></a>
+                                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"><img src="public/pictures/file-pen-solid.svg" alt="edit-pic" width="20px"/></a>
+                                        <a href="index.php?page=admin&deletedo=<?php echo $do['DOID']; ?>" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"><img src="public/pictures/trash-solid.svg" alt="trash-pic" width="16px"/></a>
                                     </div>
                                 </td>
                             </tr>

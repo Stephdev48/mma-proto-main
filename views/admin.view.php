@@ -1,7 +1,7 @@
 <section class="dark:bg-gray-900 p-3 sm:p-5">
 <p class="text-center font-medium text-2xl mt-16">Bienvenue sur la page d'administration</p>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
-        <?php if(!empty($infodelete)){ echo $infodelete; }; ?>
+        <?php if(isset($infodelete)){ echo "<span>".$infodelete."</span>"; }; ?>
     </div>
     <div class="mx-auto my-12 max-w-screen-xl px-4 lg:px-12">
         <!-- Start coding here -->
@@ -169,4 +169,4 @@
             </nav> -->
         </div>
     </div>
-    </section>
+</section>

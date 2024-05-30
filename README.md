@@ -30,3 +30,6 @@ lorsque radio value=0, la requête insère null dans les tables sauf pour cnr o�
 ## Confirmation suppression
 Il faut une alert() pour le bouton supprimer du tableau admin
 
+## Le message de confirmation de suppression dans le board admin ne fonctionne pas.
+Pas de paramètre "deletedo" dans l'URL... AJAX ?
+

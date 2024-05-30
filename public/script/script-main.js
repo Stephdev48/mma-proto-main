@@ -1,5 +1,5 @@
-function alertTestJs(){
-    alert("Le JS fonctionne");
+function alert(message){
+    alert(message);
 }
 
 function showElement(elementhidden){

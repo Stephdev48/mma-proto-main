@@ -55,7 +55,11 @@
             case 'fiche':
                 require 'controllers/admin.controller.php';
                 singleDoDisplay();
-                break;        
+                break;  
+            case 'edit':
+                require 'controllers/admin.controller.php';
+                editDo($_GET['doid']);
+                break;       
             default:
                 throw new Exception ('Paramètre invalide !');
                 break;

@@ -61,3 +61,8 @@
         </div>";
     }
 
+
+    function editDo($doid){
+        $_SESSION = read($doid);
+        header("Location: index.php?page=step1");
+    }

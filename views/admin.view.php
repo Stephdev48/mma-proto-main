@@ -115,7 +115,7 @@
                                 <td class="px-4 py-3 flex justify-center">
                                     <div class="flex flex-row py-1 text-sm text-gray-700 dark:text-gray-200">
                                         <a href="index.php?page=fiche&doid=<?php echo $do['DOID']; ?>" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"><img src="public/pictures/eye-solid.svg" alt="see-pic" width="20px"/></a>
-                                        <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"><img src="public/pictures/file-pen-solid.svg" alt="edit-pic" width="20px"/></a>
+                                        <a href="index.php?page=edit&doid=<?php echo $do['DOID']; ?>" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"><img src="public/pictures/file-pen-solid.svg" alt="edit-pic" width="20px"/></a>
                                         <a href="index.php?page=admin&deletedo=<?php echo $do['DOID']; ?>" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"><img src="public/pictures/trash-solid.svg" alt="trash-pic" width="16px"/></a>
                                     </div>
                                 </td>

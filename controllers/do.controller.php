@@ -7,6 +7,10 @@
         // Remplissage de la variable $content
         ob_start();
         switch ($currentstep) {
+            case 'step0':
+                $title = "Formulaire Dommage Ouvrage";
+                require('views/templates/form/s00-debuter.view.php');
+                break;            
             case 'step1':
                 $title = "Formulaire DO-01";
                 require('views/templates/form/s01-coordonnees.view.php');
@@ -44,9 +48,18 @@
                 $_SESSION['info_'.$_POST['fields']][$key] = $value;                
             }
             $keys = array_keys($_SESSION['info_'.$_POST['fields']]);
-
+            $res = false;
             //var_dump($_SESSION['info_'.$_POST['fields']]);
-            if($currentstep == "step1"){
+            if($currentstep == "step0"){
+                if(isset($_POST['checkbox-approuve'])){
+                    if($_POST['checkbox-approuve'] == 1){
+                        $res=true;  
+                    }
+                }else{
+                    $res=false;
+                    $message = "Vous devez cocher la case pour accepter les conditions générales du contrat Dommage Ouvrage et les Mentions légales RGPD";
+                }
+            }elseif($currentstep == "step1"){
                 $res = insert($_SESSION["info_souscripteur"]);
                 $_SESSION["DOID"] = $res;
             }else{

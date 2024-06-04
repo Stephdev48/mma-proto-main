@@ -27,7 +27,7 @@
     </td>
     <td class="px-6 py-4">
         <select id="lot-tech" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        onchange="document.getElementById('trash-action-libelle').value=this.options[this.value].text;" >
+        onchange="document.getElementById('trash-action-libelle').value=this.options[this.value].text;alert(this.value);" >
             <option selected>-- Lot technique --</option>
                 <option value='1'>BET</option>
                 <option value='2'>Ingénieur conseil</option>

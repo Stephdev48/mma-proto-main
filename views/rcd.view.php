@@ -50,10 +50,10 @@
                         <label for="nom[]" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom</label>
                     </div>
                 </td>
-                <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
+                <td class="w-full w-[500px] p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
                     <span class="lg:hidden absolute top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase">Nature</span>
-                    <select onchange="autre();" name="nature[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option>-- Lot technique --</option>
+                    <select  style="min-width: 180px;" onchange="console.log(this.value);if(this.value==99){showElement('autre-nature<?= $key;?>')}else{hideElement('autre-nature<?= $key;?>')}" name="nature[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="selected">-- Lot technique --</option>
                             <?php
                             foreach ($array_natures as $nature) {
                                 $selected= "";
@@ -63,7 +63,7 @@
                             ?>
                             <option value='99' <?php if($item['nature'] == 99){echo "selected";}?>>-Autre-</option>
                     </select>
-                    <input type="text" name="autre-nature[]" value="<?= $item['nature-autre']?>" id="autre-nature<?= $key;?>" name="autre[]" />
+                    <input type="text" class="<?php if($item['nature'] != 99){echo 'hidden';}?>" name="autre-nature[]" value="<?= $item['nature-autre']?>" id="autre-nature<?= $key;?>" name="autre[]" />
 
                 </td>
                 <td class="w-full lg:min-w-24 p-3 text-gray-800 text-center border border-b text-center block lg:table-cell relative lg:static">
@@ -354,9 +354,10 @@
                     <select name="nature[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option>-- Lot technique --</option>
                             <?php
-                            foreach ($array_natures as $key => $value) {
-                                echo "<option value='$key'>$value</option>";
+                            foreach ($array_natures as $nature) {                            
+                                echo "<option value=\"".$nature['rcd_nature_id']."\">".$nature['rcd_nature_nom']."</option>";
                             }
+
                             ?>
                             <option value='99'>-Autres-</option>
                     </select>

@@ -25,6 +25,8 @@
         case'home':
             $home = 'hidden';
             break;
+        case'step0':
+            break;            
         case'step1':
             $currentstep1 = "text-blue-600 dark:text-blue-500 font-bold";
             $currentstep1circle = "border-blue-600 border-2";

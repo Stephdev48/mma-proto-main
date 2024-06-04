@@ -4,8 +4,6 @@
     define('UPLOAD_FOLDER', "/public/uploads" );
 
 
-
-
     define('PASSWORD_ADMIN', "9%VBV!7zFkbH" );
     require 'controllers/page-erreur.controller.php';
    
@@ -22,7 +20,6 @@
     // Vide la superglobale $_SESSION
     //session_destroy();
     // $_SESSION = [];
-
     if (isset($_GET['page'])){
         $currentstep = $_GET['page'];
         switch($_GET['page']){
@@ -31,6 +28,7 @@
                 require 'controllers/home.controller.php';
                 homeDisplay($currentstep);
                 break;
+            case 'step0':
             case 'step1':
             case 'step2':
             case 'step3':

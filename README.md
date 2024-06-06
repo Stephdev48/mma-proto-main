@@ -33,3 +33,7 @@ Il faut une alert() pour le bouton supprimer du tableau admin
 ## Le message de confirmation de suppression dans le board admin ne fonctionne pas.
 Pas de paramètre "deletedo" dans l'URL... AJAX ?
 
+## Suggestions après présentation
+astérisques champs requis dans les form's
+RGPD : insertion en BDD même si abandon du formulaire
+

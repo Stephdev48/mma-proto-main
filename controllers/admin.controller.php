@@ -64,5 +64,6 @@
 
     function editDo($doid){
         $_SESSION = read($doid);
-        header("Location: index.php?page=step1");
+        print_r($_SESSION);
+        //header("Location: index.php?page=step1&doid=".$_GET['doid']);
     }

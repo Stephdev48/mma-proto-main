@@ -83,21 +83,26 @@
                     </div>
                 </div>
                 <!-- Extension horizontale -->
-                <div class="flex flex-row my-4">
-                    <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;</span>
-                    <div> <!-- Infobulle -->
-                        <button data-popover-target="extension-horizont-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
-                        <div data-popover id="extension-horizont-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
-                            <div class="p-3 space-y-2">
-                                <h3 class="font-semibold text-gray-900 dark:text-white">Extension :   </h3>
-                                <p>Agrandissement d’un bâtiment par un autre bâtiment annexe</p>
+                <div class="flex flex-col my-4">
+                    <div class="flex flex-row">
+                        <span class="text-gray-500 font-medium">D'une extension horizontale ? &ensp;&ensp;</span>
+                        <div> <!-- Infobulle -->
+                            <button data-popover-target="extension-horizont-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                            <div data-popover id="extension-horizont-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                                <div class="p-3 space-y-2">
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Extension :   </h3>
+                                    <p>Agrandissement d’un bâtiment par un autre bâtiment annexe</p>
+                                </div>
                             </div>
                         </div>
+                        <div>
+                            <input type="radio" name="nature_operation_ext_horizont" value="1" <?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_ext_horizont')"/>
+                            <label class="text-gray-500 font-medium"> Oui &ensp;</label>
+                            <input type="radio" name="nature_operation_ext_horizont" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
+                            <label class="text-gray-500 font-medium"> Non</label> 
+                        </div>
                     </div>
-                    <input type="radio" name="nature_operation_ext_horizont" value="1" <?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_ext_horizont')"/>
-                    <label class="text-gray-500 font-medium"> Oui &ensp;</label>
-                    <input type="radio" name="nature_operation_ext_horizont" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_ext_horizont')"/>
-                    <label class="text-gray-500 font-medium"> Non</label>  
+
                     <div id="nature_operation_ext_horizont" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_ext_horizont']) && ($_SESSION['info_operation_construction']['nature_operation_ext_horizont'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
@@ -120,21 +125,25 @@
                     </div>
                 </div>
                 <!-- Rénovation -->
-                <div class="flex flex-row my-4">
-                    <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span> 
-                    <div> <!-- Infobulle -->
-                        <button data-popover-target="renovation-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
-                        <div data-popover id="renovation-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
-                            <div class="p-3 space-y-2">
-                                <h3 class="font-semibold text-gray-900 dark:text-white">Rénovation :   </h3>
-                                <p>Remise en état sans changement de destination (elle peut faire l’objet d’autorisation), hors restauration. Par restauration, on entend l’intervention sur un bâtiment faisant l’objet d’une protection du patrimoine. Une question est prévue en lien : « intervention sur un bâtiment classé ».</p>
+                <div class="flex flex-col my-4">
+                    <div class="flex flex-row">
+                        <span class="text-gray-500 font-medium">D'une rénovation ?&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span> 
+                        <div> <!-- Infobulle -->
+                            <button data-popover-target="renovation-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
+                            <div data-popover id="renovation-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+                                <div class="p-3 space-y-2">
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Rénovation :   </h3>
+                                    <p>Remise en état sans changement de destination (elle peut faire l’objet d’autorisation), hors restauration. Par restauration, on entend l’intervention sur un bâtiment faisant l’objet d’une protection du patrimoine. Une question est prévue en lien : « intervention sur un bâtiment classé ».</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="">
+                            <input type="radio" name="nature_operation_renovation" value="1" <?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_renovation')"/>
+                            <label class="text-gray-500 font-medium"> Oui &ensp;&ensp; </label>
+                            <input type="radio" name="nature_operation_renovation" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
+                            <label class="text-gray-500 font-medium"> Non</label> 
+                        </div>
                     </div>
-                    <input type="radio" name="nature_operation_renovation" value="1" <?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==1 ? "checked=checked" : ""; ?> onclick="showElement('nature_operation_renovation')"/>
-                    <label class="text-gray-500 font-medium"> Oui &ensp; </label>
-                    <input type="radio" name="nature_operation_renovation" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==0 ? "checked=checked" : ""; ?> onclick="hideElement('nature_operation_renovation')"/>
-                    <label class="text-gray-500 font-medium"> Non</label> 
                     <div id="nature_operation_renovation" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_renovation']) && ($_SESSION['info_operation_construction']['nature_operation_renovation'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
@@ -199,7 +208,7 @@
                     <div id="nature_operation_rehabilitation" class="<?= isset($_SESSION['info_operation_construction']['nature_operation_rehabilitation']) && ($_SESSION['info_operation_construction']['nature_operation_rehabilitation'])==1 ? "" : "hidden"; ?> px-8 py-4">
                         <div class="mb-2 md:grid-cols-2">
                             <div class="flex flex-row py-2">
-                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp;
+                                <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervention sur la structure existante y compris la fondation ? : &ensp;&ensp; </span>
                                 <div> <!-- Infobulle -->
                                     <button data-popover-target="extension-popup" data-popover-placement="bottom-end" type="button" class="mx-6"><svg class="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg><span class="sr-only">Show information</span></button>
                                     <div data-popover id="extension-popup" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-72 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
@@ -213,7 +222,6 @@
                                 <label class="text-gray-500 font-medium">&ensp; Oui &ensp;&ensp;</label>
                                 <input type="radio" name="nature_operation_rehabilitation_fond" value="0" <?= isset($_SESSION['info_operation_construction']['nature_operation_rehabilitation_fond']) && ($_SESSION['info_operation_construction']['nature_operation_rehabilitation_fond'])==0 ? "checked=checked" : ""; ?>>
                                 <label class="text-gray-500 font-medium">&ensp; Non</label>
-                                </span>
                             </div>
                             <div class="flex flex-row py-2">
                                 <span class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isolation thermique extérieure ? : &ensp;&ensp;

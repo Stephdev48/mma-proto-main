@@ -175,7 +175,7 @@
         </div>
         <div class="mx-24 my-2">
             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intervenant en qualité de ?</label>
-            <input type="text" name="cnr_qualite" value="<?= isset($_SESSION['info_travaux_annexes']['cnr_qualite']) ? $_SESSION['info_travaux_annexes']['cnr_qualite'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required/>
+            <input type="text" name="cnr_qualite" value="<?= isset($_SESSION['info_travaux_annexes']['cnr_qualite']) ? $_SESSION['info_travaux_annexes']['cnr_qualite'] : ''?>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
         </div>
     </div>
     <?php
@@ -184,15 +184,15 @@
 
 
     <div class="flex flex-row justify-center mt-16">
-            <!-- Bouton précédent -->                                          
-            <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">
-                <button type="submit" name="page_next" value="step4" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Précédent</button>
-            </div>
-            <!-- Bouton suivant -->
-            <div class="text-center ml-6">
-                <button type="submit" name="page_next" value="step5" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
-            </div>
+        <!-- Bouton précédent -->                                          
+        <div class="flex space-y-4 justify-center sm:space-y-0 mr-6">
+            <button type="submit" name="page_next" value="step4" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Précédent</button>
         </div>
+        <!-- Bouton suivant -->
+        <div class="text-center ml-6">
+            <button type="submit" name="page_next" value="step5" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-32 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Suivant</button>
+        </div>
+    </div>
 
 
     <input type="hidden" name="fields" value="travaux_annexes">

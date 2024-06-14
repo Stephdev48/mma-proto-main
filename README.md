@@ -20,12 +20,7 @@ si après avoir rempli les coordonnées souscripteur en step1, on fait précéde
 
 ## Supprimer les required en mode DEBUG
 
-## Fonctionnement général : remarques :
-lorsque radio value=0, la requête insère null dans les tables sauf pour cnr où elle insère 0...
-
 ## Insertion des coordonnées entreprises
-
-## Les ternaires pour les champs input ne fonctionnent pas
 
 ## Confirmation suppression
 Il faut une alert() pour le bouton supprimer du tableau admin

@@ -1,7 +1,7 @@
 <?php
     require_once 'connect.db.php';
 
-    //création du souscripteur et de la demande ouvrage + doid dans chaque table
+    //lecture des données contenues dans la base
     function read($doid){
         $sql = "SELECT * FROM souscripteur, dommage_ouvrage, moa, operation_construction, situation, travaux_annexes, moe
                 WHERE dommage_ouvrage.DOID = $doid

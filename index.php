@@ -16,9 +16,7 @@
         define('DEBUG', true );
     }
 
-    //$_SESSION['env'] = 'dev';
     // Vide la superglobale $_SESSION
-    //session_destroy();
     // $_SESSION = [];
     if (isset($_GET['page'])){
         $currentstep = $_GET['page'];

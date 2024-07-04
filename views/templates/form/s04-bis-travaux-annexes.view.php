@@ -1,3 +1,6 @@
+<?php
+    error_reporting(0);
+?>
 <form action="" method="post">
     <!-- Construction bois -->
     <?php

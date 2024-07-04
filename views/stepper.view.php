@@ -12,8 +12,6 @@
     $currentstep4biscircle = $currentstep1circle;
     $currentstep5 = $currentstep1;
     $currentstep5circle = $currentstep1circle;
-    $currentstep6 = $currentstep1;
-    $currentstep6circle = $currentstep1circle;
     $validation = $currentstep1;
     $validationcircle = $currentstep1circle;
  

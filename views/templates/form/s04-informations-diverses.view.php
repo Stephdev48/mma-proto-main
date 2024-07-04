@@ -1,3 +1,6 @@
+<?php
+    error_reporting(0);
+?>
 <section>
     <!-- Situation de l'ouvrage -->
     <form action="" method="post">

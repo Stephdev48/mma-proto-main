@@ -1,3 +1,6 @@
+<?php
+    error_reporting(0);
+?>
 <form action="" method="post">
     <!-- Maitrise d'oeuvre -->
     <div class="">
@@ -70,7 +73,7 @@
         </div>
         <div class='<?= isset($_SESSION['info_situation']['situation_cnr']) && ($_SESSION['info_situation']['situation_cnr'])==1 ? "" : "hidden"; ?> mx-10 mt-4' id="garantie_cnr">
             <span class='font-normal text-gray-900'>Responsabilité du Constructeur Non Réalisateur &ensp;&ensp;
-                <input type='radio' name='moe_garantie_cnr' value='1' <?= isset($_SESSION['info_moe']['moe_garantie_cnr']) && ($_SESSION['info_moe']['moe_garantie_cnr'])==1 ? 'checked=checked' : ''; ?> required/>
+                <input type='radio' name='moe_garantie_cnr' value='1' <?= isset($_SESSION['info_moe']['moe_garantie_cnr']) && ($_SESSION['info_moe']['moe_garantie_cnr'])==1 ? 'checked=checked' : ''; ?>/>
                 <label class='text-gray-500 font-medium'> Oui &ensp;</label>
                 <input type='radio' name='moe_garantie_cnr' value='0' <?= isset($_SESSION['info_moe']['moe_garantie_cnr']) && ($_SESSION['info_moe']['moe_garantie_cnr'])==0 ? 'checked=checked' : ''; ?>/>
                 <label class='text-gray-500 font-medium'> Non</label>

@@ -32,3 +32,5 @@ Pas de paramètre "deletedo" dans l'URL... AJAX ?
 astérisques champs requis dans les form's
 RGPD : insertion en BDD même si abandon du formulaire
 
+## Les apostrophes dans les champs souscripteur posent problème pour la requête SQL
+
